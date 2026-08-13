@@ -52,12 +52,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that — a
 one-time scan of reginabb98@gmail.com on 2026-08-13, searching for ATS
 confirmation/status emails (Greenhouse, Lever, Ashby, Workday, iCIMS,
 Workable, Teamtailor) and explicit rejection/interview language over the
-trailing 12 months. 29 real applications turned up: 25 Applied, 1
-Interviewing (Design Bridge and Partners / Landor), and 3 Rejected (Prose,
-AKQA, and Prophet — the last over a work-authorization concern where a
-clarifying reply is already sent). LinkedIn's own "job alert" and "jobs
-similar to" emails were excluded since those are recommendations, not
-applications you submitted.
+trailing 12 months. 29 real applications turned up: 24 Applied, 1
+Interviewing (Design Bridge and Partners / Landor), and 4 Rejected (Prose,
+AKQA, Accenture/Droga5, and Prophet — the last over a work-authorization
+concern where a clarifying reply is already sent). LinkedIn's own "job
+alert" and "jobs similar to" emails were excluded since those are
+recommendations, not applications you submitted.
 
 ## API
 

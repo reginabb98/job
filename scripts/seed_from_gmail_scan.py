@@ -21,11 +21,13 @@ SEED_ROWS = [
     {
         "company": "Accenture (Droga5)",
         "position": "Senior Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-22",
-        "next_step": "Two follow-up emails from Accenture recruiting on 2026-08-12 (one referral-based) -- worth responding",
+        "next_step": None,
         "source": "Workday",
-        "notes": "Applied via Accenture's Workday portal for the Droga5 Senior Strategist role.",
+        "notes": "Applied via Accenture's Workday portal for the Droga5 Senior Strategist role. "
+                 "The 2026-08-12 follow-up emails were a bar from reapplying, not a new opportunity -- "
+                 "confirmed rejection.",
     },
     {
         "company": "Snapchat",
