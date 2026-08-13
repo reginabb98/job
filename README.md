@@ -48,14 +48,16 @@ you can periodically ask Claude to scan your inbox for application
 confirmations, rejections, and interview invites, and either update
 `tracker.db` directly or hand you a CSV to import.
 
-The three rows in `scripts/seed_from_gmail_scan.py` came from exactly that —
-a one-time scan of rbarrerababb@sva.edu on 2026-08-13, searching for
-application/interview/offer/rejection language and common ATS senders
-(Greenhouse, Lever, Workday, iCIMS, Taleo, SmartRecruiters, Ashby, LinkedIn).
-No corporate ATS emails turned up in that inbox at the time — the only real
-leads found were an SVA Library position (rejected) and two TA-position
-inquiries (pending). If most of your job-hunt email goes to a different
-address, point Claude at that inbox instead next time.
+The rows in `scripts/seed_from_gmail_scan.py` came from exactly that — a
+one-time scan of reginabb98@gmail.com on 2026-08-13, searching for ATS
+confirmation/status emails (Greenhouse, Lever, Ashby, Workday, iCIMS,
+Workable, Teamtailor) and explicit rejection/interview language over the
+trailing 12 months. 29 real applications turned up: 25 Applied, 1
+Interviewing (Design Bridge and Partners / Landor), and 3 Rejected (Prose,
+AKQA, and Prophet — the last over a work-authorization concern where a
+clarifying reply is already sent). LinkedIn's own "job alert" and "jobs
+similar to" emails were excluded since those are recommendations, not
+applications you submitted.
 
 ## API
 

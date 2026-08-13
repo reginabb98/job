@@ -1,14 +1,15 @@
 """
 One-time seed of the applications table from a manual Gmail scan.
 
-This reflects the results of scanning rbarrerababb@sva.edu on 2026-08-13 for
-job-application activity (thread searches for application/interview/offer/
-rejection language and common ATS senders like Greenhouse, Lever, Workday,
-iCIMS, Taleo, SmartRecruiters, Ashby, LinkedIn). No corporate ATS emails were
-found in that inbox at scan time -- these three threads were the only
-genuine position leads. Run again with `python scripts/seed_from_gmail_scan.py`
-only if the applications table is empty; it will not create duplicates on
-repeat runs.
+This reflects a scan of reginabb98@gmail.com on 2026-08-13 for job-application
+activity: ATS confirmation/status emails (Greenhouse, Lever, Ashby, Workday,
+iCIMS, Workable, Teamtailor) plus explicit rejection/interview language,
+covering the last 12 months. TA/teaching-assistant leads were intentionally
+excluded per instruction. LinkedIn "job alert" and "jobs similar to" emails
+were excluded too since they're recommendations, not applications.
+
+Run `python scripts/seed_from_gmail_scan.py` once against an empty
+applications table; it will not create duplicates on repeat runs.
 """
 import os
 import sqlite3
@@ -18,41 +19,241 @@ DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 
 SEED_ROWS = [
     {
-        "company": "SVA Library",
-        "position": "Library Position",
+        "company": "Accenture (Droga5)",
+        "position": "Senior Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-22",
+        "next_step": "Two follow-up emails from Accenture recruiting on 2026-08-12 (one referral-based) -- worth responding",
+        "source": "Workday",
+        "notes": "Applied via Accenture's Workday portal for the Droga5 Senior Strategist role.",
+    },
+    {
+        "company": "Snapchat",
+        "position": "Associate Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-22",
+        "source": "Workday",
+        "notes": None,
+    },
+    {
+        "company": "Mammoth Brands",
+        "position": "Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-22",
+        "source": "Greenhouse",
+        "notes": None,
+    },
+    {
+        "company": "The New York Times",
+        "position": "Designer, Marketing",
+        "status": "Applied",
+        "applied_date": "2026-07-22",
+        "source": "Email",
+        "notes": None,
+    },
+    {
+        "company": "Interbrand",
+        "position": "Verbal Identity Fellow",
+        "status": "Applied",
+        "applied_date": "2026-07-22",
+        "source": "Greenhouse",
+        "notes": None,
+    },
+    {
+        "company": "Interbrand",
+        "position": "General interest (no specific opening listed)",
+        "status": "Applied",
+        "applied_date": "2026-07-24",
+        "source": "Greenhouse",
+        "notes": "Separate general-interest application, distinct from the Verbal Identity Fellow role applied to 2026-07-22.",
+    },
+    {
+        "company": "Lippincott",
+        "position": "Senior Consultant, Strategy (R_350484)",
+        "status": "Applied",
+        "applied_date": "2026-07-24",
+        "source": "Workday",
+        "notes": None,
+    },
+    {
+        "company": "Design Bridge and Partners / Landor (WPP)",
+        "position": "Senior Strategist",
+        "status": "Interviewing",
+        "applied_date": "2026-07-24",
+        "next_step": "Interviewed Jul 29, 2PM ET -- awaiting outcome",
+        "source": "Greenhouse",
+        "notes": "Recruiter Ashley Hill (wppbrandconsulting.com) referenced this role under both the "
+                 "Design Bridge and Partners and Landor names -- likely the same WPP process.",
+    },
+    {
+        "company": "JPMorgan Chase & Co.",
+        "position": "Unspecified role (Job #210771927)",
+        "status": "Applied",
+        "applied_date": "2026-07-24",
+        "source": "Oracle Recruiting Cloud",
+        "notes": "Required an email verification code to complete submission.",
+    },
+    {
+        "company": "Google",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-07-24",
+        "source": "Email",
+        "notes": "Two near-identical confirmation emails same day -- possibly one application, duplicate notification.",
+    },
+    {
+        "company": "Meta",
+        "position": "Creative role (title truncated in email)",
+        "status": "Applied",
+        "applied_date": "2026-07-25",
+        "source": "Email",
+        "notes": None,
+    },
+    {
+        "company": "Prophet",
+        "position": "Unspecified role",
         "status": "Rejected",
-        "applied_date": "2025-08-04",
+        "applied_date": "2026-07-23",
         "next_step": None,
-        "job_url": None,
-        "source": "Email",
-        "referral": 0,
-        "notes": "Interviewed on Zoom with Mark Roussel. Rejected 2025-08-04: "
-                 "\"we've decided to move forward with other candidates\". "
-                 "Invited to reapply when the department hires again.",
+        "source": "Greenhouse",
+        "notes": "2026-07-25: recruiter said they couldn't move forward based on work-authorization/sponsorship "
+                 "answers. She replied same day clarifying she's authorized via F-1 OPT -- no response on file yet.",
     },
     {
-        "company": "Creative Putty (Bret Sanford)",
-        "position": "TA - Business of Branding",
+        "company": "Highsnobiety",
+        "position": "Associate Creative",
         "status": "Applied",
-        "applied_date": "2026-06-16",
-        "next_step": "Awaiting response",
-        "job_url": None,
-        "source": "Email",
-        "referral": 0,
-        "notes": "Applied via email 2026-06-16. As of 2026-07-02 still waiting "
-                 "to hear back once TA budget is finalized.",
+        "applied_date": "2026-07-27",
+        "source": "Teamtailor",
+        "notes": None,
     },
     {
-        "company": "Pop&Op (Sem Devillart)",
-        "position": "TA Position",
+        "company": "Instrument",
+        "position": "Unspecified role",
         "status": "Applied",
-        "applied_date": "2026-05-21",
-        "next_step": "Awaiting response",
-        "job_url": None,
+        "applied_date": "2026-07-27",
+        "source": "Lever",
+        "notes": None,
+    },
+    {
+        "company": "Something Special Studios",
+        "position": "Senior Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Greenhouse",
+        "notes": None,
+    },
+    {
+        "company": "Superside",
+        "position": "Lead Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Lever",
+        "notes": None,
+    },
+    {
+        "company": "Figma",
+        "position": "Designer Advocate, Figma Weave",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
         "source": "Email",
-        "referral": 0,
-        "notes": "Applied via email 2026-05-21. As of 2026-06-01 no definitive "
-                 "answer yet; another candidate (AJ) also being considered.",
+        "notes": None,
+    },
+    {
+        "company": "Buttermilk",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Teamtailor",
+        "notes": None,
+    },
+    {
+        "company": "co:collective",
+        "position": "Senior Strategist",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Lever",
+        "notes": None,
+    },
+    {
+        "company": "Omnicom Network",
+        "position": "General network application",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Workday",
+        "notes": None,
+    },
+    {
+        "company": "Meta",
+        "position": "Brand role (title truncated in email)",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Email",
+        "notes": "Distinct from the Meta Creative-role application on 2026-07-25.",
+    },
+    {
+        "company": "Partiful",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-07-27",
+        "source": "Ashby",
+        "notes": None,
+    },
+    {
+        "company": "Wieden+Kennedy",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-07-28",
+        "source": "Greenhouse",
+        "notes": None,
+    },
+    {
+        "company": "David Protein",
+        "position": "Senior Brand Manager",
+        "status": "Applied",
+        "applied_date": "2026-07-28",
+        "source": "Workable",
+        "notes": None,
+    },
+    {
+        "company": "AKQA",
+        "position": "Freelance Senior Designer (New York)",
+        "status": "Rejected",
+        "applied_date": "2026-07-28",
+        "source": "Email",
+        "notes": "Rejected same day: \"we have identified candidates who are more closely aligned with the role.\"",
+    },
+    {
+        "company": "PepsiCo",
+        "position": "Design Senior Manager - Immersive (2026-439325)",
+        "status": "Applied",
+        "applied_date": "2026-07-29",
+        "source": "iCIMS",
+        "notes": "Already in PepsiCo's talent community from an earlier signup (2026-06-16).",
+    },
+    {
+        "company": "Google",
+        "position": "Unspecified role (second application)",
+        "status": "Applied",
+        "applied_date": "2026-07-29",
+        "source": "Email",
+        "notes": "Separate confirmation from the 2026-07-24 Google application -- unclear if same or different role.",
+    },
+    {
+        "company": "JPMorgan Chase & Co.",
+        "position": "Unspecified role (Job #210768163)",
+        "status": "Applied",
+        "applied_date": "2026-07-30",
+        "source": "Oracle Recruiting Cloud",
+        "notes": "Second, distinct JPMorgan application from the one on 2026-07-24.",
+    },
+    {
+        "company": "Prose",
+        "position": "Manager of Design, Brand Creative",
+        "status": "Rejected",
+        "applied_date": "2026-07-28",
+        "source": "Ashby",
+        "notes": "Rejected 2026-08-03: \"we have decided to move forward with other candidates.\"",
     },
 ]
 
@@ -67,6 +268,9 @@ def main():
 
     now = datetime.utcnow().isoformat()
     for row in SEED_ROWS:
+        row.setdefault("next_step", None)
+        row.setdefault("job_url", None)
+        row.setdefault("referral", 0)
         db.execute(
             """
             INSERT INTO applications
