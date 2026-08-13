@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Search Tracker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="title">
+      <span class="title-emoji">🎯</span>
+      <h1>Job Search Tracker</h1>
+    </div>
+    <div class="actions">
+      <button id="importBtn" class="btn btn-secondary">Import CSV</button>
+      <button id="addBtn" class="btn btn-primary">+ Add Application</button>
+    </div>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <section class="toolbar">
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="table">Table</button>
+      <button class="view-btn" data-view="kanban">Kanban</button>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search company or position…">
+  </section>
+
+  <main id="tableView" class="view">
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Status</th>
+          <th>Applied</th>
+          <th>Next Step</th>
+          <th>Source</th>
+          <th>Referral</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </main>
+
+  <main id="kanbanView" class="view hidden">
+    <div class="kanban" id="kanbanBoard"></div>
+  </main>
+</div>
+
+<div class="modal-backdrop hidden" id="formModalBackdrop">
+  <div class="modal">
+    <h2 id="formModalTitle">Add Application</h2>
+    <form id="appForm">
+      <input type="hidden" id="appId">
+      <label>Company<input required id="fCompany" type="text"></label>
+      <label>Position<input required id="fPosition" type="text"></label>
+      <label>Status
+        <select id="fStatus">
+          <option>Applied</option>
+          <option>Interviewing</option>
+          <option>Offer</option>
+          <option>Rejected</option>
+          <option>Withdrawn</option>
+        </select>
+      </label>
+      <label>Applied Date<input id="fAppliedDate" type="date"></label>
+      <label>Next Step<input id="fNextStep" type="text" placeholder="e.g. Recruiter call Aug 20"></label>
+      <label>Job URL<input id="fJobUrl" type="url"></label>
+      <label>Source<input id="fSource" type="text" placeholder="LinkedIn, referral, company site…"></label>
+      <label class="checkbox"><input id="fReferral" type="checkbox"> Referral</label>
+      <label>Notes<textarea id="fNotes" rows="3"></textarea></label>
+      <div class="modal-actions">
+        <button type="button" id="deleteBtn" class="btn btn-danger hidden">Delete</button>
+        <div class="modal-actions-right">
+          <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal-backdrop hidden" id="importModalBackdrop">
+  <div class="modal">
+    <h2>Import from CSV</h2>
+    <p class="hint">
+      LinkedIn doesn't offer an export button for your applied-jobs list, so copy your rows
+      (from the "My Jobs &rsaquo; Applied" page) into a spreadsheet and export as CSV, or fill in
+      the template below. Required columns: <code>company</code>, <code>position</code>.
+      Optional: <code>status</code>, <code>applied_date</code>, <code>next_step</code>,
+      <code>job_url</code>, <code>source</code>, <code>referral</code>, <code>notes</code>.
+    </p>
+    <input type="file" id="csvFile" accept=".csv">
+    <div id="importResult"></div>
+    <div class="modal-actions">
+      <div class="modal-actions-right">
+        <button type="button" id="importCancelBtn" class="btn btn-secondary">Close</button>
+        <button type="button" id="importSubmitBtn" class="btn btn-primary">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

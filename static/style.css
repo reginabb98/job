@@ -1,0 +1,134 @@
+:root {
+  --bg: #ffffff;
+  --bg-muted: #f7f6f4;
+  --border: #e6e4e0;
+  --text: #37352f;
+  --text-muted: #787670;
+  --accent: #2f6fed;
+  --applied-bg: #f5e3c8; --applied-fg: #92672f;
+  --interviewing-bg: #e3ddf5; --interviewing-fg: #5a3fb8;
+  --offer-bg: #d8f0dd; --offer-fg: #23713a;
+  --rejected-bg: #fbdada; --rejected-fg: #a63333;
+  --withdrawn-bg: #eceae6; --withdrawn-fg: #6b6862;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app { max-width: 1100px; margin: 0 auto; padding: 32px 24px 80px; }
+
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.title { display: flex; align-items: center; gap: 10px; }
+.title-emoji { font-size: 28px; }
+h1 { font-size: 24px; margin: 0; }
+
+.actions { display: flex; gap: 10px; }
+
+.btn {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:hover { background: var(--bg-muted); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { filter: brightness(0.95); }
+.btn-danger { background: #fff; border-color: var(--rejected-fg); color: var(--rejected-fg); }
+.btn-danger:hover { background: var(--rejected-bg); }
+
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 24px; }
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: var(--bg-muted);
+}
+.stat-value { font-size: 22px; font-weight: 600; }
+.stat-label { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.view-toggle { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.view-btn { border: none; background: var(--bg); padding: 7px 16px; cursor: pointer; font-size: 14px; color: var(--text-muted); }
+.view-btn.active { background: var(--bg-muted); color: var(--text); font-weight: 600; }
+#searchInput { border: 1px solid var(--border); border-radius: 6px; padding: 7px 12px; font-size: 14px; width: 260px; }
+
+.view.hidden { display: none; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+}
+tbody td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--bg-muted); }
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badge-Applied { background: var(--applied-bg); color: var(--applied-fg); }
+.badge-Interviewing { background: var(--interviewing-bg); color: var(--interviewing-fg); }
+.badge-Offer { background: var(--offer-bg); color: var(--offer-fg); }
+.badge-Rejected { background: var(--rejected-bg); color: var(--rejected-fg); }
+.badge-Withdrawn { background: var(--withdrawn-bg); color: var(--withdrawn-fg); }
+
+.kanban { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; align-items: start; }
+.kanban-col { background: var(--bg-muted); border-radius: 8px; padding: 10px; min-height: 100px; }
+.kanban-col-header { font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; }
+.kanban-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.kanban-card:hover { border-color: var(--accent); }
+.kanban-card .company { font-weight: 600; margin-bottom: 2px; }
+.kanban-card .position { color: var(--text-muted); margin-bottom: 6px; }
+.kanban-card .meta { color: var(--text-muted); font-size: 12px; }
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 50;
+}
+.modal-backdrop.hidden { display: none; }
+.modal {
+  background: var(--bg); border-radius: 10px; padding: 24px;
+  width: 440px; max-width: 92vw; max-height: 88vh; overflow-y: auto;
+}
+.modal h2 { margin-top: 0; }
+.modal form label {
+  display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 12px;
+}
+.modal form input, .modal form select, .modal form textarea {
+  width: 100%; margin-top: 4px; padding: 8px 10px; border: 1px solid var(--border);
+  border-radius: 6px; font-size: 14px; color: var(--text); font-family: inherit;
+}
+.modal form label.checkbox { display: flex; align-items: center; gap: 8px; }
+.modal form label.checkbox input { width: auto; margin-top: 0; }
+.modal-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.modal-actions-right { display: flex; gap: 8px; }
+.hint { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+.hint code { background: var(--bg-muted); padding: 1px 4px; border-radius: 3px; }
+#importResult { font-size: 13px; margin: 10px 0; }
