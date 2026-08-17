@@ -79,9 +79,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Partners / Landor), and 4 Rejected (Prose, AKQA, Accenture/Droga5, and
   Prophet — the last over a work-authorization concern where a clarifying
   reply is already sent).
-- **2026-08-17** — incremental scan covering everything since the prior
-  scan. 5 new rows: 4 Applied (NBCUniversal, Blackstone, Bespoke Post,
-  Inizio Evoke) and 1 Rejected (OLIVER).
+- **2026-08-17 (afternoon)** — incremental scan covering everything since
+  the prior scan. 5 new rows: 4 Applied (NBCUniversal, Blackstone, Bespoke
+  Post, Inizio Evoke) and 1 Rejected (OLIVER).
+- **2026-08-17 (evening)** — incremental rescan. 2 new rows, both Applied
+  (PepsiCo Brand Designer — a second, distinct PepsiCo application — and
+  Razorfish Health).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

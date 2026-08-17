@@ -10,7 +10,9 @@ recommendations, not applications.
 
 Scan history:
   - 2026-08-13: initial 12-month scan, 29 applications.
-  - 2026-08-17: incremental scan since 2026-08-13, 5 new rows.
+  - 2026-08-17 (afternoon): incremental scan since 2026-08-13, 5 new rows.
+  - 2026-08-17 (evening): incremental rescan, 2 new rows (Razorfish Health,
+    a second PepsiCo application).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -310,6 +312,24 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "ZipRecruiter",
         "notes": None,
+    },
+    # -- 2026-08-17 evening rescan --
+    {
+        "company": "PepsiCo",
+        "position": "Brand Designer (2026-450688)",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "iCIMS",
+        "notes": "Second, distinct PepsiCo application from the Design Senior Manager - Immersive "
+                 "role applied to 2026-07-29.",
+    },
+    {
+        "company": "Razorfish Health",
+        "position": "Manager, Brand Strategy (2026-152303)",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "iCIMS",
+        "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
     },
 ]
 
