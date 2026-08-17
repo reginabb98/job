@@ -1,12 +1,16 @@
 """
-One-time seed of the applications table from a manual Gmail scan.
+Seed of the applications table from periodic Gmail scans.
 
-This reflects a scan of reginabb98@gmail.com on 2026-08-13 for job-application
-activity: ATS confirmation/status emails (Greenhouse, Lever, Ashby, Workday,
-iCIMS, Workable, Teamtailor) plus explicit rejection/interview language,
-covering the last 12 months. TA/teaching-assistant leads were intentionally
-excluded per instruction. LinkedIn "job alert" and "jobs similar to" emails
-were excluded too since they're recommendations, not applications.
+Covers reginabb98@gmail.com job-application activity: ATS confirmation/status
+emails (Greenhouse, Lever, Ashby, Workday, iCIMS, Workable, Teamtailor,
+SmartRecruiters) plus explicit rejection/interview language. TA/
+teaching-assistant leads are intentionally excluded per instruction, as are
+LinkedIn "job alert" and "jobs similar to" emails since they're
+recommendations, not applications.
+
+Scan history:
+  - 2026-08-13: initial 12-month scan, 29 applications.
+  - 2026-08-17: incremental scan since 2026-08-13, 5 new rows.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -256,6 +260,49 @@ SEED_ROWS = [
         "applied_date": "2026-07-28",
         "source": "Ashby",
         "notes": "Rejected 2026-08-03: \"we have decided to move forward with other candidates.\"",
+    },
+    # -- 2026-08-17 incremental scan (since 2026-08-13) --
+    {
+        "company": "OLIVER",
+        "position": "Unspecified role",
+        "status": "Rejected",
+        "applied_date": "2026-08-14",
+        "source": "Email",
+        "notes": "Rejection received 2026-08-14: \"skill sets are not exactly aligned with our "
+                 "current needs,\" profile kept in talent pool for 24 months. Rejection email did "
+                 "not name the role applied to; date shown is the rejection date.",
+    },
+    {
+        "company": "Bespoke Post",
+        "position": "Strategist, Growth Marketing",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Lever",
+        "notes": None,
+    },
+    {
+        "company": "Inizio Evoke",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Greenhouse",
+        "notes": None,
+    },
+    {
+        "company": "Blackstone",
+        "position": "Web Strategy, Associate - Digital Marketing",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Workday",
+        "notes": None,
+    },
+    {
+        "company": "NBCUniversal",
+        "position": "Associate Manager, NBC & Peacock Marketing",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "ZipRecruiter",
+        "notes": None,
     },
 ]
 

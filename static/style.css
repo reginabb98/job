@@ -45,13 +45,15 @@ h1 { font-size: 24px; margin: 0; }
 .btn-danger { background: #fff; border-color: var(--rejected-fg); color: var(--rejected-fg); }
 .btn-danger:hover { background: var(--rejected-bg); }
 
-.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 24px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-bottom: 24px; }
 .stat-card {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 14px 16px;
   background: var(--bg-muted);
 }
+.stat-card-danger { background: var(--rejected-bg); border-color: var(--rejected-fg); }
+.stat-card-danger .stat-value, .stat-card-danger .stat-label { color: var(--rejected-fg); }
 .stat-value { font-size: 22px; font-weight: 600; }
 .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
 
@@ -90,6 +92,16 @@ tbody tr:hover { background: var(--bg-muted); }
 .badge-Rejected { background: var(--rejected-bg); color: var(--rejected-fg); }
 .badge-Withdrawn { background: var(--withdrawn-bg); color: var(--withdrawn-fg); }
 
+.logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.company-cell { display: flex; align-items: center; }
+
 .kanban { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; align-items: start; }
 .kanban-col { background: var(--bg-muted); border-radius: 8px; padding: 10px; min-height: 100px; }
 .kanban-col-header { font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; }
@@ -103,7 +115,7 @@ tbody tr:hover { background: var(--bg-muted); }
   font-size: 13px;
 }
 .kanban-card:hover { border-color: var(--accent); }
-.kanban-card .company { font-weight: 600; margin-bottom: 2px; }
+.kanban-card .company { font-weight: 600; margin-bottom: 2px; display: flex; align-items: center; }
 .kanban-card .position { color: var(--text-muted); margin-bottom: 6px; }
 .kanban-card .meta { color: var(--text-muted); font-size: 12px; }
 

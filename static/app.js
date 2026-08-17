@@ -24,14 +24,32 @@ function renderStats(stats) {
     { label: "Applied", value: stats.by_status.Applied },
     { label: "Interviewing", value: stats.by_status.Interviewing },
     { label: "Offers", value: stats.by_status.Offer },
+    { label: "Rejected", value: stats.by_status.Rejected, danger: true },
     { label: "Response Rate", value: stats.response_rate + "%" },
     { label: "Interview Rate", value: stats.interview_rate + "%" },
   ];
   statsEl.innerHTML = cards
     .map(
-      (c) => `<div class="stat-card"><div class="stat-value">${c.value}</div><div class="stat-label">${c.label}</div></div>`
+      (c) => `<div class="stat-card${c.danger ? " stat-card-danger" : ""}"><div class="stat-value">${c.value}</div><div class="stat-label">${c.label}</div></div>`
     )
     .join("");
+}
+
+// Best-effort logo lookup: guess a domain from the company name and let the
+// browser fetch a favicon for it. Silently hides on failure since guesses
+// for smaller/niche companies will often be wrong.
+function companyDomain(company) {
+  let name = (company || "").split("(")[0].split("/")[0].trim().toLowerCase();
+  name = name.replace(/[,.]/g, "");
+  name = name.replace(/\b(inc|llc|co|corp|corporation|ltd|group|company)\b/g, "");
+  name = name.replace(/[^a-z0-9]/g, "");
+  return name ? `${name}.com` : null;
+}
+
+function logoImg(company) {
+  const domain = companyDomain(company);
+  if (!domain) return "";
+  return `<img class="logo" src="https://logo.clearbit.com/${domain}?size=32" alt="" onerror="this.remove()">`;
 }
 
 function filteredApps() {
@@ -53,7 +71,7 @@ function renderTable() {
     .map(
       (a) => `
     <tr data-id="${a.id}">
-      <td>${escapeHtml(a.company)}</td>
+      <td class="company-cell">${logoImg(a.company)}${escapeHtml(a.company)}</td>
       <td>${escapeHtml(a.position)}</td>
       <td><span class="badge badge-${a.status}">${a.status}</span></td>
       <td>${formatDate(a.applied_date)}</td>
@@ -78,7 +96,7 @@ function renderKanban() {
       .map(
         (a) => `
       <div class="kanban-card" data-id="${a.id}">
-        <div class="company">${escapeHtml(a.company)}</div>
+        <div class="company">${logoImg(a.company)}${escapeHtml(a.company)}</div>
         <div class="position">${escapeHtml(a.position)}</div>
         <div class="meta">${formatDate(a.applied_date)}${a.next_step ? " · " + escapeHtml(a.next_step) : ""}</div>
       </div>`
