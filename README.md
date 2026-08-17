@@ -29,12 +29,28 @@ nothing (this app or Claude) can log into LinkedIn on your behalf. Bringing
 that data in is a manual, one-way hand-off, in either of two forms:
 
 1. **Paste-and-parse (recommended):** open LinkedIn's applied-jobs page
-   (Jobs → My Jobs → Applied), copy the visible rows as plain text, and
-   paste them to Claude in chat. Claude parses company / role / applied
-   date out of the raw text and imports it for you — no formatting required.
+   (Jobs → My Jobs → Applied), copy the visible rows as plain text (or just
+   screenshot it), and paste them to Claude in chat. Claude parses company /
+   role / applied date out of the raw text, reconciles it against what's
+   already tracked (filling in real titles where the Gmail scan only had a
+   generic placeholder, rather than creating duplicates), and imports
+   whatever's genuinely new — see `scripts/seed_from_linkedin.py`.
 2. **CSV template:** copy company / role / applied date into
    [`import_template.csv`](./import_template.csv) yourself, then in the app
    click **Import CSV** and upload it.
+
+LinkedIn only exposes relative dates ("Applied 3w ago"), so applied dates
+pulled in this way are estimates, noted as such on each row. LinkedIn's own
+"no longer accepting applications" flag is a posting-lifecycle signal (the
+listing was taken down) — it does not mean anything about whether a
+response was received, so it's never treated as a rejection.
+
+**2026-08-17** — first paste-and-parse reconciliation, 14 new applications
+added (Publicis Health, G&A Strategy and Design, Synthesis ×2, Publicis
+Media ×2, Accenture Creative Agency Senior Designer, Reddit ×2, Moon Juice,
+Interbrand Senior Designer, Noom, UNIQLO, Omnicom Media), plus five
+existing Gmail-sourced rows had their placeholder titles filled in
+(two Meta roles, Prophet, Buttermilk, OLIVER).
 
 Required columns for CSV import: `company`, `position`. Optional: `status`
 (Applied / Interviewing / Offer / Rejected / Withdrawn), `applied_date`,

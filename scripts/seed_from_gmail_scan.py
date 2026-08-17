@@ -97,7 +97,10 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-07-24",
         "source": "Oracle Recruiting Cloud",
-        "notes": "Required an email verification code to complete submission.",
+        "notes": "Required an email verification code to complete submission. LinkedIn's My Jobs list "
+                 "(2026-08-17) shows a 'Corporate Brand Marketing - Senior Associate' application at "
+                 "JPMorgan -- likely this one or the 2026-07-30 JPMorgan application, but which of the "
+                 "two couldn't be confirmed, so the title wasn't merged in here.",
     },
     {
         "company": "Google",
@@ -109,21 +112,23 @@ SEED_ROWS = [
     },
     {
         "company": "Meta",
-        "position": "Creative role (title truncated in email)",
+        "position": "Creative Strategist, NA team",
         "status": "Applied",
         "applied_date": "2026-07-25",
         "source": "Email",
-        "notes": None,
+        "notes": "Title was truncated in the confirmation email -- filled in from LinkedIn's My Jobs list "
+                 "(2026-08-17). Boston, MA per LinkedIn.",
     },
     {
         "company": "Prophet",
-        "position": "Unspecified role",
+        "position": "Senior Creative Strategist",
         "status": "Rejected",
         "applied_date": "2026-07-23",
         "next_step": None,
         "source": "Greenhouse",
         "notes": "2026-07-25: recruiter said they couldn't move forward based on work-authorization/sponsorship "
-                 "answers. She replied same day clarifying she's authorized via F-1 OPT -- no response on file yet.",
+                 "answers. She replied same day clarifying she's authorized via F-1 OPT -- no response on file yet. "
+                 "Title filled in from LinkedIn's My Jobs list (2026-08-17).",
     },
     {
         "company": "Highsnobiety",
@@ -167,11 +172,11 @@ SEED_ROWS = [
     },
     {
         "company": "Buttermilk",
-        "position": "Unspecified role",
+        "position": "Senior Creative",
         "status": "Applied",
         "applied_date": "2026-07-27",
         "source": "Teamtailor",
-        "notes": None,
+        "notes": "Title filled in from LinkedIn's My Jobs list (2026-08-17).",
     },
     {
         "company": "co:collective",
@@ -191,11 +196,12 @@ SEED_ROWS = [
     },
     {
         "company": "Meta",
-        "position": "Brand role (title truncated in email)",
+        "position": "Brand Strategist",
         "status": "Applied",
         "applied_date": "2026-07-27",
         "source": "Email",
-        "notes": "Distinct from the Meta Creative-role application on 2026-07-25.",
+        "notes": "Distinct from the Meta Creative-role application on 2026-07-25. Title filled in from "
+                 "LinkedIn's My Jobs list (2026-08-17).",
     },
     {
         "company": "Partiful",
@@ -264,13 +270,14 @@ SEED_ROWS = [
     # -- 2026-08-17 incremental scan (since 2026-08-13) --
     {
         "company": "OLIVER",
-        "position": "Unspecified role",
+        "position": "Social & Culture Strategist",
         "status": "Rejected",
         "applied_date": "2026-08-14",
         "source": "Email",
         "notes": "Rejection received 2026-08-14: \"skill sets are not exactly aligned with our "
                  "current needs,\" profile kept in talent pool for 24 months. Rejection email did "
-                 "not name the role applied to; date shown is the rejection date.",
+                 "not name the role applied to (date shown is the rejection date); title filled in "
+                 "from LinkedIn's My Jobs list (2026-08-17).",
     },
     {
         "company": "Bespoke Post",
