@@ -38,7 +38,8 @@ that data in is a manual, one-way hand-off, in either of two forms:
 
 Required columns for CSV import: `company`, `position`. Optional: `status`
 (Applied / Interviewing / Offer / Rejected / Withdrawn), `applied_date`,
-`next_step`, `job_url`, `source`, `referral` (yes/no), `notes`.
+`next_step`, `job_url`, `source`, `referral` (yes/no), `notes`, `pay_range`,
+`job_description`.
 
 ### Email
 

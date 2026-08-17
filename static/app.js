@@ -172,8 +172,10 @@ function openEdit(id) {
   document.getElementById("fNextStep").value = a.next_step || "";
   document.getElementById("fJobUrl").value = a.job_url || "";
   document.getElementById("fSource").value = a.source || "";
+  document.getElementById("fPayRange").value = a.pay_range || "";
   document.getElementById("fReferral").checked = !!a.referral;
   document.getElementById("fNotes").value = a.notes || "";
+  document.getElementById("fJobDescription").value = a.job_description || "";
   deleteBtn.classList.remove("hidden");
   formModalBackdrop.classList.remove("hidden");
 }
@@ -193,8 +195,10 @@ appForm.addEventListener("submit", async (e) => {
     next_step: document.getElementById("fNextStep").value,
     job_url: document.getElementById("fJobUrl").value,
     source: document.getElementById("fSource").value,
+    pay_range: document.getElementById("fPayRange").value,
     referral: document.getElementById("fReferral").checked,
     notes: document.getElementById("fNotes").value,
+    job_description: document.getElementById("fJobDescription").value,
   };
 
   if (id) {

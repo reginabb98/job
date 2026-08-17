@@ -1,2 +1,2 @@
-company,position,status,applied_date,next_step,job_url,source,referral,notes
-Acme Inc,Senior Product Manager,Applied,2026-07-20,Awaiting response,https://linkedin.com/jobs/view/12345,LinkedIn,No,
+company,position,status,applied_date,next_step,job_url,source,referral,notes,pay_range,job_description
+Acme Inc,Senior Product Manager,Applied,2026-07-20,Awaiting response,https://linkedin.com/jobs/view/12345,LinkedIn,No,,"$120k-$140k",

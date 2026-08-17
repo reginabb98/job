@@ -43,11 +43,17 @@ def init_db():
             source TEXT,
             referral INTEGER NOT NULL DEFAULT 0,
             notes TEXT,
+            pay_range TEXT,
+            job_description TEXT,
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL
         )
         """
     )
+    existing_cols = {row[1] for row in db.execute("PRAGMA table_info(applications)")}
+    for col in ("pay_range", "job_description"):
+        if col not in existing_cols:
+            db.execute(f"ALTER TABLE applications ADD COLUMN {col} TEXT")
     db.commit()
     db.close()
 
@@ -98,8 +104,8 @@ def create_application():
     cur = db.execute(
         """
         INSERT INTO applications
-            (company, position, status, applied_date, next_step, job_url, source, referral, notes, created_at, updated_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             company,
@@ -111,6 +117,8 @@ def create_application():
             data.get("source"),
             1 if data.get("referral") else 0,
             data.get("notes"),
+            data.get("pay_range"),
+            data.get("job_description"),
             now,
             now,
         ),
@@ -146,6 +154,8 @@ def update_application(app_id):
         "source",
         "referral",
         "notes",
+        "pay_range",
+        "job_description",
     ]
     updates = {k: data[k] for k in fields if k in data}
     if "referral" in updates:
@@ -217,7 +227,8 @@ def import_csv():
             jsonify(
                 {
                     "error": "CSV must include at least 'company' and 'position' columns. "
-                    "Optional columns: status, applied_date, next_step, job_url, source, referral, notes"
+                    "Optional columns: status, applied_date, next_step, job_url, source, referral, notes, "
+                    "pay_range, job_description"
                 }
             ),
             400,
@@ -242,8 +253,8 @@ def import_csv():
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 company,
@@ -255,6 +266,8 @@ def import_csv():
                 row.get("source") or "LinkedIn",
                 1 if row.get("referral", "").lower() in ("1", "true", "yes") else 0,
                 row.get("notes") or None,
+                row.get("pay_range") or None,
+                row.get("job_description") or None,
                 now,
                 now,
             ),

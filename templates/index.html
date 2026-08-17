@@ -72,8 +72,10 @@
       <label>Next Step<input id="fNextStep" type="text" placeholder="e.g. Recruiter call Aug 20"></label>
       <label>Job URL<input id="fJobUrl" type="url"></label>
       <label>Source<input id="fSource" type="text" placeholder="LinkedIn, referral, company site…"></label>
+      <label>Pay Range<input id="fPayRange" type="text" placeholder="e.g. $95k–$115k"></label>
       <label class="checkbox"><input id="fReferral" type="checkbox"> Referral</label>
       <label>Notes<textarea id="fNotes" rows="3"></textarea></label>
+      <label>Job Description<textarea id="fJobDescription" rows="4" placeholder="Paste the posting text here…"></textarea></label>
       <div class="modal-actions">
         <button type="button" id="deleteBtn" class="btn btn-danger hidden">Delete</button>
         <div class="modal-actions-right">
@@ -93,7 +95,8 @@
       (from the "My Jobs &rsaquo; Applied" page) into a spreadsheet and export as CSV, or fill in
       the template below. Required columns: <code>company</code>, <code>position</code>.
       Optional: <code>status</code>, <code>applied_date</code>, <code>next_step</code>,
-      <code>job_url</code>, <code>source</code>, <code>referral</code>, <code>notes</code>.
+      <code>job_url</code>, <code>source</code>, <code>referral</code>, <code>notes</code>,
+      <code>pay_range</code>, <code>job_description</code>.
     </p>
     <input type="file" id="csvFile" accept=".csv">
     <div id="importResult"></div>
