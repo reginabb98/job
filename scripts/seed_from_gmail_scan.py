@@ -232,11 +232,11 @@ SEED_ROWS = [
     },
     {
         "company": "Partiful",
-        "position": "Unspecified role",
+        "position": "Opportunistic application (no specific opening)",
         "status": "Applied",
         "applied_date": "2026-07-27",
         "source": "Ashby",
-        "notes": None,
+        "notes": "Not applying to a listed opening -- reached out opportunistically.",
     },
     {
         "company": "Wieden+Kennedy",
@@ -320,7 +320,7 @@ SEED_ROWS = [
     },
     {
         "company": "Inizio Evoke",
-        "position": "Unspecified role",
+        "position": "Senior Brand Strategist",
         "status": "Applied",
         "applied_date": "2026-08-17",
         "source": "Greenhouse",
@@ -373,7 +373,7 @@ SEED_ROWS = [
     # -- 2026-08-18 early-morning rescan --
     {
         "company": "DualEntry",
-        "position": "Unspecified role",
+        "position": "Design Lead",
         "status": "Applied",
         "applied_date": "2026-08-18",
         "source": "Ashby",
