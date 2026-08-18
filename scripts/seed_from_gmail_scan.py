@@ -18,6 +18,8 @@ Scan history:
     existing JPMorgan rows, flipped one to Rejected ("Not Selected"), and
     added a third, new JPMorgan application that had no Gmail confirmation
     at all.
+  - 2026-08-18 (early): incremental rescan, 3 new rows (DualEntry, Firefly,
+    a second Accenture/Droga5 application distinct from the earlier one).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -347,6 +349,35 @@ SEED_ROWS = [
         "source": "Oracle Recruiting Cloud",
         "notes": "Third, distinct JPMorgan application, found via JPMC's own Candidate Experience "
                  "portal (Oracle HCM) rather than a Gmail confirmation. \"Under Consideration.\"",
+    },
+    # -- 2026-08-18 early-morning rescan --
+    {
+        "company": "DualEntry",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-08-18",
+        "source": "Ashby",
+        "notes": "Confirmation email didn't name the role applied to. Accounting/ERP software startup "
+                 "(recent $90M Series A).",
+    },
+    {
+        "company": "Firefly",
+        "position": "Visual Designer, Brand",
+        "status": "Applied",
+        "applied_date": "2026-08-18",
+        "source": "Ashby",
+        "notes": None,
+    },
+    {
+        "company": "Accenture (Droga5)",
+        "position": "Droga5 Senior Designer (R00348810)",
+        "status": "Applied",
+        "applied_date": "2026-08-18",
+        "source": "Workday",
+        "notes": "Distinct from both the earlier Accenture (Droga5) Senior Strategist application "
+                 "(rejected 2026-07-22) and the LinkedIn-sourced Accenture 'Creative Agency Senior "
+                 "Designer' application -- this one carries its own reference role ID (R00348810) and "
+                 "a fresh 2026-08-18 confirmation email, so it's kept separate rather than merged.",
     },
 ]
 

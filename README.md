@@ -92,6 +92,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Marketing, Senior Associate), and added a third JPMorgan application
   (Olympic & Paralympic, Graphic Designer, Senior Associate) that had no
   Gmail confirmation at all.
+- **2026-08-18 (early)** — incremental rescan. 3 new rows, all Applied
+  (DualEntry, Firefly, and a second Accenture/Droga5 application distinct
+  from the earlier rejected one).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
