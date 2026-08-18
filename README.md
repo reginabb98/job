@@ -116,6 +116,7 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Special Studios application: a direct outreach email to a specific
   strategist there, confirmed via Gmail search, separate from the earlier
   Greenhouse-sourced application.
+- **2026-08-19** — incremental rescan. 1 new row, Applied (Taskrabbit).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -40,6 +40,7 @@ Scan history:
     distinct Something Special Studios application -- a direct outreach
     email to a specific strategist there, confirmed via Gmail search,
     separate from the earlier Greenhouse-sourced application.
+  - 2026-08-19: incremental rescan, 1 new row (Taskrabbit).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -464,6 +465,15 @@ SEED_ROWS = [
                  "to Hope Calnan (hope.calnan@somethingspecialstudios.com) about the 'Creative Strategist' "
                  "role, with CV and portfolio (reginabbs.cargo.site) attached. No reply yet as of "
                  "2026-08-18.",
+    },
+    # -- 2026-08-19: incremental rescan --
+    {
+        "company": "Taskrabbit",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-08-18",
+        "source": "Greenhouse",
+        "notes": "Confirmation email was a generic auto-reply template and didn't name the role applied to.",
     },
 ]
 
