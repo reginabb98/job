@@ -13,6 +13,11 @@ Scan history:
   - 2026-08-17 (afternoon): incremental scan since 2026-08-13, 5 new rows.
   - 2026-08-17 (evening): incremental rescan, 2 new rows (Razorfish Health,
     a second PepsiCo application).
+  - 2026-08-17 (night): reconciled against a JPMC Candidate Experience
+    portal (Oracle HCM) screenshot -- corrected the titles/dates on the two
+    existing JPMorgan rows, flipped one to Rejected ("Not Selected"), and
+    added a third, new JPMorgan application that had no Gmail confirmation
+    at all.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -95,14 +100,14 @@ SEED_ROWS = [
     },
     {
         "company": "JPMorgan Chase & Co.",
-        "position": "Unspecified role (Job #210771927)",
-        "status": "Applied",
-        "applied_date": "2026-07-24",
+        "position": "Corporate Brand Marketing - Senior Associate (Job #210771927)",
+        "status": "Rejected",
+        "applied_date": "2026-07-23",
         "source": "Oracle Recruiting Cloud",
-        "notes": "Required an email verification code to complete submission. LinkedIn's My Jobs list "
-                 "(2026-08-17) shows a 'Corporate Brand Marketing - Senior Associate' application at "
-                 "JPMorgan -- likely this one or the 2026-07-30 JPMorgan application, but which of the "
-                 "two couldn't be confirmed, so the title wasn't merged in here.",
+        "notes": "Required an email verification code to complete submission. Title, exact applied date, "
+                 "and Rejected status (\"Not Selected\") confirmed 2026-08-17 via JPMC's own Candidate "
+                 "Experience portal (Oracle HCM) -- resolves the earlier ambiguity about which of the "
+                 "two JPMorgan applications the LinkedIn-listed title belonged to.",
     },
     {
         "company": "Google",
@@ -255,11 +260,13 @@ SEED_ROWS = [
     },
     {
         "company": "JPMorgan Chase & Co.",
-        "position": "Unspecified role (Job #210768163)",
+        "position": "Olympic & Paralympic Brand Strategist (Job #210768163)",
         "status": "Applied",
-        "applied_date": "2026-07-30",
+        "applied_date": "2026-07-29",
         "source": "Oracle Recruiting Cloud",
-        "notes": "Second, distinct JPMorgan application from the one on 2026-07-24.",
+        "notes": "Second, distinct JPMorgan application from the one on 2026-07-23. Title and exact "
+                 "applied date confirmed 2026-08-17 via JPMC's Candidate Experience portal -- \"Under "
+                 "Consideration.\"",
     },
     {
         "company": "Prose",
@@ -330,6 +337,16 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "iCIMS",
         "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
+    },
+    # -- 2026-08-17: JPMC Candidate Experience portal screenshot --
+    {
+        "company": "JPMorgan Chase & Co.",
+        "position": "Olympic & Paralympic, Graphic Designer, Senior Associate (Job #210766619)",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Oracle Recruiting Cloud",
+        "notes": "Third, distinct JPMorgan application, found via JPMC's own Candidate Experience "
+                 "portal (Oracle HCM) rather than a Gmail confirmation. \"Under Consideration.\"",
     },
 ]
 

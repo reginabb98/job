@@ -85,9 +85,20 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-08-17 (evening)** — incremental rescan. 2 new rows, both Applied
   (PepsiCo Brand Designer — a second, distinct PepsiCo application — and
   Razorfish Health).
+- **2026-08-17 (night)** — reconciled against a screenshot of JPMC's own
+  Candidate Experience portal (Oracle HCM), not Gmail. Corrected the
+  titles and exact applied dates on the two existing generic JPMorgan
+  rows, flipped one to Rejected ("Not Selected" — Corporate Brand
+  Marketing, Senior Associate), and added a third JPMorgan application
+  (Olympic & Paralympic, Graphic Designer, Senior Associate) that had no
+  Gmail confirmation at all.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
+Employer candidate portals (like JPMC's above) are the most authoritative
+source when they conflict with an email confirmation or LinkedIn's own
+tracking — pasting a screenshot of one works the same way as the
+paste-and-parse LinkedIn flow.
 
 An automated Routine reruns this same scan three times a day (roughly
 8am / 1pm / 6pm ET) and pushes any new rows straight to this branch.
