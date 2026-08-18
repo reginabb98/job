@@ -99,6 +99,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   candidate portal. Both existing Google rows flipped to Rejected ("Not
   proceeding"), all 3 Google applications got real titles, and the 3rd one
   (with no Gmail confirmation at all) was added.
+- **2026-08-18 (night)** — reconciled against a screenshot of Meta's own
+  candidate portal. Confirmed the Creative Strategist NA team application's
+  date and corrected its location, flipped the Brand Strategist application
+  to Rejected with a corrected applied date, and added a 3rd Meta
+  application (Instagram Brand Studio) with no Gmail confirmation at all.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

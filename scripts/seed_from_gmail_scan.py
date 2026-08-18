@@ -24,6 +24,12 @@ Scan history:
     candidate portal -- flipped both existing Google rows to Rejected
     ("Not proceeding"), filled in real titles for all 3, and added the
     3rd Google application that had no Gmail confirmation at all.
+  - 2026-08-18 (night): reconciled against a screenshot of Meta's own
+    candidate portal -- confirmed the Creative Strategist NA team
+    application's date and corrected its location, flipped the Brand
+    Strategist application to Rejected with a corrected applied date, and
+    added a 3rd Meta application (Instagram Brand Studio) with no Gmail
+    confirmation at all.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -134,7 +140,9 @@ SEED_ROWS = [
         "applied_date": "2026-07-25",
         "source": "Email",
         "notes": "Title was truncated in the confirmation email -- filled in from LinkedIn's My Jobs list "
-                 "(2026-08-17). Boston, MA per LinkedIn.",
+                 "(2026-08-17), which said Boston, MA. Meta's own candidate portal (checked 2026-08-18) "
+                 "confirms the exact applied date and says New York, NY instead -- the portal's location "
+                 "is treated as authoritative over LinkedIn's. Still active, \"Current stage: Application.\"",
     },
     {
         "company": "Prophet",
@@ -214,11 +222,13 @@ SEED_ROWS = [
     {
         "company": "Meta",
         "position": "Brand Strategist",
-        "status": "Applied",
-        "applied_date": "2026-07-27",
+        "status": "Rejected",
+        "applied_date": "2026-07-23",
         "source": "Email",
         "notes": "Distinct from the Meta Creative-role application on 2026-07-25. Title filled in from "
-                 "LinkedIn's My Jobs list (2026-08-17).",
+                 "LinkedIn's My Jobs list (2026-08-17). Meta's own candidate portal (checked 2026-08-18) "
+                 "shows this as \"Not moving forward\" and corrects the applied date to 2026-07-23 (the "
+                 "original Gmail confirmation had it as 2026-07-27).",
     },
     {
         "company": "Partiful",
@@ -400,6 +410,16 @@ SEED_ROWS = [
                  "confirmation -- \"Not proceeding.\" Exact applied date isn't shown on the portal "
                  "(just \"updated last month\"); the earliest known Google application date is used "
                  "as a placeholder here, not a confirmed date.",
+    },
+    # -- 2026-08-18: Meta candidate portal screenshot --
+    {
+        "company": "Meta",
+        "position": "Brand Designer, Strategic Initiatives - Instagram Brand Studio",
+        "status": "Applied",
+        "applied_date": "2026-07-26",
+        "source": "Email",
+        "notes": "Third Meta application, found via Meta's own candidate portal rather than a Gmail "
+                 "confirmation. Still active, \"Current stage: Application.\" New York, NY.",
     },
 ]
 
