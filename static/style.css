@@ -10,6 +10,7 @@
   --offer-bg: #d8f0dd; --offer-fg: #23713a;
   --rejected-bg: #fbdada; --rejected-fg: #a63333;
   --withdrawn-bg: #eceae6; --withdrawn-fg: #6b6862;
+  --networking-bg: #d6ecf5; --networking-fg: #2a6f8c;
 }
 
 * { box-sizing: border-box; }
@@ -91,6 +92,7 @@ tbody tr:hover { background: var(--bg-muted); }
 .badge-Offer { background: var(--offer-bg); color: var(--offer-fg); }
 .badge-Rejected { background: var(--rejected-bg); color: var(--rejected-fg); }
 .badge-Withdrawn { background: var(--withdrawn-bg); color: var(--withdrawn-fg); }
+.badge-Networking { background: var(--networking-bg); color: var(--networking-fg); }
 
 .logo {
   width: 18px;
@@ -102,7 +104,7 @@ tbody tr:hover { background: var(--bg-muted); }
 }
 .company-cell { display: flex; align-items: center; }
 
-.kanban { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; align-items: start; }
+.kanban { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; align-items: start; }
 .kanban-col { background: var(--bg-muted); border-radius: 8px; padding: 10px; min-height: 100px; }
 .kanban-col-header { font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; justify-content: space-between; }
 .kanban-card {

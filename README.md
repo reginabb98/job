@@ -53,7 +53,8 @@ existing Gmail-sourced rows had their placeholder titles filled in
 (two Meta roles, Prophet, Buttermilk, OLIVER).
 
 Required columns for CSV import: `company`, `position`. Optional: `status`
-(Applied / Interviewing / Offer / Rejected / Withdrawn), `applied_date`,
+(Applied / Interviewing / Offer / Rejected / Withdrawn / Networking),
+`applied_date`,
 `next_step`, `job_url`, `source`, `referral` (yes/no), `notes`, `pay_range`,
 `job_description`.
 
@@ -104,6 +105,17 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   date and corrected its location, flipped the Brand Strategist application
   to Rejected with a corrected applied date, and added a 3rd Meta
   application (Instagram Brand Studio) with no Gmail confirmation at all.
+- **2026-08-18 (later still)** — filled in real titles for Partiful, Inizio
+  Evoke, and DualEntry from Regina's own knowledge, and logged a Mother
+  networking call (recruiter reached out, no open role, interest expressed
+  in Strategy) using the new `Networking` status — a category for contacts
+  that aren't a real application, not something the Gmail scan detects on
+  its own.
+- **2026-08-18 (final)** — added a second PepsiCo networking contact
+  (Hillary, reported directly by Regina) and a second, distinct Something
+  Special Studios application: a direct outreach email to a specific
+  strategist there, confirmed via Gmail search, separate from the earlier
+  Greenhouse-sourced application.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -8,7 +8,7 @@ from flask import Flask, g, jsonify, render_template, request
 
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tracker.db")
 
-VALID_STATUSES = ["Applied", "Interviewing", "Offer", "Rejected", "Withdrawn"]
+VALID_STATUSES = ["Applied", "Interviewing", "Offer", "Rejected", "Withdrawn", "Networking"]
 
 app = Flask(__name__)
 

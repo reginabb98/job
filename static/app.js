@@ -1,4 +1,4 @@
-const STATUSES = ["Applied", "Interviewing", "Offer", "Rejected", "Withdrawn"];
+const STATUSES = ["Applied", "Interviewing", "Offer", "Rejected", "Withdrawn", "Networking"];
 
 let applications = [];
 let currentView = "table";

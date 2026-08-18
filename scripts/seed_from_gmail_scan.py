@@ -30,6 +30,16 @@ Scan history:
     Strategist application to Rejected with a corrected applied date, and
     added a 3rd Meta application (Instagram Brand Studio) with no Gmail
     confirmation at all.
+  - 2026-08-18 (later still): filled in real titles for Partiful, Inizio
+    Evoke, and DualEntry from Regina's own knowledge (not any inbox/portal
+    source), and added a Mother networking call reported directly by her --
+    the first row to use the new "Networking" status for a contact that
+    wasn't a real application (no open role existed to apply to).
+  - 2026-08-18 (final): added a second PepsiCo networking contact (Hillary,
+    reported directly by Regina, not found via Gmail search) and a second,
+    distinct Something Special Studios application -- a direct outreach
+    email to a specific strategist there, confirmed via Gmail search,
+    separate from the earlier Greenhouse-sourced application.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -420,6 +430,40 @@ SEED_ROWS = [
         "source": "Email",
         "notes": "Third Meta application, found via Meta's own candidate portal rather than a Gmail "
                  "confirmation. Still active, \"Current stage: Application.\" New York, NY.",
+    },
+    # -- 2026-08-18: reported directly by Regina, not from any inbox scan --
+    {
+        "company": "Mother",
+        "position": "Networking call -- no open role (Strategy)",
+        "status": "Networking",
+        "applied_date": "2026-08-18",
+        "source": "Referral",
+        "notes": "Recruiter called to get to know Regina, not about a specific opening -- she said she "
+                 "doesn't currently have any open roles. Regina expressed interest in Strategy. Call date "
+                 "approximate (not confirmed).",
+    },
+    {
+        "company": "PepsiCo",
+        "position": "Networking outreach -- design role (contact: Hillary)",
+        "status": "Networking",
+        "applied_date": "2026-08-18",
+        "source": "Email",
+        "notes": "Regina emailed Hillary at PepsiCo about a design role; Hillary's only reply was asking "
+                 "for Regina's email address, nothing further came of it. Not found in a Gmail search "
+                 "(may be on a different email thread or platform); logged from what Regina reported "
+                 "directly. Exact date not confirmed.",
+    },
+    {
+        "company": "Something Special Studios",
+        "position": "Creative Strategist (direct outreach to Hope Calnan)",
+        "status": "Applied",
+        "applied_date": "2026-08-14",
+        "source": "Email (direct outreach)",
+        "notes": "Distinct from the earlier Greenhouse-sourced 'Senior Creative Strategist' application "
+                 "(2026-07-27) -- this is a separate direct outreach, following up from a LinkedIn chat, "
+                 "to Hope Calnan (hope.calnan@somethingspecialstudios.com) about the 'Creative Strategist' "
+                 "role, with CV and portfolio (reginabbs.cargo.site) attached. No reply yet as of "
+                 "2026-08-18.",
     },
 ]
 
