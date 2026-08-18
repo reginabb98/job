@@ -20,6 +20,10 @@ Scan history:
     at all.
   - 2026-08-18 (early): incremental rescan, 3 new rows (DualEntry, Firefly,
     a second Accenture/Droga5 application distinct from the earlier one).
+  - 2026-08-18 (later): reconciled against a screenshot of Google's own
+    candidate portal -- flipped both existing Google rows to Rejected
+    ("Not proceeding"), filled in real titles for all 3, and added the
+    3rd Google application that had no Gmail confirmation at all.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -113,11 +117,15 @@ SEED_ROWS = [
     },
     {
         "company": "Google",
-        "position": "Unspecified role",
-        "status": "Applied",
+        "position": "Senior Brand Marketing Manager, Global Pixel Retail",
+        "status": "Rejected",
         "applied_date": "2026-07-24",
         "source": "Email",
-        "notes": "Two near-identical confirmation emails same day -- possibly one application, duplicate notification.",
+        "notes": "Two near-identical confirmation emails same day -- possibly one application, duplicate "
+                 "notification. Google's own candidate portal (checked 2026-08-18) shows all 3 submitted "
+                 "Google applications as \"Not proceeding\"; the portal gives no job IDs or exact dates, "
+                 "so the specific title-to-application mapping across the 3 Google rows is provisional, "
+                 "but the Rejected status is confirmed for all of them.",
     },
     {
         "company": "Meta",
@@ -254,11 +262,13 @@ SEED_ROWS = [
     },
     {
         "company": "Google",
-        "position": "Unspecified role (second application)",
-        "status": "Applied",
+        "position": "Brand Marketing Manager, AI Education Adoption",
+        "status": "Rejected",
         "applied_date": "2026-07-29",
         "source": "Email",
-        "notes": "Separate confirmation from the 2026-07-24 Google application -- unclear if same or different role.",
+        "notes": "Separate confirmation from the 2026-07-24 Google application. Status confirmed "
+                 "\"Not proceeding\" via Google's candidate portal (checked 2026-08-18) -- see note on "
+                 "the other Google rows re: mapping uncertainty across the 3 Google applications.",
     },
     {
         "company": "JPMorgan Chase & Co.",
@@ -378,6 +388,18 @@ SEED_ROWS = [
                  "(rejected 2026-07-22) and the LinkedIn-sourced Accenture 'Creative Agency Senior "
                  "Designer' application -- this one carries its own reference role ID (R00348810) and "
                  "a fresh 2026-08-18 confirmation email, so it's kept separate rather than merged.",
+    },
+    # -- 2026-08-18: Google candidate portal screenshot --
+    {
+        "company": "Google",
+        "position": "Brand Marketing Manager, AI Education Brand and Partnerships",
+        "status": "Rejected",
+        "applied_date": "2026-07-24",
+        "source": "Email",
+        "notes": "Third Google application, found via Google's own candidate portal rather than a Gmail "
+                 "confirmation -- \"Not proceeding.\" Exact applied date isn't shown on the portal "
+                 "(just \"updated last month\"); the earliest known Google application date is used "
+                 "as a placeholder here, not a confirmed date.",
     },
 ]
 

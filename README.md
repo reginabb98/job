@@ -95,6 +95,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-08-18 (early)** — incremental rescan. 3 new rows, all Applied
   (DualEntry, Firefly, and a second Accenture/Droga5 application distinct
   from the earlier rejected one).
+- **2026-08-18 (later)** — reconciled against a screenshot of Google's own
+  candidate portal. Both existing Google rows flipped to Rejected ("Not
+  proceeding"), all 3 Google applications got real titles, and the 3rd one
+  (with no Gmail confirmation at all) was added.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
