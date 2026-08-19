@@ -40,7 +40,15 @@ Scan history:
     distinct Something Special Studios application -- a direct outreach
     email to a specific strategist there, confirmed via Gmail search,
     separate from the earlier Greenhouse-sourced application.
-  - 2026-08-19: incremental rescan, 1 new row (Taskrabbit).
+  - 2026-08-19: incremental rescan, 1 new row (Taskrabbit, title unknown at
+    the time).
+  - 2026-08-19 (later): reconciled against a LinkedIn My Jobs screenshot --
+    filled in Taskrabbit's real title, confirmed Blackstone and Inizio Evoke
+    already tracked, added Book of the Month (from a separate LinkedIn Easy
+    Apply confirmation, title partly reconstructed) and two new applications
+    (Steven Madden, Inside Out Community) whose applied dates and completion
+    aren't fully confirmed -- LinkedIn only showed listing repost/post dates
+    and a "Did you finish applying?" prompt, not an application date.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -469,11 +477,47 @@ SEED_ROWS = [
     # -- 2026-08-19: incremental rescan --
     {
         "company": "Taskrabbit",
-        "position": "Unspecified role",
+        "position": "Sr. Manager, Brand & Content",
         "status": "Applied",
         "applied_date": "2026-08-18",
         "source": "Greenhouse",
-        "notes": "Confirmation email was a generic auto-reply template and didn't name the role applied to.",
+        "notes": "Confirmation email was a generic auto-reply template and didn't name the role applied "
+                 "to; title filled in from LinkedIn's My Jobs list (2026-08-19). Hybrid, New York City "
+                 "Metropolitan Area.",
+    },
+    # -- 2026-08-19: LinkedIn My Jobs list screenshot --
+    {
+        "company": "Book of the Month",
+        "position": "Growth & Creative Rotational Program",
+        "status": "Applied",
+        "applied_date": "2026-08-19",
+        "source": "LinkedIn",
+        "notes": "Applied via LinkedIn Easy Apply, confirmed by LinkedIn's \"Your application was sent\" "
+                 "screen. Exact title was cut off in the confirmation screenshot -- reconstructed from the "
+                 "visible \"Growth & Creative Rotat...\" fragment, not fully confirmed. New York, NY, "
+                 "on-site, full-time.",
+    },
+    {
+        "company": "STEVEN MADDEN Ltd.",
+        "position": "Brand Manager",
+        "status": "Applied",
+        "applied_date": "2026-08-19",
+        "source": "LinkedIn",
+        "notes": "New York, NY. LinkedIn shows \"Reposted 2d ago,\" which is the listing's repost date, "
+                 "not Regina's applied date -- exact applied date unknown, today's scan date used as a "
+                 "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
+                 "completion isn't fully confirmed either.",
+    },
+    {
+        "company": "Inside Out Community",
+        "position": "Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-08-19",
+        "source": "LinkedIn",
+        "notes": "New York, NY. LinkedIn shows \"Posted 3w ago,\" which is the listing's post date, not "
+                 "Regina's applied date -- exact applied date unknown, today's scan date used as a "
+                 "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
+                 "completion isn't fully confirmed either.",
     },
 ]
 

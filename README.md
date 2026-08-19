@@ -116,7 +116,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Special Studios application: a direct outreach email to a specific
   strategist there, confirmed via Gmail search, separate from the earlier
   Greenhouse-sourced application.
-- **2026-08-19** — incremental rescan. 1 new row, Applied (Taskrabbit).
+- **2026-08-19** — incremental rescan. 1 new row, Applied (Taskrabbit, title
+  unknown at the time).
+- **2026-08-19 (later)** — reconciled against a LinkedIn My Jobs screenshot.
+  Filled in Taskrabbit's real title, confirmed Blackstone and Inizio Evoke
+  were already tracked, and added 3 new rows: Book of the Month (LinkedIn
+  Easy Apply, title partly reconstructed from a cut-off confirmation
+  screenshot), Steven Madden, and Inside Out Community — the latter two
+  with applied dates and completion status not fully confirmed, since
+  LinkedIn only showed listing repost/post dates and a "Did you finish
+  applying?" prompt rather than an application date.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
