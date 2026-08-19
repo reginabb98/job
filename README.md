@@ -126,6 +126,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   with applied dates and completion status not fully confirmed, since
   LinkedIn only showed listing repost/post dates and a "Did you finish
   applying?" prompt rather than an application date.
+- **2026-08-19 (evening)** — incremental rescan. 2 new rows, both Applied
+  (MUBI, Tapestry).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -49,6 +49,7 @@ Scan history:
     (Steven Madden, Inside Out Community) whose applied dates and completion
     aren't fully confirmed -- LinkedIn only showed listing repost/post dates
     and a "Did you finish applying?" prompt, not an application date.
+  - 2026-08-19 (evening): incremental rescan, 2 new rows (MUBI, Tapestry).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -518,6 +519,23 @@ SEED_ROWS = [
                  "Regina's applied date -- exact applied date unknown, today's scan date used as a "
                  "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
                  "completion isn't fully confirmed either.",
+    },
+    # -- 2026-08-19 (evening): incremental rescan --
+    {
+        "company": "MUBI",
+        "position": "Communications Manager, US",
+        "status": "Applied",
+        "applied_date": "2026-08-19",
+        "source": "Ashby",
+        "notes": None,
+    },
+    {
+        "company": "Tapestry",
+        "position": "Associate, External Communications",
+        "status": "Applied",
+        "applied_date": "2026-08-19",
+        "source": "Workday",
+        "notes": None,
     },
 ]
 
