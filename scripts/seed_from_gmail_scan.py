@@ -50,6 +50,8 @@ Scan history:
     aren't fully confirmed -- LinkedIn only showed listing repost/post dates
     and a "Did you finish applying?" prompt, not an application date.
   - 2026-08-19 (evening): incremental rescan, 2 new rows (MUBI, Tapestry).
+  - 2026-08-20: incremental rescan, no new rows. Flipped the Accenture
+    Droga5 Senior Designer application (R00348810) to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -411,13 +413,14 @@ SEED_ROWS = [
     {
         "company": "Accenture (Droga5)",
         "position": "Droga5 Senior Designer (R00348810)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-18",
         "source": "Workday",
         "notes": "Distinct from both the earlier Accenture (Droga5) Senior Strategist application "
                  "(rejected 2026-07-22) and the LinkedIn-sourced Accenture 'Creative Agency Senior "
                  "Designer' application -- this one carries its own reference role ID (R00348810) and "
-                 "a fresh 2026-08-18 confirmation email, so it's kept separate rather than merged.",
+                 "a fresh 2026-08-18 confirmation email, so it's kept separate rather than merged. "
+                 "Rejected 2026-08-20: \"unable to move forward at this time.\"",
     },
     # -- 2026-08-18: Google candidate portal screenshot --
     {

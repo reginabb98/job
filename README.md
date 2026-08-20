@@ -128,6 +128,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   applying?" prompt rather than an application date.
 - **2026-08-19 (evening)** — incremental rescan. 2 new rows, both Applied
   (MUBI, Tapestry).
+- **2026-08-20** — incremental rescan, no new rows. Accenture's Droga5
+  Senior Designer application (R00348810) came back Rejected ("unable to
+  move forward at this time").
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
