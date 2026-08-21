@@ -131,6 +131,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-08-20** — incremental rescan, no new rows. Accenture's Droga5
   Senior Designer application (R00348810) came back Rejected ("unable to
   move forward at this time").
+- **2026-08-21** — incremental rescan, no new rows. Inizio Evoke's Senior
+  Brand Strategist application came back Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

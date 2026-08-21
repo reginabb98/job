@@ -52,6 +52,8 @@ Scan history:
   - 2026-08-19 (evening): incremental rescan, 2 new rows (MUBI, Tapestry).
   - 2026-08-20: incremental rescan, no new rows. Flipped the Accenture
     Droga5 Senior Designer application (R00348810) to Rejected.
+  - 2026-08-21: incremental rescan, no new rows. Flipped Inizio Evoke's
+    Senior Brand Strategist application to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -343,10 +345,11 @@ SEED_ROWS = [
     {
         "company": "Inizio Evoke",
         "position": "Senior Brand Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "Greenhouse",
-        "notes": None,
+        "notes": "Rejected 2026-08-21: \"moved ahead with other candidates who we feel are a better "
+                 "match for this particular position at this time.\"",
     },
     {
         "company": "Blackstone",
