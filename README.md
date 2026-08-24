@@ -139,6 +139,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   amazon.jobs wasn't in the ATS domain search list — found by widening the
   search after Regina asked about an interview invite. The domain has been
   added to the search going forward.
+- **2026-08-24 (later)** — Regina reported a Tapestry rejection and
+  forwarded a Duel interview invite directly. Flipped Tapestry's Associate,
+  External Communications application to Rejected, and added a new Duel
+  application (Advocacy Consultant, applied 2026-08-18) with status
+  Interviewing — a recruiter reached out to schedule a screen.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

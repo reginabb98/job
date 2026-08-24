@@ -60,6 +60,12 @@ Scan history:
     list; found by widening the search after Regina asked about an
     interview invite. The domain has been added to the search going
     forward.
+  - 2026-08-24 (later): Regina reported a Tapestry rejection and forwarded
+    a Duel interview invite directly. Flipped Tapestry's Associate,
+    External Communications application to Rejected, and added a new Duel
+    row (Advocacy Consultant, applied 2026-08-18 per its Teamtailor
+    confirmation email) with status Interviewing -- a recruiter reached out
+    2026-08-24 to schedule a screen.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -544,10 +550,10 @@ SEED_ROWS = [
     {
         "company": "Tapestry",
         "position": "Associate, External Communications",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-19",
         "source": "Workday",
-        "notes": None,
+        "notes": "Rejected 2026-08-24: application isn't progressing further.",
     },
     # -- 2026-08-24: incremental rescan -- Amazon was missed by every prior
     # scan because amazon.jobs wasn't in the ATS domain list; caught by
@@ -559,6 +565,16 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "Amazon Jobs",
         "notes": "Online assessment completed 2026-08-18; no interview invite yet.",
+    },
+    # -- 2026-08-24: recruiter reached out with a meeting invite --
+    {
+        "company": "Duel",
+        "position": "Advocacy Consultant",
+        "status": "Interviewing",
+        "applied_date": "2026-08-18",
+        "source": "Teamtailor",
+        "next_step": "Recruiter screen with Ibrahim Thomas -- pick a time slot (invite sent 2026-08-24).",
+        "notes": None,
     },
 ]
 
