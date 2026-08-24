@@ -3,7 +3,7 @@ Seed of the applications table from periodic Gmail scans.
 
 Covers reginabb98@gmail.com job-application activity: ATS confirmation/status
 emails (Greenhouse, Lever, Ashby, Workday, iCIMS, Workable, Teamtailor,
-SmartRecruiters) plus explicit rejection/interview language. TA/
+SmartRecruiters, Amazon Jobs) plus explicit rejection/interview language. TA/
 teaching-assistant leads are intentionally excluded per instruction, as are
 LinkedIn "job alert" and "jobs similar to" emails since they're
 recommendations, not applications.
@@ -54,6 +54,12 @@ Scan history:
     Droga5 Senior Designer application (R00348810) to Rejected.
   - 2026-08-21: incremental rescan, no new rows. Flipped Inizio Evoke's
     Senior Brand Strategist application to Rejected.
+  - 2026-08-24: incremental rescan, 1 new row (Amazon, Art Director --
+    Elevated Shopping, applied 2026-08-17). This one had been missed by
+    every scan since because amazon.jobs wasn't in the ATS domain search
+    list; found by widening the search after Regina asked about an
+    interview invite. The domain has been added to the search going
+    forward.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -542,6 +548,17 @@ SEED_ROWS = [
         "applied_date": "2026-08-19",
         "source": "Workday",
         "notes": None,
+    },
+    # -- 2026-08-24: incremental rescan -- Amazon was missed by every prior
+    # scan because amazon.jobs wasn't in the ATS domain list; caught by
+    # widening the search after Regina asked about an interview invite.
+    {
+        "company": "Amazon",
+        "position": "Art Director, Elevated Shopping (ID: 10410280)",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Amazon Jobs",
+        "notes": "Online assessment completed 2026-08-18; no interview invite yet.",
     },
 ]
 

@@ -133,6 +133,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   move forward at this time").
 - **2026-08-21** — incremental rescan, no new rows. Inizio Evoke's Senior
   Brand Strategist application came back Rejected.
+- **2026-08-24** — incremental rescan, 1 new row (Amazon, Art Director —
+  Elevated Shopping, applied 2026-08-17, online assessment completed
+  2026-08-18). This one had been missed by every scan since 08-17 because
+  amazon.jobs wasn't in the ATS domain search list — found by widening the
+  search after Regina asked about an interview invite. The domain has been
+  added to the search going forward.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
