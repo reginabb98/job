@@ -2,3 +2,7 @@ tracker.db
 __pycache__/
 *.pyc
 .venv/
+
+# nyc-events: API keys, never commit
+nyc-events/lastfm_credentials.json
+nyc-events/tmdb_credentials.json
