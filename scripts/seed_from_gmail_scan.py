@@ -77,6 +77,12 @@ Scan history:
     stacked on top of applications per week, so this kind of outreach is
     visible as "things done this week" without inflating the applications
     benchmark.
+  - 2026-08-26: reconciled against a screenshot of Accenture's own candidate
+    portal (My Applications, both already Rejected). Added job req
+    R00338279 to the Senior Strategist row's title/notes, and corrected the
+    Senior Designer (R00348810) applied_date from 2026-08-18 to 2026-08-17
+    -- the portal's "Date Submitted" is authoritative over the confirmation
+    email's timestamp. No status changes; both were already Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -90,14 +96,15 @@ DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 SEED_ROWS = [
     {
         "company": "Accenture (Droga5)",
-        "position": "Senior Strategist",
+        "position": "Senior Strategist (R00338279)",
         "status": "Rejected",
         "applied_date": "2026-07-22",
         "next_step": None,
         "source": "Workday",
         "notes": "Applied via Accenture's Workday portal for the Droga5 Senior Strategist role. "
                  "The 2026-08-12 follow-up emails were a bar from reapplying, not a new opportunity -- "
-                 "confirmed rejection.",
+                 "confirmed rejection. Job req R00338279 and Jul 22 applied date confirmed 2026-08-26 "
+                 "via Accenture's own candidate portal (\"No Longer Under Consideration\").",
     },
     {
         "company": "Snapchat",
@@ -440,12 +447,14 @@ SEED_ROWS = [
         "company": "Accenture (Droga5)",
         "position": "Droga5 Senior Designer (R00348810)",
         "status": "Rejected",
-        "applied_date": "2026-08-18",
+        "applied_date": "2026-08-17",
         "source": "Workday",
         "notes": "Distinct from both the earlier Accenture (Droga5) Senior Strategist application "
                  "(rejected 2026-07-22) and the LinkedIn-sourced Accenture 'Creative Agency Senior "
                  "Designer' application -- this one carries its own reference role ID (R00348810) and "
                  "a fresh 2026-08-18 confirmation email, so it's kept separate rather than merged. "
+                 "Accenture's own candidate portal (checked 2026-08-26) shows the actual submitted date "
+                 "as Aug 17, one day before that confirmation email -- corrected here. "
                  "Rejected 2026-08-20: \"unable to move forward at this time.\"",
     },
     # -- 2026-08-18: Google candidate portal screenshot --

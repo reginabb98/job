@@ -150,6 +150,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   contacts). The weekly-activity chart now shows reach-outs stacked on top
   of applications per week, so cold outreach counts toward visible weekly
   activity without inflating Total Applications.
+- **2026-08-26** — reconciled against a screenshot of Accenture's own
+  candidate portal (both applications already Rejected). Added job req
+  R00338279 to the Senior Strategist row and corrected the Senior Designer
+  (R00348810) applied date from Aug 18 to Aug 17 per the portal's "Date
+  Submitted." No status changes.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
