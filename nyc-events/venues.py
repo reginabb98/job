@@ -6,7 +6,7 @@ not turn-by-turn directions).
 import math
 from typing import Optional
 
-HOME = {"name": "Chelsea (near Safavieh, 89 7th Ave)", "lat": 40.7396, "lon": -74.0007}
+HOME = {"name": "East Williamsburg (924 Metropolitan Ave)", "lat": 40.7057, "lon": -73.9260}
 
 VENUE_COORDS = {
     "Mercury Lounge": (40.7217, -73.9878),
@@ -44,30 +44,30 @@ def distance_miles(venue_name: str) -> Optional[float]:
 
 
 # Rough door-to-door subway time in minutes from home (walk + ride + walk),
-# based on actual known NYC subway routes from the 1/A/C/E/L stops near
-# Chelsea/14th St. Not live MTA data (no such API is wired in) — hand-
-# estimated per venue, good enough for relative "how far a schlep is this"
-# judgment, not a promise of exact arrival time.
+# based on actual known NYC subway routes from the L stops near Morgan Ave /
+# Jefferson St (East Williamsburg). Not live MTA data (no such API is wired
+# in) — hand-estimated per venue, good enough for relative "how far a schlep
+# is this" judgment, not a promise of exact arrival time.
 TRANSIT_MINUTES = {
-    "Mercury Lounge": 22,
-    "Bowery Ballroom": 22,
-    "Baby's All Right": 30,
-    "Music Hall of Williamsburg": 28,
-    "Warsaw": 35,
-    "Elsewhere": 40,
-    "Public Records": 38,
-    "TV Eye": 45,
-    "Alphaville": 45,
-    "Metrograph": 22,
-    "Film Forum": 10,
-    "IFC Center": 8,
-    "Nitehawk Cinema (Williamsburg)": 28,
-    "Nitehawk Cinema (Prospect Park)": 40,
-    "The Broadway": 50,
-    "Union Pool": 28,
-    "Arlene's Grocery": 20,
-    "Heaven Can Wait": 18,
-    "Angelika Film Center": 15,
+    "Mercury Lounge": 28,
+    "Bowery Ballroom": 30,
+    "Baby's All Right": 19,
+    "Music Hall of Williamsburg": 18,
+    "Warsaw": 28,
+    "Elsewhere": 8,
+    "Public Records": 48,
+    "TV Eye": 12,
+    "Alphaville": 14,
+    "Metrograph": 28,
+    "Film Forum": 35,
+    "IFC Center": 35,
+    "Nitehawk Cinema (Williamsburg)": 20,
+    "Nitehawk Cinema (Prospect Park)": 48,
+    "The Broadway": 18,
+    "Union Pool": 16,
+    "Arlene's Grocery": 28,
+    "Heaven Can Wait": 28,
+    "Angelika Film Center": 30,
 }
 
 
