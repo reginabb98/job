@@ -155,6 +155,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   R00338279 to the Senior Strategist row and corrected the Senior Designer
   (R00348810) applied date from Aug 18 to Aug 17 per the portal's "Date
   Submitted." No status changes.
+- **2026-08-26 (later)** — incremental rescan, 1 new row (VaynerMedia,
+  Relevance Strategist).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

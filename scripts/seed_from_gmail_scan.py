@@ -83,6 +83,8 @@ Scan history:
     Senior Designer (R00348810) applied_date from 2026-08-18 to 2026-08-17
     -- the portal's "Date Submitted" is authoritative over the confirmation
     email's timestamp. No status changes; both were already Rejected.
+  - 2026-08-26 (later): incremental rescan, 1 new row (VaynerMedia,
+    Relevance Strategist).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -683,6 +685,15 @@ SEED_ROWS = [
         "source": "Cold email",
         "notes": "Direct outreach to deva.ferar@redantler.com about a brand strategy role at Red Antler. "
                  "No reply yet.",
+    },
+    # -- 2026-08-26: incremental rescan --
+    {
+        "company": "VaynerMedia",
+        "position": "Relevance Strategist",
+        "status": "Applied",
+        "applied_date": "2026-08-26",
+        "source": "Greenhouse",
+        "notes": None,
     },
 ]
 
