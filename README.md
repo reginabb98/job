@@ -144,6 +144,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   External Communications application to Rejected, and added a new Duel
   application (Advocacy Consultant, applied 2026-08-18) with status
   Interviewing — a recruiter reached out to schedule a screen.
+- **2026-08-25** — Regina reported a batch of cold outreach emails;
+  confirmed via Sent Mail and added 10 new Networking rows (Gander/Heist,
+  four Meta contacts, two Wieden+Kennedy contacts, three Red Antler
+  contacts). The weekly-activity chart now shows reach-outs stacked on top
+  of applications per week, so cold outreach counts toward visible weekly
+  activity without inflating Total Applications.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

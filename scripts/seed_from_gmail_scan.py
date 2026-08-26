@@ -66,6 +66,17 @@ Scan history:
     row (Advocacy Consultant, applied 2026-08-18 per its Teamtailor
     confirmation email) with status Interviewing -- a recruiter reached out
     2026-08-24 to schedule a screen.
+  - 2026-08-25: Regina reported a batch of cold outreach emails; confirmed
+    via Sent Mail and added 10 new Networking rows -- Gander/Heist (sent
+    2026-08-19) and, sent 2026-08-25, four individual contacts at Meta,
+    two at Wieden+Kennedy, and three at Red Antler, all reaching out about
+    brand strategy roles. Logged as Networking rather than Applied since
+    they're direct personal emails, not formal applications -- they count
+    toward the dashboard's weekly reach-out activity but not toward Total
+    Applications. The weekly-activity chart was updated to show reach-outs
+    stacked on top of applications per week, so this kind of outreach is
+    visible as "things done this week" without inflating the applications
+    benchmark.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -575,6 +586,94 @@ SEED_ROWS = [
         "source": "Teamtailor",
         "next_step": "Recruiter screen with Ibrahim Thomas -- pick a time slot (invite sent 2026-08-24).",
         "notes": None,
+    },
+    # -- 2026-08-25: cold outreach emails, reported by Regina and confirmed
+    # via Sent Mail -- each one a direct email to a specific person, not a
+    # formal application, so logged as Networking (counts toward weekly
+    # reach-out activity on the dashboard, not toward Total Applications).
+    {
+        "company": "Gander (Heist)",
+        "position": "Design/Strategy opportunities (cold outreach)",
+        "status": "Networking",
+        "applied_date": "2026-08-19",
+        "source": "Cold email",
+        "notes": "Emailed jobs@takeagander.com and mike@takeagander.com directly, referencing the Gradience "
+                 "project from Alex Center's SVA class. No reply yet.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Strategy (cold outreach -- Heidi Keel)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to heidi.keel@meta.com about brand strategy work at Meta. No reply yet.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Strategy (cold outreach -- Aisea Laungauge)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to aisea.laungauge@meta.com about brand strategy work at Meta. No reply yet.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Strategy (cold outreach -- Kristina Mora)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to kristina.mora@meta.com about brand strategy work at Meta. No reply yet.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Strategy (cold outreach -- Sandra Fernandez)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to sandra.fernandez@meta.com about brand strategy work at Meta. No reply yet.",
+    },
+    {
+        "company": "Wieden+Kennedy",
+        "position": "Brand Strategy (cold outreach -- Austin Fontenot)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to austin.fontenot@wk.com about a brand strategy role at W+K. No reply yet.",
+    },
+    {
+        "company": "Wieden+Kennedy",
+        "position": "Brand Strategy (cold outreach -- Lucy Truglio)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to lucy.truglio@wk.com about a brand strategy role at W+K. No reply yet.",
+    },
+    {
+        "company": "Red Antler",
+        "position": "Brand Strategy (cold outreach -- Brenna Ferguson)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to brenna.ferguson@redantler.com about a brand strategy role at Red Antler. "
+                 "No reply yet.",
+    },
+    {
+        "company": "Red Antler",
+        "position": "Brand Strategy (cold outreach -- Sabrina Frometa)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to sabrina.frometa@redantler.com about a brand strategy role at Red Antler. "
+                 "No reply yet.",
+    },
+    {
+        "company": "Red Antler",
+        "position": "Brand Strategy (cold outreach -- Deva Ferar)",
+        "status": "Networking",
+        "applied_date": "2026-08-25",
+        "source": "Cold email",
+        "notes": "Direct outreach to deva.ferar@redantler.com about a brand strategy role at Red Antler. "
+                 "No reply yet.",
     },
 ]
 
