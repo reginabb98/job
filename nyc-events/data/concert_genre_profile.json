@@ -1,0 +1,1097 @@
+{
+  "indie": {
+    "weight": 0.0633,
+    "artists": [
+      "Hayley Williams",
+      "Phoebe Bridgers",
+      "Trophy Wife",
+      "Hana Eid",
+      "Mitski",
+      "Cat Power",
+      "Power Snatch",
+      "Beach House",
+      "Truthpaste",
+      "Jay Som",
+      "TV Girl",
+      "The Sundays",
+      "HAIM",
+      "Lana Del Rey",
+      "Inhaler",
+      "Flycatcher",
+      "Pretty Sick",
+      "The Beths",
+      "Momma",
+      "Autolux",
+      "Tiberius b",
+      "Yeah Yeah Yeahs",
+      "Bess Atwell",
+      "Erin Rae",
+      "Hannah Cohen"
+    ]
+  },
+  "female vocalists": {
+    "weight": 0.0557,
+    "artists": [
+      "Beyonce",
+      "Hayley Williams",
+      "Bjork",
+      "Joni Mitchell",
+      "Hana Eid",
+      "Cat Power",
+      "Power Snatch",
+      "Juana Molina",
+      "Jordana",
+      "The Sundays",
+      "Alice Phoebe Lou",
+      "Sade",
+      "Norah Jones",
+      "Joan Baez",
+      "HAIM",
+      "Lana Del Rey",
+      "Charlotte Day Wilson",
+      "Yeah Yeah Yeahs",
+      "Bess Atwell",
+      "Evie Sands",
+      "Erin Rae",
+      "Hannah Cohen"
+    ]
+  },
+  "indie pop": {
+    "weight": 0.0532,
+    "artists": [
+      "Ryan Beatty",
+      "Water From Your Eyes",
+      "Clairo",
+      "Snuggle",
+      "Trophy Wife",
+      "Mitski",
+      "Beach House",
+      "Fine",
+      "Jay Som",
+      "Jordana",
+      "TV Girl",
+      "Alice Phoebe Lou",
+      "HAIM",
+      "Lana Del Rey",
+      "Jean Dawson",
+      "This Is Lorelei",
+      "The Beths",
+      "Hairpin",
+      "Tiberius b",
+      "Bess Atwell",
+      "Dora Jar"
+    ]
+  },
+  "indie rock": {
+    "weight": 0.0481,
+    "artists": [
+      "Radium Dolls",
+      "Water From Your Eyes",
+      "Phoebe Bridgers",
+      "Dry Cleaning",
+      "Mitski",
+      "Jay Som",
+      "Jordana",
+      "HAIM",
+      "Inhaler",
+      "Gretel",
+      "Teethe",
+      "Flycatcher",
+      "Pretty Sick",
+      "This Is Lorelei",
+      "The Beths",
+      "Momma",
+      "Hairpin",
+      "Autolux",
+      "Yeah Yeah Yeahs"
+    ]
+  },
+  "pop": {
+    "weight": 0.038,
+    "artists": [
+      "Ryan Beatty",
+      "Clairo",
+      "Beyonce",
+      "Rosalia",
+      "Nathy Peluso",
+      "Jordana",
+      "TV Girl",
+      "Addison Rae",
+      "Wings",
+      "Sade",
+      "Norah Jones",
+      "Lana Del Rey",
+      "Charlotte Day Wilson",
+      "Gretel",
+      "Tears for Fears"
+    ]
+  },
+  "folk": {
+    "weight": 0.038,
+    "artists": [
+      "Joni Mitchell",
+      "Phoebe Bridgers",
+      "Cat Power",
+      "Truthpaste",
+      "Juana Molina",
+      "Dominique Adams",
+      "Alice Phoebe Lou",
+      "Joan Baez",
+      "Gretel",
+      "Silvia Perez Cruz",
+      "Tiberius b",
+      "Bess Atwell",
+      "Erin Rae",
+      "Rita Payes",
+      "Hannah Cohen"
+    ]
+  },
+  "rock": {
+    "weight": 0.0304,
+    "artists": [
+      "Radium Dolls",
+      "Hayley Williams",
+      "Trophy Wife",
+      "Power Snatch",
+      "Wings",
+      "Bread",
+      "Inhaler",
+      "Ecca Vandal",
+      "Momma",
+      "Autolux",
+      "Tears for Fears",
+      "Yeah Yeah Yeahs"
+    ]
+  },
+  "singer-songwriter": {
+    "weight": 0.0304,
+    "artists": [
+      "Joni Mitchell",
+      "Phoebe Bridgers",
+      "Mitski",
+      "Cat Power",
+      "Juana Molina",
+      "Alice Phoebe Lou",
+      "Norah Jones",
+      "Joan Baez",
+      "Tiberius b",
+      "Evie Sands",
+      "Erin Rae",
+      "Hannah Cohen"
+    ]
+  },
+  "experimental": {
+    "weight": 0.0278,
+    "artists": [
+      "Water From Your Eyes",
+      "Smerz",
+      "Bjork",
+      "Astrid Sonne",
+      "Swans",
+      "Psychic TV",
+      "BADBADNOTGOOD",
+      "Gretel",
+      "Shady Nasty",
+      "Jean Dawson",
+      "This Is Lorelei"
+    ]
+  },
+  "electronic": {
+    "weight": 0.0278,
+    "artists": [
+      "Smerz",
+      "Bjork",
+      "Astrid Sonne",
+      "Psychic TV",
+      "Efterklang",
+      "Oklou",
+      "AIR",
+      "Ecca Vandal",
+      "Massive Attack",
+      "Nightmares on Wax",
+      "Dora Jar"
+    ]
+  },
+  "alternative": {
+    "weight": 0.0228,
+    "artists": [
+      "Bjork",
+      "Cat Power",
+      "The Sundays",
+      "Lana Del Rey",
+      "Inhaler",
+      "Jean Dawson",
+      "Momma",
+      "Autolux",
+      "Yeah Yeah Yeahs"
+    ]
+  },
+  "dream pop": {
+    "weight": 0.0203,
+    "artists": [
+      "Clairo",
+      "Snuggle",
+      "Mitski",
+      "Beach House",
+      "Fine",
+      "Jay Som",
+      "The Sundays",
+      "Teethe"
+    ]
+  },
+  "soul": {
+    "weight": 0.0203,
+    "artists": [
+      "Beyonce",
+      "El Michels Affair",
+      "Thee Sacred Souls",
+      "Thee Heart Tones",
+      "Sade",
+      "HAIM",
+      "Charlotte Day Wilson",
+      "Evie Sands"
+    ]
+  },
+  "jazz": {
+    "weight": 0.0177,
+    "artists": [
+      "El Michels Affair",
+      "Sade",
+      "Norah Jones",
+      "BADBADNOTGOOD",
+      "Piero Piccioni",
+      "Silvia Perez Cruz",
+      "Rita Payes"
+    ]
+  },
+  "alternative rock": {
+    "weight": 0.0152,
+    "artists": [
+      "Hayley Williams",
+      "Power Snatch",
+      "Ecca Vandal",
+      "Flycatcher",
+      "Pretty Sick",
+      "Bedridden"
+    ]
+  },
+  "Lo-Fi": {
+    "weight": 0.0127,
+    "artists": [
+      "Clairo",
+      "Snuggle",
+      "Beach House",
+      "TV Girl",
+      "Teethe"
+    ]
+  },
+  "art pop": {
+    "weight": 0.0127,
+    "artists": [
+      "Smerz",
+      "Snuggle",
+      "Rosalia",
+      "Oklou",
+      "Dora Jar"
+    ]
+  },
+  "post-punk": {
+    "weight": 0.0101,
+    "artists": [
+      "Water From Your Eyes",
+      "Dry Cleaning",
+      "Swans",
+      "Model/Actriz"
+    ]
+  },
+  "rnb": {
+    "weight": 0.0101,
+    "artists": [
+      "Beyonce",
+      "Nathy Peluso",
+      "Thee Sacred Souls",
+      "Charlotte Day Wilson"
+    ]
+  },
+  "Hip-Hop": {
+    "weight": 0.0101,
+    "artists": [
+      "Beyonce",
+      "BADBADNOTGOOD",
+      "Shady Nasty",
+      "Ecca Vandal"
+    ]
+  },
+  "indie folk": {
+    "weight": 0.0101,
+    "artists": [
+      "Phoebe Bridgers",
+      "Truthpaste",
+      "Tiberius b",
+      "Bess Atwell"
+    ]
+  },
+  "USA": {
+    "weight": 0.0101,
+    "artists": [
+      "Hana Eid",
+      "Thee Heart Tones",
+      "Momma",
+      "Erin Rae"
+    ]
+  },
+  "shoegaze": {
+    "weight": 0.0101,
+    "artists": [
+      "Jay Som",
+      "Mercury Rocket",
+      "Bedridden",
+      "Autolux"
+    ]
+  },
+  "chillout": {
+    "weight": 0.0101,
+    "artists": [
+      "AIR",
+      "Sade",
+      "Massive Attack",
+      "Nightmares on Wax"
+    ]
+  },
+  "spanish": {
+    "weight": 0.0076,
+    "artists": [
+      "Rosalia",
+      "Nathy Peluso",
+      "Rita Payes"
+    ]
+  },
+  "instrumental": {
+    "weight": 0.0076,
+    "artists": [
+      "El Michels Affair",
+      "Hermanos Gutierrez",
+      "Piero Piccioni"
+    ]
+  },
+  "british": {
+    "weight": 0.0076,
+    "artists": [
+      "Trophy Wife",
+      "Truthpaste",
+      "Wings"
+    ]
+  },
+  "ambient": {
+    "weight": 0.0076,
+    "artists": [
+      "Astrid Sonne",
+      "Efterklang",
+      "AIR"
+    ]
+  },
+  "danish": {
+    "weight": 0.0076,
+    "artists": [
+      "Astrid Sonne",
+      "Fine",
+      "Efterklang"
+    ]
+  },
+  "electronica": {
+    "weight": 0.0076,
+    "artists": [
+      "Efterklang",
+      "AIR",
+      "Massive Attack"
+    ]
+  },
+  "classic rock": {
+    "weight": 0.0076,
+    "artists": [
+      "Wings",
+      "Bread",
+      "Joan Baez"
+    ]
+  },
+  "american": {
+    "weight": 0.0051,
+    "artists": [
+      "Ryan Beatty",
+      "Addison Rae"
+    ]
+  },
+  "new wave": {
+    "weight": 0.0051,
+    "artists": [
+      "Water From Your Eyes",
+      "Tears for Fears"
+    ]
+  },
+  "bedroom pop": {
+    "weight": 0.0051,
+    "artists": [
+      "Clairo",
+      "This Is Lorelei"
+    ]
+  },
+  "pop punk": {
+    "weight": 0.0051,
+    "artists": [
+      "Hayley Williams",
+      "Power Snatch"
+    ]
+  },
+  "argentina": {
+    "weight": 0.0051,
+    "artists": [
+      "Nathy Peluso",
+      "Juana Molina"
+    ]
+  },
+  "funk": {
+    "weight": 0.0051,
+    "artists": [
+      "El Michels Affair",
+      "Thee Sacred Souls"
+    ]
+  },
+  "industrial": {
+    "weight": 0.0051,
+    "artists": [
+      "Swans",
+      "Psychic TV"
+    ]
+  },
+  "noise rock": {
+    "weight": 0.0051,
+    "artists": [
+      "Swans",
+      "Model/Actriz"
+    ]
+  },
+  "no wave": {
+    "weight": 0.0051,
+    "artists": [
+      "Swans",
+      "Model/Actriz"
+    ]
+  },
+  "UK": {
+    "weight": 0.0051,
+    "artists": [
+      "Truthpaste",
+      "Gretel"
+    ]
+  },
+  "french": {
+    "weight": 0.0051,
+    "artists": [
+      "Oklou",
+      "AIR"
+    ]
+  },
+  "alternative rnb": {
+    "weight": 0.0051,
+    "artists": [
+      "Oklou",
+      "Jean Dawson"
+    ]
+  },
+  "folktronica": {
+    "weight": 0.0051,
+    "artists": [
+      "Juana Molina",
+      "Dora Jar"
+    ]
+  },
+  "canada": {
+    "weight": 0.0051,
+    "artists": [
+      "Dominique Adams",
+      "Charlotte Day Wilson"
+    ]
+  },
+  "United States": {
+    "weight": 0.0051,
+    "artists": [
+      "Thee Sacred Souls",
+      "Bedridden"
+    ]
+  },
+  "70s": {
+    "weight": 0.0051,
+    "artists": [
+      "Wings",
+      "Bread"
+    ]
+  },
+  "60s": {
+    "weight": 0.0051,
+    "artists": [
+      "Joan Baez",
+      "Evie Sands"
+    ]
+  },
+  "Psychedelic Rock": {
+    "weight": 0.0051,
+    "artists": [
+      "Mercury Rocket",
+      "GIFT"
+    ]
+  },
+  "rap": {
+    "weight": 0.0051,
+    "artists": [
+      "Shady Nasty",
+      "Jean Dawson"
+    ]
+  },
+  "punk": {
+    "weight": 0.0051,
+    "artists": [
+      "Ecca Vandal",
+      "Inside Out"
+    ]
+  },
+  "Garage Rock": {
+    "weight": 0.0051,
+    "artists": [
+      "Flycatcher",
+      "Pretty Sick"
+    ]
+  },
+  "power pop": {
+    "weight": 0.0051,
+    "artists": [
+      "The Beths",
+      "Hairpin"
+    ]
+  },
+  "trip-hop": {
+    "weight": 0.0051,
+    "artists": [
+      "Massive Attack",
+      "Nightmares on Wax"
+    ]
+  },
+  "downtempo": {
+    "weight": 0.0051,
+    "artists": [
+      "Massive Attack",
+      "Nightmares on Wax"
+    ]
+  },
+  "lounge": {
+    "weight": 0.0051,
+    "artists": [
+      "Piero Piccioni",
+      "Nightmares on Wax"
+    ]
+  },
+  "spain": {
+    "weight": 0.0051,
+    "artists": [
+      "Silvia Perez Cruz",
+      "Rita Payes"
+    ]
+  },
+  "australia": {
+    "weight": 0.0025,
+    "artists": [
+      "Radium Dolls"
+    ]
+  },
+  "australian": {
+    "weight": 0.0025,
+    "artists": [
+      "Radium Dolls"
+    ]
+  },
+  "Brisbane": {
+    "weight": 0.0025,
+    "artists": [
+      "Radium Dolls"
+    ]
+  },
+  "LITTLE STAR": {
+    "weight": 0.0025,
+    "artists": [
+      "Ryan Beatty"
+    ]
+  },
+  "male": {
+    "weight": 0.0025,
+    "artists": [
+      "Ryan Beatty"
+    ]
+  },
+  "Norway": {
+    "weight": 0.0025,
+    "artists": [
+      "Smerz"
+    ]
+  },
+  "House": {
+    "weight": 0.0025,
+    "artists": [
+      "Smerz"
+    ]
+  },
+  "icelandic": {
+    "weight": 0.0025,
+    "artists": [
+      "Bjork"
+    ]
+  },
+  "alternative pop": {
+    "weight": 0.0025,
+    "artists": [
+      "Snuggle"
+    ]
+  },
+  "Canadian": {
+    "weight": 0.0025,
+    "artists": [
+      "Joni Mitchell"
+    ]
+  },
+  "acoustic": {
+    "weight": 0.0025,
+    "artists": [
+      "Joni Mitchell"
+    ]
+  },
+  "Flamenco": {
+    "weight": 0.0025,
+    "artists": [
+      "Rosalia"
+    ]
+  },
+  "Flamenco Nuevo": {
+    "weight": 0.0025,
+    "artists": [
+      "Rosalia"
+    ]
+  },
+  "argentinian": {
+    "weight": 0.0025,
+    "artists": [
+      "Nathy Peluso"
+    ]
+  },
+  "afrobeat": {
+    "weight": 0.0025,
+    "artists": [
+      "El Michels Affair"
+    ]
+  },
+  "Crank wave": {
+    "weight": 0.0025,
+    "artists": [
+      "Dry Cleaning"
+    ]
+  },
+  "spoken word": {
+    "weight": 0.0025,
+    "artists": [
+      "Dry Cleaning"
+    ]
+  },
+  "post-brexit new wave": {
+    "weight": 0.0025,
+    "artists": [
+      "Dry Cleaning"
+    ]
+  },
+  "riot grrrl": {
+    "weight": 0.0025,
+    "artists": [
+      "Trophy Wife"
+    ]
+  },
+  "glitch": {
+    "weight": 0.0025,
+    "artists": [
+      "Astrid Sonne"
+    ]
+  },
+  "psychedelic": {
+    "weight": 0.0025,
+    "artists": [
+      "Psychic TV"
+    ]
+  },
+  "avantgarde": {
+    "weight": 0.0025,
+    "artists": [
+      "Psychic TV"
+    ]
+  },
+  "Dreamy": {
+    "weight": 0.0025,
+    "artists": [
+      "Beach House"
+    ]
+  },
+  "heavy metal": {
+    "weight": 0.0025,
+    "artists": [
+      "Fine"
+    ]
+  },
+  "denmark": {
+    "weight": 0.0025,
+    "artists": [
+      "Fine"
+    ]
+  },
+  "post-rock": {
+    "weight": 0.0025,
+    "artists": [
+      "Efterklang"
+    ]
+  },
+  "ambient pop": {
+    "weight": 0.0025,
+    "artists": [
+      "Oklou"
+    ]
+  },
+  "Winnipeg": {
+    "weight": 0.0025,
+    "artists": [
+      "Dominique Adams"
+    ]
+  },
+  "rutracker": {
+    "weight": 0.0025,
+    "artists": [
+      "Jordana"
+    ]
+  },
+  "chillwave": {
+    "weight": 0.0025,
+    "artists": [
+      "TV Girl"
+    ]
+  },
+  "90s": {
+    "weight": 0.0025,
+    "artists": [
+      "The Sundays"
+    ]
+  },
+  "electropop": {
+    "weight": 0.0025,
+    "artists": [
+      "Addison Rae"
+    ]
+  },
+  "alt-pop": {
+    "weight": 0.0025,
+    "artists": [
+      "Addison Rae"
+    ]
+  },
+  "queen of pop": {
+    "weight": 0.0025,
+    "artists": [
+      "Addison Rae"
+    ]
+  },
+  "san diego": {
+    "weight": 0.0025,
+    "artists": [
+      "Thee Sacred Souls"
+    ]
+  },
+  "south africa": {
+    "weight": 0.0025,
+    "artists": [
+      "Alice Phoebe Lou"
+    ]
+  },
+  "chicano soul": {
+    "weight": 0.0025,
+    "artists": [
+      "Thee Heart Tones"
+    ]
+  },
+  "los angeles": {
+    "weight": 0.0025,
+    "artists": [
+      "Thee Heart Tones"
+    ]
+  },
+  "soft rock": {
+    "weight": 0.0025,
+    "artists": [
+      "Bread"
+    ]
+  },
+  "oldies": {
+    "weight": 0.0025,
+    "artists": [
+      "Bread"
+    ]
+  },
+  "blues": {
+    "weight": 0.0025,
+    "artists": [
+      "Norah Jones"
+    ]
+  },
+  "latin": {
+    "weight": 0.0025,
+    "artists": [
+      "Hermanos Gutierrez"
+    ]
+  },
+  "switzerland": {
+    "weight": 0.0025,
+    "artists": [
+      "Hermanos Gutierrez"
+    ]
+  },
+  "swiss": {
+    "weight": 0.0025,
+    "artists": [
+      "Hermanos Gutierrez"
+    ]
+  },
+  "guitar": {
+    "weight": 0.0025,
+    "artists": [
+      "Hermanos Gutierrez"
+    ]
+  },
+  "instrumental hip-hop": {
+    "weight": 0.0025,
+    "artists": [
+      "BADBADNOTGOOD"
+    ]
+  },
+  "Avant-Garde": {
+    "weight": 0.0025,
+    "artists": [
+      "BADBADNOTGOOD"
+    ]
+  },
+  "dance-punk": {
+    "weight": 0.0025,
+    "artists": [
+      "Model/Actriz"
+    ]
+  },
+  "industrial rock": {
+    "weight": 0.0025,
+    "artists": [
+      "Model/Actriz"
+    ]
+  },
+  "ireland": {
+    "weight": 0.0025,
+    "artists": [
+      "Inhaler"
+    ]
+  },
+  "hip hop": {
+    "weight": 0.0025,
+    "artists": [
+      "Shady Nasty"
+    ]
+  },
+  "sydney": {
+    "weight": 0.0025,
+    "artists": [
+      "Shady Nasty"
+    ]
+  },
+  "slowcore": {
+    "weight": 0.0025,
+    "artists": [
+      "Teethe"
+    ]
+  },
+  "slacker rock": {
+    "weight": 0.0025,
+    "artists": [
+      "Teethe"
+    ]
+  },
+  "new jersey": {
+    "weight": 0.0025,
+    "artists": [
+      "Flycatcher"
+    ]
+  },
+  "Garage Punk": {
+    "weight": 0.0025,
+    "artists": [
+      "Pretty Sick"
+    ]
+  },
+  "Progressive rock": {
+    "weight": 0.0025,
+    "artists": [
+      "GIFT"
+    ]
+  },
+  "krautrock": {
+    "weight": 0.0025,
+    "artists": [
+      "GIFT"
+    ]
+  },
+  "hard rock": {
+    "weight": 0.0025,
+    "artists": [
+      "GIFT"
+    ]
+  },
+  "german": {
+    "weight": 0.0025,
+    "artists": [
+      "GIFT"
+    ]
+  },
+  "noise pop": {
+    "weight": 0.0025,
+    "artists": [
+      "This Is Lorelei"
+    ]
+  },
+  "New Zealand": {
+    "weight": 0.0025,
+    "artists": [
+      "The Beths"
+    ]
+  },
+  "future garage": {
+    "weight": 0.0025,
+    "artists": [
+      "VVV"
+    ]
+  },
+  "dubstep": {
+    "weight": 0.0025,
+    "artists": [
+      "VVV"
+    ]
+  },
+  "2-step": {
+    "weight": 0.0025,
+    "artists": [
+      "VVV"
+    ]
+  },
+  "UK Garage": {
+    "weight": 0.0025,
+    "artists": [
+      "VVV"
+    ]
+  },
+  "Post-garage": {
+    "weight": 0.0025,
+    "artists": [
+      "VVV"
+    ]
+  },
+  "post hardcore": {
+    "weight": 0.0025,
+    "artists": [
+      "Hairpin"
+    ]
+  },
+  "space rock": {
+    "weight": 0.0025,
+    "artists": [
+      "Bedridden"
+    ]
+  },
+  "Soundtrack": {
+    "weight": 0.0025,
+    "artists": [
+      "Piero Piccioni"
+    ]
+  },
+  "italian": {
+    "weight": 0.0025,
+    "artists": [
+      "Piero Piccioni"
+    ]
+  },
+  "world": {
+    "weight": 0.0025,
+    "artists": [
+      "Silvia Perez Cruz"
+    ]
+  },
+  "Espanha": {
+    "weight": 0.0025,
+    "artists": [
+      "Silvia Perez Cruz"
+    ]
+  },
+  "80s": {
+    "weight": 0.0025,
+    "artists": [
+      "Tears for Fears"
+    ]
+  },
+  "synth pop": {
+    "weight": 0.0025,
+    "artists": [
+      "Tears for Fears"
+    ]
+  },
+  "hardcore": {
+    "weight": 0.0025,
+    "artists": [
+      "Inside Out"
+    ]
+  },
+  "hardcore punk": {
+    "weight": 0.0025,
+    "artists": [
+      "Inside Out"
+    ]
+  },
+  "Straight Edge": {
+    "weight": 0.0025,
+    "artists": [
+      "Inside Out"
+    ]
+  },
+  "oldschool hardcore": {
+    "weight": 0.0025,
+    "artists": [
+      "Inside Out"
+    ]
+  },
+  "Blue-Eyed Soul": {
+    "weight": 0.0025,
+    "artists": [
+      "Evie Sands"
+    ]
+  },
+  "trombone": {
+    "weight": 0.0025,
+    "artists": [
+      "Rita Payes"
+    ]
+  },
+  "synthpop": {
+    "weight": 0.0025,
+    "artists": [
+      "Dora Jar"
+    ]
+  },
+  "melancholy": {
+    "weight": 0.0025,
+    "artists": [
+      "Hannah Cohen"
+    ]
+  }
+}

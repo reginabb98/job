@@ -1,0 +1,35 @@
+{
+  "loved_artists": [
+    "Radium Dolls", "Ryan Beatty", "Water From Your Eyes", "Clairo", "Beyonce",
+    "Smerz", "Hayley Williams", "Bjork", "Snuggle", "Joni Mitchell", "Rosalia",
+    "Nathy Peluso", "Phoebe Bridgers", "El Michels Affair", "Dry Cleaning",
+    "Man Woman Chainsaw", "Trophy Wife", "Hana Eid", "Mitski", "Cat Power",
+    "Astrid Sonne", "Swans", "Power Snatch", "Psychic TV", "Beach House",
+    "Fine", "Truthpaste", "Efterklang", "Jay Som", "Oklou", "Juana Molina",
+    "Dominique Adams", "Jordana", "TV Girl",
+    "The Sundays", "Addison Rae", "Thee Sacred Souls", "AIR", "Alice Phoebe Lou",
+    "Thee Heart Tones", "Wings", "Sade", "Bread", "Norah Jones", "Joan Baez",
+    "HAIM", "Lana Del Rey", "Hermanos Gutierrez", "The Army The Navy",
+    "Charlotte Day Wilson", "BADBADNOTGOOD"
+  ],
+  "casually_liked": [
+    "Massive Attack", "Piero Piccioni", "Silvia Perez Cruz", "Tears for Fears",
+    "Inside Out", "Tiberius b", "Safety Mind", "Double Virgo",
+    "Yeah Yeah Yeahs", "Nightmares on Wax", "Bess Atwell", "Evie Sands",
+    "Erin Rae", "Rita Payes", "Dora Jar", "Hannah Cohen"
+  ],
+  "exploring_rockier_alt": [
+    "Model/Actriz", "Inhaler", "Mercury Rocket", "Gretel", "Caro Caro",
+    "Shady Nasty", "Ecca Vandal", "Jean Dawson", "Teethe", "Master Peace",
+    "Flycatcher", "Pretty Sick", "GIFT", "This Is Lorelei", "The Beths",
+    "VVV", "Momma", "Hairpin", "Bedridden", "Autolux"
+  ],
+  "throwback_alt_reference_points": [
+    "Veruca Salt", "Bikini Kill", "Garbage", "Hole", "The Donnas",
+    "Elastica", "Broadcast", "Warpaint"
+  ],
+  "notes": "Core taste leans dreamy/art-pop, singer-songwriter, and left-field electronic/experimental (Bjork, Rosalia, Efterklang, Astrid Sonne). Actively branching into rockier/riot-grrrl-adjacent alt via a Spotify playlist called 'Red' — treat throwback_alt_reference_points as a genre/vibe signal, not literal booking matches (these acts won't play small NYC rooms currently, they're a taste reference). Not into straight-up club/DJ electronica (house/techno/dance sets) despite liking electronic-adjacent art-pop artists — see avoid_genres. Top-songs-2025 signal (The Sundays, AIR, Sade, Bread, Norah Jones, Joan Baez, Thee Sacred Souls, Wings, Alice Phoebe Lou, Thee Heart Tones, Addison Rae) adds a softer/warmer/retro throughline: jangle pop, sophisti-pop/soul, 60s-70s folk and soft rock, downtempo — broadens the 'dreamy' core beyond just art-pop into classic and retro-soul territory too.",
+  "min_monthly_listeners": 20000,
+  "lastfm_metric_used": "listeners",
+  "avoid_genres": ["electronic", "house", "techno", "dance", "edm", "dj set", "club"]
+}
