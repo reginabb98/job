@@ -85,6 +85,9 @@ Scan history:
     email's timestamp. No status changes; both were already Rejected.
   - 2026-08-26 (later): incremental rescan, 1 new row (VaynerMedia,
     Relevance Strategist).
+  - 2026-08-26 (evening): Regina reported two more cold outreach emails;
+    confirmed via Sent Mail and added as Networking rows (Porto Rocha --
+    Natalee, and Decade).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -694,6 +697,25 @@ SEED_ROWS = [
         "applied_date": "2026-08-26",
         "source": "Greenhouse",
         "notes": None,
+    },
+    # -- 2026-08-26 (later): two more cold outreach emails, confirmed via Sent Mail --
+    {
+        "company": "Porto Rocha",
+        "position": "Brand Strategy (cold outreach -- Natalee)",
+        "status": "Networking",
+        "applied_date": "2026-08-26",
+        "source": "Cold email",
+        "notes": "Direct outreach to natalee@portorocha.com about brand strategy work at Porto Rocha. "
+                 "No reply yet.",
+    },
+    {
+        "company": "Decade",
+        "position": "Creative Strategy Opportunity (cold outreach)",
+        "status": "Networking",
+        "applied_date": "2026-08-26",
+        "source": "Cold email",
+        "notes": "Direct outreach to hello@decadenewyork.com introducing herself for creative strategy "
+                 "work. No reply yet.",
     },
 ]
 

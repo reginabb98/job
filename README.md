@@ -157,6 +157,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Submitted." No status changes.
 - **2026-08-26 (later)** — incremental rescan, 1 new row (VaynerMedia,
   Relevance Strategist).
+- **2026-08-26 (evening)** — Regina reported two more cold outreach
+  emails; confirmed via Sent Mail and added as Networking rows (Porto
+  Rocha, Decade).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
