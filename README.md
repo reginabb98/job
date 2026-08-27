@@ -160,6 +160,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-08-26 (evening)** — Regina reported two more cold outreach
   emails; confirmed via Sent Mail and added as Networking rows (Porto
   Rocha, Decade).
+- **2026-08-27** — incremental rescan, no new rows. Two rejections: Duel's
+  Advocacy Consultant application (after the recruiter screen) and
+  DualEntry's Brand Design Lead application (before the interview stage,
+  title corrected from the earlier "Design Lead" placeholder).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -88,6 +88,12 @@ Scan history:
   - 2026-08-26 (evening): Regina reported two more cold outreach emails;
     confirmed via Sent Mail and added as Networking rows (Porto Rocha --
     Natalee, and Decade).
+  - 2026-08-27: incremental rescan, no new rows. Two rejections: Duel's
+    Advocacy Consultant application (after the recruiter screen with
+    Ibrahim Thomas) and DualEntry's Brand Design Lead application (before
+    the interview stage) -- DualEntry's title was also corrected from the
+    earlier placeholder "Design Lead" now that the rejection email named
+    it directly.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -433,12 +439,13 @@ SEED_ROWS = [
     # -- 2026-08-18 early-morning rescan --
     {
         "company": "DualEntry",
-        "position": "Design Lead",
-        "status": "Applied",
+        "position": "Brand Design Lead",
+        "status": "Rejected",
         "applied_date": "2026-08-18",
         "source": "Ashby",
-        "notes": "Confirmation email didn't name the role applied to. Accounting/ERP software startup "
-                 "(recent $90M Series A).",
+        "notes": "Confirmation email didn't name the role applied to; title confirmed 2026-08-27 by the "
+                 "rejection email. Accounting/ERP software startup (recent $90M Series A). Rejected "
+                 "2026-08-27: \"not able to move forward to the interview stage at this time.\"",
     },
     {
         "company": "Firefly",
@@ -595,11 +602,12 @@ SEED_ROWS = [
     {
         "company": "Duel",
         "position": "Advocacy Consultant",
-        "status": "Interviewing",
+        "status": "Rejected",
         "applied_date": "2026-08-18",
         "source": "Teamtailor",
-        "next_step": "Recruiter screen with Ibrahim Thomas -- pick a time slot (invite sent 2026-08-24).",
-        "notes": None,
+        "notes": "Interviewed with recruiter Ibrahim Thomas the week of 2026-08-24. Rejected 2026-08-27: "
+                 "\"we are going to move forward with other candidates for this specific role.\" He offered "
+                 "to keep in touch about future openings.",
     },
     # -- 2026-08-25: cold outreach emails, reported by Regina and confirmed
     # via Sent Mail -- each one a direct email to a specific person, not a
