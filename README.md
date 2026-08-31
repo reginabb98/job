@@ -164,6 +164,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Advocacy Consultant application (after the recruiter screen) and
   DualEntry's Brand Design Lead application (before the interview stage,
   title corrected from the earlier "Design Lead" placeholder).
+- **2026-08-31** — incremental rescan, no new rows. Mammoth Brands'
+  Creative Strategist application came back Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

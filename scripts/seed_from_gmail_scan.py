@@ -94,6 +94,8 @@ Scan history:
     the interview stage) -- DualEntry's title was also corrected from the
     earlier placeholder "Design Lead" now that the rejection email named
     it directly.
+  - 2026-08-31: incremental rescan, no new rows. Flipped Mammoth Brands'
+    Creative Strategist application to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -128,10 +130,11 @@ SEED_ROWS = [
     {
         "company": "Mammoth Brands",
         "position": "Creative Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-22",
         "source": "Greenhouse",
-        "notes": None,
+        "notes": "Rejected 2026-08-31: \"decided to move forward with other candidates whose experience "
+                 "more closely aligns with what we're looking for at this time.\"",
     },
     {
         "company": "The New York Times",
