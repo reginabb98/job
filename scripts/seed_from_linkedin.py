@@ -35,8 +35,8 @@ NEW_ROWS = [
         "source": "LinkedIn",
         "notes": "Hybrid, New York, NY. Applied date estimated from LinkedIn's \"Applied 2w ago\" "
                  "(as of 2026-08-17), not exact.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Search turned up several different Publicis Health-family roles (Senior Associate, Strategy & Activation at Publicis Health Media; Senior Strategist at Langland, a healthcare sub-agency) rather than one clear listing matching this application -- can't confirm which one Regina actually applied to or what its real bar was.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting (Publicis Health CoLab): 2-3 yrs strategy/digital-consulting/planning experience, heavy on presentation and creative-brief work; healthcare/pharma experience is called \"extremely helpful\" but not required. Regina's research, presentation, and briefing skills map well -- the pharma-industry specifics are the one real gap.",
     },
     {
         "company": "G&A Strategy and Design",
@@ -126,8 +126,8 @@ NEW_ROWS = [
         "source": "LinkedIn",
         "notes": "Remote, United States. Posting no longer accepting applications. Applied date "
                  "estimated from LinkedIn's \"Applied 3w ago\" (as of 2026-08-17), not exact.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm an exact title match -- the only Moon Juice listing found was 'Copy Lead & Content Strategist,' a copywriting-first role (sole copywriter across all channels) that emphasizes a different skill set than the title Regina applied under, and copywriting isn't a core strength on her resume regardless.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting ($135K, remote -- matches the application LinkedIn shows submitted): 7+ yrs brand/content strategy, and the role owns copywriting across every channel plus manages a copywriter, with health & wellness industry experience called \"a must.\" Regina is under the years bar, copywriting ownership isn't a core strength on her resume, and wellness-industry experience isn't evidenced.",
     },
     {
         "company": "Interbrand",
@@ -186,8 +186,8 @@ NEW_ROWS = [
         "notes": "Hybrid, New York, NY. \"Application viewed\" per LinkedIn. Posting no longer "
                  "accepting applications. Distinct from the earlier general Omnicom Network "
                  "application. Applied date estimated from LinkedIn's \"Applied 3w ago,\" not exact.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "No exact 'Senior Associate, Strategy' listing could be confirmed -- search surfaced adjacent Omnicom Senior Associate roles (Integrated Media Planning, general buying) that are media-planning/buying-ops roles, a different discipline from Regina's creative/brand-strategy work, but the precise posting she applied to can't be verified.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: a junior strategist role supporting a Strategy Director, synthesizing culture/category/consumer insight into RFPs and presentations -- 1-2 yrs agency experience is called \"ideal\" but the posting says \"proven strategic comms ability... is most important.\" Regina's research, storytelling, and presentation-building skills line up well; the gap is the named syndicated research tools (Simmons-MRI, GWI) the role wants familiarity with.",
     },
 ]
 

@@ -664,8 +664,8 @@ SEED_ROWS = [
                  "not Regina's applied date -- exact applied date unknown, today's scan date used as a "
                  "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
                  "completion isn't fully confirmed either.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Could only find a 'Sr. Brand Manager' listing under Steve Madden's ATM portfolio brand, not confirmed as the exact 'Brand Manager' posting Regina applied to -- the tracker's own note already flags this application's title and date as unconfirmed, and the posting itself couldn't be verified either.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (LinkedIn): 5-8+ yrs brand management/marketing (fashion/retail preferred), acting as the cross-functional connector across marketing/creative/merchandising/e-commerce/wholesale, leading brand collaborations. Regina's storytelling and trend instincts overlap qualitatively, but this is a brand-management ownership/connector role rather than design or creative-strategy execution, and her 6 years sits at the low end of the 5-8+ range.",
     },
     {
         "company": "Inside Out Community",
@@ -689,8 +689,8 @@ SEED_ROWS = [
         "source": "Ashby",
         "notes": "Rejected 2026-09-02: \"other candidates were selected whose profiles more closely "
                  "matched what we are looking for at this time.\"",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Could only find a much more junior 'Communications Coordinator' listing (1-2 yrs, press/PR-logistics focused) -- not the Manager-level role Regina applied to, and the exact posting couldn't be confirmed. Worth noting PR/press relations is a different discipline from her brand design/strategy background regardless of level.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting (Ashby): 2-3 yrs as a communications coordinator/manager, PR/publicity-focused -- awards-campaign logistics, press screenings, talent scheduling, pitching press directly, Google Docs/Adobe Suite/Mailchimp/Muck Rack. This is a press-relations discipline, not brand design or creative strategy -- outside Regina's core background even though Adobe Suite overlaps.",
     },
     {
         "company": "Tapestry",
