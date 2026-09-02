@@ -177,6 +177,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   using the real job posting where one could be found and confirmed via web
   search. 12 came back Unknown rather than guessed, where the posting was
   opportunistic/unspecified or couldn't be confirmed.
+- **2026-09-02 (JPMC portal recheck)** — Regina shared an updated screenshot
+  of JPMC's own candidate portal. The Graphic Designer, Senior Associate
+  application is still Under Consideration and Corporate Brand Marketing was
+  already Rejected — no change. The Olympic & Paralympic Brand Strategist
+  application flipped from Under Consideration to Not Selected — updated to
+  Rejected.
+- **2026-09-02 (reported directly by Regina)** — Superside's Lead Creative
+  Strategist application was rejected; she says the role requires being
+  based in Mexico, which she isn't — a residency requirement, not a
+  skills-based rejection. Flipped to Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

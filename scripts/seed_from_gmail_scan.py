@@ -109,6 +109,17 @@ Scan history:
     / Unknown. 12 came back Unknown -- either the posting was opportunistic/
     unspecified with nothing to assess, or the exact listing couldn't be
     confirmed -- rather than guessing at a rating without real evidence.
+  - 2026-09-02 (JPMC portal recheck): Regina shared an updated screenshot of
+    JPMC's Candidate Experience portal. The Graphic Designer, Senior
+    Associate application (210766619) is still Under Consideration, and
+    Corporate Brand Marketing (210771927) was already Rejected -- no change
+    to either. The Olympic & Paralympic Brand Strategist application
+    (210768163), previously Under Consideration, now shows Not Selected --
+    flipped to Rejected.
+  - 2026-09-02 (reported directly by Regina): Superside's Lead Creative
+    Strategist application was rejected -- Regina says the role requires
+    being based in Mexico, which she isn't. A residency requirement, not a
+    skills-based rejection. Flipped to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -293,12 +304,13 @@ SEED_ROWS = [
     {
         "company": "Superside",
         "position": "Lead Creative Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-27",
         "source": "Lever",
-        "notes": None,
+        "notes": "Rejected: Regina reported the role requires being based in Mexico, which she isn't -- a "
+                 "residency requirement, not a skills-based rejection.",
         "job_fit": "Good",
-        "job_fit_notes": "6+ yrs strategy roles at creative/ad/digital agencies with data-informed briefs and AI-championing -- Regina is right at the years bar and has genuine insider knowledge from her own recent Superside employment (Creative, Feb-Sept 2025). The gap is team-leading/mentoring experience, which the 'Lead' title implies but isn't clearly evidenced on her resume.",
+        "job_fit_notes": "6+ yrs strategy roles at creative/ad/digital agencies with data-informed briefs and AI-championing -- Regina is right at the years bar and has genuine insider knowledge from her own recent Superside employment (Creative, Feb-Sept 2025). The gap is team-leading/mentoring experience, which the 'Lead' title implies but isn't clearly evidenced on her resume. Note: the actual rejection was purely a Mexico-residency requirement, not a skills mismatch -- the fit rating above reflects the role's substance, not the reason it didn't move forward.",
     },
     {
         "company": "Figma",
@@ -418,12 +430,12 @@ SEED_ROWS = [
     {
         "company": "JPMorgan Chase & Co.",
         "position": "Olympic & Paralympic Brand Strategist (Job #210768163)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-29",
         "source": "Oracle Recruiting Cloud",
         "notes": "Second, distinct JPMorgan application from the one on 2026-07-23. Title and exact "
-                 "applied date confirmed 2026-08-17 via JPMC's Candidate Experience portal -- \"Under "
-                 "Consideration.\"",
+                 "applied date confirmed 2026-08-17 via JPMC's Candidate Experience portal -- was \"Under "
+                 "Consideration\" then, now shows \"Not Selected\" per a later portal check on 2026-09-02.",
         "job_fit": "Fair",
         "job_fit_notes": "Requires 4+ yrs brand strategy plus hands-on sponsorship-activation and paid-media-campaign management for the IOC/Team USA relationship. Regina's brand-strategy and creative-brief skills partially overlap, but sponsorship activation and paid-media management aren't evidenced on her resume.",
     },
