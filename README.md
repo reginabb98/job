@@ -210,6 +210,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Lead Designer (applied 2026-08-18, rejected 2026-08-20 — both added) and
   Ogilvy's Designer (applied 2026-08-17, still no response — added as
   Applied).
+- **2026-09-02 (reported directly by Regina)** — Monks' Associate Director,
+  Comms Planning application was rejected the same day it was submitted;
+  Olga Gamer replied she can't hire candidates who will require visa
+  sponsorship, even in the future — a visa/authorization issue, not a
+  skills-based rejection. Flipped to Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

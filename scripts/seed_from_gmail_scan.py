@@ -158,6 +158,11 @@ Scan history:
     in the ATS-domain search list: Datadog's Lead Designer (applied
     2026-08-18, rejected 2026-08-20 -- both added) and Ogilvy's Designer
     (applied 2026-08-17, still no response -- added as Applied).
+  - 2026-09-02 (reported directly by Regina): Monks' Associate Director,
+    Comms Planning application was rejected the same day it was submitted --
+    Olga Gamer replied she can't hire candidates who will require visa
+    sponsorship, even in the future. A visa/authorization issue, not a
+    skills-based rejection. Flipped to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -939,16 +944,18 @@ SEED_ROWS = [
     {
         "company": "Monks",
         "position": "Associate Director, Comms Planning",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-02",
         "source": "Email",
         "notes": "Applied through the official posting and separately emailed Olga Gamer "
                  "(olga.gamer@monks.com) directly the same day, referencing her Superside experience "
                  "and attaching a tailored CV. Confirmation email (no-reply@monks.com) titles the role "
                  "\"Associate Director, Comms Planning\"; the outreach email to Olga said \"Associate "
-                 "Strategy Director, Comms Planning\" -- same role, minor title variant.",
+                 "Strategy Director, Comms Planning\" -- same role, minor title variant. Rejected same day: "
+                 "Olga replied she can't hire candidates who will require visa sponsorship, even in the "
+                 "future -- a visa/authorization issue, not a skills-based rejection.",
         "job_fit": "Fair",
-        "job_fit_notes": "Wants 5 years in a media agency (3+ specifically in Connections/Comms Strategy) plus direct-report management. Regina's research, deck-building, and narrative-writing skills overlap qualitatively, but this is a media/comms-planning discipline rather than brand/creative design, and her 6 years are mostly design-agency rather than media-agency -- plus people-management isn't evidenced on her resume.",
+        "job_fit_notes": "Wants 5 years in a media agency (3+ specifically in Connections/Comms Strategy) plus direct-report management. Regina's research, deck-building, and narrative-writing skills overlap qualitatively, but this is a media/comms-planning discipline rather than brand/creative design, and her 6 years are mostly design-agency rather than media-agency -- plus people-management isn't evidenced on her resume. Note: the actual rejection was a visa-sponsorship policy, not a skills mismatch -- the fit rating above reflects the role's substance, not the reason it didn't move forward.",
     },
 ]
 
