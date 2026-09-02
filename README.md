@@ -187,6 +187,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Strategist application was rejected; she says the role requires being
   based in Mexico, which she isn't — a residency requirement, not a
   skills-based rejection. Flipped to Rejected.
+- **2026-09-02 (missed rejection, caught by Regina)** — Highsnobiety's
+  Associate Creative application was rejected 2026-08-24, but every scan
+  since then missed it: the subject line was a generic "Thank you for your
+  job application!" and the rejection was phrased softly ("decided to move
+  forward with other candidates") rather than in the explicit language
+  prior scans searched for. Flipped to Rejected; future scans will also
+  treat generic "thank you for applying" subjects and "moving forward with
+  other candidates" phrasing as possible soft rejections. Also reconciled
+  against a fresh Accenture portal screenshot — both Droga5 applications
+  already showed Rejected here, matching the portal. No change needed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

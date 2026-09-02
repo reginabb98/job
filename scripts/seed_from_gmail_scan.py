@@ -120,6 +120,20 @@ Scan history:
     Strategist application was rejected -- Regina says the role requires
     being based in Mexico, which she isn't. A residency requirement, not a
     skills-based rejection. Flipped to Rejected.
+  - 2026-09-02 (missed rejection, caught by Regina): Highsnobiety's
+    Associate Creative application was rejected 2026-08-24, but every scan
+    since then missed it -- the email's subject line was a generic "Thank
+    you for your job application!" and the rejection itself was phrased
+    softly ("decided to move forward with other candidates"), neither of
+    which matched the more explicit rejection language prior searches
+    looked for. Flipped to Rejected; future scans should also treat
+    generic "thank you for applying" subjects and "moving forward with
+    other candidates" phrasing as possible soft rejections, not just
+    explicit "reject"/"not selected"/"unable to move forward" language.
+    Also reconciled against a fresh Accenture candidate-portal screenshot --
+    both Droga5 applications (Senior Designer R00348810, Senior Strategist
+    R00338279) already show Rejected here, matching "No Longer Under
+    Consideration" on the portal. No change needed.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -274,10 +288,13 @@ SEED_ROWS = [
     {
         "company": "Highsnobiety",
         "position": "Associate Creative",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-27",
         "source": "Teamtailor",
-        "notes": None,
+        "notes": "Rejected 2026-08-24: \"decided to move forward with other candidates... only the finest "
+                 "of nuances which tip the balance of a decision one way or the other.\" This rejection was "
+                 "missed by the 2026-08-24 and 2026-08-27 rescans -- caught late when Regina forwarded it "
+                 "directly on 2026-09-02.",
         "job_fit": "Strong",
         "job_fit_notes": "1-3 yrs, deep cultural fluency in fashion/music/youth culture, concepts grounded in audience and cultural insight, visual research and moodboards, Keynote/Photoshop/Illustrator -- a close match to Regina's actual skill set and experience level.",
     },
