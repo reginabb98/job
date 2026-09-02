@@ -96,6 +96,8 @@ Scan history:
     it directly.
   - 2026-08-31: incremental rescan, no new rows. Flipped Mammoth Brands'
     Creative Strategist application to Rejected.
+  - 2026-09-02: incremental rescan, no new rows. Flipped MUBI's
+    Communications Manager, US application to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -577,10 +579,11 @@ SEED_ROWS = [
     {
         "company": "MUBI",
         "position": "Communications Manager, US",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-19",
         "source": "Ashby",
-        "notes": None,
+        "notes": "Rejected 2026-09-02: \"other candidates were selected whose profiles more closely "
+                 "matched what we are looking for at this time.\"",
     },
     {
         "company": "Tapestry",

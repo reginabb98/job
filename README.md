@@ -166,6 +166,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   title corrected from the earlier "Design Lead" placeholder).
 - **2026-08-31** — incremental rescan, no new rows. Mammoth Brands'
   Creative Strategist application came back Rejected.
+- **2026-09-02** — incremental rescan, no new rows. MUBI's Communications
+  Manager, US application came back Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
