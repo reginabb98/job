@@ -56,7 +56,8 @@ Required columns for CSV import: `company`, `position`. Optional: `status`
 (Applied / Interviewing / Offer / Rejected / Withdrawn / Networking),
 `applied_date`,
 `next_step`, `job_url`, `source`, `referral` (yes/no), `notes`, `pay_range`,
-`job_description`.
+`job_description`, `job_fit` (Strong / Good / Fair / Weak / Unknown),
+`job_fit_notes`.
 
 ### Email
 
@@ -171,6 +172,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-02 (later)** — Regina applied directly to Monks (Associate
   Director, Comms Planning) and separately emailed a contact there the same
   day; confirmed via Gmail search and added.
+- **2026-09-02 (job-fit backfill)** — rated every real (non-Networking)
+  application (67 total) on fit against Regina's actual resume/background,
+  using the real job posting where one could be found and confirmed via web
+  search. 12 came back Unknown rather than guessed, where the posting was
+  opportunistic/unspecified or couldn't be confirmed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

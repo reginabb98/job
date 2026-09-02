@@ -101,6 +101,14 @@ Scan history:
   - 2026-09-02 (later): Regina applied directly to Monks (Associate Director,
     Comms Planning) and separately emailed a contact there the same day;
     confirmed via Gmail search and added.
+  - 2026-09-02 (job-fit backfill): rated every real (non-Networking)
+    application -- 66 existing plus the new Monks row, 67 total -- on fit
+    against Regina's actual resume/background (five tailored resume
+    versions she shared), using the real job posting where one could be
+    found and confirmed via web search. Scale: Strong / Good / Fair / Weak
+    / Unknown. 12 came back Unknown -- either the posting was opportunistic/
+    unspecified with nothing to assess, or the exact listing couldn't be
+    confirmed -- rather than guessing at a rating without real evidence.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -123,6 +131,8 @@ SEED_ROWS = [
                  "The 2026-08-12 follow-up emails were a bar from reapplying, not a new opportunity -- "
                  "confirmed rejection. Job req R00338279 and Jul 22 applied date confirmed 2026-08-26 "
                  "via Accenture's own candidate portal (\"No Longer Under Consideration\").",
+        "job_fit": "Fair",
+        "job_fit_notes": "Droga5 wants someone whose career has been in the strategist seat -- brief-writing, storytelling, owning day-to-day strategy on projects, managing AI-assisted research. Regina's briefing/storytelling/AI-research skills overlap, but her career has been design-led with a strategy overlay, not a strategy-track career, which is likely why this didn't convert.",
     },
     {
         "company": "Snapchat",
@@ -131,6 +141,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-22",
         "source": "Workday",
         "notes": None,
+        "job_fit": "Strong",
+        "job_fit_notes": "Entry-level bar (1+ yrs creative strategy/design/marketing, presentation-building, Google Slides/AI tools, social-first storytelling) that Regina's presentation-design, visual-storytelling, and AI-assisted research skills map to directly -- if anything she's above the seniority the posting asks for.",
     },
     {
         "company": "Mammoth Brands",
@@ -140,6 +152,8 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "Rejected 2026-08-31: \"decided to move forward with other candidates whose experience "
                  "more closely aligns with what we're looking for at this time.\"",
+        "job_fit": "Weak",
+        "job_fit_notes": "Wants hands-on video editing (Premiere/CapCut/DaVinci) and direct-response/performance-ad ownership. Neither is evidenced anywhere on Regina's resume -- her design and strategy work isn't in video or performance advertising.",
     },
     {
         "company": "The New York Times",
@@ -148,6 +162,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-22",
         "source": "Email",
         "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "5+ yrs agency/in-house marketing design across social/digital/email/print with strong typography and Figma/Adobe fluency -- squarely Regina's Common Matter and Superside experience. The one clear gap is hands-on motion/animation (Jitter, After Effects), which the posting also requires and isn't on her resume.",
     },
     {
         "company": "Interbrand",
@@ -156,6 +172,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-22",
         "source": "Greenhouse",
         "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "A 0-1 yr entry-level fellowship built around copywriting/naming/verbal fields (linguistics, creative writing, English) -- Regina is 6+ yrs experienced and her core strength is visual design, not copywriting, so this is a mismatch on both seniority and discipline.",
     },
     {
         "company": "Interbrand",
@@ -164,6 +182,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-24",
         "source": "Greenhouse",
         "notes": "Separate general-interest application, distinct from the Verbal Identity Fellow role applied to 2026-07-22.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "This was an opportunistic general-interest application with no specific opening or job posting attached -- there's no listing to assess fit against.",
     },
     {
         "company": "Lippincott",
@@ -172,6 +192,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-24",
         "source": "Workday",
         "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "3+ yrs strategy/brand-consulting with heavy emphasis on synthesis, presentation, and writing -- Regina's audience/cultural/competitive research and creative-briefing skills line up well, though she comes from a design-led background rather than a consulting track, and client-interview-style stakeholder work isn't clearly evidenced on her resume.",
     },
     {
         "company": "Design Bridge and Partners / Landor (WPP)",
@@ -182,6 +204,8 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "Recruiter Ashley Hill (wppbrandconsulting.com) referenced this role under both the "
                  "Design Bridge and Partners and Landor names -- likely the same WPP process.",
+        "job_fit": "Good",
+        "job_fit_notes": "Leading strategic phases, translating business challenges into creative briefs, and working closely with design teams -- a strong match given Regina's brief-writing and research skills plus her own design background giving her real fluency on the design side of that strategy hand-off. This is also the one application that actually reached an interview, consistent with a solid match.",
     },
     {
         "company": "JPMorgan Chase & Co.",
@@ -193,6 +217,8 @@ SEED_ROWS = [
                  "and Rejected status (\"Not Selected\") confirmed 2026-08-17 via JPMC's own Candidate "
                  "Experience portal (Oracle HCM) -- resolves the earlier ambiguity about which of the "
                  "two JPMorgan applications the LinkedIn-listed title belonged to.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Wants B2B corporate brand-marketing experience (4+ yrs) enforcing brand guidelines across a large matrixed org. Regina's background is agency/freelance creative and strategy work, not in-house corporate brand marketing, so the day-to-day skill set doesn't line up as closely as the title suggests.",
     },
     {
         "company": "Google",
@@ -205,6 +231,8 @@ SEED_ROWS = [
                  "Google applications as \"Not proceeding\"; the portal gives no job IDs or exact dates, "
                  "so the specific title-to-application mapping across the 3 Google rows is provisional, "
                  "but the Rejected status is confirmed for all of them.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Requires 9 years of brand/consumer marketing experience managing creative-agency relationships and executive stakeholders -- well above Regina's 6 years, and it's a marketing-manager career track rather than design or creative strategy.",
     },
     {
         "company": "Meta",
@@ -216,6 +244,8 @@ SEED_ROWS = [
                  "(2026-08-17), which said Boston, MA. Meta's own candidate portal (checked 2026-08-18) "
                  "confirms the exact applied date and says New York, NY instead -- the portal's location "
                  "is treated as authoritative over LinkedIn's. Still active, \"Current stage: Application.\"",
+        "job_fit": "Weak",
+        "job_fit_notes": "Requires 10+ years of creative experience in brand/performance marketing with a paid-social campaign portfolio -- both the years bar and the paid-social specialization are well beyond what's on Regina's resume.",
     },
     {
         "company": "Prophet",
@@ -227,6 +257,8 @@ SEED_ROWS = [
         "notes": "2026-07-25: recruiter said they couldn't move forward based on work-authorization/sponsorship "
                  "answers. She replied same day clarifying she's authorized via F-1 OPT -- no response on file yet. "
                  "Title filled in from LinkedIn's My Jobs list (2026-08-17).",
+        "job_fit": "Good",
+        "job_fit_notes": "5-8+ yrs creative strategist/account-planner experience with strong storytelling, curiosity, and a creative-brief portfolio -- Regina is at the lower end of the years range but the qualitative fit (briefs, storytelling, collaborative style) is strong. The clear gap is the named audience-research tools (Quilt.AI, Infegy, Resonate, MRI-Simmons), which aren't on her resume.",
     },
     {
         "company": "Highsnobiety",
@@ -235,6 +267,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Teamtailor",
         "notes": None,
+        "job_fit": "Strong",
+        "job_fit_notes": "1-3 yrs, deep cultural fluency in fashion/music/youth culture, concepts grounded in audience and cultural insight, visual research and moodboards, Keynote/Photoshop/Illustrator -- a close match to Regina's actual skill set and experience level.",
     },
     {
         "company": "Instrument",
@@ -243,6 +277,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Lever",
         "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role applied to, and no listing could be matched -- there's nothing concrete to assess fit against.",
     },
     {
         "company": "Something Special Studios",
@@ -251,6 +287,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Greenhouse",
         "notes": None,
+        "job_fit": "Strong",
+        "job_fit_notes": "Leading multidisciplinary strategy projects end-to-end (research through insight to concept and launch), narrative-driven decks, client presentations, and cultural sensibility -- this maps closely to Regina's actual day-to-day skill set.",
     },
     {
         "company": "Superside",
@@ -259,6 +297,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Lever",
         "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "6+ yrs strategy roles at creative/ad/digital agencies with data-informed briefs and AI-championing -- Regina is right at the years bar and has genuine insider knowledge from her own recent Superside employment (Creative, Feb-Sept 2025). The gap is team-leading/mentoring experience, which the 'Lead' title implies but isn't clearly evidenced on her resume.",
     },
     {
         "company": "Figma",
@@ -267,6 +307,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Email",
         "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Wants experience with node-based/procedural AI pipelines (ComfyUI, Houdini, TouchDesigner) and a motion-graphics/VFX/creative-automation background for teaching technical creative audiences -- none of that specific tooling is on Regina's resume, even though her general AI-assisted-research and Figma skills overlap loosely.",
     },
     {
         "company": "Buttermilk",
@@ -275,6 +317,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Teamtailor",
         "notes": "Title filled in from LinkedIn's My Jobs list (2026-08-17).",
+        "job_fit": "Fair",
+        "job_fit_notes": "6-8+ yrs at a creative/social/influencer/integrated agency with mentoring and creator-marketing/internet-culture specialization -- Regina is close on years and her design/strategy/presentation background is relevant, but influencer-marketing specialization and formal mentoring aren't evidenced.",
     },
     {
         "company": "co:collective",
@@ -283,6 +327,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Lever",
         "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "4-5+ yrs strategy/brand-planning across 2-3 strategy disciplines with qual+quant synthesis and proposal-writing -- Regina's brand strategy, research, and storytelling skills map well qualitatively; formal quant-data synthesis and business-strategy consulting experience are less evidenced.",
     },
     {
         "company": "Omnicom Network",
@@ -291,6 +337,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Workday",
         "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "A general opportunistic application to the Omnicom network with no specific role attached -- there's no listing to assess fit against.",
     },
     {
         "company": "Meta",
@@ -302,6 +350,8 @@ SEED_ROWS = [
                  "LinkedIn's My Jobs list (2026-08-17). Meta's own candidate portal (checked 2026-08-18) "
                  "shows this as \"Not moving forward\" and corrects the applied date to 2026-07-23 (the "
                  "original Gmail confirmation had it as 2026-07-27).",
+        "job_fit": "Weak",
+        "job_fit_notes": "Requires 8-10 years of strategist experience owning brand architecture/naming/positioning and presenting to executives -- well above Regina's 6 years.",
     },
     {
         "company": "Partiful",
@@ -310,6 +360,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-27",
         "source": "Ashby",
         "notes": "Not applying to a listed opening -- reached out opportunistically.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Explicitly an opportunistic outreach with no listed opening -- there's no posting to assess fit against.",
     },
     {
         "company": "Wieden+Kennedy",
@@ -318,6 +370,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-28",
         "source": "Greenhouse",
         "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role applied to, and no matching listing could be found -- there's nothing concrete to assess fit against.",
     },
     {
         "company": "David Protein",
@@ -326,6 +380,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-28",
         "source": "Workable",
         "notes": None,
+        "job_fit": "Fair",
+        "job_fit_notes": "Centers on influencer/creator partnership recruitment and negotiation and top-of-funnel growth ownership at a fast-growing CPG brand. Regina's brand strategy and creative sensibility are relevant, but the role is fundamentally a partnerships/growth-marketing operator seat, which isn't part of her evidenced experience.",
     },
     {
         "company": "AKQA",
@@ -334,6 +390,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-28",
         "source": "Email",
         "notes": "Rejected same day: \"we have identified candidates who are more closely aligned with the role.\"",
+        "job_fit": "Fair",
+        "job_fit_notes": "A UX-leaning design role emphasizing AI-tool proficiency and research-grounded process. Regina's design, research, and AI-assisted workflow skills overlap, but her portfolio leans brand/graphic/packaging rather than UX/product design specifically.",
     },
     {
         "company": "PepsiCo",
@@ -342,6 +400,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-29",
         "source": "iCIMS",
         "notes": "Already in PepsiCo's talent community from an earlier signup (2026-06-16).",
+        "job_fit": "Good",
+        "job_fit_notes": "Leading immersive/experiential brand experiences (gaming, music, festivals) for a major CPG -- Regina's Common Matter experiential work (Parlote and Live Out music festivals) is a genuinely strong direct match. The gap is formal people-management of a design team, which this 'Senior Manager' title implies.",
     },
     {
         "company": "Google",
@@ -352,6 +412,8 @@ SEED_ROWS = [
         "notes": "Separate confirmation from the 2026-07-24 Google application. Status confirmed "
                  "\"Not proceeding\" via Google's candidate portal (checked 2026-08-18) -- see note on "
                  "the other Google rows re: mapping uncertainty across the 3 Google applications.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Requires 6 years of marketing experience (brand/product/growth/social), which Regina is right at, but it's a marketing-manager career track at a huge matrixed tech org rather than a design or creative-strategy seat -- a stretch outside her core discipline despite clearing the years bar.",
     },
     {
         "company": "JPMorgan Chase & Co.",
@@ -362,6 +424,8 @@ SEED_ROWS = [
         "notes": "Second, distinct JPMorgan application from the one on 2026-07-23. Title and exact "
                  "applied date confirmed 2026-08-17 via JPMC's Candidate Experience portal -- \"Under "
                  "Consideration.\"",
+        "job_fit": "Fair",
+        "job_fit_notes": "Requires 4+ yrs brand strategy plus hands-on sponsorship-activation and paid-media-campaign management for the IOC/Team USA relationship. Regina's brand-strategy and creative-brief skills partially overlap, but sponsorship activation and paid-media management aren't evidenced on her resume.",
     },
     {
         "company": "Prose",
@@ -370,6 +434,8 @@ SEED_ROWS = [
         "applied_date": "2026-07-28",
         "source": "Ashby",
         "notes": "Rejected 2026-08-03: \"we have decided to move forward with other candidates.\"",
+        "job_fit": "Good",
+        "job_fit_notes": "4-6 yrs of visual-design leadership end-to-end with AI tools -- a strong match on the core design-leadership skill set, though the posting specifically wants apparel/sports-industry design experience, which Regina doesn't have.",
     },
     # -- 2026-08-17 incremental scan (since 2026-08-13) --
     {
@@ -382,6 +448,8 @@ SEED_ROWS = [
                  "current needs,\" profile kept in talent pool for 24 months. Rejection email did "
                  "not name the role applied to (date shown is the rejection date); title filled in "
                  "from LinkedIn's My Jobs list (2026-08-17).",
+        "job_fit": "Good",
+        "job_fit_notes": "Social-strategy development, translating cultural trends into creative direction, Gen AI use, and briefing creative teams -- lines up closely with Regina's trend-analysis, creative-briefing, and cultural-research skill set.",
     },
     {
         "company": "Bespoke Post",
@@ -390,6 +458,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "Lever",
         "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "A hands-on performance-marketing role: buying and optimizing paid Meta/Google budgets, Shopify merchandising, MMM/attribution modeling. This is a different discipline entirely from Regina's brand/creative background -- no paid-media-buying or Shopify experience is evidenced.",
     },
     {
         "company": "Inizio Evoke",
@@ -399,6 +469,8 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "Rejected 2026-08-21: \"moved ahead with other candidates who we feel are a better "
                  "match for this particular position at this time.\"",
+        "job_fit": "Fair",
+        "job_fit_notes": "Inizio Evoke is a healthcare/pharma communications agency and the role's stated degree preference is life sciences/marketing/comms -- Regina's degree is graphic design, a field mismatch, even though the day-to-day deck-development and creative-brief work would transfer reasonably well.",
     },
     {
         "company": "Blackstone",
@@ -407,6 +479,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "Workday",
         "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "A web-ops/CMS role requiring hands-on WordPress, SEO/GEO, and Google Analytics experience -- none of that technical web-strategy work is evidenced anywhere in Regina's design/creative-strategy background.",
     },
     {
         "company": "NBCUniversal",
@@ -415,6 +489,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "ZipRecruiter",
         "notes": None,
+        "job_fit": "Fair",
+        "job_fit_notes": "An entertainment-marketing campaign-execution/coordination role (2+ yrs). Regina's brand and creative collaboration skills transfer reasonably, but this is more marketing-ops/coordination than the design or strategy authorship she actually does.",
     },
     # -- 2026-08-17 evening rescan --
     {
@@ -425,6 +501,8 @@ SEED_ROWS = [
         "source": "iCIMS",
         "notes": "Second, distinct PepsiCo application from the Design Senior Manager - Immersive "
                  "role applied to 2026-07-29.",
+        "job_fit": "Strong",
+        "job_fit_notes": "2-5 yrs hands-on brand/packaging/graphic design with 360 brand-design experience across print, packaging, digital, environmental, and experiential -- almost exactly Regina's Common Matter experience.",
     },
     {
         "company": "Razorfish Health",
@@ -433,6 +511,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "iCIMS",
         "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
+        "job_fit": "Good",
+        "job_fit_notes": "3-6 yrs strategy/research/agency experience built on qual+quant research synthesis, creative-brief development, and presentations -- Regina's research, briefing, and presentation skills map well. The one gap is the healthcare/HCP-specific research angle the posting calls out as ideal.",
     },
     # -- 2026-08-17: JPMC Candidate Experience portal screenshot --
     {
@@ -443,6 +523,8 @@ SEED_ROWS = [
         "source": "Oracle Recruiting Cloud",
         "notes": "Third, distinct JPMorgan application, found via JPMC's own Candidate Experience "
                  "portal (Oracle HCM) rather than a Gmail confirmation. \"Under Consideration.\"",
+        "job_fit": "Strong",
+        "job_fit_notes": "3+ yrs brand design across disciplines, a portfolio in brand systems and multi-channel campaigns, Adobe CS + Figma, and interest in generative AI -- a very close, direct match to Regina's actual design background and tools.",
     },
     # -- 2026-08-18 early-morning rescan --
     {
@@ -454,6 +536,8 @@ SEED_ROWS = [
         "notes": "Confirmation email didn't name the role applied to; title confirmed 2026-08-27 by the "
                  "rejection email. Accounting/ERP software startup (recent $90M Series A). Rejected "
                  "2026-08-27: \"not able to move forward to the interview stage at this time.\"",
+        "job_fit": "Weak",
+        "job_fit_notes": "Wants 6+ yrs including deep motion/3D tooling (After Effects, Blender, Cinema4D) and freelancer management -- neither is evidenced on Regina's resume. Worth flagging separately: the listing itself restricts the role to candidates based in the EU or LATAM, which may not even match her eligibility.",
     },
     {
         "company": "Firefly",
@@ -462,6 +546,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-18",
         "source": "Ashby",
         "notes": None,
+        "job_fit": "Strong",
+        "job_fit_notes": "Owning a brand's print and digital collateral -- tradeshow graphics, decks, packaging -- and being equally comfortable in print and pixels. Strong direct overlap with Regina's Common Matter packaging/print/presentation/digital-collateral work.",
     },
     {
         "company": "Accenture (Droga5)",
@@ -476,6 +562,8 @@ SEED_ROWS = [
                  "Accenture's own candidate portal (checked 2026-08-26) shows the actual submitted date "
                  "as Aug 17, one day before that confirmation email -- corrected here. "
                  "Rejected 2026-08-20: \"unable to move forward at this time.\"",
+        "job_fit": "Good",
+        "job_fit_notes": "6-8 yrs agency design experience -- Regina's core brand/campaign design work overlaps well. The gaps are the posting's motion-design and UX/UI requirements and formal mentoring of junior designers, none of which are clearly evidenced on her resume.",
     },
     # -- 2026-08-18: Google candidate portal screenshot --
     {
@@ -488,6 +576,8 @@ SEED_ROWS = [
                  "confirmation -- \"Not proceeding.\" Exact applied date isn't shown on the portal "
                  "(just \"updated last month\"); the earliest known Google application date is used "
                  "as a placeholder here, not a confirmed date.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Same pattern as the other Google AI Education role: 6 years of product-marketing experience (loosely met) but a partnerships/marketing-manager career track rather than design or creative strategy.",
     },
     # -- 2026-08-18: Meta candidate portal screenshot --
     {
@@ -498,6 +588,8 @@ SEED_ROWS = [
         "source": "Email",
         "notes": "Third Meta application, found via Meta's own candidate portal rather than a Gmail "
                  "confirmation. Still active, \"Current stage: Application.\" New York, NY.",
+        "job_fit": "Fair",
+        "job_fit_notes": "This specialized 'Strategic Initiatives' track wants 8+ yrs of brand/identity design (the general Instagram Brand Designer track is 5+ yrs, which Regina's 6 would clear); motion tools like After Effects/Cinema4D are listed as preferred, not required, and are the one clear gap otherwise.",
     },
     # -- 2026-08-18: reported directly by Regina, not from any inbox scan --
     {
@@ -532,6 +624,8 @@ SEED_ROWS = [
                  "to Hope Calnan (hope.calnan@somethingspecialstudios.com) about the 'Creative Strategist' "
                  "role, with CV and portfolio (reginabbs.cargo.site) attached. No reply yet as of "
                  "2026-08-18.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Same company and role family as the Greenhouse-sourced Senior Creative Strategist application -- research-to-insight-to-concept work, narrative decks, and cultural sensibility line up closely with Regina's actual skill set.",
     },
     # -- 2026-08-19: incremental rescan --
     {
@@ -543,6 +637,8 @@ SEED_ROWS = [
         "notes": "Confirmation email was a generic auto-reply template and didn't name the role applied "
                  "to; title filled in from LinkedIn's My Jobs list (2026-08-19). Hybrid, New York City "
                  "Metropolitan Area.",
+        "job_fit": "Fair",
+        "job_fit_notes": "5-7 yrs owning brand positioning plus a full content system and editorial calendar across channels. Regina's brand strategy and creative-briefing skills are relevant, but the role is heavy on content-strategy/editorial-calendar operations, which isn't evidenced on her resume.",
     },
     # -- 2026-08-19: LinkedIn My Jobs list screenshot --
     {
@@ -555,6 +651,8 @@ SEED_ROWS = [
                  "screen. Exact title was cut off in the confirmation screenshot -- reconstructed from the "
                  "visible \"Growth & Creative Rotat...\" fragment, not fully confirmed. New York, NY, "
                  "on-site, full-time.",
+        "job_fit": "Fair",
+        "job_fit_notes": "An early-career rotational program spanning influencer/social/performance-marketing/analytics -- Regina is well past the program's intended career stage, and most of the rotations (performance marketing, data analytics) aren't her strength, though the 'Creative Briefing & Project Management' rotation specifically would fit her well.",
     },
     {
         "company": "STEVEN MADDEN Ltd.",
@@ -566,6 +664,8 @@ SEED_ROWS = [
                  "not Regina's applied date -- exact applied date unknown, today's scan date used as a "
                  "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
                  "completion isn't fully confirmed either.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Could only find a 'Sr. Brand Manager' listing under Steve Madden's ATM portfolio brand, not confirmed as the exact 'Brand Manager' posting Regina applied to -- the tracker's own note already flags this application's title and date as unconfirmed, and the posting itself couldn't be verified either.",
     },
     {
         "company": "Inside Out Community",
@@ -577,6 +677,8 @@ SEED_ROWS = [
                  "Regina's applied date -- exact applied date unknown, today's scan date used as a "
                  "placeholder. LinkedIn's own \"Did you finish applying?\" prompt on this row means "
                  "completion isn't fully confirmed either.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No posting matching this exact title and company could be found -- only unrelated low-paid remote marketing-strategist gigs under a similarly named site turned up, which don't look like a genuine match. Can't confirm what the actual posting asked for.",
     },
     # -- 2026-08-19 (evening): incremental rescan --
     {
@@ -587,6 +689,8 @@ SEED_ROWS = [
         "source": "Ashby",
         "notes": "Rejected 2026-09-02: \"other candidates were selected whose profiles more closely "
                  "matched what we are looking for at this time.\"",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Could only find a much more junior 'Communications Coordinator' listing (1-2 yrs, press/PR-logistics focused) -- not the Manager-level role Regina applied to, and the exact posting couldn't be confirmed. Worth noting PR/press relations is a different discipline from her brand design/strategy background regardless of level.",
     },
     {
         "company": "Tapestry",
@@ -595,6 +699,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-19",
         "source": "Workday",
         "notes": "Rejected 2026-08-24: application isn't progressing further.",
+        "job_fit": "Weak",
+        "job_fit_notes": "1-2 yrs comms/PR/journalism with a required Communications/Journalism/PR/English/Marketing degree -- a discipline mismatch against Regina's graphic design degree and visual-design core strength.",
     },
     # -- 2026-08-24: incremental rescan -- Amazon was missed by every prior
     # scan because amazon.jobs wasn't in the ATS domain list; caught by
@@ -606,6 +712,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "Amazon Jobs",
         "notes": "Online assessment completed 2026-08-18; no interview invite yet.",
+        "job_fit": "Good",
+        "job_fit_notes": "2+ yrs design, a portfolio, Adobe tools, and creative direction for premium/luxury fashion and beauty content -- Regina's design and visual-storytelling background overlaps well. On-set art direction of live photo/video shoots specifically isn't clearly evidenced on her resume, though everything else lines up and this is the application that got furthest (online assessment completed).",
     },
     # -- 2026-08-24: recruiter reached out with a meeting invite --
     {
@@ -617,6 +725,8 @@ SEED_ROWS = [
         "notes": "Interviewed with recruiter Ibrahim Thomas the week of 2026-08-24. Rejected 2026-08-27: "
                  "\"we are going to move forward with other candidates for this specific role.\" He offered "
                  "to keep in touch about future openings.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Turned out to be a sales/customer-success role (Senior Brand Advocacy Consultant, on the sales team) at a SaaS platform -- a commercial/sales discipline entirely outside Regina's brand design/creative-strategy background, which likely explains the rejection after the recruiter screen.",
     },
     # -- 2026-08-25: cold outreach emails, reported by Regina and confirmed
     # via Sent Mail -- each one a direct email to a specific person, not a
@@ -714,6 +824,8 @@ SEED_ROWS = [
         "applied_date": "2026-08-26",
         "source": "Greenhouse",
         "notes": None,
+        "job_fit": "Fair",
+        "job_fit_notes": "Wants deep insider fluency in Tech/AI developer culture specifically, based in LA. Regina's cultural-research and trend-analysis skills are relevant in a general sense, but the role's specific vertical and location don't match her background or base.",
     },
     # -- 2026-08-26 (later): two more cold outreach emails, confirmed via Sent Mail --
     {
@@ -746,6 +858,8 @@ SEED_ROWS = [
                  "and attaching a tailored CV. Confirmation email (no-reply@monks.com) titles the role "
                  "\"Associate Director, Comms Planning\"; the outreach email to Olga said \"Associate "
                  "Strategy Director, Comms Planning\" -- same role, minor title variant.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Wants 5 years in a media agency (3+ specifically in Connections/Comms Strategy) plus direct-report management. Regina's research, deck-building, and narrative-writing skills overlap qualitatively, but this is a media/comms-planning discipline rather than brand/creative design, and her 6 years are mostly design-agency rather than media-agency -- plus people-management isn't evidenced on her resume.",
     },
 ]
 
