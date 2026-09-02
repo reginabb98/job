@@ -8,6 +8,16 @@ teaching-assistant leads are intentionally excluded per instruction, as are
 LinkedIn "job alert" and "jobs similar to" emails since they're
 recommendations, not applications.
 
+As of 2026-09-02, scans also search broadly for generic "thank you for
+applying"/"thank you for your interest" subjects and soft-rejection phrasing
+("move forward with other candidates", "not move forward", "position has
+been filled", "unfortunately", "at this time") rather than relying only on
+a fixed ATS-domain list -- several real applications and rejections were
+sent from a company's own domain (datadoghq.com, ogilvy.com) rather than a
+known ATS platform, and several rejections were phrased too softly to match
+explicit reject/not-selected keyword searches. See the 2026-09-02 scan
+history entries below for what that turned up.
+
 Scan history:
   - 2026-08-13: initial 12-month scan, 29 applications.
   - 2026-08-17 (afternoon): incremental scan since 2026-08-13, 5 new rows.
@@ -134,6 +144,20 @@ Scan history:
     both Droga5 applications (Senior Designer R00348810, Senior Strategist
     R00338279) already show Rejected here, matching "No Longer Under
     Consideration" on the portal. No change needed.
+  - 2026-09-02 (widened rejection search, at Regina's request): searched
+    Gmail for soft-rejection phrasing ("move forward with other candidates",
+    "not move forward", "position has been filled", "unfortunately", etc.)
+    and generic "thank you for applying" subjects across the full inbox
+    history, not just explicit reject/not-selected language. Found:
+    (1) David Protein's Senior Brand Manager application was rejected
+    2026-08-12 and had been sitting as Applied ever since -- flipped to
+    Rejected. (2) Noom's Creative Strategist application was rejected
+    2026-08-25 ("the position has been filled") and had also been sitting
+    as Applied -- flipped to Rejected. (3) Two applications were missed
+    entirely because their ATS domains (datadoghq.com, ogilvy.com) weren't
+    in the ATS-domain search list: Datadog's Lead Designer (applied
+    2026-08-18, rejected 2026-08-20 -- both added) and Ogilvy's Designer
+    (applied 2026-08-17, still no response -- added as Applied).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -405,10 +429,12 @@ SEED_ROWS = [
     {
         "company": "David Protein",
         "position": "Senior Brand Manager",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-28",
         "source": "Workable",
-        "notes": None,
+        "notes": "Rejected 2026-08-12: \"After reviewing your application, we've decided not to move "
+                 "forward at this time.\" Missed by every scan since -- caught in a 2026-09-02 widened "
+                 "search for soft-rejection phrasing.",
         "job_fit": "Fair",
         "job_fit_notes": "Centers on influencer/creator partnership recruitment and negotiation and top-of-funnel growth ownership at a fast-growing CPG brand. Regina's brand strategy and creative sensibility are relevant, but the role is fundamentally a partnerships/growth-marketing operator seat, which isn't part of her evidenced experience.",
     },
@@ -874,6 +900,40 @@ SEED_ROWS = [
         "source": "Cold email",
         "notes": "Direct outreach to hello@decadenewyork.com introducing herself for creative strategy "
                  "work. No reply yet.",
+    },
+    # -- 2026-09-02: widened rejection-pattern search turned up 2 applications
+    # that every prior scan had missed entirely (neither their confirmation nor
+    # their outcome email matched the ATS-domain/explicit-rejection search) --
+    {
+        "company": "Datadog",
+        "position": "Lead Designer",
+        "status": "Rejected",
+        "applied_date": "2026-08-18",
+        "source": "Email",
+        "notes": "Missed entirely by every prior scan -- confirmation email came from "
+                 "no-reply@datadoghq.com, not a domain in the ATS search list. Rejected 2026-08-20: "
+                 "\"we have decided not to move forward with your application at this time.\"",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm the exact 'Lead Designer' posting -- Datadog's design roles "
+                         "found in this range (Lead UX Designer, Staff Visual/Product Designer) are all "
+                         "senior UX/product-design specialist tracks (6-10+ yrs) rather than brand/graphic "
+                         "design, which would be a stretch for Regina's background, but the specific listing "
+                         "she applied to can't be verified.",
+    },
+    {
+        "company": "Ogilvy",
+        "position": "Designer",
+        "status": "Applied",
+        "applied_date": "2026-08-17",
+        "source": "Email",
+        "notes": "Missed entirely by every prior scan -- confirmation email came from no-reply@ogilvy.com, "
+                 "not a domain in the ATS search list. No response yet as of 2026-09-02.",
+        "job_fit": "Good",
+        "job_fit_notes": "The closest generalist-titled match found is a 3-5 yr Graphic Designer posting: "
+                         "advanced Adobe Creative Suite, working Figma knowledge, client-branding-guideline "
+                         "layout work -- a solid match for Regina's tools and design background, though the "
+                         "confirmation email didn't specify a seniority level so this exact posting isn't "
+                         "fully confirmed.",
     },
     # -- 2026-09-02: applied directly + reached out to a team contact same day --
     {

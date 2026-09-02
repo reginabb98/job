@@ -197,6 +197,19 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   other candidates" phrasing as possible soft rejections. Also reconciled
   against a fresh Accenture portal screenshot — both Droga5 applications
   already showed Rejected here, matching the portal. No change needed.
+- **2026-09-02 (widened rejection search, at Regina's request)** — searched
+  Gmail for soft-rejection phrasing ("move forward with other candidates",
+  "not move forward", "position has been filled", "unfortunately", etc.) and
+  generic "thank you for applying" subjects across the full inbox history,
+  not just explicit reject/not-selected language. Found: David Protein's
+  Senior Brand Manager application, rejected 2026-08-12 and sitting as
+  Applied ever since — flipped to Rejected. Noom's Creative Strategist
+  application, rejected 2026-08-25 ("the position has been filled") and
+  also sitting as Applied — flipped to Rejected. Two applications missed
+  entirely because their domains weren't in the ATS search list: Datadog's
+  Lead Designer (applied 2026-08-18, rejected 2026-08-20 — both added) and
+  Ogilvy's Designer (applied 2026-08-17, still no response — added as
+  Applied).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

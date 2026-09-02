@@ -157,11 +157,13 @@ NEW_ROWS = [
     {
         "company": "Noom",
         "position": "Creative Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-27",
         "source": "LinkedIn",
         "notes": "New York, NY. Applied date estimated from LinkedIn's \"Applied 3w ago\" (as of "
-                 "2026-08-17), not exact.",
+                 "2026-08-17), not exact. Rejected 2026-08-25: \"the timing didn't quite line up, and the "
+                 "position has been filled.\" Missed by every scan since -- caught in a 2026-09-02 widened "
+                 "search for soft-rejection phrasing.",
         "job_fit": "Weak",
         "job_fit_notes": "Every level of this role (Junior through Senior) centers on hands-on direct-response/performance-creative work across Meta/TikTok/YouTube ads and UGC briefing -- none of that performance-advertising specialization is evidenced in Regina's background.",
     },
