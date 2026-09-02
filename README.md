@@ -168,6 +168,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Creative Strategist application came back Rejected.
 - **2026-09-02** — incremental rescan, no new rows. MUBI's Communications
   Manager, US application came back Rejected.
+- **2026-09-02 (later)** — Regina applied directly to Monks (Associate
+  Director, Comms Planning) and separately emailed a contact there the same
+  day; confirmed via Gmail search and added.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

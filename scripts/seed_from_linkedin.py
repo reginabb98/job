@@ -181,11 +181,13 @@ def main():
         row.setdefault("referral", 0)
         row.setdefault("pay_range", None)
         row.setdefault("job_description", None)
+        row.setdefault("job_fit", None)
+        row.setdefault("job_fit_notes", None)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_description, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_description, :job_fit, :job_fit_notes, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )

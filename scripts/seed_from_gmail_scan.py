@@ -98,6 +98,9 @@ Scan history:
     Creative Strategist application to Rejected.
   - 2026-09-02: incremental rescan, no new rows. Flipped MUBI's
     Communications Manager, US application to Rejected.
+  - 2026-09-02 (later): Regina applied directly to Monks (Associate Director,
+    Comms Planning) and separately emailed a contact there the same day;
+    confirmed via Gmail search and added.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -731,6 +734,19 @@ SEED_ROWS = [
         "notes": "Direct outreach to hello@decadenewyork.com introducing herself for creative strategy "
                  "work. No reply yet.",
     },
+    # -- 2026-09-02: applied directly + reached out to a team contact same day --
+    {
+        "company": "Monks",
+        "position": "Associate Director, Comms Planning",
+        "status": "Applied",
+        "applied_date": "2026-09-02",
+        "source": "Email",
+        "notes": "Applied through the official posting and separately emailed Olga Gamer "
+                 "(olga.gamer@monks.com) directly the same day, referencing her Superside experience "
+                 "and attaching a tailored CV. Confirmation email (no-reply@monks.com) titles the role "
+                 "\"Associate Director, Comms Planning\"; the outreach email to Olga said \"Associate "
+                 "Strategy Director, Comms Planning\" -- same role, minor title variant.",
+    },
 ]
 
 
@@ -747,11 +763,13 @@ def main():
         row.setdefault("next_step", None)
         row.setdefault("job_url", None)
         row.setdefault("referral", 0)
+        row.setdefault("job_fit", None)
+        row.setdefault("job_fit_notes", None)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, job_fit, job_fit_notes, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :job_fit, :job_fit_notes, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )

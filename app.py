@@ -45,13 +45,15 @@ def init_db():
             notes TEXT,
             pay_range TEXT,
             job_description TEXT,
+            job_fit TEXT,
+            job_fit_notes TEXT,
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL
         )
         """
     )
     existing_cols = {row[1] for row in db.execute("PRAGMA table_info(applications)")}
-    for col in ("pay_range", "job_description"):
+    for col in ("pay_range", "job_description", "job_fit", "job_fit_notes"):
         if col not in existing_cols:
             db.execute(f"ALTER TABLE applications ADD COLUMN {col} TEXT")
     db.commit()
@@ -104,8 +106,8 @@ def create_application():
     cur = db.execute(
         """
         INSERT INTO applications
-            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, created_at, updated_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             company,
@@ -119,6 +121,8 @@ def create_application():
             data.get("notes"),
             data.get("pay_range"),
             data.get("job_description"),
+            data.get("job_fit"),
+            data.get("job_fit_notes"),
             now,
             now,
         ),
@@ -156,6 +160,8 @@ def update_application(app_id):
         "notes",
         "pay_range",
         "job_description",
+        "job_fit",
+        "job_fit_notes",
     ]
     updates = {k: data[k] for k in fields if k in data}
     if "referral" in updates:
@@ -228,7 +234,7 @@ def import_csv():
                 {
                     "error": "CSV must include at least 'company' and 'position' columns. "
                     "Optional columns: status, applied_date, next_step, job_url, source, referral, notes, "
-                    "pay_range, job_description"
+                    "pay_range, job_description, job_fit, job_fit_notes"
                 }
             ),
             400,
@@ -253,8 +259,8 @@ def import_csv():
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 company,
@@ -268,6 +274,8 @@ def import_csv():
                 row.get("notes") or None,
                 row.get("pay_range") or None,
                 row.get("job_description") or None,
+                row.get("job_fit") or None,
+                row.get("job_fit_notes") or None,
                 now,
                 now,
             ),
