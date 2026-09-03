@@ -220,6 +220,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   rejected Droga5 Senior Strategist application, likely a reposted
   opening), Nourish (role unspecified — generic Greenhouse confirmation
   didn't name it), and Disney (Associate Manager, Brand Strategy).
+- **2026-09-03 (later)** — incremental rescan, 1 new row: MrBeast (role
+  unspecified — generic Greenhouse confirmation didn't name it).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

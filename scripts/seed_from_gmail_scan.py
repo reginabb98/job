@@ -168,6 +168,8 @@ Scan history:
     rejected Droga5 Senior Strategist application, likely a reposted
     opening. Nourish (role unspecified -- generic Greenhouse confirmation
     didn't name it). Disney (Associate Manager, Brand Strategy).
+  - 2026-09-03 (later): incremental rescan, 1 new row. MrBeast (role
+    unspecified -- generic Greenhouse confirmation didn't name it).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -944,6 +946,18 @@ SEED_ROWS = [
                          "layout work -- a solid match for Regina's tools and design background, though the "
                          "confirmation email didn't specify a seniority level so this exact posting isn't "
                          "fully confirmed.",
+    },
+    # -- 2026-09-03 (later): incremental rescan, 1 new row --
+    {
+        "company": "MrBeast",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-03",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
     },
     # -- 2026-09-03: incremental rescan, 3 new rows --
     {
