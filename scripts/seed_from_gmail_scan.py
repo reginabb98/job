@@ -163,6 +163,11 @@ Scan history:
     Olga Gamer replied she can't hire candidates who will require visa
     sponsorship, even in the future. A visa/authorization issue, not a
     skills-based rejection. Flipped to Rejected.
+  - 2026-09-03: incremental rescan, 3 new rows. Accenture (Droga5 Senior
+    Strategist, R00348814) -- a distinct req ID from the earlier, already-
+    rejected Droga5 Senior Strategist application, likely a reposted
+    opening. Nourish (role unspecified -- generic Greenhouse confirmation
+    didn't name it). Disney (Associate Manager, Brand Strategy).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -939,6 +944,49 @@ SEED_ROWS = [
                          "layout work -- a solid match for Regina's tools and design background, though the "
                          "confirmation email didn't specify a seniority level so this exact posting isn't "
                          "fully confirmed.",
+    },
+    # -- 2026-09-03: incremental rescan, 3 new rows --
+    {
+        "company": "Accenture (Droga5)",
+        "position": "Senior Strategist (R00348814)",
+        "status": "Applied",
+        "applied_date": "2026-09-03",
+        "source": "Workday",
+        "notes": "Distinct req ID from the earlier, already-rejected Droga5 Senior Strategist application "
+                 "(R00338279) -- same role title/team, likely a reposted opening. Kept as a separate row "
+                 "since it carries its own reference ID and confirmation email.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Same role type as the earlier Droga5 Senior Strategist application (R00338279, "
+                         "rejected): Droga5 wants someone whose career has been in the strategist seat, "
+                         "which doesn't fully match Regina's design-led background with a strategy overlay. "
+                         "Worth noting this is effectively a second shot at a role Accenture already passed "
+                         "on her for once.",
+    },
+    {
+        "company": "Nourish",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-03",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
+    },
+    {
+        "company": "Disney",
+        "position": "Associate Manager, Brand Strategy",
+        "status": "Applied",
+        "applied_date": "2026-09-03",
+        "source": "Workday",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "Couldn't confirm this exact posting, but Disney's closely related 'Marketing "
+                         "Strategy Associate Manager' role wants 2+ yrs marketing strategy/content/brand "
+                         "marketing, strong writing, and cross-functional collaboration with creative, PR, "
+                         "and digital teams -- content/photo-video production oversight is preferred, not "
+                         "required. Regina's creative-brief, presentation, and research skills line up well "
+                         "with the core bar, though the exact req isn't fully confirmed.",
     },
     # -- 2026-09-02: applied directly + reached out to a team contact same day --
     {

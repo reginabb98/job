@@ -215,6 +215,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Olga Gamer replied she can't hire candidates who will require visa
   sponsorship, even in the future — a visa/authorization issue, not a
   skills-based rejection. Flipped to Rejected.
+- **2026-09-03** — incremental rescan, 3 new rows: Accenture (Droga5 Senior
+  Strategist, R00348814 — a distinct req ID from the earlier, already-
+  rejected Droga5 Senior Strategist application, likely a reposted
+  opening), Nourish (role unspecified — generic Greenhouse confirmation
+  didn't name it), and Disney (Associate Manager, Brand Strategy).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
