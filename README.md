@@ -222,6 +222,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   didn't name it), and Disney (Associate Manager, Brand Strategy).
 - **2026-09-03 (later)** — incremental rescan, 1 new row: MrBeast (role
   unspecified — generic Greenhouse confirmation didn't name it).
+- **2026-09-05** — incremental rescan, 3 new rows: Notion (Brand Designer,
+  Creative Studio), PepsiCo (Graphic Designer — poppi, 2026-470592 — a
+  third, distinct PepsiCo application), and Finch (Brand and Web Designer).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

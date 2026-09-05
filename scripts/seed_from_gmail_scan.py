@@ -170,6 +170,10 @@ Scan history:
     didn't name it). Disney (Associate Manager, Brand Strategy).
   - 2026-09-03 (later): incremental rescan, 1 new row. MrBeast (role
     unspecified -- generic Greenhouse confirmation didn't name it).
+  - 2026-09-05: incremental rescan, 3 new rows. Notion (Brand Designer,
+    Creative Studio), PepsiCo (Graphic Designer - poppi, 2026-470592 -- a
+    third, distinct PepsiCo application), and Finch (Brand and Web
+    Designer).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -946,6 +950,50 @@ SEED_ROWS = [
                          "layout work -- a solid match for Regina's tools and design background, though the "
                          "confirmation email didn't specify a seniority level so this exact posting isn't "
                          "fully confirmed.",
+    },
+    # -- 2026-09-05: incremental rescan, 3 new rows --
+    {
+        "company": "Notion",
+        "position": "Brand Designer, Creative Studio",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "Greenhouse",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "5+ yrs agency/in-house design, strong Figma/Adobe CC, brand storytelling across "
+                         "launch campaigns -- a solid match for Regina's design background and tools. "
+                         "Animation/motion/illustration/coding is listed as one of several optional "
+                         "'specialist skillset' additions rather than a hard requirement, and mentoring "
+                         "isn't clearly evidenced on her resume.",
+    },
+    {
+        "company": "PepsiCo",
+        "position": "Graphic Designer - poppi (2026-470592)",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "iCIMS",
+        "notes": "Third, distinct PepsiCo application, for the poppi brand specifically -- separate from "
+                 "the Design Senior Manager - Immersive (applied 07-29) and Brand Designer (applied 08-17) "
+                 "roles already tracked.",
+        "job_fit": "Strong",
+        "job_fit_notes": "3+ yrs graphic design with a strong packaging/print-production portfolio, Adobe "
+                         "CS, translating brand guidelines into production-ready assets, independent project "
+                         "ownership -- nearly a direct match to Regina's Common Matter packaging/print/"
+                         "brand-guideline execution work.",
+    },
+    {
+        "company": "Finch",
+        "position": "Brand and Web Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "Lever",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "6+ yrs brand/visual design with an agency background, Figma/Adobe CS, comfort "
+                         "with AI-assisted design tools, systems thinking across brand/web/print -- strong "
+                         "general overlap with Regina's background. Gaps: Webflow isn't evidenced on her "
+                         "resume, and the role prefers B2B SaaS/tech-company experience, while her agency "
+                         "work has been consumer/entertainment/food/beauty/cultural rather than tech.",
     },
     # -- 2026-09-03 (later): incremental rescan, 1 new row --
     {
