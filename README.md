@@ -246,6 +246,21 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   core requirement). Amazon's Brand Designer, Brand Innovation Lab
   application: Regina withdrew it and then reapplied the same day, so
   it's flipped back to Applied.
+- **2026-09-05 (networking backfill)** — Regina reported 6 networking
+  calls from her own memory/calendar/LinkedIn messages: Jennifer Passas
+  (Interbrand, Jul 30), Julia her SVA TA (advice, Aug 4), Andrew her SVA
+  instructor (advice, Aug 19), Anna-Rae Morris (LinkedIn, Aug 31, possible
+  follow-up), and two scheduled calls not yet happened — Angel Bellon
+  (independent cultural-intelligence consultant/Parsons faculty, Sep 8)
+  and Maggie Murphy (Strategy Director at Mother, Sep 10 — a follow-up
+  from the earlier Mother Intro Call). Also corrected the existing Mother
+  Intro Call's date from an approximate Aug 18 to the confirmed calendar
+  date, Jul 30.
+- **2026-09-05 (clarified by Regina)** — LinkedIn cold-outreach messages
+  are not logged as Networking rows on their own; only once they actually
+  turn into a response and a scheduled/completed call. (Cold outreach
+  sent by email is a separate, already-established exception — see the
+  Aug 25 entry above — and continues to be logged even without a reply.)
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

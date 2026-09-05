@@ -198,6 +198,25 @@ Scan history:
     doesn't have evidenced). Amazon's Brand Designer, Brand Innovation Lab
     application: Regina withdrew it and then reapplied the same day, so
     it's flipped back from Withdrawn to Applied.
+  - 2026-09-05 (networking backfill): Regina reported 6 networking calls
+    from her own memory/calendar/LinkedIn messages -- Jennifer Passas
+    (Interbrand, 07-30), Julia her SVA TA (advice, 08-04), Andrew her SVA
+    instructor (advice, 08-19), Anna-Rae Morris (LinkedIn, 08-31, possible
+    follow-up), and two scheduled calls not yet happened: Angel Bellon
+    (independent cultural-intelligence consultant/Parsons faculty, 09-08)
+    and Maggie Murphy (Strategy Director at Mother, 09-10 -- a follow-up
+    from the earlier Mother Intro Call). Also corrected the existing
+    Mother Intro Call's date from an approximate 08-18 to the confirmed
+    calendar date, 07-30.
+  - 2026-09-05 (clarified by Regina): LinkedIn cold-outreach messages are
+    NOT logged as Networking rows on their own -- only once they actually
+    turn into a response and a scheduled/completed call. (Cold outreach
+    sent by email is a separate, already-established exception -- see the
+    2026-08-25 entry above -- and continues to be logged even without a
+    reply, since it's tracked as direct personal outreach rather than a
+    LinkedIn message.) Anna-Rae Morris and Angel Bellon both already
+    cleared this bar (a completed or scheduled call), so no changes were
+    needed to what's tracked.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -691,11 +710,13 @@ SEED_ROWS = [
         "company": "Mother",
         "position": "Networking call -- no open role (Strategy)",
         "status": "Networking",
-        "applied_date": "2026-08-18",
+        "applied_date": "2026-07-30",
         "source": "Referral",
-        "notes": "Recruiter called to get to know Regina, not about a specific opening -- she said she "
-                 "doesn't currently have any open roles. Regina expressed interest in Strategy. Call date "
-                 "approximate (not confirmed).",
+        "notes": "Mother Intro Call, confirmed via calendar (12:30pm, 2026-07-30) -- corrects the earlier "
+                 "approximate date. Recruiter called to get to know Regina, not about a specific opening -- "
+                 "she said she doesn't currently have any open roles. Regina expressed interest in Strategy. "
+                 "Led to a follow-up call scheduled with Maggie Murphy, Strategy Director at Mother, on "
+                 "2026-09-10 (see separate row).",
     },
     {
         "company": "PepsiCo",
@@ -1035,6 +1056,61 @@ SEED_ROWS = [
                          "skills (After Effects, 'bring assets to life') as a core skill, not a nice-to-have "
                          "-- that isn't evidenced anywhere on her resume. Fintech familiarity is called out "
                          "as a plus, which she also doesn't have.",
+    },
+    # -- 2026-09-05: networking calls reported directly by Regina, backfilled
+    # from her own memory/calendar/LinkedIn messages (not a Gmail scan find) --
+    {
+        "company": "Interbrand",
+        "position": "Networking call -- Jennifer Passas",
+        "status": "Networking",
+        "applied_date": "2026-07-30",
+        "source": "Referral",
+        "notes": "Networking call with Jennifer Passas, who works at Interbrand. Not tied to a specific "
+                 "open role -- general relationship-building conversation.",
+    },
+    {
+        "company": "SVA",
+        "position": "Advice call -- Julia (TA)",
+        "status": "Networking",
+        "applied_date": "2026-08-04",
+        "source": "Referral",
+        "notes": "Advice call with Julia, Regina's TA at SVA -- career/job-search advice, not a job lead.",
+    },
+    {
+        "company": "SVA",
+        "position": "Advice call -- Andrew (instructor)",
+        "status": "Networking",
+        "applied_date": "2026-08-19",
+        "source": "Referral",
+        "notes": "Advice call with Andrew, one of Regina's instructors at SVA -- career/job-search advice, "
+                 "not a job lead.",
+    },
+    {
+        "company": "Anna-Rae Morris",
+        "position": "Networking call",
+        "status": "Networking",
+        "applied_date": "2026-08-31",
+        "source": "LinkedIn",
+        "notes": "Networking call with Anna-Rae Morris via LinkedIn outreach. Regina may have a follow-up "
+                 "call with her -- not yet confirmed/scheduled.",
+    },
+    {
+        "company": "Angel Bellon",
+        "position": "Networking call (Cultural Intelligence + Foresight consultant, Parsons faculty)",
+        "status": "Networking",
+        "applied_date": "2026-09-08",
+        "source": "LinkedIn",
+        "notes": "Scheduled networking call with Angel Bellon -- independent cultural-intelligence/foresight "
+                 "consultant and Parsons faculty. Not yet happened as of 2026-09-05.",
+    },
+    {
+        "company": "Mother",
+        "position": "Networking call -- Maggie Murphy, Strategy Director",
+        "status": "Networking",
+        "applied_date": "2026-09-10",
+        "source": "Referral",
+        "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
+                 "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {
