@@ -180,6 +180,11 @@ Scan history:
     Rejected. The portal also showed 1 Active Amazon application not
     visible in the screenshot (only the Archived tab was shown) -- not yet
     identified or added.
+  - 2026-09-05 (later still): identified the Active Amazon application via
+    Gmail -- Regina applied to Brand Designer, Brand Innovation Lab
+    (ID: 10525009), then withdrew it a few minutes later per Amazon's own
+    "You've withdrawn your Amazon job application!" confirmation. Added
+    with status Withdrawn to match.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -782,6 +787,21 @@ SEED_ROWS = [
     # -- 2026-08-24: incremental rescan -- Amazon was missed by every prior
     # scan because amazon.jobs wasn't in the ATS domain list; caught by
     # widening the search after Regina asked about an interview invite.
+    {
+        "company": "Amazon",
+        "position": "Brand Designer, Brand Innovation Lab (ID: 10525009)",
+        "status": "Withdrawn",
+        "applied_date": "2026-09-05",
+        "source": "Amazon Jobs",
+        "notes": "Applied 2026-09-05, then withdrawn a few minutes later per Amazon's own confirmation "
+                 "email (\"You've withdrawn your Amazon job application!\"). Distinct from the earlier, "
+                 "already-rejected Art Director, Elevated Shopping application.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Confirmed posting (Job ID 10525009): 4+ yrs brand design at agencies or in-house "
+                         "creative, Adobe Creative Suite, presentation decks, campaign work spanning film, "
+                         "packaging, and social -- a strong match to Regina's Common Matter/Superside "
+                         "background and tools.",
+    },
     {
         "company": "Amazon",
         "position": "Art Director, Elevated Shopping (ID: 10410280)",

@@ -230,6 +230,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   is now Archived / "No longer under consideration" — flipped to Rejected.
   The portal also showed 1 Active Amazon application not visible in the
   screenshot — not yet identified or added.
+- **2026-09-05 (later still)** — identified the Active Amazon application
+  via Gmail: Regina applied to Brand Designer, Brand Innovation Lab
+  (ID: 10525009), then withdrew it a few minutes later per Amazon's own
+  "You've withdrawn your Amazon job application!" confirmation. Added with
+  status Withdrawn to match.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
