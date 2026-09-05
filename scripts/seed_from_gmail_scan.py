@@ -190,6 +190,14 @@ Scan history:
     earlier Design Bridge and Partners / Landor Senior Strategist
     application, different recruiter/ATS instance), and Gigs (role
     unspecified).
+  - 2026-09-05 (final): Regina shared the actual Landor and Gigs postings
+    and clarified the Amazon Brand Designer situation. Landor's role
+    confirmed as "Designer" (2+ yrs, brand-focused, Strong fit). Gigs'
+    role confirmed as "Senior Brand Designer" ($170K-$200K, Fair fit --
+    requires motion-design skills as a core requirement, which Regina
+    doesn't have evidenced). Amazon's Brand Designer, Brand Innovation Lab
+    application: Regina withdrew it and then reapplied the same day, so
+    it's flipped back from Withdrawn to Applied.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -795,12 +803,12 @@ SEED_ROWS = [
     {
         "company": "Amazon",
         "position": "Brand Designer, Brand Innovation Lab (ID: 10525009)",
-        "status": "Withdrawn",
+        "status": "Applied",
         "applied_date": "2026-09-05",
         "source": "Amazon Jobs",
-        "notes": "Applied 2026-09-05, then withdrawn a few minutes later per Amazon's own confirmation "
-                 "email (\"You've withdrawn your Amazon job application!\"). Distinct from the earlier, "
-                 "already-rejected Art Director, Elevated Shopping application.",
+        "notes": "Applied 2026-09-05, briefly withdrew, then reapplied the same day per Regina -- currently "
+                 "a live application. Distinct from the earlier, already-rejected Art Director, Elevated "
+                 "Shopping application.",
         "job_fit": "Strong",
         "job_fit_notes": "Confirmed posting (Job ID 10525009): 4+ yrs brand design at agencies or in-house "
                          "creative, Adobe Creative Suite, presentation decks, campaign work spanning film, "
@@ -1000,27 +1008,33 @@ SEED_ROWS = [
     },
     {
         "company": "Landor",
-        "position": "Unspecified role",
+        "position": "Designer",
         "status": "Applied",
         "applied_date": "2026-09-05",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse confirmation didn't name the role. Distinct from the earlier Design "
-                 "Bridge and Partners / Landor (WPP) Senior Strategist application (applied 2026-07-24, "
-                 "Interviewing) -- that one came through a different recruiter contact and ATS instance.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Greenhouse confirmation didn't name the role; title confirmed from Regina's copy "
+                 "of the New York posting. Distinct from the earlier Design Bridge and Partners / Landor "
+                 "(WPP) Senior Strategist application (applied 2026-07-24, Interviewing) -- that one came "
+                 "through a different recruiter contact and ATS instance.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Confirmed posting: 2+ yrs brand-focused design, building brands from scratch or "
+                         "refreshing them, Adobe Creative Suite, a comprehensive portfolio -- a close, "
+                         "direct match to Regina's Common Matter brand-design background and tools.",
     },
     {
         "company": "Gigs",
-        "position": "Unspecified role",
+        "position": "Senior Brand Designer",
         "status": "Applied",
         "applied_date": "2026-09-05",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; title confirmed from "
+                 "Regina's copy of the posting. New York, salary range $170K-$200K.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: Figma/Adobe CS proficiency and agency/scale-up background line "
+                         "up with Regina's experience, but the role explicitly requires strong motion-design "
+                         "skills (After Effects, 'bring assets to life') as a core skill, not a nice-to-have "
+                         "-- that isn't evidenced anywhere on her resume. Fintech familiarity is called out "
+                         "as a plus, which she also doesn't have.",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {

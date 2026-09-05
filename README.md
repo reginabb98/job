@@ -239,6 +239,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Bumble (Graphic Designer), Landor (role unspecified — distinct from the
   earlier Design Bridge and Partners / Landor Senior Strategist
   application), and Gigs (role unspecified).
+- **2026-09-05 (final)** — Regina shared the actual Landor and Gigs
+  postings and clarified the Amazon Brand Designer situation. Landor's
+  role confirmed as "Designer" (Strong fit). Gigs' role confirmed as
+  "Senior Brand Designer" (Fair fit — requires motion-design skills as a
+  core requirement). Amazon's Brand Designer, Brand Innovation Lab
+  application: Regina withdrew it and then reapplied the same day, so
+  it's flipped back to Applied.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
