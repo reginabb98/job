@@ -174,6 +174,12 @@ Scan history:
     Creative Studio), PepsiCo (Graphic Designer - poppi, 2026-470592 -- a
     third, distinct PepsiCo application), and Finch (Brand and Web
     Designer).
+  - 2026-09-05 (later): reconciled against a screenshot of Amazon's own My
+    Applications portal. The Art Director, Elevated Shopping application
+    is now Archived / "No longer under consideration" -- flipped to
+    Rejected. The portal also showed 1 Active Amazon application not
+    visible in the screenshot (only the Archived tab was shown) -- not yet
+    identified or added.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -779,10 +785,12 @@ SEED_ROWS = [
     {
         "company": "Amazon",
         "position": "Art Director, Elevated Shopping (ID: 10410280)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "Amazon Jobs",
-        "notes": "Online assessment completed 2026-08-18; no interview invite yet.",
+        "notes": "Online assessment completed 2026-08-18. Rejected per Amazon's own My Applications "
+                 "portal (screenshot shared by Regina 2026-09-05) -- moved to Archived, \"No longer under "
+                 "consideration.\" Exact rejection date not shown on the portal.",
         "job_fit": "Good",
         "job_fit_notes": "2+ yrs design, a portfolio, Adobe tools, and creative direction for premium/luxury fashion and beauty content -- Regina's design and visual-storytelling background overlaps well. On-set art direction of live photo/video shoots specifically isn't clearly evidenced on her resume, though everything else lines up and this is the application that got furthest (online assessment completed).",
     },

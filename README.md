@@ -225,6 +225,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-05** — incremental rescan, 3 new rows: Notion (Brand Designer,
   Creative Studio), PepsiCo (Graphic Designer — poppi, 2026-470592 — a
   third, distinct PepsiCo application), and Finch (Brand and Web Designer).
+- **2026-09-05 (later)** — reconciled against a screenshot of Amazon's own
+  My Applications portal. The Art Director, Elevated Shopping application
+  is now Archived / "No longer under consideration" — flipped to Rejected.
+  The portal also showed 1 Active Amazon application not visible in the
+  screenshot — not yet identified or added.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
