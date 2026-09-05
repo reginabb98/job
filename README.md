@@ -235,6 +235,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (ID: 10525009), then withdrew it a few minutes later per Amazon's own
   "You've withdrawn your Amazon job application!" confirmation. Added with
   status Withdrawn to match.
+- **2026-09-05 (later still)** — incremental rescan, 3 more new rows:
+  Bumble (Graphic Designer), Landor (role unspecified — distinct from the
+  earlier Design Bridge and Partners / Landor Senior Strategist
+  application), and Gigs (role unspecified).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

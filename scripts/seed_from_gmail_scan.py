@@ -185,6 +185,11 @@ Scan history:
     (ID: 10525009), then withdrew it a few minutes later per Amazon's own
     "You've withdrawn your Amazon job application!" confirmation. Added
     with status Withdrawn to match.
+  - 2026-09-05 (later still): incremental rescan, 3 more new rows. Bumble
+    (Graphic Designer), Landor (role unspecified -- distinct from the
+    earlier Design Bridge and Partners / Landor Senior Strategist
+    application, different recruiter/ATS instance), and Gigs (role
+    unspecified).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -978,6 +983,44 @@ SEED_ROWS = [
                          "layout work -- a solid match for Regina's tools and design background, though the "
                          "confirmation email didn't specify a seniority level so this exact posting isn't "
                          "fully confirmed.",
+    },
+    # -- 2026-09-05 (later still): incremental rescan, 3 more new rows --
+    {
+        "company": "Bumble",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "3+ yrs graphic design (tech sector preferred, not required), in-house creative "
+                         "studio work across print/digital/social/campaign -- a good match for Regina's "
+                         "Common Matter and Superside background, with tech-industry experience as the one "
+                         "soft preference she doesn't have.",
+    },
+    {
+        "company": "Landor",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse confirmation didn't name the role. Distinct from the earlier Design "
+                 "Bridge and Partners / Landor (WPP) Senior Strategist application (applied 2026-07-24, "
+                 "Interviewing) -- that one came through a different recruiter contact and ATS instance.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
+    },
+    {
+        "company": "Gigs",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-05",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {
