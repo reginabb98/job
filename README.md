@@ -286,6 +286,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   specialist illustration track, tool overlap but not a demonstrated
   core strength). A 5th, distinct Meta application on the same team as
   the existing Strategic Initiatives role.
+- **2026-09-06 (evening)** — incremental rescan, 2 new rows: Fanatics
+  Collectibles (Graphic Designer II, Good fit — solid Adobe CC/branding/
+  print-production match) and United Legwear Company (unspecified role,
+  Unknown fit — generic ADP confirmation named no role).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

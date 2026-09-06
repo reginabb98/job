@@ -250,6 +250,11 @@ Scan history:
     overlap but not a demonstrated core strength). A 5th, distinct Meta
     application, same team as the existing Strategic Initiatives role but
     a different req.
+  - 2026-09-06 (evening): incremental rescan, 2 new rows. Fanatics
+    Collectibles (Graphic Designer II, Good fit -- 3-5 yr Adobe CC/
+    branding/print-production match) and United Legwear Company
+    (unspecified role, Unknown fit -- generic ADP confirmation named no
+    role).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1403,6 +1408,30 @@ SEED_ROWS = [
                          "identity-systems background overlap, but this is a specialist illustration/"
                          "iconography track, and illustration isn't a demonstrated core strength on her "
                          "resume/portfolio.",
+    },
+    # -- 2026-09-06 (evening): 2 more new rows --
+    {
+        "company": "Fanatics Collectibles",
+        "position": "Graphic Designer II",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 3-5 yrs graphic design, Adobe Creative Suite (Photoshop/"
+                         "Illustrator/InDesign), branding/typography/layout/print-production work across "
+                         "product lines -- a solid, direct match to Regina's tools and design background.",
+    },
+    {
+        "company": "United Legwear Company",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "ADP",
+        "notes": "Generic ADP-based confirmation email didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
     },
 ]
 
