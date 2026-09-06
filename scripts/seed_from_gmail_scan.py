@@ -268,6 +268,16 @@ Scan history:
     Iconography & Illustration role's fit was downgraded from an earlier
     Fair (based on a search summary) to Weak once the full posting text
     showed an 8+ year specialist-experience minimum.
+  - 2026-09-06 (pay_range backfill): populated the pay_range field for
+    every row where a real posting's compensation figure had already
+    been confirmed (previously only mentioned in job_fit_notes prose,
+    not structured): Gigs ($170K-$200K), Havas ($18-22/hr), Gensler
+    ($70K-$85K), Hypha ($80K-$100K), Brick ($90K-$110K), Meta
+    Iconography & Illustration ($149K-$209K), United Legwear
+    ($100K-$130K), and Moon Juice in seed_from_linkedin.py ($135K). The
+    Working Assembly's $95,000 is Regina's own stated salary expectation
+    on the application form, not an employer-posted range, so it was
+    left out of pay_range and stays noted in prose only.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1104,6 +1114,7 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; title confirmed from "
                  "Regina's copy of the posting. New York, salary range $170K-$200K.",
+        "pay_range": "$170K-$200K/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: Figma/Adobe CS proficiency and agency/scale-up background line "
                          "up with Regina's experience, but the role explicitly requires strong motion-design "
@@ -1319,6 +1330,7 @@ SEED_ROWS = [
         "applied_date": "2026-09-06",
         "source": "Workday",
         "notes": None,
+        "pay_range": "$18-22/hr",
         "job_fit": "Weak",
         "job_fit_notes": "Confirmed posting: Havas's Graphic Design Intern program targets rising juniors/"
                          "seniors/recent grads working toward a Bachelor's degree, $18-22/hr, a 4-month "
@@ -1347,6 +1359,7 @@ SEED_ROWS = [
         "applied_date": "2026-09-06",
         "source": "Workday",
         "notes": None,
+        "pay_range": "$70K-$85K/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting ($70K-$85K): print production and digital-delivery design work "
                          "overlaps with Regina's background, but the role explicitly wants someone who "
@@ -1363,6 +1376,7 @@ SEED_ROWS = [
         "notes": "Confirmed posting (Regina shared the full listing): the job page's own title is "
                  "\"Visual Designer\" but the body describes it as a \"Brand Designer\" role -- a title "
                  "inconsistency in Hypha's own posting, not a separate role.",
+        "pay_range": "$80K-$100K/yr",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting ($80K-$100K): 1-3 yrs brand/visual design experience (or an "
                          "exceptional portfolio in place of it), Figma fluency, launch/campaign creative, "
@@ -1395,6 +1409,7 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "Generic Greenhouse auto-reply confirmation didn't name the role, but Regina shared the "
                  "LinkedIn listing (same Greenhouse apply link) confirming it was this Growth Designer role.",
+        "pay_range": "$90K-$110K/yr",
         "job_fit": "Weak",
         "job_fit_notes": "Confirmed posting ($90K-$110K): 3-5 yrs growth/marketing/performance design, expert "
                          "Figma/Illustrator/Photoshop, but the role is specifically performance-marketing ad "
@@ -1422,6 +1437,7 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Email",
+        "pay_range": "$149K-$209K/yr",
         "notes": "5th, distinct Meta application -- same Instagram Brand Studio team as the existing "
                  "\"Brand Designer, Strategic Initiatives\" role (applied 07-26) but a different req/"
                  "specialization within it.",
@@ -1454,6 +1470,7 @@ SEED_ROWS = [
         "source": "ADP",
         "notes": "Generic ADP-based confirmation email didn't name the role, but Regina shared the LinkedIn "
                  "listing (same ADP apply link) confirming it was this Scotch & Soda Kids design role.",
+        "pay_range": "$100K-$130K/yr",
         "job_fit": "Weak",
         "job_fit_notes": "Confirmed posting ($100K-$130K): 5+ yrs children's-apparel design experience, "
                          "hands-on with PLM systems and tech-pack/CAD development for garment production -- "
@@ -1477,13 +1494,14 @@ def main():
         row.setdefault("next_step", None)
         row.setdefault("job_url", None)
         row.setdefault("referral", 0)
+        row.setdefault("pay_range", None)
         row.setdefault("job_fit", None)
         row.setdefault("job_fit_notes", None)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, job_fit, job_fit_notes, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :job_fit, :job_fit_notes, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )

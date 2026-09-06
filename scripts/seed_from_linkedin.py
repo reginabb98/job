@@ -126,6 +126,7 @@ NEW_ROWS = [
         "source": "LinkedIn",
         "notes": "Remote, United States. Posting no longer accepting applications. Applied date "
                  "estimated from LinkedIn's \"Applied 3w ago\" (as of 2026-08-17), not exact.",
+        "pay_range": "$135K/yr",
         "job_fit": "Weak",
         "job_fit_notes": "Confirmed posting ($135K, remote -- matches the application LinkedIn shows submitted): 7+ yrs brand/content strategy, and the role owns copywriting across every channel plus manages a copywriter, with health & wellness industry experience called \"a must.\" Regina is under the years bar, copywriting ownership isn't a core strength on her resume, and wellness-industry experience isn't evidenced.",
     },

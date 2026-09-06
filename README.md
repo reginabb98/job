@@ -297,6 +297,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   confirmed as "Senior Designer, KIDS" (Unknown → Weak, an apparel/PLM
   discipline), and Meta's Iconography & Illustration role downgraded
   Fair → Weak once the full posting showed an 8+ year minimum.
+- **2026-09-06 (pay_range backfill)** — populated the structured
+  pay_range field for every row with a confirmed posting salary (Gigs,
+  Havas, Gensler, Hypha, Brick, Meta Iconography & Illustration, United
+  Legwear, Moon Juice) — previously that figure only lived in prose
+  inside job_fit_notes. The dashboard now shows it on kanban cards and
+  in each row's expanded detail. The Working Assembly's $95,000 is
+  Regina's own stated expectation, not a posted range, so it's excluded
+  from pay_range.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
