@@ -281,6 +281,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   as one application), Brick (unspecified role, Unknown), and The Working
   Assembly (Brand Designer, Strong fit — close agency-background match,
   applied via the company's own Google Form rather than an ATS).
+- **2026-09-06 (incremental)** — 1 new row: Meta — Brand Designer,
+  Iconography & Illustration, Instagram Brand Studio (Fair fit — a
+  specialist illustration track, tool overlap but not a demonstrated
+  core strength). A 5th, distinct Meta application on the same team as
+  the existing Strategic Initiatives role.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

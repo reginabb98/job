@@ -244,6 +244,12 @@ Scan history:
     generic confirmation), and The Working Assembly (Brand Designer,
     Strong fit -- close match to Regina's agency background, applied via
     the company's own Google Form rather than an ATS).
+  - 2026-09-06 (incremental rescan since prior pass): 1 new row. Meta --
+    Brand Designer, Iconography & Illustration, Instagram Brand Studio
+    (Fair fit -- a specialist illustration/iconography track, tool
+    overlap but not a demonstrated core strength). A 5th, distinct Meta
+    application, same team as the existing Strategic Initiatives role but
+    a different req.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1380,6 +1386,23 @@ SEED_ROWS = [
         "job_fit_notes": "Confirmed posting: 3-5+ yrs at a branding/creative agency, crafting brand "
                          "identities across visual identity, packaging, and creative campaigns -- a close, "
                          "direct match to Regina's Common Matter agency background.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Designer, Iconography & Illustration - Instagram Brand Studio",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Email",
+        "notes": "5th, distinct Meta application -- same Instagram Brand Studio team as the existing "
+                 "\"Brand Designer, Strategic Initiatives\" role (applied 07-26) but a different req/"
+                 "specialization within it.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting ($149K-$209K): running Instagram's icon/illustration intake "
+                         "program, defining icon/illustration style guidelines, delivering production-ready "
+                         "assets in Figma/Illustrator/SVG. Regina's Figma/Adobe tool fluency and brand-"
+                         "identity-systems background overlap, but this is a specialist illustration/"
+                         "iconography track, and illustration isn't a demonstrated core strength on her "
+                         "resume/portfolio.",
     },
 ]
 
