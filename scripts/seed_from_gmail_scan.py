@@ -278,6 +278,13 @@ Scan history:
     Working Assembly's $95,000 is Regina's own stated salary expectation
     on the application form, not an employer-posted range, so it was
     left out of pay_range and stays noted in prose only.
+  - 2026-09-06 (night): incremental rescan, 4 new rows. Amazon (3rd
+    distinct Amazon application, "Designer, Premium, Elevated Shopping",
+    Unknown fit -- salary confirmed but not the exact requirements),
+    Assembled (Brand Designer, Good fit, $150K-$190K), Ripple
+    (unspecified role, Unknown fit -- generic confirmation and two
+    plausible openings, neither confirmed), and Material (unspecified
+    role, Unknown fit -- generic confirmation).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1477,6 +1484,58 @@ SEED_ROWS = [
                          "an apparel/product-design discipline (fabric, fit, garment tech packs) entirely "
                          "distinct from Regina's brand/graphic-design background, with no PLM or apparel "
                          "production experience evidenced on her resume.",
+    },
+    # -- 2026-09-06 (night): 4 more new rows --
+    {
+        "company": "Amazon",
+        "position": "Designer, Premium, Elevated Shopping (ID: 10523835)",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Amazon Jobs",
+        "notes": "3rd, distinct Amazon application, same Elevated Shopping product family as the earlier "
+                 "Art Director (rejected) and Brand Designer, Brand Innovation Lab (active) roles.",
+        "pay_range": "$133K-$185K/yr",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Found the salary range ($133K-$185K) but couldn't confirm the exact requirements "
+                         "for this specific req ID -- there's nothing concrete enough to rate fit against.",
+    },
+    {
+        "company": "Assembled",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Ashby",
+        "notes": None,
+        "pay_range": "$150K-$190K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 5-8 yrs brand design, strong portfolio (opinionated brand work "
+                         "plus practical conversion-driven marketing assets), full Adobe/Figma suite -- a "
+                         "solid match to Regina's experience and tools. The role's framing around actively "
+                         "adopting AI tools into a design workflow isn't clearly evidenced on her resume.",
+    },
+    {
+        "company": "Ripple",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role. Ripple has both a Brand "
+                 "Designer (New York) and a Senior Brand Designer (San Francisco) opening -- couldn't confirm "
+                 "which one, if either, this application was for.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Two plausible openings exist but neither is confirmed as the one applied to -- "
+                         "there's nothing concrete enough to rate fit against.",
+    },
+    {
+        "company": "Material",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Workday",
+        "notes": "Generic Workday auto-reply confirmation didn't name the role. Los Angeles-based company.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
     },
 ]
 

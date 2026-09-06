@@ -305,6 +305,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   in each row's expanded detail. The Working Assembly's $95,000 is
   Regina's own stated expectation, not a posted range, so it's excluded
   from pay_range.
+- **2026-09-06 (night)** — incremental rescan, 4 new rows: Amazon (3rd
+  distinct application, "Designer, Premium, Elevated Shopping", Unknown
+  fit — salary confirmed but not the exact requirements), Assembled
+  (Brand Designer, Good fit, $150K-$190K), Ripple (unspecified role,
+  Unknown fit — two plausible openings, neither confirmed), and
+  Material (unspecified role, Unknown fit — generic confirmation).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
