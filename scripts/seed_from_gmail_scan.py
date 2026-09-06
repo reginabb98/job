@@ -233,6 +233,17 @@ Scan history:
     pipeline; NYC: civil-service title "College Aide", experience level
     "Student"), so both rated Weak fit on seniority mismatch rather than a
     skills gap.
+  - 2026-09-06 (later still): incremental rescan, 5 more new rows that
+    landed after the prior pass -- Gensler (Multimedia + Graphic Designer,
+    Marketing, Fair fit -- motion/video is a core requirement Regina
+    doesn't have evidenced), Hypha (Visual Designer, Unknown fit --
+    couldn't find the posting), Vestwell (Senior Brand Designer, Fair fit
+    -- strong brand-systems overlap but requires hands-on HubSpot CMS
+    experience; also resubmitted via a Greenhouse security-code step,
+    treated as one application), Brick (unspecified role, Unknown fit --
+    generic confirmation), and The Working Assembly (Brand Designer,
+    Strong fit -- close match to Regina's agency background, applied via
+    the company's own Google Form rather than an ATS).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1303,6 +1314,72 @@ SEED_ROWS = [
                          "experience level \"Student\" -- this role is explicitly reserved for current college "
                          "students, not working professionals. Same seniority mismatch as the Havas "
                          "internship above, unrelated to Regina's actual design skills.",
+    },
+    # -- 2026-09-06 (later still): 5 more new rows found after the prior pass --
+    {
+        "company": "Gensler",
+        "position": "Multimedia + Graphic Designer, Marketing",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Workday",
+        "notes": None,
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting ($70K-$85K): print production and digital-delivery design work "
+                         "overlaps with Regina's background, but the role explicitly wants someone who "
+                         "\"works in motion as fluently as in layout\" -- videography, video editing, and "
+                         "animation are core requirements, not nice-to-haves, and that isn't evidenced on "
+                         "her resume.",
+    },
+    {
+        "company": "Hypha",
+        "position": "Visual Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find or confirm this specific posting -- there's nothing concrete to "
+                         "assess fit against.",
+    },
+    {
+        "company": "Vestwell",
+        "position": "Senior Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": "Resubmitted via a Greenhouse security-code verification step the same session (security-"
+                 "code email immediately followed by the \"thank you for applying\" confirmation) -- treated "
+                 "as one application, not double-counted.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: a high-ownership role independently running brand design across "
+                         "every channel and building/maintaining a design system, which lines up well with "
+                         "Regina's brand-systems background -- but it explicitly requires hands-on HubSpot "
+                         "CMS experience (building/deploying landing pages and emails directly in HubSpot), "
+                         "which isn't evidenced on her resume, and it's a solo-owner Senior-level scope.",
+    },
+    {
+        "company": "Brick",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
+    },
+    {
+        "company": "The Working Assembly",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Google Form",
+        "notes": "Applied via the agency's own Google Form (not an ATS) -- Regina listed $95,000 as her "
+                 "salary expectation on the form.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Confirmed posting: 3-5+ yrs at a branding/creative agency, crafting brand "
+                         "identities across visual identity, packaging, and creative campaigns -- a close, "
+                         "direct match to Regina's Common Matter agency background.",
     },
 ]
 

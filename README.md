@@ -272,6 +272,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   target current college students (Havas: student/recent-grad pipeline;
   NYC: civil-service title "College Aide", experience level "Student") —
   rated Weak fit on seniority mismatch, not a skills gap.
+- **2026-09-06 (later still)** — incremental rescan, 5 more new rows:
+  Gensler (Multimedia + Graphic Designer, Fair fit — motion/video is a
+  core requirement not evidenced on Regina's resume), Hypha (Visual
+  Designer, Unknown — couldn't find the posting), Vestwell (Senior Brand
+  Designer, Fair — strong brand-systems overlap but requires hands-on
+  HubSpot CMS experience; resubmitted via a security-code step, treated
+  as one application), Brick (unspecified role, Unknown), and The Working
+  Assembly (Brand Designer, Strong fit — close agency-background match,
+  applied via the company's own Google Form rather than an ATS).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
