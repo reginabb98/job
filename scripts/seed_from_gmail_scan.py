@@ -255,6 +255,19 @@ Scan history:
     branding/print-production match) and United Legwear Company
     (unspecified role, Unknown fit -- generic ADP confirmation named no
     role).
+  - 2026-09-06 (fit confirmation, real postings shared by Regina): filled
+    in confirmed titles and fit for 4 rows that had gone in with generic
+    confirmations or estimated fit. Hypha's role confirmed as "Visual
+    Designer" (posting body calls it "Brand Designer" -- a naming
+    inconsistency in Hypha's own listing), Good fit. Brick's unspecified
+    role confirmed as "Growth Designer" -- flipped Unknown to Weak, since
+    it's a performance-marketing/ad-creative discipline, not brand
+    design. United Legwear's unspecified role confirmed as "Senior
+    Designer, KIDS (Scotch & Soda)" -- flipped Unknown to Weak, an
+    apparel/PLM discipline unrelated to Regina's background. Meta's
+    Iconography & Illustration role's fit was downgraded from an earlier
+    Fair (based on a search summary) to Weak once the full posting text
+    showed an 8+ year specialist-experience minimum.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1347,10 +1360,16 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Ashby",
-        "notes": None,
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't find or confirm this specific posting -- there's nothing concrete to "
-                         "assess fit against.",
+        "notes": "Confirmed posting (Regina shared the full listing): the job page's own title is "
+                 "\"Visual Designer\" but the body describes it as a \"Brand Designer\" role -- a title "
+                 "inconsistency in Hypha's own posting, not a separate role.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting ($80K-$100K): 1-3 yrs brand/visual design experience (or an "
+                         "exceptional portfolio in place of it), Figma fluency, launch/campaign creative, "
+                         "and translating brand into product tokens/components -- a solid match for Regina's "
+                         "design and systems-thinking background. The role also leans heavily on daily "
+                         "generative-AI tool use and AI-assisted coding (Claude Code/Cursor/v0) to implement "
+                         "designs directly, which isn't evidenced on her resume.",
     },
     {
         "company": "Vestwell",
@@ -1370,14 +1389,19 @@ SEED_ROWS = [
     },
     {
         "company": "Brick",
-        "position": "Unspecified role",
+        "position": "Growth Designer",
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role, but Regina shared the "
+                 "LinkedIn listing (same Greenhouse apply link) confirming it was this Growth Designer role.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting ($90K-$110K): 3-5 yrs growth/marketing/performance design, expert "
+                         "Figma/Illustrator/Photoshop, but the role is specifically performance-marketing ad "
+                         "creative -- direct-response hierarchy, paid-social testing/iteration, CTR/CPA/CVR "
+                         "literacy. That's a different discipline from Regina's brand-identity/creative-"
+                         "agency background; the tool overlap is real but the performance-marketing focus "
+                         "and metrics fluency aren't evidenced on her resume.",
     },
     {
         "company": "The Working Assembly",
@@ -1401,13 +1425,13 @@ SEED_ROWS = [
         "notes": "5th, distinct Meta application -- same Instagram Brand Studio team as the existing "
                  "\"Brand Designer, Strategic Initiatives\" role (applied 07-26) but a different req/"
                  "specialization within it.",
-        "job_fit": "Fair",
-        "job_fit_notes": "Confirmed posting ($149K-$209K): running Instagram's icon/illustration intake "
-                         "program, defining icon/illustration style guidelines, delivering production-ready "
-                         "assets in Figma/Illustrator/SVG. Regina's Figma/Adobe tool fluency and brand-"
-                         "identity-systems background overlap, but this is a specialist illustration/"
-                         "iconography track, and illustration isn't a demonstrated core strength on her "
-                         "resume/portfolio.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Full posting text confirmed (updated from an earlier search-summary estimate): "
+                         "8+ years of experience specifically in iconography/illustration/visual design with "
+                         "a systematic icon program focus is a hard minimum qualification, plus a portfolio "
+                         "demonstrating dedicated icon-system and illustration craft. Regina's ~6 yrs is "
+                         "under the bar, and illustration/iconography isn't a demonstrated specialty on her "
+                         "resume -- the earlier Fair rating undersold how senior and specialist this req is.",
     },
     # -- 2026-09-06 (evening): 2 more new rows --
     {
@@ -1424,14 +1448,18 @@ SEED_ROWS = [
     },
     {
         "company": "United Legwear Company",
-        "position": "Unspecified role",
+        "position": "Senior Designer, KIDS (Scotch & Soda)",
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "ADP",
-        "notes": "Generic ADP-based confirmation email didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic ADP-based confirmation email didn't name the role, but Regina shared the LinkedIn "
+                 "listing (same ADP apply link) confirming it was this Scotch & Soda Kids design role.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting ($100K-$130K): 5+ yrs children's-apparel design experience, "
+                         "hands-on with PLM systems and tech-pack/CAD development for garment production -- "
+                         "an apparel/product-design discipline (fabric, fit, garment tech packs) entirely "
+                         "distinct from Regina's brand/graphic-design background, with no PLM or apparel "
+                         "production experience evidenced on her resume.",
     },
 ]
 

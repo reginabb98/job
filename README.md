@@ -290,6 +290,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Collectibles (Graphic Designer II, Good fit — solid Adobe CC/branding/
   print-production match) and United Legwear Company (unspecified role,
   Unknown fit — generic ADP confirmation named no role).
+- **2026-09-06 (fit confirmation)** — Regina shared the real postings for
+  4 rows that had gone in generic or estimated: Hypha confirmed as
+  "Visual Designer" (Good fit), Brick confirmed as "Growth Designer"
+  (Unknown → Weak, a performance-marketing discipline), United Legwear
+  confirmed as "Senior Designer, KIDS" (Unknown → Weak, an apparel/PLM
+  discipline), and Meta's Iconography & Illustration role downgraded
+  Fair → Weak once the full posting showed an 8+ year minimum.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
