@@ -261,6 +261,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   turn into a response and a scheduled/completed call. (Cold outreach
   sent by email is a separate, already-established exception — see the
   Aug 25 entry above — and continues to be logged even without a reply.)
+- **2026-09-06** — incremental rescan since Sep 5, 2 new rows: Bain &
+  Company (Strategic Designer, Weak fit — UX/service-design discipline,
+  not brand/graphic design) and Meta (generic "Designer" role, Unknown
+  fit — a 4th, distinct Meta application). Also found a same-night Ogilvy
+  security-code verification step re-confirming the existing Designer
+  application (applied Aug 17) — treated as a resubmission, not a new row.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

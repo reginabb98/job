@@ -217,6 +217,15 @@ Scan history:
     LinkedIn message.) Anna-Rae Morris and Angel Bellon both already
     cleared this bar (a completed or scheduled call), so no changes were
     needed to what's tracked.
+  - 2026-09-06: incremental rescan since 2026-09-05, 2 new rows. Bain &
+    Company (Strategic Designer, Weak fit -- a UX/service-design/product-
+    design discipline, not brand/graphic design) and Meta (generic
+    "Designer" role, Unknown fit -- confirmation email named no team or
+    seniority; a 4th, distinct Meta application from the 3 already
+    tracked). Also found a same-night Ogilvy security-code verification
+    step followed by a second "thank you for applying" email for the same
+    Designer role already tracked (applied 2026-08-17) -- treated as a
+    resubmission of that existing application, not a new row.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1005,7 +1014,10 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "Email",
         "notes": "Missed entirely by every prior scan -- confirmation email came from no-reply@ogilvy.com, "
-                 "not a domain in the ATS search list. No response yet as of 2026-09-02.",
+                 "not a domain in the ATS search list. No response yet as of 2026-09-02. Resubmitted via a "
+                 "Greenhouse security-code verification step on 2026-09-05 (security-code email then a "
+                 "second \"thank you for applying\" confirmation, both for the same Designer role) -- treated "
+                 "as the same application, not double-counted.",
         "job_fit": "Good",
         "job_fit_notes": "The closest generalist-titled match found is a 3-5 yr Graphic Designer posting: "
                          "advanced Adobe Creative Suite, working Figma knowledge, client-branding-guideline "
@@ -1227,6 +1239,36 @@ SEED_ROWS = [
                  "future -- a visa/authorization issue, not a skills-based rejection.",
         "job_fit": "Fair",
         "job_fit_notes": "Wants 5 years in a media agency (3+ specifically in Connections/Comms Strategy) plus direct-report management. Regina's research, deck-building, and narrative-writing skills overlap qualitatively, but this is a media/comms-planning discipline rather than brand/creative design, and her 6 years are mostly design-agency rather than media-agency -- plus people-management isn't evidenced on her resume. Note: the actual rejection was a visa-sponsorship policy, not a skills mismatch -- the fit rating above reflects the role's substance, not the reason it didn't move forward.",
+    },
+    # -- 2026-09-06 incremental rescan --
+    {
+        "company": "Bain & Company",
+        "position": "Strategic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Email",
+        "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Couldn't confirm the exact posting, but Bain's Strategic Design roles (Manager/"
+                         "Senior Strategic Designer family) center on UX, service design, and digital-product "
+                         "design -- design thinking, prototyping, Figma/Miro/Webflow fluency, plus ~30% client "
+                         "travel in a consulting environment. That's a different discipline from Regina's "
+                         "brand/graphic-design background, which doesn't show UX/service-design or product "
+                         "prototyping work.",
+    },
+    {
+        "company": "Meta",
+        "position": "Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Email",
+        "notes": "Confirmation email didn't name a specific team or seniority -- generic \"Designer role\" "
+                 "at Meta. Distinct from the 3 existing, more specific Meta applications already tracked "
+                 "(Creative Strategist NA team, Brand Strategist -- rejected, Brand Designer/Instagram Brand "
+                 "Studio).",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role or team -- there's nothing "
+                         "concrete to assess fit against.",
     },
 ]
 
