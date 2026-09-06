@@ -226,6 +226,13 @@ Scan history:
     step followed by a second "thank you for applying" email for the same
     Designer role already tracked (applied 2026-08-17) -- treated as a
     resubmission of that existing application, not a new row.
+  - 2026-09-06 (later): incremental rescan, 2 more new rows that landed in
+    the inbox after the prior pass -- Havas and City of New York, both
+    "Graphic Design Intern" postings. Confirmed both postings target
+    current college students (Havas: rising junior/senior/recent-grad
+    pipeline; NYC: civil-service title "College Aide", experience level
+    "Student"), so both rated Weak fit on seniority mismatch rather than a
+    skills gap.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1269,6 +1276,33 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role or team -- there's nothing "
                          "concrete to assess fit against.",
+    },
+    {
+        "company": "Havas",
+        "position": "Graphic Design Intern",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Workday",
+        "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: Havas's Graphic Design Intern program targets rising juniors/"
+                         "seniors/recent grads working toward a Bachelor's degree, $18-22/hr, a 4-month "
+                         "structured internship. Regina's Adobe/typography/layout skills match the day-to-day "
+                         "work, but the program is explicitly a student pipeline -- a seniority mismatch given "
+                         "her 6 years of professional experience, not a skills gap.",
+    },
+    {
+        "company": "City of New York",
+        "position": "Graphic Design Intern (ref. 781366)",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "SmartRecruiters",
+        "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting (NYC Jobs, ref. 781366): civil-service title \"College Aide\", "
+                         "experience level \"Student\" -- this role is explicitly reserved for current college "
+                         "students, not working professionals. Same seniority mismatch as the Havas "
+                         "internship above, unrelated to Regina's actual design skills.",
     },
 ]
 

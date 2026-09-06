@@ -267,6 +267,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   fit — a 4th, distinct Meta application). Also found a same-night Ogilvy
   security-code verification step re-confirming the existing Designer
   application (applied Aug 17) — treated as a resubmission, not a new row.
+- **2026-09-06 (later)** — incremental rescan, 2 more new rows: Havas and
+  City of New York, both "Graphic Design Intern" postings. Confirmed both
+  target current college students (Havas: student/recent-grad pipeline;
+  NYC: civil-service title "College Aide", experience level "Student") —
+  rated Weak fit on seniority mismatch, not a skills gap.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
