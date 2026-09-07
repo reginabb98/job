@@ -317,6 +317,19 @@ Scan history:
     "Designer" application as a Creative X / Reality Labs role (wearables/
     metaverse brand design) from the LinkedIn listing Regina shared --
     Unknown to Good, $122K-$175K.
+  - 2026-09-07 (later still): incremental rescan, 6 new rows. Conveo
+    (Design Lead, Fair fit -- B2B/SaaS leadership scope not evidenced),
+    Figma (2nd application, Brand Designer/Product Launches, Fair fit --
+    launch-storytelling/motion craft not a demonstrated specialty),
+    Day One (Senior Designer, Unknown -- couldn't confirm requirements),
+    Fresh (Senior Designer, Digital and Social, Good fit -- beauty-brand
+    digital/social work matches Regina's background, though the exact
+    posting wasn't confirmed), and two generic confirmations left as
+    Unspecified role (Tory Burch, Omnicom network).
+  - 2026-09-07 (reconciled against Publicis's own candidate portal):
+    Regina shared a screenshot showing req 2026-152303 (Razorfish
+    Health, Manager, Brand Strategy) marked "Not selected" -- flipped
+    that row from Applied to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -721,10 +734,12 @@ SEED_ROWS = [
     {
         "company": "Razorfish Health",
         "position": "Manager, Brand Strategy (2026-152303)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "iCIMS",
-        "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
+        "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance. Rejected per "
+                 "Publicis's own candidate portal (screenshot shared by Regina 2026-09-07) -- \"Not selected.\" "
+                 "Exact rejection date not shown on the portal.",
         "job_fit": "Good",
         "job_fit_notes": "3-6 yrs strategy/research/agency experience built on qual+quant research synthesis, creative-brief development, and presentations -- Regina's research, briefing, and presentation skills map well. The one gap is the healthcare/HCP-specific research angle the posting calls out as ideal.",
     },
@@ -1623,6 +1638,83 @@ SEED_ROWS = [
                          "explicitly includes motion (Figma, After Effects, Cavalry, Cinema 4D), and motion "
                          "design isn't evidenced anywhere on her resume -- the same gap seen on several other "
                          "roles (Gigs, Gensler, Brick), and here it's a listed requirement, not a plus.",
+    },
+    # -- 2026-09-07 (later still): 6 more new rows --
+    {
+        "company": "Conveo",
+        "position": "Design Lead",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: 6+ yrs design with strong B2B/SaaS exposure, owning a full "
+                         "brand-identity rebuild end to end, casting/directing freelance designers and "
+                         "motion/illustration partners from a funded budget. Regina's years and brand-"
+                         "identity craft line up, but B2B/SaaS specialization and this leadership/directing "
+                         "scope (versus being the individual executor) aren't evidenced on her resume.",
+    },
+    {
+        "company": "Figma",
+        "position": "Brand Designer, Product Launches",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Email",
+        "notes": "2nd, distinct Figma application -- separate from the earlier Designer Advocate, Figma "
+                 "Weave role (applied 07-27).",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: distilling a strategy brief into a single compelling idea and "
+                         "driving it into execution, strong composition/color/pacing especially in motion "
+                         "contexts, Figma proficiency (After Effects a plus, not required). Regina's "
+                         "strategic-brief and Figma/Adobe skills overlap, but the role's core craft is launch "
+                         "storytelling via styleframes/storyboards/motion, which isn't a demonstrated "
+                         "specialty on her resume.",
+    },
+    {
+        "company": "Day One",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Pinpoint",
+        "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm the exact requirements for this specific posting -- there's "
+                         "nothing concrete enough to rate fit against.",
+    },
+    {
+        "company": "Fresh",
+        "position": "Senior Designer, Digital and Social",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "SmartRecruiters",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "Couldn't confirm the exact posting, but Fresh's closely related Senior Digital "
+                         "Designer role ($100K-$130K) and Regina's Common Matter beauty-brand digital/social "
+                         "design experience line up well -- treat as a good but not fully confirmed match.",
+    },
+    {
+        "company": "Tory Burch",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Workday",
+        "notes": "Generic Workday auto-reply confirmation didn't name the role applied to.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
+    },
+    {
+        "company": "Omnicom",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Workday",
+        "notes": "Generic \"thank you for your application to the Omnicom network\" confirmation didn't name "
+                 "a specific agency, team, or role.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
+                         "to assess fit against.",
     },
 ]
 

@@ -335,6 +335,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-07 (later still)** — confirmed Meta's generic "Designer"
   application as a Creative X / Reality Labs role (wearables/metaverse
   brand design) — Unknown → Good, $122K-$175K.
+- **2026-09-07 (later still)** — incremental rescan, 6 new rows: Conveo
+  (Design Lead, Fair fit), Figma (2nd application, Brand Designer/
+  Product Launches, Fair fit), Day One (Senior Designer, Unknown),
+  Fresh (Senior Designer, Digital and Social, Good fit — beauty-brand
+  digital/social match, exact posting unconfirmed), and two generic
+  confirmations (Tory Burch, Omnicom network).
+- **2026-09-07 (portal reconciliation)** — Regina shared a Publicis
+  candidate-portal screenshot showing req 2026-152303 (Razorfish
+  Health, Manager, Brand Strategy) marked "Not selected" — flipped
+  from Applied to Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
