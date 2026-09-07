@@ -295,6 +295,14 @@ Scan history:
     Eddie Opara's team (eo_teamjobs@pentagram.com) with resume and
     portfolio attached; no public posting found, so this looks like a
     referral-style opportunity rather than a listed job.
+  - 2026-09-07 (fit confirmation, real postings shared by Regina): filled
+    in confirmed titles and fit for the 2 remaining Unknown rows from
+    the 09-06 night rescan. Ripple confirmed as the New York "Brand
+    Designer" opening (not the separate SF Senior role) -- Unknown to
+    Good, $112K-$120K. Material confirmed as "Mid-level Brand Designer
+    (Aruliden)" -- Unknown to Good, $65K-$85K; also corrected the
+    location from an earlier guess of Los Angeles to the posting's
+    actual New York, NY (hybrid).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1525,27 +1533,38 @@ SEED_ROWS = [
     },
     {
         "company": "Ripple",
-        "position": "Unspecified role",
+        "position": "Brand Designer",
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role. Ripple has both a Brand "
-                 "Designer (New York) and a Senior Brand Designer (San Francisco) opening -- couldn't confirm "
-                 "which one, if either, this application was for.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Two plausible openings exist but neither is confirmed as the one applied to -- "
-                         "there's nothing concrete enough to rate fit against.",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; confirmed as the New York "
+                 "Brand Designer opening (not the separate San Francisco Senior Brand Designer role) from the "
+                 "LinkedIn listing Regina shared.",
+        "pay_range": "$112K-$120K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 4+ yrs brand design, a portfolio spanning graphic design/web/"
+                         "motion/typography/physical builds, Figma + Adobe CS -- a solid general match to "
+                         "Regina's brand-design background and tools. Motion/illustration is called a plus, "
+                         "not required. The crypto/Web3 subject matter (Ripple/XRP) isn't evidenced anywhere "
+                         "on her resume, though the posting doesn't require industry-specific experience.",
     },
     {
         "company": "Material",
-        "position": "Unspecified role",
+        "position": "Mid-level Brand Designer (Aruliden)",
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Workday",
-        "notes": "Generic Workday auto-reply confirmation didn't name the role. Los Angeles-based company.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Workday auto-reply confirmation didn't name the role; confirmed from the LinkedIn "
+                 "listing Regina shared. Aruliden is a Material-owned multi-disciplinary design studio "
+                 "(beauty/lifestyle/wellness/tech clients), New York, NY (hybrid) -- not Los Angeles as "
+                 "originally assumed from a generic web search.",
+        "pay_range": "$65K-$85K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 2-5+ yrs studio/agency design, brand identity systems across "
+                         "packaging/digital/physical, Adobe CS + Figma, strong typography, cultural fluency "
+                         "in beauty/fashion/lifestyle -- a solid match to Regina's Common Matter background. "
+                         "Motion graphics is called out twice as a required skill, which isn't evidenced on "
+                         "her resume.",
     },
     # -- 2026-09-07: Regina completed a previously-abandoned application --
     {

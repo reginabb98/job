@@ -319,6 +319,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (Good fit). Direct cold-email application to Eddie Opara's team with
   resume and portfolio attached; no public posting found, so it reads
   as a referral-style opportunity rather than a listed job.
+- **2026-09-07 (fit confirmation)** — Regina shared the real postings
+  for the 2 remaining Unknown rows from the 09-06 night rescan: Ripple
+  confirmed as the NY "Brand Designer" role (Unknown → Good, $112K-
+  $120K) and Material confirmed as "Mid-level Brand Designer (Aruliden)"
+  (Unknown → Good, $65K-$85K) — also correcting its location from an
+  earlier guess of Los Angeles to New York, NY (hybrid).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
