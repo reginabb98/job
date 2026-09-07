@@ -18,6 +18,16 @@ known ATS platform, and several rejections were phrased too softly to match
 explicit reject/not-selected keyword searches. See the 2026-09-02 scan
 history entries below for what that turned up.
 
+As of 2026-09-06 (night), applied_date is assigned from the email
+timestamp converted to US Eastern time, not the raw UTC date Gmail
+returns. Late-evening Eastern applications (roughly 8pm-midnight) show
+up as after-midnight UTC on the *next calendar day*, which had been
+silently rolling them into the wrong day -- and, worse, the wrong
+week -- on the dashboard. Regina caught this when a Sunday-night batch
+of applications showed up dated Monday. Every row touched in or after
+that correction uses the Eastern date; earlier rows were not
+retroactively audited for this.
+
 Scan history:
   - 2026-08-13: initial 12-month scan, 29 applications.
   - 2026-08-17 (afternoon): incremental scan since 2026-08-13, 5 new rows.
@@ -285,17 +295,17 @@ Scan history:
     (unspecified role, Unknown fit -- generic confirmation and two
     plausible openings, neither confirmed), and Material (unspecified
     role, Unknown fit -- generic confirmation).
-  - 2026-09-07: 1 new row, reported directly by Regina. Paramount --
+  - 2026-09-06: 1 new row, reported directly by Regina. Paramount --
     Designer, Publishing, Fair fit. She'd started this application
     earlier and left it incomplete; a "please complete your application"
     reminder landed 2026-09-06 night, and she finished submitting it
-    2026-09-07.
-  - 2026-09-07 (later): 1 new row, found via Gmail Sent search. Pentagram
+    2026-09-06.
+  - 2026-09-06 (later): 1 new row, found via Gmail Sent search. Pentagram
     -- Middleweight Designer, Good fit. Direct cold-email application to
     Eddie Opara's team (eo_teamjobs@pentagram.com) with resume and
     portfolio attached; no public posting found, so this looks like a
     referral-style opportunity rather than a listed job.
-  - 2026-09-07 (fit confirmation, real postings shared by Regina): filled
+  - 2026-09-06 (fit confirmation, real postings shared by Regina): filled
     in confirmed titles and fit for the 2 remaining Unknown rows from
     the 09-06 night rescan. Ripple confirmed as the New York "Brand
     Designer" opening (not the separate SF Senior role) -- Unknown to
@@ -303,7 +313,7 @@ Scan history:
     (Aruliden)" -- Unknown to Good, $65K-$85K; also corrected the
     location from an earlier guess of Los Angeles to the posting's
     actual New York, NY (hybrid).
-  - 2026-09-07 (later still, fit confirmation): Regina shared 2 more
+  - 2026-09-06 (later still, fit confirmation): Regina shared 2 more
     real postings. Pentagram's Middleweight Designer role, previously
     rated Good on general agency-tier reasoning, was downgraded to Fair
     once the full listing showed required motion-tool proficiency
@@ -313,11 +323,11 @@ Scan history:
     Premium, Elevated Shopping (ID: 10523835) confirmed as Good fit --
     5+ yrs premium fashion/beauty design experience matches her agency
     background well; salary corrected to $132.5K-$185K.
-  - 2026-09-07 (later still, fit confirmation): confirmed Meta's generic
+  - 2026-09-06 (later still, fit confirmation): confirmed Meta's generic
     "Designer" application as a Creative X / Reality Labs role (wearables/
     metaverse brand design) from the LinkedIn listing Regina shared --
     Unknown to Good, $122K-$175K.
-  - 2026-09-07 (later still): incremental rescan, 6 new rows. Conveo
+  - 2026-09-06 (later still): incremental rescan, 6 new rows. Conveo
     (Design Lead, Fair fit -- B2B/SaaS leadership scope not evidenced),
     Figma (2nd application, Brand Designer/Product Launches, Fair fit --
     launch-storytelling/motion craft not a demonstrated specialty),
@@ -326,16 +336,35 @@ Scan history:
     digital/social work matches Regina's background, though the exact
     posting wasn't confirmed), and two generic confirmations left as
     Unspecified role (Tory Burch, Omnicom network).
-  - 2026-09-07 (reconciled against Publicis's own candidate portal):
+  - 2026-09-06 (reconciled against Publicis's own candidate portal):
     Regina shared a screenshot showing req 2026-152303 (Razorfish
     Health, Manager, Brand Strategy) marked "Not selected" -- flipped
     that row from Applied to Rejected.
-  - 2026-09-07 (later still): incremental rescan, 2 more new rows.
+  - 2026-09-06 (later still): incremental rescan, 2 more new rows.
     Turner Duckworth (Senior Designer, 2026-166476, Strong fit --
     packaging/brand-identity agency, a direct match to Regina's Common
     Matter background) and Posh (Brand Designer, Weak fit -- wants a
     Series B-D in-house creative *leader* with hands-on motion/film and
     nightlife-culture ties, well beyond her current level).
+  - 2026-09-06 (date-correction, caught by Regina): a whole evening's
+    batch of applications (Pentagram, Paramount, Conveo, Figma's 2nd app,
+    Day One, Fresh, Tory Burch, Omnicom, Turner Duckworth, Posh) had been
+    dated 2026-09-07 -- the raw UTC date of their Gmail confirmations --
+    even though they were all submitted 8-10pm Eastern on 2026-09-06.
+    Regina noticed the dashboard's weekly counter had rolled into a new
+    week for a Sunday-night batch. Corrected all ten applied_date values
+    to 2026-09-06 and adopted Eastern-time conversion as the standing
+    rule going forward (see docstring intro).
+  - 2026-09-06 (fit confirmation, more real postings shared by Regina):
+    Day One's Senior Designer confirmed Good fit ($80K-$95K); Tory Burch
+    confirmed as "Temporary Helper, Senior
+    Graphic Designer" (Unknown to Good); Omnicom confirmed as
+    "Presentation Designer, Brand Experience" under a "Design Manager"
+    listing title (Unknown to Good, $50K-$95K, PowerPoint-heavy); Nourish
+    confirmed as "Senior Creative Strategist" (Unknown to Fair --
+    performance-data fluency not evidenced); MrBeast confirmed as
+    "Senior Brand Strategist" (Unknown to Weak -- wants 8-10+ yrs at a
+    top-tier digital publisher, well beyond Regina's experience).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -744,7 +773,7 @@ SEED_ROWS = [
         "applied_date": "2026-08-17",
         "source": "iCIMS",
         "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance. Rejected per "
-                 "Publicis's own candidate portal (screenshot shared by Regina 2026-09-07) -- \"Not selected.\" "
+                 "Publicis's own candidate portal (screenshot shared by Regina 2026-09-06) -- \"Not selected.\" "
                  "Exact rejection date not shown on the portal.",
         "job_fit": "Good",
         "job_fit_notes": "3-6 yrs strategy/research/agency experience built on qual+quant research synthesis, creative-brief development, and presentations -- Regina's research, briefing, and presentation skills map well. The one gap is the healthcare/HCP-specific research angle the posting calls out as ideal.",
@@ -1284,14 +1313,18 @@ SEED_ROWS = [
     # -- 2026-09-03 (later): incremental rescan, 1 new row --
     {
         "company": "MrBeast",
-        "position": "Unspecified role",
+        "position": "Senior Brand Strategist",
         "status": "Applied",
         "applied_date": "2026-09-03",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; confirmed from the "
+                 "LinkedIn listing Regina shared (same Greenhouse instance, mrbeastyoutube).",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting ($135.7K-$170.2K target comp): 8-10+ yrs in Strategy/Planning "
+                         "at a top-tier digital publisher/social platform/agency, proven leadership on "
+                         "seven-figure multi-platform integrated partnership deals, deep YouTube/TikTok/"
+                         "Instagram ad-format fluency. Regina's ~6-7 yrs is well under the bar, and the "
+                         "digital-publisher partnership-sales scope isn't evidenced on her resume.",
     },
     # -- 2026-09-03: incremental rescan, 3 new rows --
     {
@@ -1312,14 +1345,18 @@ SEED_ROWS = [
     },
     {
         "company": "Nourish",
-        "position": "Unspecified role",
+        "position": "Senior Creative Strategist",
         "status": "Applied",
         "applied_date": "2026-09-03",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; confirmed from the "
+                 "LinkedIn listing Regina shared (same Greenhouse instance, usenourish).",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: 5-7 yrs creative strategy/growth marketing owning the creative "
+                         "roadmap for paid channels. Regina's creative-strategy and storytelling skills "
+                         "overlap, but the role is explicitly performance-marketing-driven -- \"fluent in "
+                         "performance data,\" pattern-matching across ad tests, growth KPIs -- and that "
+                         "data-driven growth-marketing fluency isn't evidenced on her resume.",
     },
     {
         "company": "Disney",
@@ -1610,16 +1647,16 @@ SEED_ROWS = [
                          "Motion graphics is called out twice as a required skill, which isn't evidenced on "
                          "her resume.",
     },
-    # -- 2026-09-07: Regina completed a previously-abandoned application --
+    # -- 2026-09-06: Regina completed a previously-abandoned application --
     {
         "company": "Paramount",
         "position": "Designer, Publishing",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "SuccessFactors",
         "notes": "Started this application earlier and left it incomplete; SuccessFactors sent a \"please "
-                 "complete your application\" reminder on 2026-09-06 (23:02), and Regina finished submitting "
-                 "it on 2026-09-07.",
+                 "complete your application\" reminder on 2026-09-06 evening (Eastern), and Regina finished "
+                 "submitting it later that same evening.",
         "pay_range": "$65K-$100K/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: book-cover/interior design, typography, Adobe InDesign/"
@@ -1632,7 +1669,7 @@ SEED_ROWS = [
         "company": "Pentagram",
         "position": "Middleweight Designer",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Email",
         "notes": "Direct cold-email application to Eddie Opara's team (eo_teamjobs@pentagram.com), subject "
                  "\"Middleweight Designer Role\" -- resume and portfolio (reginabbsv.cargo.site) attached.",
@@ -1645,12 +1682,12 @@ SEED_ROWS = [
                          "design isn't evidenced anywhere on her resume -- the same gap seen on several other "
                          "roles (Gigs, Gensler, Brick), and here it's a listed requirement, not a plus.",
     },
-    # -- 2026-09-07 (later still): 6 more new rows --
+    # -- 2026-09-06 (later still): 6 more new rows --
     {
         "company": "Conveo",
         "position": "Design Lead",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Ashby",
         "notes": None,
         "job_fit": "Fair",
@@ -1664,7 +1701,7 @@ SEED_ROWS = [
         "company": "Figma",
         "position": "Brand Designer, Product Launches",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Email",
         "notes": "2nd, distinct Figma application -- separate from the earlier Designer Advocate, Figma "
                  "Weave role (applied 07-27).",
@@ -1680,18 +1717,22 @@ SEED_ROWS = [
         "company": "Day One",
         "position": "Senior Designer",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Pinpoint",
         "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm the exact requirements for this specific posting -- there's "
-                         "nothing concrete enough to rate fit against.",
+        "pay_range": "$80K-$95K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 4+ yrs at an agency/design studio, multi-disciplinary portfolio "
+                         "across digital/print/experiential, Adobe CS/Figma/Keynote/PowerPoint, strong "
+                         "typography -- a solid match to Regina's Common Matter agency background. "
+                         "Storyboarding/animation direction is one of several listed skills, not a hard "
+                         "requirement, and isn't a demonstrated core strength on her resume.",
     },
     {
         "company": "Fresh",
         "position": "Senior Designer, Digital and Social",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "SmartRecruiters",
         "notes": None,
         "job_fit": "Good",
@@ -1701,32 +1742,44 @@ SEED_ROWS = [
     },
     {
         "company": "Tory Burch",
-        "position": "Unspecified role",
+        "position": "Temporary Helper, Senior Graphic Designer",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Workday",
-        "notes": "Generic Workday auto-reply confirmation didn't name the role applied to.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+        "notes": "Generic Workday auto-reply confirmation didn't name the role; confirmed from the LinkedIn "
+                 "listing Regina shared. The posting's own title says \"Temporary Helper, Senior Graphic "
+                 "Designer\" but the body describes a Manager-level Designer role supporting the Senior Art "
+                 "Director on digital experiences -- a title/body inconsistency in Tory Burch's own posting.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 4+ yrs relevant experience (fashion industry preferred, not "
+                         "required), Photoshop/InDesign/Illustrator/Keynote, developing digital experiences "
+                         "for site/email/digital ads -- a good match to Regina's digital design and Adobe "
+                         "tool background. Fashion-industry specifics are the one soft preference she doesn't "
+                         "have evidenced.",
     },
     {
         "company": "Omnicom",
-        "position": "Unspecified role",
+        "position": "Presentation Designer, Brand Experience (Global Growth)",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Workday",
         "notes": "Generic \"thank you for your application to the Omnicom network\" confirmation didn't name "
-                 "a specific agency, team, or role.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
-                         "to assess fit against.",
+                 "a specific agency, team, or role; confirmed from the LinkedIn listing Regina shared. The "
+                 "listing's own title says \"Design Manager\" but the body describes a \"Presentation "
+                 "Designer\" role on the Brand Experience team -- a title/body inconsistency in the posting.",
+        "pay_range": "$50K-$95K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 5-7+ yrs brand/graphic/experience design, PowerPoint expertise "
+                         "called an \"absolute must,\" Adobe Creative Cloud, strong typography/layout/visual "
+                         "storytelling -- Regina's deck-building and presentation skills (noted elsewhere, "
+                         "e.g. the Omnicom Media Senior Associate Strategy application) map directly onto "
+                         "this role's core requirement.",
     },
     {
         "company": "Turner Duckworth",
         "position": "Senior Designer (2026-166476)",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "iCIMS",
         "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
         "job_fit": "Strong",
@@ -1738,7 +1791,7 @@ SEED_ROWS = [
         "company": "Posh",
         "position": "Brand Designer",
         "status": "Applied",
-        "applied_date": "2026-09-07",
+        "applied_date": "2026-09-06",
         "source": "Ashby",
         "notes": None,
         "job_fit": "Weak",

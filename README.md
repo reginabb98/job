@@ -311,44 +311,59 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (Brand Designer, Good fit, $150K-$190K), Ripple (unspecified role,
   Unknown fit — two plausible openings, neither confirmed), and
   Material (unspecified role, Unknown fit — generic confirmation).
-- **2026-09-07** — 1 new row, reported directly by Regina: Paramount —
+- **2026-09-06** — 1 new row, reported directly by Regina: Paramount —
   Designer, Publishing (Fair fit). She'd started this application and
   left it incomplete; after a reminder email, she finished submitting
   it.
-- **2026-09-07 (later)** — 1 new row: Pentagram — Middleweight Designer
+- **2026-09-06 (later)** — 1 new row: Pentagram — Middleweight Designer
   (Good fit). Direct cold-email application to Eddie Opara's team with
   resume and portfolio attached; no public posting found, so it reads
   as a referral-style opportunity rather than a listed job.
-- **2026-09-07 (fit confirmation)** — Regina shared the real postings
+- **2026-09-06 (fit confirmation)** — Regina shared the real postings
   for the 2 remaining Unknown rows from the 09-06 night rescan: Ripple
   confirmed as the NY "Brand Designer" role (Unknown → Good, $112K-
   $120K) and Material confirmed as "Mid-level Brand Designer (Aruliden)"
   (Unknown → Good, $65K-$85K) — also correcting its location from an
   earlier guess of Los Angeles to New York, NY (hybrid).
-- **2026-09-07 (later still)** — 2 more real postings confirmed: Pentagram's
+- **2026-09-06 (later still)** — 2 more real postings confirmed: Pentagram's
   Middleweight Designer downgraded Good → Fair once the full listing
   showed required motion-tool proficiency (After Effects, Cavalry,
   Cinema 4D) not evidenced on Regina's resume — $85K-$105K confirmed.
   Amazon's Designer, Premium, Elevated Shopping confirmed as Good fit —
   5+ yrs premium fashion/beauty design matches her agency background —
   salary corrected to $132.5K-$185K.
-- **2026-09-07 (later still)** — confirmed Meta's generic "Designer"
+- **2026-09-06 (later still)** — confirmed Meta's generic "Designer"
   application as a Creative X / Reality Labs role (wearables/metaverse
   brand design) — Unknown → Good, $122K-$175K.
-- **2026-09-07 (later still)** — incremental rescan, 6 new rows: Conveo
+- **2026-09-06 (later still)** — incremental rescan, 6 new rows: Conveo
   (Design Lead, Fair fit), Figma (2nd application, Brand Designer/
   Product Launches, Fair fit), Day One (Senior Designer, Unknown),
   Fresh (Senior Designer, Digital and Social, Good fit — beauty-brand
   digital/social match, exact posting unconfirmed), and two generic
   confirmations (Tory Burch, Omnicom network).
-- **2026-09-07 (portal reconciliation)** — Regina shared a Publicis
+- **2026-09-06 (portal reconciliation)** — Regina shared a Publicis
   candidate-portal screenshot showing req 2026-152303 (Razorfish
   Health, Manager, Brand Strategy) marked "Not selected" — flipped
   from Applied to Rejected.
-- **2026-09-07 (later still)** — incremental rescan, 2 more new rows:
+- **2026-09-06 (later still)** — incremental rescan, 2 more new rows:
   Turner Duckworth (Senior Designer, Strong fit — packaging/brand-
   identity agency match) and Posh (Brand Designer, Weak fit — wants a
   Series B-D in-house creative leader, well beyond Regina's level).
+- **2026-09-06 (date correction)** — a Sunday-evening batch of ten
+  applications (Pentagram, Paramount, Conveo, Figma's 2nd app, Day One,
+  Fresh, Tory Burch, Omnicom, Turner Duckworth, Posh) had been dated
+  2026-09-07 — the raw UTC date of their Gmail confirmations — even
+  though they were submitted 8-10pm Eastern on 2026-09-06. Regina caught
+  it when the dashboard's weekly counter rolled into a new week for a
+  Sunday-night batch. Corrected all ten dates and switched to Eastern-
+  time conversion for applied_date going forward.
+- **2026-09-06 (fit confirmation)** — more real postings shared by
+  Regina: Day One (Good, $80K-$95K), Tory Burch confirmed as "Temporary
+  Helper, Senior Graphic Designer" (Unknown → Good), Omnicom confirmed
+  as "Presentation Designer, Brand Experience" (Unknown → Good, $50K-
+  $95K), Nourish confirmed as "Senior Creative Strategist" (Unknown →
+  Fair), and MrBeast confirmed as "Senior Brand Strategist" (Unknown →
+  Weak — wants 8-10+ yrs, well beyond Regina's experience).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
