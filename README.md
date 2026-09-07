@@ -332,6 +332,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Amazon's Designer, Premium, Elevated Shopping confirmed as Good fit —
   5+ yrs premium fashion/beauty design matches her agency background —
   salary corrected to $132.5K-$185K.
+- **2026-09-07 (later still)** — confirmed Meta's generic "Designer"
+  application as a Creative X / Reality Labs role (wearables/metaverse
+  brand design) — Unknown → Good, $122K-$175K.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

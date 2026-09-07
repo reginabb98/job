@@ -313,6 +313,10 @@ Scan history:
     Premium, Elevated Shopping (ID: 10523835) confirmed as Good fit --
     5+ yrs premium fashion/beauty design experience matches her agency
     background well; salary corrected to $132.5K-$185K.
+  - 2026-09-07 (later still, fit confirmation): confirmed Meta's generic
+    "Designer" application as a Creative X / Reality Labs role (wearables/
+    metaverse brand design) from the LinkedIn listing Regina shared --
+    Unknown to Good, $122K-$175K.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1346,17 +1350,22 @@ SEED_ROWS = [
     },
     {
         "company": "Meta",
-        "position": "Designer",
+        "position": "Designer, Creative X (Reality Labs)",
         "status": "Applied",
         "applied_date": "2026-09-06",
         "source": "Email",
         "notes": "Confirmation email didn't name a specific team or seniority -- generic \"Designer role\" "
-                 "at Meta. Distinct from the 3 existing, more specific Meta applications already tracked "
-                 "(Creative Strategist NA team, Brand Strategist -- rejected, Brand Designer/Instagram Brand "
-                 "Studio).",
-        "job_fit": "Unknown",
-        "job_fit_notes": "The confirmation email never named the specific role or team -- there's nothing "
-                         "concrete to assess fit against.",
+                 "at Meta. Confirmed from the LinkedIn listing Regina shared as a Creative X / Reality Labs "
+                 "role (wearables and metaverse brand design). Distinct from the 4 other Meta applications "
+                 "already tracked (Creative Strategist NA team, Brand Strategist -- rejected, and the two "
+                 "Instagram Brand Studio roles).",
+        "pay_range": "$122K-$175K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 5+ yrs brand design (agency/in-house), multidisciplinary brand "
+                         "identities/design systems/template-driven creative programs, Figma/Adobe CS, "
+                         "directing external creative partners, presenting to stakeholders -- a strong match "
+                         "to Regina's Common Matter agency background. Familiarity with wearables/VR is "
+                         "called a plus, not required, and isn't evidenced on her resume.",
     },
     {
         "company": "Havas",
