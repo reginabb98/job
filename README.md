@@ -325,6 +325,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   $120K) and Material confirmed as "Mid-level Brand Designer (Aruliden)"
   (Unknown → Good, $65K-$85K) — also correcting its location from an
   earlier guess of Los Angeles to New York, NY (hybrid).
+- **2026-09-07 (later still)** — 2 more real postings confirmed: Pentagram's
+  Middleweight Designer downgraded Good → Fair once the full listing
+  showed required motion-tool proficiency (After Effects, Cavalry,
+  Cinema 4D) not evidenced on Regina's resume — $85K-$105K confirmed.
+  Amazon's Designer, Premium, Elevated Shopping confirmed as Good fit —
+  5+ yrs premium fashion/beauty design matches her agency background —
+  salary corrected to $132.5K-$185K.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

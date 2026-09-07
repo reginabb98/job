@@ -303,6 +303,16 @@ Scan history:
     (Aruliden)" -- Unknown to Good, $65K-$85K; also corrected the
     location from an earlier guess of Los Angeles to the posting's
     actual New York, NY (hybrid).
+  - 2026-09-07 (later still, fit confirmation): Regina shared 2 more
+    real postings. Pentagram's Middleweight Designer role, previously
+    rated Good on general agency-tier reasoning, was downgraded to Fair
+    once the full listing showed required motion-tool proficiency
+    (Figma, After Effects, Cavalry, Cinema 4D) that isn't evidenced on
+    her resume -- same gap as Gigs/Gensler/Brick, but a hard requirement
+    here, not a plus; salary confirmed $85K-$105K. Amazon's Designer,
+    Premium, Elevated Shopping (ID: 10523835) confirmed as Good fit --
+    5+ yrs premium fashion/beauty design experience matches her agency
+    background well; salary corrected to $132.5K-$185K.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1512,10 +1522,14 @@ SEED_ROWS = [
         "source": "Amazon Jobs",
         "notes": "3rd, distinct Amazon application, same Elevated Shopping product family as the earlier "
                  "Art Director (rejected) and Brand Designer, Brand Innovation Lab (active) roles.",
-        "pay_range": "$133K-$185K/yr",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Found the salary range ($133K-$185K) but couldn't confirm the exact requirements "
-                         "for this specific req ID -- there's nothing concrete enough to rate fit against.",
+        "pay_range": "$132.5K-$185K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Bachelor's degree, 5+ yrs graphic design with proven premium "
+                         "fashion/beauty sector expertise, branding guidelines/corporate identity, print and "
+                         "digital layout design, email marketing and social media design -- a strong match to "
+                         "Regina's 6-7 yrs agency background across consumer/beauty/cultural brands (Common "
+                         "Matter, Superside). AI-tooling fluency and UX-adjacent experience are called out but "
+                         "framed as a plus, not a hard requirement.",
     },
     {
         "company": "Assembled",
@@ -1592,12 +1606,14 @@ SEED_ROWS = [
         "source": "Email",
         "notes": "Direct cold-email application to Eddie Opara's team (eo_teamjobs@pentagram.com), subject "
                  "\"Middleweight Designer Role\" -- resume and portfolio (reginabbsv.cargo.site) attached.",
-        "job_fit": "Good",
-        "job_fit_notes": "Couldn't find or confirm a public posting for this specific opening -- it looks "
-                         "like a direct/referral-style opportunity rather than a listed job. \"Middleweight\" "
-                         "is a standard agency tier (roughly 3-7 yrs), and Pentagram's brand-identity/"
-                         "packaging/editorial work under a partner-led team is a close match to Regina's "
-                         "Common Matter background and portfolio.",
+        "pay_range": "$85K-$105K/yr",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (Regina shared the full listing): BA in Graphic Design, 3+ yrs "
+                         "experience, strong typography and brand-systems portfolio -- Regina clears the bar "
+                         "and the brand-systems/typography overlap is strong. But required tool proficiency "
+                         "explicitly includes motion (Figma, After Effects, Cavalry, Cinema 4D), and motion "
+                         "design isn't evidenced anywhere on her resume -- the same gap seen on several other "
+                         "roles (Gigs, Gensler, Brick), and here it's a listed requirement, not a plus.",
     },
 ]
 
