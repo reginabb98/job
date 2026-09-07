@@ -311,6 +311,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (Brand Designer, Good fit, $150K-$190K), Ripple (unspecified role,
   Unknown fit — two plausible openings, neither confirmed), and
   Material (unspecified role, Unknown fit — generic confirmation).
+- **2026-09-07** — 1 new row, reported directly by Regina: Paramount —
+  Designer, Publishing (Fair fit). She'd started this application and
+  left it incomplete; after a reminder email, she finished submitting
+  it.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

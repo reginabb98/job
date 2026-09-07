@@ -285,6 +285,11 @@ Scan history:
     (unspecified role, Unknown fit -- generic confirmation and two
     plausible openings, neither confirmed), and Material (unspecified
     role, Unknown fit -- generic confirmation).
+  - 2026-09-07: 1 new row, reported directly by Regina. Paramount --
+    Designer, Publishing, Fair fit. She'd started this application
+    earlier and left it incomplete; a "please complete your application"
+    reminder landed 2026-09-06 night, and she finished submitting it
+    2026-09-07.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1536,6 +1541,24 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
                          "to assess fit against.",
+    },
+    # -- 2026-09-07: Regina completed a previously-abandoned application --
+    {
+        "company": "Paramount",
+        "position": "Designer, Publishing",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "SuccessFactors",
+        "notes": "Started this application earlier and left it incomplete; SuccessFactors sent a \"please "
+                 "complete your application\" reminder on 2026-09-06 (23:02), and Regina finished submitting "
+                 "it on 2026-09-07.",
+        "pay_range": "$65K-$100K/yr",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: book-cover/interior design, typography, Adobe InDesign/"
+                         "Illustrator/Photoshop, print production -- Regina's design and print-production "
+                         "background overlaps well. Book-publishing-specific work (covers/interiors across "
+                         "formats, art directing illustrators) isn't evidenced on her resume, which is more "
+                         "brand/packaging-focused.",
     },
 ]
 
