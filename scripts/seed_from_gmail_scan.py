@@ -290,6 +290,11 @@ Scan history:
     earlier and left it incomplete; a "please complete your application"
     reminder landed 2026-09-06 night, and she finished submitting it
     2026-09-07.
+  - 2026-09-07 (later): 1 new row, found via Gmail Sent search. Pentagram
+    -- Middleweight Designer, Good fit. Direct cold-email application to
+    Eddie Opara's team (eo_teamjobs@pentagram.com) with resume and
+    portfolio attached; no public posting found, so this looks like a
+    referral-style opportunity rather than a listed job.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1559,6 +1564,21 @@ SEED_ROWS = [
                          "background overlaps well. Book-publishing-specific work (covers/interiors across "
                          "formats, art directing illustrators) isn't evidenced on her resume, which is more "
                          "brand/packaging-focused.",
+    },
+    {
+        "company": "Pentagram",
+        "position": "Middleweight Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Email",
+        "notes": "Direct cold-email application to Eddie Opara's team (eo_teamjobs@pentagram.com), subject "
+                 "\"Middleweight Designer Role\" -- resume and portfolio (reginabbsv.cargo.site) attached.",
+        "job_fit": "Good",
+        "job_fit_notes": "Couldn't find or confirm a public posting for this specific opening -- it looks "
+                         "like a direct/referral-style opportunity rather than a listed job. \"Middleweight\" "
+                         "is a standard agency tier (roughly 3-7 yrs), and Pentagram's brand-identity/"
+                         "packaging/editorial work under a partner-led team is a close match to Regina's "
+                         "Common Matter background and portfolio.",
     },
 ]
 

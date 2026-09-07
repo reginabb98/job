@@ -315,6 +315,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Designer, Publishing (Fair fit). She'd started this application and
   left it incomplete; after a reminder email, she finished submitting
   it.
+- **2026-09-07 (later)** — 1 new row: Pentagram — Middleweight Designer
+  (Good fit). Direct cold-email application to Eddie Opara's team with
+  resume and portfolio attached; no public posting found, so it reads
+  as a referral-style opportunity rather than a listed job.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
