@@ -345,6 +345,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   candidate-portal screenshot showing req 2026-152303 (Razorfish
   Health, Manager, Brand Strategy) marked "Not selected" — flipped
   from Applied to Rejected.
+- **2026-09-07 (later still)** — incremental rescan, 2 more new rows:
+  Turner Duckworth (Senior Designer, Strong fit — packaging/brand-
+  identity agency match) and Posh (Brand Designer, Weak fit — wants a
+  Series B-D in-house creative leader, well beyond Regina's level).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

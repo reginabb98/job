@@ -330,6 +330,12 @@ Scan history:
     Regina shared a screenshot showing req 2026-152303 (Razorfish
     Health, Manager, Brand Strategy) marked "Not selected" -- flipped
     that row from Applied to Rejected.
+  - 2026-09-07 (later still): incremental rescan, 2 more new rows.
+    Turner Duckworth (Senior Designer, 2026-166476, Strong fit --
+    packaging/brand-identity agency, a direct match to Regina's Common
+    Matter background) and Posh (Brand Designer, Weak fit -- wants a
+    Series B-D in-house creative *leader* with hands-on motion/film and
+    nightlife-culture ties, well beyond her current level).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1715,6 +1721,32 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role -- there's nothing concrete "
                          "to assess fit against.",
+    },
+    {
+        "company": "Turner Duckworth",
+        "position": "Senior Designer (2026-166476)",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "iCIMS",
+        "notes": "Publicis Groupe agency; confirmation came via Publicis Groupe's iCIMS instance.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Confirmed posting: 6+ yrs concept-driven, craft-focused brand design, reporting "
+                         "to a Design Director -- Turner Duckworth is a packaging/brand-identity design "
+                         "agency, a close, direct match to Regina's Common Matter background and years.",
+    },
+    {
+        "company": "Posh",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: wants past experience as the in-house creative *leader* at a "
+                         "Series B-D consumer brand (e.g. Liquid Death, Poppi, Partiful), hands-on motion/"
+                         "photo/film production, and deep personal ties to music/nightlife culture. This is "
+                         "a senior creative-leadership scope well beyond Regina's current level, plus real "
+                         "gaps in motion/film production and the nightlife-specific cultural fit.",
     },
 ]
 
