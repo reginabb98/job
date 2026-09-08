@@ -373,6 +373,12 @@ Scan history:
     SmartRecruiters application ID for the same role Regina already applied
     to on 2026-09-06, logged as an apparent accidental duplicate
     resubmission.
+  - 2026-09-08 (later): incremental rescan, 1 new row and 1 rejection.
+    WITHIN, Creative Lead Fellow (Weak fit -- confirmed posting is an
+    8-week performance-creative/short-form-video fellowship judged on a
+    public social/spec portfolio, a different discipline from Regina's
+    brand/graphic design background). Flipped VaynerMedia's Relevance
+    Strategist application to Rejected per a VaynerX/Greenhouse email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1111,10 +1117,10 @@ SEED_ROWS = [
     {
         "company": "VaynerMedia",
         "position": "Relevance Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-26",
         "source": "Greenhouse",
-        "notes": None,
+        "notes": "Rejected via a VaynerX/Greenhouse email on 2026-09-08 (\"decided not to move forward\").",
         "job_fit": "Fair",
         "job_fit_notes": "Wants deep insider fluency in Tech/AI developer culture specifically, based in LA. Regina's cultural-research and trend-analysis skills are relevant in a general sense, but the role's specific vertical and location don't match her background or base.",
     },
@@ -1835,6 +1841,21 @@ SEED_ROWS = [
         "job_fit_notes": "Same assessment as the first Fresh application: couldn't confirm the exact posting, "
                          "but Fresh's closely related Senior Digital Designer role ($100K-$130K) and Regina's "
                          "Common Matter beauty-brand digital/social design experience line up well.",
+    },
+    {
+        "company": "WITHIN",
+        "position": "Creative Lead Fellow",
+        "status": "Applied",
+        "applied_date": "2026-09-08",
+        "source": "Greenhouse",
+        "notes": None,
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: an 8-week paid fellowship for short-form/performance-creative "
+                         "content (TikTok-style hooks, platform mechanics, fatigue/iteration), evaluated on a "
+                         "public portfolio of grown social accounts or spec campaigns rather than years of "
+                         "experience. This is a social-video/performance-content discipline distinct from "
+                         "Regina's brand/graphic-design background, with no comparable short-form content work "
+                         "evidenced on her resume.",
     },
 ]
 

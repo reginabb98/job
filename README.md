@@ -372,6 +372,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   SmartRecruiters application ID for the same role Regina already applied
   to on 2026-09-06, logged as an apparent accidental duplicate
   resubmission.
+- **2026-09-08 (later)** — incremental rescan, 1 new row and 1 rejection:
+  WITHIN, Creative Lead Fellow (Weak fit — confirmed posting is an 8-week
+  performance-creative/short-form-video fellowship judged on a public
+  social/spec portfolio, a different discipline from Regina's brand/graphic
+  design background). Flipped VaynerMedia's Relevance Strategist
+  application to Rejected per a VaynerX/Greenhouse email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
