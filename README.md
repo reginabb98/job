@@ -364,6 +364,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   $95K), Nourish confirmed as "Senior Creative Strategist" (Unknown →
   Fair), and MrBeast confirmed as "Senior Brand Strategist" (Unknown →
   Weak — wants 8-10+ yrs, well beyond Regina's experience).
+- **2026-09-08** — incremental rescan, 2 new rows: Accenture (Work & Co)
+  Designer, R00334677 (Unknown fit — a generic Work & Co/Accenture Song
+  design req, distinct from the three earlier Accenture/Droga5
+  applications, no confirmable requirements beyond team-page copy), and
+  Fresh, Senior Designer, Digital and Social — a second, distinct
+  SmartRecruiters application ID for the same role Regina already applied
+  to on 2026-09-06, logged as an apparent accidental duplicate
+  resubmission.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

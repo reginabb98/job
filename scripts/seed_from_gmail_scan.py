@@ -365,6 +365,14 @@ Scan history:
     performance-data fluency not evidenced); MrBeast confirmed as
     "Senior Brand Strategist" (Unknown to Weak -- wants 8-10+ yrs at a
     top-tier digital publisher, well beyond Regina's experience).
+  - 2026-09-08: incremental rescan, 2 new rows. Accenture (Work & Co)
+    Designer, R00334677, Unknown fit -- a generic Work & Co/Accenture Song
+    design req, distinct from the three earlier Accenture/Droga5
+    applications, with no confirmable requirements beyond generic team-page
+    copy. Fresh, Senior Designer, Digital and Social -- a second, distinct
+    SmartRecruiters application ID for the same role Regina already applied
+    to on 2026-09-06, logged as an apparent accidental duplicate
+    resubmission.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1800,6 +1808,33 @@ SEED_ROWS = [
                          "photo/film production, and deep personal ties to music/nightlife culture. This is "
                          "a senior creative-leadership scope well beyond Regina's current level, plus real "
                          "gaps in motion/film production and the nightlife-specific cultural fit.",
+    },
+    {
+        "company": "Accenture (Work & Co)",
+        "position": "Designer (R00334677)",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "Workday",
+        "notes": "Distinct from the three earlier Accenture/Droga5 applications -- this one is a generic "
+                 "Designer req under Work & Co, Accenture Song's design studio, not Droga5.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Could only confirm generic team-page copy for Work & Co (\"no boundary between form "
+                         "and function,\" visual design/UX/UI/branding/coding) -- no years-of-experience bar or "
+                         "specific requirements available for this req to rate confidently.",
+    },
+    {
+        "company": "Fresh",
+        "position": "Senior Designer, Digital and Social",
+        "status": "Applied",
+        "applied_date": "2026-09-07",
+        "source": "SmartRecruiters",
+        "notes": "Second, distinct application submission (different SmartRecruiters application ID) for the "
+                 "same role and company as the 2026-09-06 Fresh application -- appears to be an accidental "
+                 "duplicate resubmission rather than a second role.",
+        "job_fit": "Good",
+        "job_fit_notes": "Same assessment as the first Fresh application: couldn't confirm the exact posting, "
+                         "but Fresh's closely related Senior Digital Designer role ($100K-$130K) and Regina's "
+                         "Common Matter beauty-brand digital/social design experience line up well.",
     },
 ]
 
