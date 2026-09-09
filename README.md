@@ -378,6 +378,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   social/spec portfolio, a different discipline from Regina's brand/graphic
   design background). Flipped VaynerMedia's Relevance Strategist
   application to Rejected per a VaynerX/Greenhouse email.
+- **2026-09-09** — incremental rescan, no new rows, 2 rejections: Finch's
+  Brand and Web Designer (Lever email), and Accenture (Work & Co) Designer,
+  R00334677 (Workday email citing that Regina's application indicated she
+  requires visa sponsorship — flagged for her to check her Workday/EEO
+  profile answers, since an incorrect sponsorship flag could be silently
+  disqualifying other US-based Workday applications too).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

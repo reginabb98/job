@@ -379,6 +379,14 @@ Scan history:
     public social/spec portfolio, a different discipline from Regina's
     brand/graphic design background). Flipped VaynerMedia's Relevance
     Strategist application to Rejected per a VaynerX/Greenhouse email.
+  - 2026-09-09: incremental rescan, no new rows, 2 rejections. Flipped
+    Finch's Brand and Web Designer application to Rejected per a Lever
+    email. Flipped the Accenture (Work & Co) Designer (R00334677)
+    application to Rejected per a Workday email citing that Regina's
+    application indicated she requires visa sponsorship -- flagged for
+    Regina to double-check her Workday/EEO profile answers, since an
+    incorrect sponsorship flag there could be silently disqualifying her
+    from other US-based Workday applications too.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1313,10 +1321,10 @@ SEED_ROWS = [
     {
         "company": "Finch",
         "position": "Brand and Web Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "Lever",
-        "notes": None,
+        "notes": "Rejected via a Lever email on 2026-09-08 evening (\"decided to move forward with other applicants\").",
         "job_fit": "Good",
         "job_fit_notes": "6+ yrs brand/visual design with an agency background, Figma/Adobe CS, comfort "
                          "with AI-assisted design tools, systems thinking across brand/web/print -- strong "
@@ -1818,11 +1826,14 @@ SEED_ROWS = [
     {
         "company": "Accenture (Work & Co)",
         "position": "Designer (R00334677)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-07",
         "source": "Workday",
         "notes": "Distinct from the three earlier Accenture/Droga5 applications -- this one is a generic "
-                 "Designer req under Work & Co, Accenture Song's design studio, not Droga5.",
+                 "Designer req under Work & Co, Accenture Song's design studio, not Droga5. Rejected via a "
+                 "Workday email on 2026-09-09, citing that Regina's application indicated she requires visa "
+                 "sponsorship -- worth double-checking whether a saved Workday/EEO profile answer is "
+                 "incorrectly flagging sponsorship-required across applications.",
         "job_fit": "Unknown",
         "job_fit_notes": "Could only confirm generic team-page copy for Work & Co (\"no boundary between form "
                          "and function,\" visual design/UX/UI/branding/coding) -- no years-of-experience bar or "
