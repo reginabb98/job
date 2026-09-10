@@ -384,6 +384,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   requires visa sponsorship — flagged for her to check her Workday/EEO
   profile answers, since an incorrect sponsorship flag could be silently
   disqualifying other US-based Workday applications too).
+- **2026-09-09 (later, reported directly by Regina)** — 2 new rows:
+  DualEntry, Brand Designer — a direct cold-email application to the
+  recruiter since Ashby was blocking a second application tied to her
+  earlier, rejected Brand Design Lead req (Good fit, $100K–$160K). Omnicom
+  Network, a 2nd distinct general network application (Unspecified role,
+  Unknown fit) — separate from both the 2026-07-27 and 2026-09-06 Omnicom
+  applications already on file.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

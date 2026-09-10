@@ -387,6 +387,13 @@ Scan history:
     Regina to double-check her Workday/EEO profile answers, since an
     incorrect sponsorship flag there could be silently disqualifying her
     from other US-based Workday applications too.
+  - 2026-09-09 (later, reported directly by Regina): 2 new rows. DualEntry,
+    Brand Designer -- a direct cold-email application to the recruiter
+    since Ashby was blocking a second application tied to her earlier,
+    rejected Brand Design Lead req (Good fit, $100K-$160K). Omnicom
+    Network, a 2nd distinct general network application (Unspecified role,
+    Unknown fit) -- separate from both the 2026-07-27 and 2026-09-06
+    Omnicom applications already on file.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1867,6 +1874,36 @@ SEED_ROWS = [
                          "experience. This is a social-video/performance-content discipline distinct from "
                          "Regina's brand/graphic-design background, with no comparable short-form content work "
                          "evidenced on her resume.",
+    },
+    {
+        "company": "DualEntry",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-09",
+        "source": "Cold email",
+        "notes": "Direct cold-email application to the DualEntry recruiter (polinan@dualentry.com), resume "
+                 "attached -- Ashby was blocking a second application because of Regina's earlier, rejected "
+                 "Brand Design Lead application, so she emailed directly asking to be considered for this "
+                 "distinct, more junior Brand/Visual Designer opening instead.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting ($100K-$160K): owning dualentry.com and the brand system end-to-end "
+                         "across web, campaigns, print, and events -- a close match to Regina's Common Matter "
+                         "brand-systems background across consumer/cultural/healthcare clients. Exact "
+                         "years-of-experience bar wasn't confirmable, but the role reads as more hands-on/"
+                         "individual-contributor than the earlier Brand Design Lead req she was rejected from.",
+    },
+    {
+        "company": "Omnicom Network",
+        "position": "General network application (2nd)",
+        "status": "Applied",
+        "applied_date": "2026-09-09",
+        "source": "Workday",
+        "notes": "Reported directly by Regina as a 2nd, distinct Omnicom application -- generic \"thank you for "
+                 "your application to the Omnicom network\" confirmation didn't name a role, and Regina didn't "
+                 "specify which listing. Distinct from both the 2026-07-27 general network application and the "
+                 "2026-09-06 Presentation Designer, Brand Experience application.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No specific role attached to confirm a posting against.",
     },
 ]
 
