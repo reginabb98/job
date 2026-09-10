@@ -391,6 +391,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Network, a 2nd distinct general network application (Unspecified role,
   Unknown fit) — separate from both the 2026-07-27 and 2026-09-06 Omnicom
   applications already on file.
+- **2026-09-10 (reported directly by Regina, screenshot)** — 1 new row:
+  Pomegranate Gallery, Part Time Book Designer — applied via SVA's own
+  career-services job board (12twenty). Confirmed posting is actually a
+  combined "Film Editor/Videographer & Graphic/Book Designer" role (Fair
+  fit — film editing/videography isn't evidenced on Regina's resume,
+  though the book/graphic-design half overlaps).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

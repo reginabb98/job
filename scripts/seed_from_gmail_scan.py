@@ -394,6 +394,12 @@ Scan history:
     Network, a 2nd distinct general network application (Unspecified role,
     Unknown fit) -- separate from both the 2026-07-27 and 2026-09-06
     Omnicom applications already on file.
+  - 2026-09-10 (reported directly by Regina, screenshot): 1 new row.
+    Pomegranate Gallery, Part Time Book Designer -- applied via SVA's own
+    career-services job board (12twenty). Confirmed posting is actually a
+    combined "Film Editor/Videographer & Graphic/Book Designer" role
+    (Fair fit -- film editing/videography isn't evidenced on Regina's
+    resume, though the book/graphic-design half overlaps).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1904,6 +1910,22 @@ SEED_ROWS = [
                  "2026-09-06 Presentation Designer, Brand Experience application.",
         "job_fit": "Unknown",
         "job_fit_notes": "No specific role attached to confirm a posting against.",
+    },
+    {
+        "company": "Pomegranate Gallery",
+        "position": "Part Time Book Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-10",
+        "source": "SVA Career Development (12twenty)",
+        "notes": "Applied through SVA's own career-services job board (12twenty), confirmed via a "
+                 "screenshot of the confirmation email.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (listed as \"Part Time Film Editor/Videographer & Graphic/Book "
+                         "Designer\"): a SoHo gallery role combining film editing/videography (InDesign + "
+                         "iMovie) with graphic/book design, part time and in person, Hebrew fluency a bonus. "
+                         "The book/graphic-design half overlaps with Regina's background, but film editing "
+                         "and videography aren't evidenced on her resume, and it's a smaller-scope part-time "
+                         "gallery role rather than her usual full-time agency work.",
     },
 ]
 
