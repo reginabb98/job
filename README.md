@@ -400,6 +400,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-11** — incremental rescan, no new rows, 1 rejection: flipped
   the Accenture (Droga5) Senior Strategist (R00348814) application to
   Rejected per a Workday email.
+- **2026-09-11 (later)** — incremental rescan, no new rows, 1 rejection:
+  flipped NBCUniversal's Associate Manager, NBC & Peacock Marketing
+  application to Rejected per a SmartRecruiters email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

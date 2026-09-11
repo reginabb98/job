@@ -403,6 +403,9 @@ Scan history:
   - 2026-09-11: incremental rescan, no new rows, 1 rejection. Flipped the
     Accenture (Droga5) Senior Strategist (R00348814) application to
     Rejected per a Workday email.
+  - 2026-09-11 (later): incremental rescan, no new rows, 1 rejection.
+    Flipped NBCUniversal's Associate Manager, NBC & Peacock Marketing
+    application to Rejected per a SmartRecruiters email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -785,10 +788,10 @@ SEED_ROWS = [
     {
         "company": "NBCUniversal",
         "position": "Associate Manager, NBC & Peacock Marketing",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "ZipRecruiter",
-        "notes": None,
+        "notes": "Rejected via a SmartRecruiters email on 2026-09-11 (\"not be moving forward with your candidacy\").",
         "job_fit": "Fair",
         "job_fit_notes": "An entertainment-marketing campaign-execution/coordination role (2+ yrs). Regina's brand and creative collaboration skills transfer reasonably, but this is more marketing-ops/coordination than the design or strategy authorship she actually does.",
     },
