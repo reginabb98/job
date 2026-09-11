@@ -397,6 +397,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   combined "Film Editor/Videographer & Graphic/Book Designer" role (Fair
   fit — film editing/videography isn't evidenced on Regina's resume,
   though the book/graphic-design half overlaps).
+- **2026-09-11** — incremental rescan, no new rows, 1 rejection: flipped
+  the Accenture (Droga5) Senior Strategist (R00348814) application to
+  Rejected per a Workday email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

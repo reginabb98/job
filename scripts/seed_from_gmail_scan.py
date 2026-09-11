@@ -400,6 +400,9 @@ Scan history:
     combined "Film Editor/Videographer & Graphic/Book Designer" role
     (Fair fit -- film editing/videography isn't evidenced on Regina's
     resume, though the book/graphic-design half overlaps).
+  - 2026-09-11: incremental rescan, no new rows, 1 rejection. Flipped the
+    Accenture (Droga5) Senior Strategist (R00348814) application to
+    Rejected per a Workday email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1365,12 +1368,13 @@ SEED_ROWS = [
     {
         "company": "Accenture (Droga5)",
         "position": "Senior Strategist (R00348814)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-03",
         "source": "Workday",
         "notes": "Distinct req ID from the earlier, already-rejected Droga5 Senior Strategist application "
                  "(R00338279) -- same role title/team, likely a reposted opening. Kept as a separate row "
-                 "since it carries its own reference ID and confirmation email.",
+                 "since it carries its own reference ID and confirmation email. Rejected via a Workday email "
+                 "on 2026-09-11 (\"unable to move forward at this time\").",
         "job_fit": "Fair",
         "job_fit_notes": "Same role type as the earlier Droga5 Senior Strategist application (R00338279, "
                          "rejected): Droga5 wants someone whose career has been in the strategist seat, "
