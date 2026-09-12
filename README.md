@@ -403,6 +403,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-11 (later)** — incremental rescan, no new rows, 1 rejection:
   flipped NBCUniversal's Associate Manager, NBC & Peacock Marketing
   application to Rejected per a SmartRecruiters email.
+- **2026-09-12 (later)** — 1 new row, found via a rejection email and
+  traced back to its confirmation: Noom, Senior Creative Strategist,
+  Performance (applied 2026-08-26, rejected 2026-09-12, Weak fit — a
+  performance-marketing/media-buying leadership scope not evidenced on
+  Regina's resume) — missed entirely by every prior scan since its
+  generic confirmation subject didn't match the search keywords.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

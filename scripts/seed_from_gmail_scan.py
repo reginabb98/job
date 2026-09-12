@@ -406,6 +406,12 @@ Scan history:
   - 2026-09-11 (later): incremental rescan, no new rows, 1 rejection.
     Flipped NBCUniversal's Associate Manager, NBC & Peacock Marketing
     application to Rejected per a SmartRecruiters email.
+  - 2026-09-12 (later): 1 new row, found via a rejection email and traced
+    back to its confirmation. Noom, Senior Creative Strategist, Performance
+    (applied 2026-08-26, rejected 2026-09-12, Weak fit -- a performance-
+    marketing/media-buying leadership scope not evidenced on Regina's
+    resume) -- missed entirely by every prior scan since its generic
+    confirmation subject didn't match the search keywords.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1917,6 +1923,24 @@ SEED_ROWS = [
                  "2026-09-06 Presentation Designer, Brand Experience application.",
         "job_fit": "Unknown",
         "job_fit_notes": "No specific role attached to confirm a posting against.",
+    },
+    {
+        "company": "Noom",
+        "position": "Senior Creative Strategist, Performance",
+        "status": "Rejected",
+        "applied_date": "2026-08-26",
+        "source": "Email",
+        "notes": "Missed entirely by every prior scan -- the confirmation email's generic subject didn't match "
+                 "the search keywords. Found via the 2026-09-12 rejection email (\"the position has been "
+                 "filled\"), then traced back to the original 2026-08-26 confirmation to backfill the applied "
+                 "date and role title.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: 6-10 yrs total experience, 3-5+ yrs specifically in performance "
+                         "creative strategy, owning bottom-of-funnel paid-social/digital creative and managing "
+                         "a junior Creative Strategist, tight partnership with media buyers on creative "
+                         "testing. This is a performance-marketing leadership scope -- media-buying fluency "
+                         "and direct-response/paid-social optimization experience aren't evidenced on Regina's "
+                         "brand/creative-agency background.",
     },
     {
         "company": "Pomegranate Gallery",
