@@ -409,6 +409,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   performance-marketing/media-buying leadership scope not evidenced on
   Regina's resume) — missed entirely by every prior scan since its
   generic confirmation subject didn't match the search keywords.
+- **2026-09-14** — incremental rescan, no new rows, 1 rejection: flipped
+  Disney's Associate Manager, Brand Strategy application to Rejected per
+  a Workday email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

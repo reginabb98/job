@@ -412,6 +412,9 @@ Scan history:
     marketing/media-buying leadership scope not evidenced on Regina's
     resume) -- missed entirely by every prior scan since its generic
     confirmation subject didn't match the search keywords.
+  - 2026-09-14: incremental rescan, no new rows, 1 rejection. Flipped
+    Disney's Associate Manager, Brand Strategy application to Rejected
+    per a Workday email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1409,10 +1412,11 @@ SEED_ROWS = [
     {
         "company": "Disney",
         "position": "Associate Manager, Brand Strategy",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-03",
         "source": "Workday",
-        "notes": None,
+        "notes": "Rejected via a Workday email on 2026-09-14 (\"already in process with candidates whose "
+                 "background and experience align with our hiring needs\").",
         "job_fit": "Good",
         "job_fit_notes": "Couldn't confirm this exact posting, but Disney's closely related 'Marketing "
                          "Strategy Associate Manager' role wants 2+ yrs marketing strategy/content/brand "
