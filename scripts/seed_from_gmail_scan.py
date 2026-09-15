@@ -422,6 +422,17 @@ Scan history:
     consultancy, not the hiring company itself, and runs many concurrently
     open, similarly-titled reqs, so the exact client listing for each
     couldn't be confirmed (all three Unknown fit).
+  - 2026-09-15: incremental rescan, 3 more new rows from the same evening's
+    application batch. The New York Times, Senior Designer, Games
+    Marketing (Temporary) -- a 2nd, distinct NYT application, Fair fit
+    (motion design is a required skill here, not evidenced on Regina's
+    resume). Sapience AI Corporation, Brand Graphic Designer (best-guess
+    title from their job board, generic confirmation didn't name it),
+    Weak fit -- the one design req found prefers Seattle/Pacific time, a
+    location mismatch. Unspecified (Ashby application) -- a fully generic
+    Ashby confirmation with no company name, role, or any identifying
+    detail at all; likely part of the same application session but the
+    company couldn't be determined.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2010,6 +2021,49 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Brand Designer listings.",
+    },
+    {
+        "company": "The New York Times",
+        "position": "Senior Designer, Games Marketing (Temporary)",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Greenhouse",
+        "notes": "2nd, distinct New York Times application -- separate from the earlier Designer, Marketing "
+                 "role (applied 07-22). This one is a temporary (6-month) role reporting to the Associate "
+                 "Creative Director, Marketing, Games.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: concepting/producing Games marketing campaigns, refined "
+                         "aesthetic, strong typography/layout/color, and motion design as a called-out core "
+                         "skill. Regina's design craft and typography line up well, but motion design is a "
+                         "required skill area here (not a plus), and it isn't evidenced on her resume -- the "
+                         "same recurring gap seen on several other roles.",
+    },
+    {
+        "company": "Sapience AI Corporation",
+        "position": "Brand Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse confirmation didn't name the role; \"Brand Graphic Designer\" is the one "
+                 "design req found on their job board, an AI company with a remote role but Seattle-area/"
+                 "Pacific-time-zone preference, so the exact title isn't fully confirmed.",
+        "job_fit": "Weak",
+        "job_fit_notes": "The one design req found (Brand Graphic Designer) prefers candidates in the Seattle "
+                         "area on Pacific time -- Regina is NYC-based and Eastern time, a location/timezone "
+                         "mismatch on top of an unfamiliar AI-company industry context.",
+    },
+    {
+        "company": "Unspecified (Ashby application)",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Ashby",
+        "notes": "The confirmation email was a fully generic Ashby template signed only \"TALENT TEAM\" -- no "
+                 "company name, role title, or any other identifying detail anywhere in the email. Submitted "
+                 "the same evening as the Craft/NYT/Sapience AI batch, so likely part of the same application "
+                 "session, but which company this was for could not be determined.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No company or role information available to assess fit against.",
     },
 ]
 

@@ -419,6 +419,17 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   consultancy, not the hiring company itself, and runs many concurrently
   open, similarly-titled reqs, so the exact client listing for each
   couldn't be confirmed (all three Unknown fit).
+- **2026-09-15** — incremental rescan, 3 more new rows from the same
+  evening's application batch: The New York Times, Senior Designer, Games
+  Marketing (Temporary) — a 2nd, distinct NYT application, Fair fit
+  (motion design is a required skill here, not evidenced on Regina's
+  resume). Sapience AI Corporation, Brand Graphic Designer (best-guess
+  title from their job board, generic confirmation didn't name it), Weak
+  fit — the one design req found prefers Seattle/Pacific time, a location
+  mismatch. Unspecified (Ashby application) — a fully generic Ashby
+  confirmation with no company name, role, or any identifying detail at
+  all; likely part of the same application session but the company
+  couldn't be determined.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
