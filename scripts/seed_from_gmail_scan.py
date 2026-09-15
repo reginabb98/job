@@ -433,6 +433,14 @@ Scan history:
     Ashby confirmation with no company name, role, or any identifying
     detail at all; likely part of the same application session but the
     company couldn't be determined.
+  - 2026-09-15 (later, reported directly by Regina, screenshot): 1 new
+    row, found via a rejection email and traced back to its confirmation.
+    DEPT, Principal, Visual Design (applied 2026-09-14, part of the same
+    evening's application batch; rejected 2026-09-15, Weak fit -- a
+    Principal-level design-leadership/UX scope well beyond Regina's
+    brand/graphic-design background) -- missed by the prior two rescans
+    since its confirmation subject ("Whoo! We've received your
+    application!") didn't match the search keywords.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2064,6 +2072,25 @@ SEED_ROWS = [
                  "session, but which company this was for could not be determined.",
         "job_fit": "Unknown",
         "job_fit_notes": "No company or role information available to assess fit against.",
+    },
+    {
+        "company": "DEPT",
+        "position": "Principal, Visual Design",
+        "status": "Rejected",
+        "applied_date": "2026-09-14",
+        "source": "Greenhouse",
+        "notes": "Part of the same 2026-09-14 evening application batch as Craft/NYT/Sapience AI/the "
+                 "unspecified Ashby application -- missed by the 2026-09-14/09-15 rescans since the "
+                 "confirmation subject (\"Whoo! We've received your application!\") didn't match the search "
+                 "keywords. Found via a rejection email Regina shared (screenshot) on 2026-09-15, then traced "
+                 "back to the original confirmation to backfill the applied date; the confirmation itself "
+                 "didn't name the role.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: a Principal-level design-leadership role setting visual/UX "
+                         "direction across large, diverse teams, with a strong UX/interaction-design-system "
+                         "component and executive-level presentation/stakeholder skills. This is a design-"
+                         "leadership scope and seniority several levels above Regina's brand/graphic-design "
+                         "agency background, and UX/interaction design isn't evidenced on her resume.",
     },
 ]
 

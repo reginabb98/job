@@ -430,6 +430,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   confirmation with no company name, role, or any identifying detail at
   all; likely part of the same application session but the company
   couldn't be determined.
+- **2026-09-15 (later, reported directly by Regina, screenshot)** — 1 new
+  row, found via a rejection email and traced back to its confirmation:
+  DEPT, Principal, Visual Design (applied 2026-09-14, part of the same
+  evening's application batch; rejected 2026-09-15, Weak fit — a
+  Principal-level design-leadership/UX scope well beyond Regina's
+  brand/graphic-design background) — missed by the prior two rescans
+  since its confirmation subject ("Whoo! We've received your
+  application!") didn't match the search keywords.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
