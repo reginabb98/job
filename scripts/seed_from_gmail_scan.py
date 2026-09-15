@@ -441,6 +441,10 @@ Scan history:
     brand/graphic-design background) -- missed by the prior two rescans
     since its confirmation subject ("Whoo! We've received your
     application!") didn't match the search keywords.
+  - 2026-09-15 (later): incremental rescan, 1 new row. TUSHY, Creative
+    Strategist, Unknown fit -- couldn't confirm the exact posting; TUSHY's
+    own board only showed a differently-titled, more senior Associate
+    Director, Creative req.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2091,6 +2095,20 @@ SEED_ROWS = [
                          "component and executive-level presentation/stakeholder skills. This is a design-"
                          "leadership scope and seniority several levels above Regina's brand/graphic-design "
                          "agency background, and UX/interaction design isn't evidenced on her resume.",
+    },
+    {
+        "company": "TUSHY",
+        "position": "Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Breezy",
+        "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm the exact Creative Strategist posting -- TUSHY's own board only "
+                         "turned up a more senior, differently-titled Associate Director, Creative req. TUSHY "
+                         "is a D2C bidet/personal-care brand known for irreverent, humor-driven performance "
+                         "marketing, which isn't a demonstrated specialty on Regina's resume, but without the "
+                         "actual listing there's nothing concrete to assess fit against.",
     },
 ]
 

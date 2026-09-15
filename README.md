@@ -438,6 +438,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   brand/graphic-design background) — missed by the prior two rescans
   since its confirmation subject ("Whoo! We've received your
   application!") didn't match the search keywords.
+- **2026-09-15 (later)** — incremental rescan, 1 new row: TUSHY, Creative
+  Strategist, Unknown fit — couldn't confirm the exact posting; TUSHY's
+  own board only showed a differently-titled, more senior Associate
+  Director, Creative req.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
