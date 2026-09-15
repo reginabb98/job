@@ -412,6 +412,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-14** — incremental rescan, no new rows, 1 rejection: flipped
   Disney's Associate Manager, Brand Strategy application to Rejected per
   a Workday email.
+- **2026-09-14 (later)** — incremental rescan, 3 new rows: Craft, Senior
+  Designer / Freelance Senior Brand Designer / Brand Designer — three
+  distinct applications submitted within minutes of each other through
+  Craft's own ATS. Craft is a UK/NY creative & design recruitment
+  consultancy, not the hiring company itself, and runs many concurrently
+  open, similarly-titled reqs, so the exact client listing for each
+  couldn't be confirmed (all three Unknown fit).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

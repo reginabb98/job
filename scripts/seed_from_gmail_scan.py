@@ -415,6 +415,13 @@ Scan history:
   - 2026-09-14: incremental rescan, no new rows, 1 rejection. Flipped
     Disney's Associate Manager, Brand Strategy application to Rejected
     per a Workday email.
+  - 2026-09-14 (later): incremental rescan, 3 new rows. Craft, Senior
+    Designer / Freelance Senior Brand Designer / Brand Designer -- three
+    distinct applications submitted within minutes of each other through
+    Craft's own ATS. Craft is a UK/NY creative & design recruitment
+    consultancy, not the hiring company itself, and runs many concurrently
+    open, similarly-titled reqs, so the exact client listing for each
+    couldn't be confirmed (all three Unknown fit).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1961,6 +1968,48 @@ SEED_ROWS = [
                          "The book/graphic-design half overlaps with Regina's background, but film editing "
                          "and videography aren't evidenced on her resume, and it's a smaller-scope part-time "
                          "gallery role rather than her usual full-time agency work.",
+    },
+    {
+        "company": "Craft",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Craft (recruitment agency ATS)",
+        "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
+                 "company itself -- Regina submitted three distinct applications through their ATS within "
+                 "minutes of each other. Craft runs many concurrently open, similarly-titled reqs across "
+                 "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
+                         "Senior Designer listings; a comparable NY-based Senior Designer req seen on their "
+                         "board (5-7 yrs agency/branding experience, $95K-$140K) would be a solid match to "
+                         "Regina's Common Matter background, but that's not confirmed as the actual posting.",
+    },
+    {
+        "company": "Craft",
+        "position": "Freelance Senior Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Craft (recruitment agency ATS)",
+        "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
+                 "company itself -- one of three distinct applications Regina submitted through their ATS "
+                 "within minutes of each other.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific client/freelance req this was among Craft's several "
+                         "open Senior Brand Designer listings.",
+    },
+    {
+        "company": "Craft",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-14",
+        "source": "Craft (recruitment agency ATS)",
+        "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
+                 "company itself -- one of three distinct applications Regina submitted through their ATS "
+                 "within minutes of each other.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
+                         "Brand Designer listings.",
     },
 ]
 
