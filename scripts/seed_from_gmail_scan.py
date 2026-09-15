@@ -445,6 +445,12 @@ Scan history:
     Strategist, Unknown fit -- couldn't confirm the exact posting; TUSHY's
     own board only showed a differently-titled, more senior Associate
     Director, Creative req.
+  - 2026-09-15 (evening): incremental rescan, 2 new rows. Compass, Senior
+    Designer (Good fit -- closest match found is a Senior Graphic
+    Designer role on their in-house Creative Studio, brand/campaign/print
+    work with Adobe + Figma, a solid match to Regina's background). FLORA,
+    Creative Generalist (Contract), Unknown fit -- couldn't confirm the
+    exact posting among FLORA's differently-titled Ashby listings.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2109,6 +2115,33 @@ SEED_ROWS = [
                          "is a D2C bidet/personal-care brand known for irreverent, humor-driven performance "
                          "marketing, which isn't a demonstrated specialty on Regina's resume, but without the "
                          "actual listing there's nothing concrete to assess fit against.",
+    },
+    {
+        "company": "Compass",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Greenhouse",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "The closest match found is a Senior Graphic Designer role on Compass's in-house "
+                         "Creative Studio (NYC, real-estate brokerage): brand identities, motion-led campaigns, "
+                         "print/digital marketing collateral, Illustrator/Photoshop/Figma/InDesign (motion a "
+                         "plus, not required) -- a solid match to Regina's Common Matter agency background and "
+                         "tools, though 100% in-office wasn't confirmed as a hard requirement for this exact "
+                         "req.",
+    },
+    {
+        "company": "FLORA",
+        "position": "Creative Generalist (Contract)",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm the exact Creative Generalist posting -- FLORA's Ashby board only "
+                         "showed differently-titled roles (Production Coordinator, Brand & Creative; Forward "
+                         "Deployed Creative), so there's nothing concrete to assess fit against.",
     },
 ]
 

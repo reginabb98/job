@@ -442,6 +442,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Strategist, Unknown fit — couldn't confirm the exact posting; TUSHY's
   own board only showed a differently-titled, more senior Associate
   Director, Creative req.
+- **2026-09-15 (evening)** — incremental rescan, 2 new rows: Compass,
+  Senior Designer (Good fit — closest match found is a Senior Graphic
+  Designer role on their in-house Creative Studio, brand/campaign/print
+  work with Adobe + Figma, a solid match to Regina's background). FLORA,
+  Creative Generalist (Contract), Unknown fit — couldn't confirm the
+  exact posting among FLORA's differently-titled Ashby listings.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
