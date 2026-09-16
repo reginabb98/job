@@ -451,6 +451,13 @@ Scan history:
     work with Adobe + Figma, a solid match to Regina's background). FLORA,
     Creative Generalist (Contract), Unknown fit -- couldn't confirm the
     exact posting among FLORA's differently-titled Ashby listings.
+  - 2026-09-16: incremental rescan, 2 new rows from the prior evening.
+    Made Thought, Senior Designer (Good fit -- confirmed posting, a
+    London creative studio wanting graphic design/art direction/strategy
+    craft, a strong match to Regina's agency background). Profound, Brand
+    Designer (Good fit -- a well-funded AI marketing-analytics startup
+    wanting a Brand Designer to define its look/feel as it scales, solid
+    general match though specific requirements weren't confirmable).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2142,6 +2149,34 @@ SEED_ROWS = [
         "job_fit_notes": "Couldn't confirm the exact Creative Generalist posting -- FLORA's Ashby board only "
                          "showed differently-titled roles (Production Coordinator, Brand & Creative; Forward "
                          "Deployed Creative), so there's nothing concrete to assess fit against.",
+    },
+    {
+        "company": "Made Thought",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Email",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: a London creative studio (adidas, MoMA, Pinterest, Stella "
+                         "McCartney) wanting graphic design/art direction/strategy craft via Adobe CS and "
+                         "Keynote, driving projects concept-to-delivery and mentoring junior designers -- a "
+                         "strong match to Regina's Common Matter agency background. 3D tools are also listed "
+                         "among the studio's core work, which isn't evidenced on her resume.",
+    },
+    {
+        "company": "Profound",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Ashby",
+        "notes": None,
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed general scope: a well-funded ($1B valuation) AI marketing-analytics "
+                         "startup wants a Brand Designer to define its look/feel across campaigns, events, and "
+                         "visual systems as it scales -- a solid general match to Regina's brand-systems "
+                         "background, though specific years-of-experience/skill requirements weren't "
+                         "confirmable from the posting summary found.",
     },
 ]
 

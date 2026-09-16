@@ -448,6 +448,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   work with Adobe + Figma, a solid match to Regina's background). FLORA,
   Creative Generalist (Contract), Unknown fit — couldn't confirm the
   exact posting among FLORA's differently-titled Ashby listings.
+- **2026-09-16** — incremental rescan, 2 new rows from the prior evening:
+  Made Thought, Senior Designer (Good fit — confirmed posting, a London
+  creative studio wanting graphic design/art direction/strategy craft, a
+  strong match to Regina's agency background). Profound, Brand Designer
+  (Good fit — a well-funded AI marketing-analytics startup wanting a
+  Brand Designer to define its look/feel as it scales, solid general
+  match though specific requirements weren't confirmable).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
