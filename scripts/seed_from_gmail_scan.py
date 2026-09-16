@@ -458,6 +458,14 @@ Scan history:
     Designer (Good fit -- a well-funded AI marketing-analytics startup
     wanting a Brand Designer to define its look/feel as it scales, solid
     general match though specific requirements weren't confirmable).
+  - 2026-09-16 (reported directly by Regina, screenshot): 2 new rows,
+    found via a Gmail Sent search. Combo, Senior Brand Designer -- a
+    direct cold-email application (jobs@combo.co), Unknown fit since no
+    actual posting could be found. Saint Urbain, Senior Designer -- a
+    direct cold-email application (work@sainturbain.com) in response to
+    a LinkedIn post, Strong fit -- an independent branding/strategy/
+    design studio, a close match to Regina's branding-studio, Superside,
+    and SVA Branding Master's background.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2177,6 +2185,31 @@ SEED_ROWS = [
                          "visual systems as it scales -- a solid general match to Regina's brand-systems "
                          "background, though specific years-of-experience/skill requirements weren't "
                          "confirmable from the posting summary found.",
+    },
+    {
+        "company": "Combo",
+        "position": "Senior Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-15",
+        "source": "Cold email",
+        "notes": "Direct cold-email application to jobs@combo.co, resume and portfolio attached -- found via "
+                 "Gmail Sent search.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find or confirm an actual Combo job posting to assess fit against.",
+    },
+    {
+        "company": "Saint Urbain",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-16",
+        "source": "Cold email",
+        "notes": "Direct cold-email application to work@sainturbain.com in response to a LinkedIn post about "
+                 "the opening, resume and cover letter attached -- found via Gmail Sent search.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Confirmed via Saint Urbain's own LinkedIn post: a Senior Designer with brand design "
+                         "experience, remote and freelance-to-start. Saint Urbain is an independent branding/"
+                         "strategy/design studio -- a close, direct match to Regina's branding-studio "
+                         "(Mexico), Superside, and SVA Branding Master's background.",
     },
 ]
 

@@ -455,6 +455,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (Good fit — a well-funded AI marketing-analytics startup wanting a
   Brand Designer to define its look/feel as it scales, solid general
   match though specific requirements weren't confirmable).
+- **2026-09-16 (reported directly by Regina, screenshot)** — 2 new rows,
+  found via a Gmail Sent search: Combo, Senior Brand Designer — a direct
+  cold-email application (jobs@combo.co), Unknown fit since no actual
+  posting could be found. Saint Urbain, Senior Designer — a direct
+  cold-email application (work@sainturbain.com) in response to a
+  LinkedIn post, Strong fit — an independent branding/strategy/design
+  studio, a close match to Regina's branding-studio, Superside, and SVA
+  Branding Master's background.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
