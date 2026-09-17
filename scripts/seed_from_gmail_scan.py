@@ -466,6 +466,9 @@ Scan history:
     a LinkedIn post, Strong fit -- an independent branding/strategy/
     design studio, a close match to Regina's branding-studio, Superside,
     and SVA Branding Master's background.
+  - 2026-09-17: incremental rescan, no new rows, 1 rejection. Flipped
+    Compass's Senior Designer application to Rejected per a Greenhouse
+    email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2134,10 +2137,12 @@ SEED_ROWS = [
     {
         "company": "Compass",
         "position": "Senior Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-15",
         "source": "Greenhouse",
-        "notes": None,
+        "notes": "Rejected via a Greenhouse email on 2026-09-17 (\"decided to move forward with other "
+                 "candidates\") -- confirmed as the real-estate brokerage Compass International Holdings, "
+                 "not a distinct company.",
         "job_fit": "Good",
         "job_fit_notes": "The closest match found is a Senior Graphic Designer role on Compass's in-house "
                          "Creative Studio (NYC, real-estate brokerage): brand identities, motion-led campaigns, "

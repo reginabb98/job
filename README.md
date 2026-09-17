@@ -463,6 +463,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   LinkedIn post, Strong fit — an independent branding/strategy/design
   studio, a close match to Regina's branding-studio, Superside, and SVA
   Branding Master's background.
+- **2026-09-17** — incremental rescan, no new rows, 1 rejection: flipped
+  Compass's Senior Designer application to Rejected per a Greenhouse
+  email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
