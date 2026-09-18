@@ -470,6 +470,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Google Meet booked via Calendly), Sept 16, 2026, reported directly by
   Regina. Only a Calendly confirmation email was found in Gmail —
   company/context unconfirmed.
+- **2026-09-18 (later)** — incremental rescan, 2 new rows, 2 flips: New
+  York Times — Senior Strategist (3rd distinct NYT application, Unknown
+  fit — couldn't confirm which of several same-titled NYT postings this
+  was). Ripple — Senior Brand Designer, Rejected (distinct from the
+  already-tracked NY Brand Designer role; likely the separate SF opening
+  referenced in that row's notes, inferred applied_date from the original
+  ambiguous 09-06 confirmation). Flipped Made Thought's Senior Designer
+  application to Rejected. Flipped Day One's Senior Designer application
+  to Interviewing — an external recruiter (Angela, thechangeagents.co)
+  reached out to schedule a call; not yet booked.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

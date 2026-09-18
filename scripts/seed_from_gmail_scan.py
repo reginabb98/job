@@ -473,6 +473,17 @@ Scan history:
     Google Meet booked via Calendly), Sept 16, 2026, reported directly
     by Regina. Only a Calendly confirmation email was found in Gmail --
     company/context unconfirmed.
+  - 2026-09-18 (later): incremental rescan, 2 new rows, 2 flips. New
+    York Times -- Senior Strategist (3rd distinct NYT application,
+    Unknown fit -- couldn't confirm which of several same-titled NYT
+    postings this was). Ripple -- Senior Brand Designer, Rejected
+    (distinct from the already-tracked NY Brand Designer role; likely
+    the separate SF opening referenced in that row's notes, inferred
+    applied_date from the original ambiguous 09-06 confirmation).
+    Flipped Made Thought's Senior Designer application to Rejected.
+    Flipped Day One's Senior Designer application to Interviewing --
+    an external recruiter (Angela, thechangeagents.co) reached out to
+    schedule a call; not yet booked.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1826,8 +1837,10 @@ SEED_ROWS = [
     {
         "company": "Day One",
         "position": "Senior Designer",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-09-06",
+        "next_step": "Angela (external recruiter/consultant, thechangeagents.co) emailed 2026-09-18 to schedule "
+                     "a Google Meet re: the Senior Designer, NY role -- shared a Calendly link, not yet booked.",
         "source": "Pinpoint",
         "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
         "pay_range": "$80K-$95K/yr",
@@ -2170,10 +2183,11 @@ SEED_ROWS = [
     {
         "company": "Made Thought",
         "position": "Senior Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-15",
         "source": "Email",
-        "notes": None,
+        "notes": "Rejected via email on 2026-09-18 (\"identified candidates more closely aligned with the "
+                 "role\").",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: a London creative studio (adidas, MoMA, Pinterest, Stella "
                          "McCartney) wanting graphic design/art direction/strategy craft via Adobe CS and "
@@ -2230,6 +2244,39 @@ SEED_ROWS = [
         "notes": "30-minute Google Meet call booked via Calendly, Sept 16, 2026, 11:00-11:30am ET. Only a "
                  "Calendly confirmation email was found in Gmail -- no other correspondence surfaced, so the "
                  "company/context behind this contact is unconfirmed.",
+    },
+    # -- 2026-09-18 (later): incremental rescan, 2 new rows, 2 flips --
+    {
+        "company": "The New York Times",
+        "position": "Senior Strategist",
+        "status": "Applied",
+        "applied_date": "2026-09-18",
+        "source": "Greenhouse",
+        "notes": "3rd, distinct New York Times application -- separate from the Designer, Marketing role "
+                 "(applied 07-22) and the Senior Designer, Games Marketing role (applied 09-14).",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Multiple NYT 'Senior Strategist' postings exist (e.g. a T Brand Studio advertising-"
+                         "sales-strategy role vs. an Events-team role); direct access to the exact posting was "
+                         "blocked, so which one Regina applied to -- and fit against it -- couldn't be "
+                         "confirmed. The T Brand Studio listing skews toward advertiser-facing sales strategy "
+                         "and cross-platform marketing experience, which isn't a clear match to her design-"
+                         "agency background.",
+    },
+    {
+        "company": "Ripple",
+        "position": "Senior Brand Designer",
+        "status": "Rejected",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": "Distinct from the already-tracked Ripple Brand Designer (NY) application -- this is likely "
+                 "the separate San Francisco Senior Brand Designer opening referenced in that row's notes as "
+                 "the other plausible match for the original ambiguous 09-06 Greenhouse confirmation. No "
+                 "distinct confirmation email for this one was ever found, only a 2026-09-18 rejection (\"Update "
+                 "on Your Application\"), so the applied_date is inferred from the original 09-06 confirmation "
+                 "rather than confirmed directly.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "The Senior-level SF posting itself wasn't separately confirmed, so fit couldn't be "
+                         "assessed against it directly.",
     },
 ]
 
