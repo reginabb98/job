@@ -466,6 +466,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-17** — incremental rescan, no new rows, 1 rejection: flipped
   Compass's Senior Designer application to Rejected per a Greenhouse
   email.
+- **2026-09-18** — logged a networking call with Andie Wexler (30-min
+  Google Meet booked via Calendly), Sept 16, 2026, reported directly by
+  Regina. Only a Calendly confirmation email was found in Gmail —
+  company/context unconfirmed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

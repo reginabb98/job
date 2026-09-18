@@ -469,6 +469,10 @@ Scan history:
   - 2026-09-17: incremental rescan, no new rows, 1 rejection. Flipped
     Compass's Senior Designer application to Rejected per a Greenhouse
     email.
+  - 2026-09-18: logged a networking call with Andie Wexler (30-min
+    Google Meet booked via Calendly), Sept 16, 2026, reported directly
+    by Regina. Only a Calendly confirmation email was found in Gmail --
+    company/context unconfirmed.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2215,6 +2219,17 @@ SEED_ROWS = [
                          "experience, remote and freelance-to-start. Saint Urbain is an independent branding/"
                          "strategy/design studio -- a close, direct match to Regina's branding-studio "
                          "(Mexico), Superside, and SVA Branding Master's background.",
+    },
+    # -- 2026-09-18: networking call reported directly by Regina --
+    {
+        "company": "Andie Wexler",
+        "position": "Networking call",
+        "status": "Networking",
+        "applied_date": "2026-09-16",
+        "source": "Calendly",
+        "notes": "30-minute Google Meet call booked via Calendly, Sept 16, 2026, 11:00-11:30am ET. Only a "
+                 "Calendly confirmation email was found in Gmail -- no other correspondence surfaced, so the "
+                 "company/context behind this contact is unconfirmed.",
     },
 ]
 
