@@ -493,6 +493,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Designer, Good fit — a distinct 3rd OLIVER application (global
   financial-services account, in-house-agency model), missed by prior
   scans; confirmation found via targeted search.
+- **2026-09-19 (evening rescan)** — incremental rescan, 1 new row:
+  OLIVER — Senior Designer (2nd application), Unknown fit — a 4th,
+  distinct OLIVER confirmation for a same-titled posting, 13 days after
+  the first; OLIVER runs many concurrent Senior Designer reqs, so this
+  reads as a separate opening rather than a duplicate.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

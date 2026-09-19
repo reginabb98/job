@@ -497,6 +497,11 @@ Scan history:
     Designer, Good fit -- a distinct 3rd OLIVER application (global
     financial-services account, in-house-agency model), missed by
     prior scans; confirmation found via targeted search.
+  - 2026-09-19 (evening rescan): incremental rescan, 1 new row. OLIVER
+    -- Senior Designer (2nd application), Unknown fit -- a 4th, distinct
+    OLIVER confirmation for a same-titled posting, 13 days after the
+    first; OLIVER runs many concurrent Senior Designer reqs, so this
+    reads as a separate opening rather than a duplicate.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2328,6 +2333,22 @@ SEED_ROWS = [
                          "account, embedded client-side (in OLIVER's in-house-agency model) 2 days/week, "
                          "$106,250-$118,750. A solid general match to Regina's Common Matter agency background, "
                          "though the specific financial-services client industry isn't evidenced on her resume.",
+    },
+    # -- 2026-09-19 (evening rescan): incremental rescan, 1 new row --
+    {
+        "company": "OLIVER",
+        "position": "Senior Designer (2nd application)",
+        "status": "Applied",
+        "applied_date": "2026-09-19",
+        "source": "Greenhouse",
+        "notes": "Second, distinct Greenhouse confirmation for a same-titled 'Senior Designer' posting, 13 "
+                 "days after the first (applied 09-06) -- OLIVER runs many concurrent Senior Designer reqs "
+                 "across different client accounts, so this reads as a separate opening rather than a "
+                 "duplicate resubmission, though the confirmation itself is fully generic and doesn't name "
+                 "which req.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific OLIVER Senior Designer req this is among their "
+                         "several concurrently open, similarly-titled postings.",
     },
 ]
 
