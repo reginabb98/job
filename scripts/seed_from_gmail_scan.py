@@ -484,6 +484,11 @@ Scan history:
     Flipped Day One's Senior Designer application to Interviewing --
     an external recruiter (Angela, thechangeagents.co) reached out to
     schedule a call; not yet booked.
+  - 2026-09-19: 1 new row, reported directly by Regina with the full
+    posting shared. Perplexity -- Brand Designer, Growth, Fair fit
+    ($150K-$225K + equity; strong on brand/visual craft, but the role's
+    core growth-performance-data-driven iteration isn't a demonstrated
+    specialty on her resume).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2277,6 +2282,26 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "The Senior-level SF posting itself wasn't separately confirmed, so fit couldn't be "
                          "assessed against it directly.",
+    },
+    # -- 2026-09-19: reported directly by Regina, full posting shared --
+    {
+        "company": "Perplexity",
+        "position": "Brand Designer, Growth",
+        "status": "Applied",
+        "applied_date": "2026-09-19",
+        "source": "Ashby",
+        "notes": "Full posting shared directly by Regina. San Francisco or New York, hybrid. Per LinkedIn's "
+                 "applicant-insight panel at the time she applied: 30 candidates had clicked apply total, all "
+                 "30 within the past day.",
+        "pay_range": "$150K-$225K + equity",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: 5+ yrs designing growth/performance creative (paid ads, social, "
+                         "lifecycle email) with strong Figma/Adobe CS craft and strategic concepting -- the "
+                         "visual-design and brand-system side lines up with Regina's Common Matter background. "
+                         "But the core of the role is reading ad-performance data (CTR, conversion, hook rates) "
+                         "and iterating creative against it in partnership with a Growth team, which isn't a "
+                         "demonstrated specialty on her resume; motion design is called out as a plus, not "
+                         "required.",
     },
 ]
 

@@ -480,6 +480,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   application to Rejected. Flipped Day One's Senior Designer application
   to Interviewing — an external recruiter (Angela, thechangeagents.co)
   reached out to schedule a call; not yet booked.
+- **2026-09-19** — 1 new row, reported directly by Regina with the full
+  posting shared: Perplexity — Brand Designer, Growth, Fair fit
+  ($150K–$225K + equity; strong on brand/visual craft, but the role's
+  core growth-performance-data-driven iteration isn't a demonstrated
+  specialty on her resume).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
