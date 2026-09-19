@@ -492,6 +492,11 @@ Scan history:
   - 2026-09-19 (later): incremental rescan, no new rows. Day One's
     interview with Angela got booked -- Google Meet confirmed for
     Monday, Sept 21, 2026, 1:00-1:25pm ET.
+  - 2026-09-19 (evening): 1 new row, traced back after Regina flagged
+    it from a LinkedIn applicant-insight screenshot. OLIVER -- Senior
+    Designer, Good fit -- a distinct 3rd OLIVER application (global
+    financial-services account, in-house-agency model), missed by
+    prior scans; confirmation found via targeted search.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2304,6 +2309,25 @@ SEED_ROWS = [
                          "and iterating creative against it in partnership with a Growth team, which isn't a "
                          "demonstrated specialty on her resume; motion design is called out as a plus, not "
                          "required.",
+    },
+    # -- 2026-09-19 (later): traced back via targeted search after Regina --
+    # confirmed via LinkedIn's applicant-insight screenshot that she'd applied --
+    {
+        "company": "OLIVER",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-06",
+        "source": "Greenhouse",
+        "notes": "Distinct from the two other already-tracked OLIVER applications (Social & Culture "
+                 "Strategist, applied 07-23; and a separate role rejected 08-14). Confirmation was missed by "
+                 "prior scans; found via targeted search after Regina flagged it from LinkedIn's own "
+                 "applicant-insight panel (113 applicants total, 4 in the past day, per her screenshot).",
+        "applicant_count": 113,
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed general scope: a Senior Designer role on a global financial-services "
+                         "account, embedded client-side (in OLIVER's in-house-agency model) 2 days/week, "
+                         "$106,250-$118,750. A solid general match to Regina's Common Matter agency background, "
+                         "though the specific financial-services client industry isn't evidenced on her resume.",
     },
 ]
 

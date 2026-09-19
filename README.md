@@ -488,6 +488,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-19 (later)** — incremental rescan, no new rows. Day One's
   interview with Angela got booked — Google Meet confirmed for Monday,
   Sept 21, 2026, 1:00–1:25pm ET.
+- **2026-09-19 (evening)** — 1 new row, traced back after Regina flagged
+  it from a LinkedIn applicant-insight screenshot: OLIVER — Senior
+  Designer, Good fit — a distinct 3rd OLIVER application (global
+  financial-services account, in-house-agency model), missed by prior
+  scans; confirmation found via targeted search.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
