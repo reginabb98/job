@@ -2290,10 +2290,9 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-19",
         "source": "Ashby",
-        "notes": "Full posting shared directly by Regina. San Francisco or New York, hybrid. Per LinkedIn's "
-                 "applicant-insight panel at the time she applied: 30 candidates had clicked apply total, all "
-                 "30 within the past day.",
+        "notes": "Full posting shared directly by Regina. San Francisco or New York, hybrid.",
         "pay_range": "$150K-$225K + equity",
+        "applicant_count": 30,
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: 5+ yrs designing growth/performance creative (paid ads, social, "
                          "lifecycle email) with strong Figma/Adobe CS craft and strategic concepting -- the "
@@ -2322,11 +2321,12 @@ def main():
         row.setdefault("pay_range", None)
         row.setdefault("job_fit", None)
         row.setdefault("job_fit_notes", None)
+        row.setdefault("applicant_count", None)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )
