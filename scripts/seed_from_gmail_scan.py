@@ -489,6 +489,9 @@ Scan history:
     ($150K-$225K + equity; strong on brand/visual craft, but the role's
     core growth-performance-data-driven iteration isn't a demonstrated
     specialty on her resume).
+  - 2026-09-19 (later): incremental rescan, no new rows. Day One's
+    interview with Angela got booked -- Google Meet confirmed for
+    Monday, Sept 21, 2026, 1:00-1:25pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1844,8 +1847,8 @@ SEED_ROWS = [
         "position": "Senior Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-06",
-        "next_step": "Angela (external recruiter/consultant, thechangeagents.co) emailed 2026-09-18 to schedule "
-                     "a Google Meet re: the Senior Designer, NY role -- shared a Calendly link, not yet booked.",
+        "next_step": "Google Meet with Angela (external recruiter/consultant, thechangeagents.co) booked for "
+                     "Monday, Sept 21, 2026, 1:00-1:25pm ET, re: the Senior Designer, NY role.",
         "source": "Pinpoint",
         "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
         "pay_range": "$80K-$95K/yr",

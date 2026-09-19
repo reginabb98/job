@@ -485,6 +485,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   ($150K–$225K + equity; strong on brand/visual craft, but the role's
   core growth-performance-data-driven iteration isn't a demonstrated
   specialty on her resume).
+- **2026-09-19 (later)** — incremental rescan, no new rows. Day One's
+  interview with Angela got booked — Google Meet confirmed for Monday,
+  Sept 21, 2026, 1:00–1:25pm ET.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
