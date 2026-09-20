@@ -498,6 +498,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   distinct OLIVER confirmation for a same-titled posting, 13 days after
   the first; OLIVER runs many concurrent Senior Designer reqs, so this
   reads as a separate opening rather than a duplicate.
+- **2026-09-20** — 1 new row, traced back after a rejection surfaced for
+  an application prior scans had missed: BritBox International — Senior
+  Designer, Fair fit (entertainment key art for BBC Studios' streaming
+  brand; typography/Photoshop craft lines up, but key art is a niche
+  not evidenced on her resume). Applied 09-14, rejected 09-20.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

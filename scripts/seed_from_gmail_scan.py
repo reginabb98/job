@@ -502,6 +502,12 @@ Scan history:
     OLIVER confirmation for a same-titled posting, 13 days after the
     first; OLIVER runs many concurrent Senior Designer reqs, so this
     reads as a separate opening rather than a duplicate.
+  - 2026-09-20: 1 new row, traced back after a rejection surfaced for
+    an application prior scans had missed. BritBox International --
+    Senior Designer, Fair fit (entertainment key art for BBC Studios'
+    streaming brand; typography/Photoshop craft lines up, but key art
+    is a niche not evidenced on her resume). Applied 09-14, rejected
+    09-20.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2349,6 +2355,24 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific OLIVER Senior Designer req this is among their "
                          "several concurrently open, similarly-titled postings.",
+    },
+    # -- 2026-09-20: traced back after a rejection surfaced; confirmation --
+    # was missed by prior scans (subject didn't match search keywords) --
+    {
+        "company": "BritBox International",
+        "position": "Senior Designer",
+        "status": "Rejected",
+        "applied_date": "2026-09-14",
+        "source": "Teamtailor",
+        "notes": "Confirmation (\"We have received your application!\") was missed by prior scans; traced back "
+                 "after a rejection email arrived 2026-09-20 (\"we won't be progressing further at this "
+                 "stage\").",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: leading key art and marketing design for BBC Studios' BritBox "
+                         "streaming brand (Direct-to-Consumer division), reporting to the Associate Art "
+                         "Director, NYC. Typography and Photoshop craft line up with Regina's design "
+                         "background, but entertainment key art (movie/show marketing art) is a specific "
+                         "niche not evidenced on her resume, which is agency/brand-systems focused.",
     },
 ]
 
