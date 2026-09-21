@@ -508,6 +508,9 @@ Scan history:
     streaming brand; typography/Photoshop craft lines up, but key art
     is a niche not evidenced on her resume). Applied 09-14, rejected
     09-20.
+  - 2026-09-21: incremental rescan, no new rows, 1 rejection. Flipped
+    Gensler's Multimedia + Graphic Designer, Marketing application to
+    Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1602,10 +1605,10 @@ SEED_ROWS = [
     {
         "company": "Gensler",
         "position": "Multimedia + Graphic Designer, Marketing",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-06",
         "source": "Workday",
-        "notes": None,
+        "notes": "Rejected via email on 2026-09-21 (\"decided not to move forward with your application\").",
         "pay_range": "$70K-$85K/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting ($70K-$85K): print production and digital-delivery design work "

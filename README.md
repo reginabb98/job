@@ -503,6 +503,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Designer, Fair fit (entertainment key art for BBC Studios' streaming
   brand; typography/Photoshop craft lines up, but key art is a niche
   not evidenced on her resume). Applied 09-14, rejected 09-20.
+- **2026-09-21** — incremental rescan, no new rows, 1 rejection: flipped
+  Gensler's Multimedia + Graphic Designer, Marketing application to
+  Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
