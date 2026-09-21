@@ -517,6 +517,10 @@ Scan history:
     Agency Senior Designer" application (in seed_from_linkedin.py) to
     Rejected -- the other 3 (both Droga5 Senior Strategist reqs, Droga5
     Senior Designer) were already Rejected.
+  - 2026-09-21 (evening rescan): incremental rescan, 1 new row.
+    Accenture -- Creative Agency Senior Designer (2nd application),
+    Strong fit -- a second, distinct Workday confirmation for the same
+    role she was rejected from on 07-27, likely a reposted req.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2382,6 +2386,23 @@ SEED_ROWS = [
                          "Director, NYC. Typography and Photoshop craft line up with Regina's design "
                          "background, but entertainment key art (movie/show marketing art) is a specific "
                          "niche not evidenced on her resume, which is agency/brand-systems focused.",
+    },
+    # -- 2026-09-21 (later): incremental rescan, 1 new row --
+    {
+        "company": "Accenture",
+        "position": "Creative Agency Senior Designer (2nd application)",
+        "status": "Applied",
+        "applied_date": "2026-09-21",
+        "source": "Workday",
+        "notes": "Second, distinct Workday confirmation for the same-titled 'Creative Agency Senior Designer' "
+                 "role Regina was rejected from back on 07-27 (confirmed via the Accenture candidate-portal "
+                 "screenshot) -- likely a reposted/reopened req, same pattern as the earlier Droga5 Senior "
+                 "Strategist reapplication.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Same role as the earlier application: 6+ yrs agency design with a concept-driven "
+                         "brand-identity portfolio, expert Figma/Illustrator/Photoshop/InDesign, and AI "
+                         "image-generation tools -- a strong direct match to Regina's brand-identity, "
+                         "visual-storytelling, and AI-assisted design background.",
     },
 ]
 

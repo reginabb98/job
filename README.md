@@ -512,6 +512,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Agency Senior Designer" application to Rejected — the other 3 (both
   Droga5 Senior Strategist reqs, Droga5 Senior Designer) were already
   Rejected.
+- **2026-09-21 (evening rescan)** — incremental rescan, 1 new row:
+  Accenture — Creative Agency Senior Designer (2nd application), Strong
+  fit — a second, distinct Workday confirmation for the same role she
+  was rejected from on 07-27, likely a reposted req.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
