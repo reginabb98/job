@@ -98,12 +98,14 @@ NEW_ROWS = [
     {
         "company": "Accenture",
         "position": "Creative Agency Senior Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-27",
         "source": "LinkedIn",
         "notes": "New York, NY. Posting no longer accepting applications. Distinct from the "
                  "Accenture (Droga5) Senior Strategist application, which was rejected. Applied date "
-                 "estimated from LinkedIn's \"Applied 3w ago\" (as of 2026-08-17), not exact.",
+                 "estimated from LinkedIn's \"Applied 3w ago\" (as of 2026-08-17), not exact. Shows as "
+                 "\"Designer -- No Longer Under Consideration\" on Accenture's own Workday candidate portal "
+                 "(screenshot, 2026-09-21) -- the plain \"Designer\" title likely a truncation of this role.",
         "job_fit": "Strong",
         "job_fit_notes": "6+ yrs agency design with a concept-driven brand-identity portfolio, expert Figma/Illustrator/Photoshop/InDesign, and AI image-generation tools -- a strong direct match to Regina's brand-identity, visual-storytelling, and AI-assisted design background.",
     },

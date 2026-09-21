@@ -506,6 +506,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-21** — incremental rescan, no new rows, 1 rejection: flipped
   Gensler's Multimedia + Graphic Designer, Marketing application to
   Rejected.
+- **2026-09-21 (later)** — reconciled against a fresh Accenture
+  candidate-portal screenshot (My Applications, all 4 "No Longer Under
+  Consideration"). Flipped the LinkedIn-sourced Accenture "Creative
+  Agency Senior Designer" application to Rejected — the other 3 (both
+  Droga5 Senior Strategist reqs, Droga5 Senior Designer) were already
+  Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -511,6 +511,12 @@ Scan history:
   - 2026-09-21: incremental rescan, no new rows, 1 rejection. Flipped
     Gensler's Multimedia + Graphic Designer, Marketing application to
     Rejected.
+  - 2026-09-21 (later): reconciled against a fresh Accenture candidate-
+    portal screenshot (My Applications, all 4 "No Longer Under
+    Consideration"). Flipped the LinkedIn-sourced Accenture "Creative
+    Agency Senior Designer" application (in seed_from_linkedin.py) to
+    Rejected -- the other 3 (both Droga5 Senior Strategist reqs, Droga5
+    Senior Designer) were already Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
