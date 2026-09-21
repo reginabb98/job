@@ -516,6 +516,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Accenture — Creative Agency Senior Designer (2nd application), Strong
   fit — a second, distinct Workday confirmation for the same role she
   was rejected from on 07-27, likely a reposted req.
+- **2026-09-21 (later still)** — incremental rescan, no new rows, 1
+  rejection: flipped Figma's Designer Advocate, Figma Weave application
+  to Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

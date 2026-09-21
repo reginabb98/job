@@ -521,6 +521,9 @@ Scan history:
     Accenture -- Creative Agency Senior Designer (2nd application),
     Strong fit -- a second, distinct Workday confirmation for the same
     role she was rejected from on 07-27, likely a reposted req.
+  - 2026-09-21 (later still): incremental rescan, no new rows, 1
+    rejection. Flipped Figma's Designer Advocate, Figma Weave
+    application to Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -719,10 +722,11 @@ SEED_ROWS = [
     {
         "company": "Figma",
         "position": "Designer Advocate, Figma Weave",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-27",
         "source": "Email",
-        "notes": None,
+        "notes": "Rejected via email on 2026-09-21 (\"decided not to move forward with your candidacy at this "
+                 "time\").",
         "job_fit": "Weak",
         "job_fit_notes": "Wants experience with node-based/procedural AI pipelines (ComfyUI, Houdini, TouchDesigner) and a motion-graphics/VFX/creative-automation background for teaching technical creative audiences -- none of that specific tooling is on Regina's resume, even though her general AI-assisted-research and Figma skills overlap loosely.",
     },
