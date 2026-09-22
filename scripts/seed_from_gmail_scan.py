@@ -623,6 +623,10 @@ Scan history:
     Logitech) -- a solid general match to Regina's brand-strategy
     background, tilted more toward video/content than her usual
     identity/print work.
+  - 2026-09-22 (rescan): incremental rescan, no new rows. Day One's
+    interview call with Angela happened Monday, Sept 21 as scheduled --
+    she followed up 09-22 asking for an updated resume, which Regina
+    sent same day. Updated next_step accordingly; still Interviewing.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1986,8 +1990,8 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-06",
         "had_interview": 1,
-        "next_step": "Google Meet with Angela (external recruiter/consultant, thechangeagents.co) booked for "
-                     "Monday, Sept 21, 2026, 1:00-1:25pm ET, re: the Senior Designer, NY role.",
+        "next_step": "Call with Angela happened Mon, Sept 21 as scheduled -- she followed up 09-22 asking "
+                     "for an updated resume; Regina sent resume + portfolio same day. Awaiting next steps.",
         "source": "Pinpoint",
         "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
         "pay_range": "$80K-$95K/yr",

@@ -616,6 +616,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Logitech) — a solid general match to Regina's brand-strategy
   background, tilted more toward video/content than her usual
   identity/print work.
+- **2026-09-22 (rescan)** — incremental rescan, no new rows: Day One's
+  interview call with Angela happened Monday, Sept 21 as scheduled —
+  she followed up 09-22 asking for an updated resume, which Regina
+  sent same day. Updated next_step accordingly; still Interviewing.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
