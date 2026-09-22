@@ -583,6 +583,13 @@ Scan history:
     an actual interview/screening call: Design Bridge and Partners /
     Landor (Interviewing), Day One (Interviewing), and Duel (Rejected
     after a recruiter screen).
+  - 2026-09-22 (yet later): Regina booked the Craft call with Anna
+    Callagher for Wednesday, Sept 23 and asked again which of the 3
+    Craft applications it's for -- still unanswered. Added a
+    `next_step` note to all three flagging the booked call, but
+    deliberately did not set `had_interview` on any of them yet, since
+    doing so on all three would triple-count a single call and picking
+    just one would be a guess.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2146,13 +2153,17 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
+        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
+                     "the 3 Craft applications it's for.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- Regina submitted three distinct applications through their ATS within "
                  "minutes of each other. Craft runs many concurrently open, similarly-titled reqs across "
                  "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down. "
                  "Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn on 2026-09-22 asking to book a "
-                 "call about one of Regina's three Craft applications -- didn't say which. Regina asked her to "
-                 "clarify; not yet confirmed which of the three this note applies to.",
+                 "call about one of Regina's three Craft applications -- didn't say which. Regina booked a "
+                 "spot for Wednesday, Sept 23, and asked Anna again which company/role it's for -- not yet "
+                 "answered as of 2026-09-22, so `had_interview` isn't set on any of the three yet to avoid "
+                 "triple-counting a single call across all of them.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Senior Designer listings; a comparable NY-based Senior Designer req seen on their "
@@ -2165,12 +2176,14 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
+        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
+                     "the 3 Craft applications it's for.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
                  "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
                  "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which. Regina asked her to clarify; not yet confirmed which of the three this note "
-                 "applies to.",
+                 "say which. Regina booked a spot for Wednesday, Sept 23, and asked Anna again which company/"
+                 "role it's for -- not yet answered as of 2026-09-22.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client/freelance req this was among Craft's several "
                          "open Senior Brand Designer listings.",
@@ -2181,12 +2194,14 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
+        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
+                     "the 3 Craft applications it's for.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
                  "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
                  "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which. Regina asked her to clarify; not yet confirmed which of the three this note "
-                 "applies to.",
+                 "say which. Regina booked a spot for Wednesday, Sept 23, and asked Anna again which company/"
+                 "role it's for -- not yet answered as of 2026-09-22.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Brand Designer listings.",

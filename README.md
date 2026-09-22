@@ -578,6 +578,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   actual interview/screening call: Design Bridge and Partners / Landor
   (Interviewing), Day One (Interviewing), and Duel (Rejected after a
   recruiter screen).
+- **2026-09-22 (yet later)** — Regina booked the Craft call with Anna
+  Callagher for Wednesday, Sept 23 and asked again which of the 3 Craft
+  applications it's for — still unanswered. Added a `next_step` note to
+  all three flagging the booked call, but deliberately did not set
+  `had_interview` on any of them yet, since doing so on all three would
+  triple-count a single call and picking just one would be a guess.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
