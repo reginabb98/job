@@ -584,6 +584,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   all three flagging the booked call, but deliberately did not set
   `had_interview` on any of them yet, since doing so on all three would
   triple-count a single call and picking just one would be a guess.
+- **2026-09-22 (rescan)** — incremental rescan, 1 new row, 1 rejection:
+  flipped Accenture's 2nd Creative Agency Senior Designer application to
+  Rejected — same visa-sponsorship template as the earlier Work & Co
+  Designer rejection. Added a new Craft Networking row: Fionn Andrews,
+  a separate Craft recruiter (freelance placement arm, not the same
+  person as Anna Callagher) who already had a call with Regina and is
+  onboarding her onto Craft's "Taste" freelance-project platform —
+  distinct from the still-unresolved Anna Callagher call about one of
+  the 3 full-time Craft applications.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

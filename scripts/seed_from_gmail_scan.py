@@ -590,6 +590,15 @@ Scan history:
     deliberately did not set `had_interview` on any of them yet, since
     doing so on all three would triple-count a single call and picking
     just one would be a guess.
+  - 2026-09-22 (rescan): incremental rescan, 1 new row, 1 rejection.
+    Flipped Accenture's 2nd Creative Agency Senior Designer application
+    to Rejected -- same visa-sponsorship template as the earlier Work &
+    Co Designer rejection. Added a new Craft Networking row: Fionn
+    Andrews, a separate Craft recruiter (freelance placement arm, not
+    the same person as Anna Callagher) who already had a call with
+    Regina and is onboarding her onto Craft's "Taste" freelance-project
+    platform -- distinct from the still-unresolved Anna Callagher call
+    about one of the 3 full-time Craft applications.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2505,13 +2514,16 @@ SEED_ROWS = [
     {
         "company": "Accenture",
         "position": "Creative Agency Senior Designer (2nd application)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-21",
         "source": "Workday",
         "notes": "Second, distinct Workday confirmation for the same-titled 'Creative Agency Senior Designer' "
                  "role Regina was rejected from back on 07-27 (confirmed via the Accenture candidate-portal "
                  "screenshot) -- likely a reposted/reopened req, same pattern as the earlier Droga5 Senior "
-                 "Strategist reapplication.",
+                 "Strategist reapplication. Rejected via email on 2026-09-22, citing visa sponsorship "
+                 "(\"you indicated you require sponsorship and/or support for employment visa status\") -- same "
+                 "template as the earlier Work & Co Designer (R00334677) visa rejection; reference role "
+                 "confirmed as \"Creative Agency Senior Designer.\"",
         "job_fit": "Strong",
         "job_fit_notes": "Same role as the earlier application: 6+ yrs agency design with a concept-driven "
                          "brand-identity portfolio, expert Figma/Illustrator/Photoshop/InDesign, and AI "
@@ -2586,6 +2598,22 @@ SEED_ROWS = [
                          "Born Social's own board (only an Associate Director, Client Services role and other "
                          "differently-titled reqs turned up), so there's nothing concrete to assess fit "
                          "against.",
+    },
+    # -- 2026-09-22 (later): found via Gmail, distinct from the Anna --
+    # Callagher thread -- a separate Craft recruiter, freelance track --
+    {
+        "company": "Craft",
+        "position": "Networking call -- Fionn Andrews, Lead Recruiter (Freelance Brand, Design & Creative)",
+        "status": "Networking",
+        "applied_date": "2026-09-22",
+        "source": "Referral",
+        "notes": "Distinct from the pending Anna Callagher call (booked for 09-23, re: one of the 3 "
+                 "full-time Craft job applications) -- Fionn Andrews is a separate Craft recruiter for their "
+                 "freelance placement arm. A call already happened (\"thanks for the chat!\") before this "
+                 "email, exact call date unconfirmed; Fionn is now onboarding Regina onto Craft's 'Taste' "
+                 "freelance-project platform, with next steps to apply for specific freelance project scopes "
+                 "(e.g. 'Senior Designer, Brand Guidelines and Identity' and 'Presentation Design') -- not yet "
+                 "applied to any specific project as of this email.",
     },
 ]
 
