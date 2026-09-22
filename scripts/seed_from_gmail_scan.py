@@ -536,6 +536,13 @@ Scan history:
     application to jobs@thecollectedworks.com, resume attached; no
     listed opening, general outreach to an SVA-founded NYC/New Orleans
     identity/motion/3D design studio.
+  - 2026-09-22 (later still): reported directly by Regina, not from a
+    Gmail scan. Flipped all three PepsiCo job applications (Design
+    Senior Manager - Immersive, Brand Designer, Graphic Designer -
+    poppi) to Rejected -- an HR contact told her PepsiCo likely doesn't
+    sponsor visas. Left the separate PepsiCo Networking outreach row
+    (contact: Hillary) untouched since it's a contact, not an
+    application to reject.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -830,10 +837,12 @@ SEED_ROWS = [
     {
         "company": "PepsiCo",
         "position": "Design Senior Manager - Immersive (2026-439325)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-07-29",
         "source": "iCIMS",
-        "notes": "Already in PepsiCo's talent community from an earlier signup (2026-06-16).",
+        "notes": "Already in PepsiCo's talent community from an earlier signup (2026-06-16). Reported directly "
+                 "by Regina as Rejected -- an HR contact told her PepsiCo likely doesn't sponsor visas, "
+                 "applying to all of her open PepsiCo applications.",
         "job_fit": "Good",
         "job_fit_notes": "Leading immersive/experiential brand experiences (gaming, music, festivals) for a major CPG -- Regina's Common Matter experiential work (Parlote and Live Out music festivals) is a genuinely strong direct match. The gap is formal people-management of a design team, which this 'Senior Manager' title implies.",
     },
@@ -930,11 +939,12 @@ SEED_ROWS = [
     {
         "company": "PepsiCo",
         "position": "Brand Designer (2026-450688)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "iCIMS",
         "notes": "Second, distinct PepsiCo application from the Design Senior Manager - Immersive "
-                 "role applied to 2026-07-29.",
+                 "role applied to 2026-07-29. Reported directly by Regina as Rejected -- an HR contact told "
+                 "her PepsiCo likely doesn't sponsor visas, applying to all of her open PepsiCo applications.",
         "job_fit": "Strong",
         "job_fit_notes": "2-5 yrs hands-on brand/packaging/graphic design with 360 brand-design experience across print, packaging, digital, environmental, and experiential -- almost exactly Regina's Common Matter experience.",
     },
@@ -1456,12 +1466,13 @@ SEED_ROWS = [
     {
         "company": "PepsiCo",
         "position": "Graphic Designer - poppi (2026-470592)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "iCIMS",
         "notes": "Third, distinct PepsiCo application, for the poppi brand specifically -- separate from "
                  "the Design Senior Manager - Immersive (applied 07-29) and Brand Designer (applied 08-17) "
-                 "roles already tracked.",
+                 "roles already tracked. Reported directly by Regina as Rejected -- an HR contact told her "
+                 "PepsiCo likely doesn't sponsor visas, applying to all of her open PepsiCo applications.",
         "job_fit": "Strong",
         "job_fit_notes": "3+ yrs graphic design with a strong packaging/print-production portfolio, Adobe "
                          "CS, translating brand guidelines into production-ready assets, independent project "

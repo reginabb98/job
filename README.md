@@ -531,6 +531,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   application to jobs@thecollectedworks.com, resume attached; no listed
   opening, general outreach to an SVA-founded NYC/New Orleans
   identity/motion/3D design studio.
+- **2026-09-22 (later still)** — reported directly by Regina, not from
+  a Gmail scan: flipped all three PepsiCo job applications (Design
+  Senior Manager - Immersive, Brand Designer, Graphic Designer - poppi)
+  to Rejected — an HR contact told her PepsiCo likely doesn't sponsor
+  visas. Left the separate PepsiCo Networking outreach row (contact:
+  Hillary) untouched since it's a contact, not an application to
+  reject.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
