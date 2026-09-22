@@ -615,6 +615,14 @@ Scan history:
     warm-intro cold email referred by Sadia; company isn't hiring, no
     resume attached, no specific role, so logged as Networking rather
     than a job application.
+  - 2026-09-22 (final): 1 new row, found via Gmail Sent search. LOS
+    YORK -- Freelance Brand Strategist, Good fit. Direct cold-email
+    application to katy.b@losyork.tv in response to a LinkedIn post,
+    resume attached; no formal posting found, but LOS YORK is an LA/NY
+    multidisciplinary creative production studio (Amazon, Netflix,
+    Logitech) -- a solid general match to Regina's brand-strategy
+    background, tilted more toward video/content than her usual
+    identity/print work.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2662,6 +2670,22 @@ SEED_ROWS = [
         "notes": "Warm-intro cold email to robyn@mischiefusa.com, referred by Sadia -- Mischief isn't "
                  "actively hiring, but Sadia flagged they might need extra design support as things get "
                  "busy. Portfolio linked, no resume attached, no specific role applied to.",
+    },
+    {
+        "company": "LOS YORK",
+        "position": "Freelance Brand Strategist",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "Cold email",
+        "notes": "Direct cold-email application to katy.b@losyork.tv in response to a LinkedIn post about the "
+                 "freelance opening, resume attached and portfolio linked -- found via Gmail Sent search.",
+        "job_fit": "Good",
+        "job_fit_notes": "No formal job posting found, only company profile -- LOS YORK is an LA/NY "
+                         "multidisciplinary creative production studio (Amazon, Netflix, Logitech) spanning "
+                         "brand strategy, content, and production from strategy through execution. Regina's "
+                         "SVA Branding Master's and brand-strategy/positioning/research/messaging background "
+                         "is a solid general match, though the studio's focus tilts more toward video/content "
+                         "production than her more identity-and-print-centric Common Matter background.",
     },
 ]
 

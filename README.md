@@ -608,6 +608,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   warm-intro cold email referred by Sadia; company isn't hiring, no
   resume attached, no specific role, so logged as Networking rather
   than a job application.
+- **2026-09-22 (final)** — 1 new row, found via Gmail Sent search: LOS
+  YORK — Freelance Brand Strategist, Good fit. Direct cold-email
+  application to katy.b@losyork.tv in response to a LinkedIn post,
+  resume attached; no formal posting found, but LOS YORK is an LA/NY
+  multidisciplinary creative production studio (Amazon, Netflix,
+  Logitech) — a solid general match to Regina's brand-strategy
+  background, tilted more toward video/content than her usual
+  identity/print work.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
