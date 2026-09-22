@@ -599,6 +599,17 @@ Scan history:
     Regina and is onboarding her onto Craft's "Taste" freelance-project
     platform -- distinct from the still-unresolved Anna Callagher call
     about one of the 3 full-time Craft applications.
+  - 2026-09-22 (later rescan): incremental rescan, 1 new row, 2
+    rejections. Flipped both Fresh -- Senior Designer, Digital and
+    Social applications (09-06 and its 09-07 duplicate) to Rejected --
+    two separate but identical rejection emails, ~25 min apart. New
+    row: Craft (Taste freelance platform) -- Senior Designer, Brand
+    Guidelines and Identity, Offer status -- Regina applied to this
+    Taste freelance project the same day she was onboarded by Fionn,
+    submitted a design assessment, and was selected to move forward
+    with a Master Freelance Agreement/Statement of Work being sent, all
+    within hours. Strong fit (brand guidelines/identity is her core
+    specialty). Flagged to Regina as a new Offer-status result.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1977,10 +1988,10 @@ SEED_ROWS = [
     {
         "company": "Fresh",
         "position": "Senior Designer, Digital and Social",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-06",
         "source": "SmartRecruiters",
-        "notes": None,
+        "notes": "Rejected via email on 2026-09-22 (\"decided to pursue other candidates\").",
         "job_fit": "Good",
         "job_fit_notes": "Couldn't confirm the exact posting, but Fresh's closely related Senior Digital "
                          "Designer role ($100K-$130K) and Regina's Common Matter beauty-brand digital/social "
@@ -2066,12 +2077,14 @@ SEED_ROWS = [
     {
         "company": "Fresh",
         "position": "Senior Designer, Digital and Social",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-07",
         "source": "SmartRecruiters",
         "notes": "Second, distinct application submission (different SmartRecruiters application ID) for the "
                  "same role and company as the 2026-09-06 Fresh application -- appears to be an accidental "
-                 "duplicate resubmission rather than a second role.",
+                 "duplicate resubmission rather than a second role. Rejected via a separate email on "
+                 "2026-09-22 (\"decided to pursue other candidates\"), sent ~25 min after the first Fresh "
+                 "rejection.",
         "job_fit": "Good",
         "job_fit_notes": "Same assessment as the first Fresh application: couldn't confirm the exact posting, "
                          "but Fresh's closely related Senior Digital Designer role ($100K-$130K) and Regina's "
@@ -2610,10 +2623,29 @@ SEED_ROWS = [
         "notes": "Distinct from the pending Anna Callagher call (booked for 09-23, re: one of the 3 "
                  "full-time Craft job applications) -- Fionn Andrews is a separate Craft recruiter for their "
                  "freelance placement arm. A call already happened (\"thanks for the chat!\") before this "
-                 "email, exact call date unconfirmed; Fionn is now onboarding Regina onto Craft's 'Taste' "
-                 "freelance-project platform, with next steps to apply for specific freelance project scopes "
-                 "(e.g. 'Senior Designer, Brand Guidelines and Identity' and 'Presentation Design') -- not yet "
-                 "applied to any specific project as of this email.",
+                 "email, exact call date unconfirmed; Fionn onboarded Regina onto Craft's 'Taste' "
+                 "freelance-project platform. Same day, she completed her profile and applied to the "
+                 "'Senior Designer, Brand Guidelines and Identity' project -- see the separate Craft (Taste) "
+                 "row for that application's own status.",
+    },
+    {
+        "company": "Craft (Taste freelance platform)",
+        "position": "Senior Designer, Brand Guidelines and Identity",
+        "status": "Offer",
+        "applied_date": "2026-09-22",
+        "had_interview": 1,
+        "next_step": "Selected to move forward -- identity verification, then signing a Master Freelance "
+                     "Agreement + Statement of Work. Portal: portal.tastelabs.com.",
+        "source": "Referral",
+        "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
+                 "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
+                 "day: assessment submitted, reviewed, and selected to move forward, with a Master Freelance "
+                 "Agreement/Statement of Work now being sent -- treated as Offer status since a freelance "
+                 "engagement contract is being extended, pending identity verification and paperwork.",
+        "job_fit": "Strong",
+        "job_fit_notes": "Brand guidelines and identity design is squarely Regina's specialty from her "
+                         "Common Matter agency background and SVA Branding Master's -- a direct match, "
+                         "reflected in being selected to move forward same-day.",
     },
 ]
 

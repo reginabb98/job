@@ -593,6 +593,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   onboarding her onto Craft's "Taste" freelance-project platform —
   distinct from the still-unresolved Anna Callagher call about one of
   the 3 full-time Craft applications.
+- **2026-09-22 (later rescan)** — incremental rescan, 1 new row, 2
+  rejections: flipped both Fresh — Senior Designer, Digital and Social
+  applications (09-06 and its 09-07 duplicate) to Rejected — two
+  separate but identical rejection emails, ~25 min apart. New row:
+  Craft (Taste freelance platform) — Senior Designer, Brand Guidelines
+  and Identity, **Offer** status — Regina applied to this Taste
+  freelance project the same day she was onboarded by Fionn, submitted
+  a design assessment, and was selected to move forward with a Master
+  Freelance Agreement/Statement of Work being sent, all within hours.
+  Strong fit (brand guidelines/identity is her core specialty).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
