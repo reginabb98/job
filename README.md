@@ -526,6 +526,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Brand Designer — all applied 09-14) without saying which. Regina
   doesn't know either and asked Anna to clarify — no status change yet;
   noted on all three pending an answer.
+- **2026-09-22 (later)** — 1 new row, found via Gmail Sent search: The
+  Collected Works — Brand Designer, Good fit. Direct cold-email
+  application to jobs@thecollectedworks.com, resume attached; no listed
+  opening, general outreach to an SVA-founded NYC/New Orleans
+  identity/motion/3D design studio.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -531,6 +531,11 @@ Scan history:
     Designer, Brand Designer -- all applied 09-14) without saying
     which. Regina doesn't know either and asked Anna to clarify -- no
     status change yet; noted on all three pending an answer.
+  - 2026-09-22 (later): 1 new row, found via Gmail Sent search. The
+    Collected Works -- Brand Designer, Good fit. Direct cold-email
+    application to jobs@thecollectedworks.com, resume attached; no
+    listed opening, general outreach to an SVA-founded NYC/New Orleans
+    identity/motion/3D design studio.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2423,6 +2428,22 @@ SEED_ROWS = [
                          "brand-identity portfolio, expert Figma/Illustrator/Photoshop/InDesign, and AI "
                          "image-generation tools -- a strong direct match to Regina's brand-identity, "
                          "visual-storytelling, and AI-assisted design background.",
+    },
+    # -- 2026-09-22: reported directly by Regina, found via Gmail Sent search --
+    {
+        "company": "The Collected Works",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "Cold email",
+        "notes": "Direct cold-email application to jobs@thecollectedworks.com, resume attached -- no listed "
+                 "opening found, general outreach to their jobs inbox.",
+        "job_fit": "Good",
+        "job_fit_notes": "The Collected Works is an independent NYC/New Orleans identity, motion, and 3D "
+                         "design studio co-founded by two SVA grads (Nike, The National, The New York Times "
+                         "among past clients) -- a close cultural/disciplinary match to Regina's SVA Branding "
+                         "Master's and Common Matter identity-design background, though no specific job "
+                         "posting exists to confirm exact seniority or requirements against.",
     },
 ]
 
