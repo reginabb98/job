@@ -538,6 +538,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   visas. Left the separate PepsiCo Networking outreach row (contact:
   Hillary) untouched since it's a contact, not an application to
   reject.
+- **2026-09-22 (evening)** — reported directly by Regina, who shared the
+  full LinkedIn posting for the NYT Senior Strategist application
+  (previously Unknown fit since the exact req couldn't be pinned down).
+  Confirmed as the T Brand Studio Creative Strategy team req
+  (REQ-020117, $90K–$100K, 173 applicants) — updated to Fair fit, same
+  strategy-track-career gap seen on the Droga5 and Design Bridge/Landor
+  Senior Strategist roles.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

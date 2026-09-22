@@ -543,6 +543,13 @@ Scan history:
     sponsor visas. Left the separate PepsiCo Networking outreach row
     (contact: Hillary) untouched since it's a contact, not an
     application to reject.
+  - 2026-09-22 (evening): reported directly by Regina, who shared the
+    full LinkedIn posting for the NYT Senior Strategist application
+    (previously Unknown fit since the exact req couldn't be pinned
+    down). Confirmed as the T Brand Studio Creative Strategy team req
+    (REQ-020117, $90K-$100K, 173 applicants) -- updated to Fair fit,
+    same strategy-track-career gap seen on the Droga5 and Design
+    Bridge/Landor Senior Strategist roles.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2326,14 +2333,18 @@ SEED_ROWS = [
         "applied_date": "2026-09-18",
         "source": "Greenhouse",
         "notes": "3rd, distinct New York Times application -- separate from the Designer, Marketing role "
-                 "(applied 07-22) and the Senior Designer, Games Marketing role (applied 09-14).",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Multiple NYT 'Senior Strategist' postings exist (e.g. a T Brand Studio advertising-"
-                         "sales-strategy role vs. an Events-team role); direct access to the exact posting was "
-                         "blocked, so which one Regina applied to -- and fit against it -- couldn't be "
-                         "confirmed. The T Brand Studio listing skews toward advertiser-facing sales strategy "
-                         "and cross-platform marketing experience, which isn't a clear match to her design-"
-                         "agency background.",
+                 "(applied 07-22) and the Senior Designer, Games Marketing role (applied 09-14). Confirmed by "
+                 "Regina as the T Brand Studio Creative Strategy team req (LinkedIn posting shared directly): "
+                 "REQ-020117, $90K-$100K, reporting to the Director of Strategy.",
+        "applicant_count": 173,
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (REQ-020117): 6+ yrs advertising/marketing experience building "
+                         "creative briefs from cultural research and audience data, producing 360-degree "
+                         "proposals for advertisers, and presenting strategy directly to agency/brand contacts "
+                         "-- an advertising-sales-strategy career track. Regina's audience/cultural-research "
+                         "and creative-briefing skills overlap, but like the Droga5 and Design Bridge/Landor "
+                         "Senior Strategist roles, this wants a dedicated strategy-track career rather than "
+                         "her design-led background with a strategy overlay.",
     },
     {
         "company": "Ripple",
