@@ -610,6 +610,11 @@ Scan history:
     with a Master Freelance Agreement/Statement of Work being sent, all
     within hours. Strong fit (brand guidelines/identity is her core
     specialty). Flagged to Regina as a new Offer-status result.
+  - 2026-09-22 (yet later): 1 new row, found via Gmail Sent search.
+    Mischief -- Networking outreach, no open role (contact: Robyn) --
+    warm-intro cold email referred by Sadia; company isn't hiring, no
+    resume attached, no specific role, so logged as Networking rather
+    than a job application.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2646,6 +2651,17 @@ SEED_ROWS = [
         "job_fit_notes": "Brand guidelines and identity design is squarely Regina's specialty from her "
                          "Common Matter agency background and SVA Branding Master's -- a direct match, "
                          "reflected in being selected to move forward same-day.",
+    },
+    # -- 2026-09-22 (later still): reported directly by Regina, found via Gmail Sent search --
+    {
+        "company": "Mischief",
+        "position": "Networking outreach -- no open role (contact: Robyn)",
+        "status": "Networking",
+        "applied_date": "2026-09-22",
+        "source": "Cold email",
+        "notes": "Warm-intro cold email to robyn@mischiefusa.com, referred by Sadia -- Mischief isn't "
+                 "actively hiring, but Sadia flagged they might need extra design support as things get "
+                 "busy. Portfolio linked, no resume attached, no specific role applied to.",
     },
 ]
 

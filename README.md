@@ -603,6 +603,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   a design assessment, and was selected to move forward with a Master
   Freelance Agreement/Statement of Work being sent, all within hours.
   Strong fit (brand guidelines/identity is her core specialty).
+- **2026-09-22 (yet later)** — 1 new row, found via Gmail Sent search:
+  Mischief — Networking outreach, no open role (contact: Robyn) —
+  warm-intro cold email referred by Sadia; company isn't hiring, no
+  resume attached, no specific role, so logged as Networking rather
+  than a job application.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
