@@ -549,6 +549,22 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   the full posting shared: BBDO — Senior Strategist, Fair fit
   ($95K–$110K/yr; same dedicated-strategist-career gap seen on the
   other Senior Strategist rows).
+- **2026-09-22 (still later)** — reported directly by Regina, full
+  postings shared for two previously Unknown-fit cold/generic
+  applications: OLIVER's 2nd Senior Designer application (applied
+  09-19) updated to Fair fit (Req 18584, $114,750–$128,250, hybrid 4
+  days/wk — a high-volume regulated-industry account with real
+  team-management and budget-ownership scope beyond IC design, not
+  fully confirmed as the exact req behind that confirmation email).
+  Combo's Senior Brand Designer cold-email application updated to Good
+  fit (6+ yrs studio/agency, brand identity/packaging/campaign/UI
+  portfolio — a strong match to her Common Matter background).
+- **2026-09-22 (evening rescan)** — incremental rescan, 3 new rows:
+  Monster Energy — Senior Graphic Designer, Americas, Fair fit (Corona,
+  CA-based, no remote/NYC arrangement confirmed). Born Social —
+  Associate Creative Director [NYC], Unknown fit (exact posting not
+  found on their board). Omnicom Network — General network application
+  (3rd, distinct), Unknown fit.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

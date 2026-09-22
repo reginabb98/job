@@ -554,6 +554,22 @@ Scan history:
     full posting shared. BBDO -- Senior Strategist, Fair fit
     ($95K-$110K/yr; same dedicated-strategist-career gap seen on the
     other Senior Strategist rows).
+  - 2026-09-22 (still later): reported directly by Regina, full
+    postings shared for two previously Unknown-fit cold/generic
+    applications. OLIVER's 2nd Senior Designer application (applied
+    09-19) updated to Fair fit (Req 18584, $114,750-$128,250, hybrid 4
+    days/wk -- a high-volume regulated-industry account with real team-
+    management and budget-ownership scope beyond IC design, not fully
+    confirmed as the exact req behind that confirmation email). Combo's
+    Senior Brand Designer cold-email application updated to Good fit
+    (6+ yrs studio/agency, brand identity/packaging/campaign/UI
+    portfolio -- a strong match to her Common Matter background).
+  - 2026-09-22 (evening rescan): incremental rescan, 3 new rows.
+    Monster Energy -- Senior Graphic Designer, Americas, Fair fit
+    (Corona, CA-based, no remote/NYC arrangement confirmed). Born
+    Social -- Associate Creative Director [NYC], Unknown fit (exact
+    posting not found on their board). Omnicom Network -- General
+    network application (3rd, distinct), Unknown fit.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2300,9 +2316,16 @@ SEED_ROWS = [
         "applied_date": "2026-09-15",
         "source": "Cold email",
         "notes": "Direct cold-email application to jobs@combo.co, resume and portfolio attached -- found via "
-                 "Gmail Sent search.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't find or confirm an actual Combo job posting to assess fit against.",
+                 "Gmail Sent search. Full posting shared directly by Regina (NY office).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 6+ yrs studio/agency environment, leading projects "
+                         "independently concept-to-delivery, delegating to and directing other designers, "
+                         "Illustrator/Photoshop/InDesign/Figma, and a diverse portfolio spanning brand "
+                         "identity, packaging, campaign, and UI/digital work (motion a plus, not required). "
+                         "Strong direct match on portfolio breadth, tools, and years of experience with "
+                         "Regina's Common Matter background; delegating/directing other designers day-to-day "
+                         "isn't as clearly evidenced as the rest, but is a lighter ask than formal team "
+                         "management.",
     },
     {
         "company": "Saint Urbain",
@@ -2414,11 +2437,20 @@ SEED_ROWS = [
         "notes": "Second, distinct Greenhouse confirmation for a same-titled 'Senior Designer' posting, 13 "
                  "days after the first (applied 09-06) -- OLIVER runs many concurrent Senior Designer reqs "
                  "across different client accounts, so this reads as a separate opening rather than a "
-                 "duplicate resubmission, though the confirmation itself is fully generic and doesn't name "
-                 "which req.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which specific OLIVER Senior Designer req this is among their "
-                         "several concurrently open, similarly-titled postings.",
+                 "duplicate resubmission. Likely matches the full posting Regina later shared (Req ID: 18584, "
+                 "$114,750-$128,250, hybrid onsite 4 days/wk) -- distinct pay range and onsite schedule from "
+                 "the already-confirmed 09-06 application ($106,250-$118,750, 2 days/wk), though not 100% "
+                 "certain which req this specific confirmation email was for.",
+        "pay_range": "$114,750-$128,250/yr",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (Req 18584): leading creative delivery for a high-volume "
+                         "(250+ deliverables/month) regulated-industry (financial-services-adjacent) account, "
+                         "with significant scope beyond IC design -- managing/delegating to junior and "
+                         "production designers, mentoring, and owning project-level production budgets "
+                         "(cost estimation, PO/invoicing, freelancer negotiation). Print/editorial/brand-"
+                         "consistency craft lines up with Regina's Common Matter background, but formal team "
+                         "management and budget ownership aren't evidenced on her resume -- the same "
+                         "management-scope gap seen on other Senior-titled roles with people-leadership scope.",
     },
     # -- 2026-09-20: traced back after a rejection surfaced; confirmation --
     # was missed by prior scans (subject didn't match search keywords) --
@@ -2490,6 +2522,48 @@ SEED_ROWS = [
                          "with Regina's background, but 'own and lead strategy deliverables independently' "
                          "reflects the same dedicated-strategist-career gap seen on the Droga5, Design "
                          "Bridge/Landor, and NYT Senior Strategist roles.",
+    },
+    # -- 2026-09-22 (evening rescan): incremental rescan, 3 new rows --
+    {
+        "company": "Monster Energy",
+        "position": "Senior Graphic Designer, Americas",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "Email",
+        "notes": None,
+        "pay_range": "$108,750-$145,000/yr",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed general posting: 5+ yrs print graphic design for large consumer brands, "
+                         "creating marketing collateral/POS materials/packaging across Monster's M-Claw "
+                         "brands, Adobe CS. The consumer-brand packaging/print-production overlap with "
+                         "Regina's Common Matter background is strong, but the role is based in Corona, CA -- "
+                         "no remote/NYC arrangement was confirmed in the posting.",
+    },
+    {
+        "company": "Born Social",
+        "position": "Associate Creative Director [NYC]",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "Teamtailor",
+        "notes": None,
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find or confirm the exact 'Associate Creative Director [NYC]' posting on "
+                         "Born Social's own board (only an Associate Director, Client Services role and other "
+                         "differently-titled reqs turned up), so there's nothing concrete to assess fit "
+                         "against.",
+    },
+    {
+        "company": "Omnicom Network",
+        "position": "General network application (3rd)",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "Workday",
+        "notes": "Reported directly by Regina as a 3rd, distinct Omnicom application -- generic \"thank you "
+                 "for your application to the Omnicom network\" confirmation didn't name a role. Distinct "
+                 "from the 2026-07-27 and 2026-09-09 general network applications, and the 2026-09-06 "
+                 "Presentation Designer, Brand Experience application.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No specific role attached to confirm a posting against.",
     },
 ]
 
