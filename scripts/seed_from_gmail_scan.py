@@ -550,6 +550,10 @@ Scan history:
     (REQ-020117, $90K-$100K, 173 applicants) -- updated to Fair fit,
     same strategy-track-career gap seen on the Droga5 and Design
     Bridge/Landor Senior Strategist roles.
+  - 2026-09-22 (later): 1 new row, reported directly by Regina with the
+    full posting shared. BBDO -- Senior Strategist, Fair fit
+    ($95K-$110K/yr; same dedicated-strategist-career gap seen on the
+    other Senior Strategist rows).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2466,6 +2470,26 @@ SEED_ROWS = [
                          "among past clients) -- a close cultural/disciplinary match to Regina's SVA Branding "
                          "Master's and Common Matter identity-design background, though no specific job "
                          "posting exists to confirm exact seniority or requirements against.",
+    },
+    # -- 2026-09-22 (later): reported directly by Regina, full posting shared --
+    {
+        "company": "BBDO",
+        "position": "Senior Strategist",
+        "status": "Applied",
+        "applied_date": "2026-09-22",
+        "source": "LinkedIn",
+        "notes": "Full posting shared directly by Regina. Per LinkedIn's applicant-insight panel at the time "
+                 "she applied: 42 candidates had clicked apply total, all 42 within the past day.",
+        "pay_range": "$95K-$110K/yr",
+        "applicant_count": 42,
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: day-to-day strategy support on assignments/brands, leading "
+                         "strategy from briefing through creative development to measurement, effectiveness "
+                         "writing, new-business support, leading creative-review feedback, in-office 3+ "
+                         "days/week. Collaborating with creative teams and creative-review feedback overlap "
+                         "with Regina's background, but 'own and lead strategy deliverables independently' "
+                         "reflects the same dedicated-strategist-career gap seen on the Droga5, Design "
+                         "Bridge/Landor, and NYT Senior Strategist roles.",
     },
 ]
 

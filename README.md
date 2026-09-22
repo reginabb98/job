@@ -545,6 +545,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (REQ-020117, $90K–$100K, 173 applicants) — updated to Fair fit, same
   strategy-track-career gap seen on the Droga5 and Design Bridge/Landor
   Senior Strategist roles.
+- **2026-09-22 (later)** — 1 new row, reported directly by Regina with
+  the full posting shared: BBDO — Senior Strategist, Fair fit
+  ($95K–$110K/yr; same dedicated-strategist-career gap seen on the
+  other Senior Strategist rows).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
