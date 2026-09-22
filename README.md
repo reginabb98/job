@@ -519,6 +519,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-09-21 (later still)** — incremental rescan, no new rows, 1
   rejection: flipped Figma's Designer Advocate, Figma Weave application
   to Rejected.
+- **2026-09-22** — reported directly by Regina (LinkedIn message
+  screenshot), not from a Gmail scan: Anna Callagher, Lead Recruiter @
+  Craft, messaged asking to book a call about one of Regina's three
+  Craft applications (Senior Designer, Freelance Senior Brand Designer,
+  Brand Designer — all applied 09-14) without saying which. Regina
+  doesn't know either and asked Anna to clarify — no status change yet;
+  noted on all three pending an answer.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

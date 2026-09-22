@@ -524,6 +524,13 @@ Scan history:
   - 2026-09-21 (later still): incremental rescan, no new rows, 1
     rejection. Flipped Figma's Designer Advocate, Figma Weave
     application to Rejected.
+  - 2026-09-22: reported directly by Regina (LinkedIn message
+    screenshot), not from a Gmail scan. Anna Callagher, Lead Recruiter
+    @ Craft, messaged asking to book a call about one of Regina's three
+    Craft applications (Senior Designer, Freelance Senior Brand
+    Designer, Brand Designer -- all applied 09-14) without saying
+    which. Regina doesn't know either and asked Anna to clarify -- no
+    status change yet; noted on all three pending an answer.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2083,7 +2090,10 @@ SEED_ROWS = [
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- Regina submitted three distinct applications through their ATS within "
                  "minutes of each other. Craft runs many concurrently open, similarly-titled reqs across "
-                 "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down.",
+                 "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down. "
+                 "Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn on 2026-09-22 asking to book a "
+                 "call about one of Regina's three Craft applications -- didn't say which. Regina asked her to "
+                 "clarify; not yet confirmed which of the three this note applies to.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Senior Designer listings; a comparable NY-based Senior Designer req seen on their "
@@ -2098,7 +2108,10 @@ SEED_ROWS = [
         "source": "Craft (recruitment agency ATS)",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
-                 "within minutes of each other.",
+                 "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
+                 "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
+                 "say which. Regina asked her to clarify; not yet confirmed which of the three this note "
+                 "applies to.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client/freelance req this was among Craft's several "
                          "open Senior Brand Designer listings.",
@@ -2111,7 +2124,10 @@ SEED_ROWS = [
         "source": "Craft (recruitment agency ATS)",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
-                 "within minutes of each other.",
+                 "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
+                 "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
+                 "say which. Regina asked her to clarify; not yet confirmed which of the three this note "
+                 "applies to.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Brand Designer listings.",
