@@ -217,11 +217,12 @@ def main():
         row.setdefault("job_fit", None)
         row.setdefault("job_fit_notes", None)
         row.setdefault("applicant_count", None)
+        row.setdefault("had_interview", 0)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_description, :job_fit, :job_fit_notes, :applicant_count, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_description, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )

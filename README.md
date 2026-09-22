@@ -563,8 +563,21 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Monster Energy — Senior Graphic Designer, Americas, Fair fit (Corona,
   CA-based, no remote/NYC arrangement confirmed). Born Social —
   Associate Creative Director [NYC], Unknown fit (exact posting not
-  found on their board). Omnicom Network — General network application
-  (3rd, distinct), Unknown fit.
+  found on their board). A third row logged as "Omnicom Network —
+  General network application (3rd)" was removed after Regina
+  clarified it wasn't a separate general application — it was the
+  confirmation for the same-day BBDO Senior Strategist application
+  (BBDO is part of Omnicom's network and routes through their shared
+  Workday ATS). Merged that confirmation detail into the existing BBDO
+  row instead.
+- **2026-09-22 (later still)** — added a `had_interview` field, separate
+  from current `status`, so an application that reached an interview
+  call keeps that fact even if it's later Rejected (Regina pointed out
+  the "2 Interviewing" stat undercounts real interview calls).
+  Backfilled `had_interview: 1` on the 3 rows confirmed to have had an
+  actual interview/screening call: Design Bridge and Partners / Landor
+  (Interviewing), Day One (Interviewing), and Duel (Rejected after a
+  recruiter screen).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

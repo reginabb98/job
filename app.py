@@ -48,6 +48,7 @@ def init_db():
             job_fit TEXT,
             job_fit_notes TEXT,
             applicant_count INTEGER,
+            had_interview INTEGER NOT NULL DEFAULT 0,
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL
         )
@@ -59,6 +60,8 @@ def init_db():
             db.execute(f"ALTER TABLE applications ADD COLUMN {col} TEXT")
     if "applicant_count" not in existing_cols:
         db.execute("ALTER TABLE applications ADD COLUMN applicant_count INTEGER")
+    if "had_interview" not in existing_cols:
+        db.execute("ALTER TABLE applications ADD COLUMN had_interview INTEGER NOT NULL DEFAULT 0")
     db.commit()
     db.close()
 
@@ -66,6 +69,7 @@ def init_db():
 def row_to_dict(row):
     d = dict(row)
     d["referral"] = bool(d["referral"])
+    d["had_interview"] = bool(d["had_interview"])
     return d
 
 
@@ -109,8 +113,8 @@ def create_application():
     cur = db.execute(
         """
         INSERT INTO applications
-            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, created_at, updated_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             company,
@@ -127,6 +131,7 @@ def create_application():
             data.get("job_fit"),
             data.get("job_fit_notes"),
             data.get("applicant_count"),
+            1 if data.get("had_interview") else 0,
             now,
             now,
         ),
@@ -167,10 +172,13 @@ def update_application(app_id):
         "job_fit",
         "job_fit_notes",
         "applicant_count",
+        "had_interview",
     ]
     updates = {k: data[k] for k in fields if k in data}
     if "referral" in updates:
         updates["referral"] = 1 if updates["referral"] else 0
+    if "had_interview" in updates:
+        updates["had_interview"] = 1 if updates["had_interview"] else 0
 
     if updates:
         set_clause = ", ".join(f"{k} = ?" for k in updates)
@@ -239,7 +247,7 @@ def import_csv():
                 {
                     "error": "CSV must include at least 'company' and 'position' columns. "
                     "Optional columns: status, applied_date, next_step, job_url, source, referral, notes, "
-                    "pay_range, job_description, job_fit, job_fit_notes, applicant_count"
+                    "pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview"
                 }
             ),
             400,
@@ -264,8 +272,8 @@ def import_csv():
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 company,
@@ -282,6 +290,7 @@ def import_csv():
                 row.get("job_fit") or None,
                 row.get("job_fit_notes") or None,
                 row.get("applicant_count") or None,
+                1 if row.get("had_interview", "").lower() in ("1", "true", "yes") else 0,
                 now,
                 now,
             ),

@@ -568,8 +568,21 @@ Scan history:
     Monster Energy -- Senior Graphic Designer, Americas, Fair fit
     (Corona, CA-based, no remote/NYC arrangement confirmed). Born
     Social -- Associate Creative Director [NYC], Unknown fit (exact
-    posting not found on their board). Omnicom Network -- General
-    network application (3rd, distinct), Unknown fit.
+    posting not found on their board). A third row logged as "Omnicom
+    Network -- General network application (3rd)" was removed after
+    Regina clarified it wasn't a separate general application -- it
+    was the confirmation for the same-day BBDO Senior Strategist
+    application (BBDO is part of Omnicom's network and routes through
+    their shared Workday ATS). Merged that confirmation detail into
+    the existing BBDO row instead.
+  - 2026-09-22 (later still): added a `had_interview` field, separate
+    from current `status`, so an application that reached an interview
+    call keeps that fact even if it's later Rejected (Regina pointed
+    out the "2 Interviewing" stat undercounts real interview calls).
+    Backfilled `had_interview: 1` on the 3 rows confirmed to have had
+    an actual interview/screening call: Design Bridge and Partners /
+    Landor (Interviewing), Day One (Interviewing), and Duel (Rejected
+    after a recruiter screen).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -661,6 +674,7 @@ SEED_ROWS = [
         "position": "Senior Strategist",
         "status": "Interviewing",
         "applied_date": "2026-07-24",
+        "had_interview": 1,
         "next_step": "Interviewed Jul 29, 2PM ET -- awaiting outcome",
         "source": "Greenhouse",
         "notes": "Recruiter Ashley Hill (wppbrandconsulting.com) referenced this role under both the "
@@ -1213,6 +1227,7 @@ SEED_ROWS = [
         "position": "Advocacy Consultant",
         "status": "Rejected",
         "applied_date": "2026-08-18",
+        "had_interview": 1,
         "source": "Teamtailor",
         "notes": "Interviewed with recruiter Ibrahim Thomas the week of 2026-08-24. Rejected 2026-08-27: "
                  "\"we are going to move forward with other candidates for this specific role.\" He offered "
@@ -1930,6 +1945,7 @@ SEED_ROWS = [
         "position": "Senior Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-06",
+        "had_interview": 1,
         "next_step": "Google Meet with Angela (external recruiter/consultant, thechangeagents.co) booked for "
                      "Monday, Sept 21, 2026, 1:00-1:25pm ET, re: the Senior Designer, NY role.",
         "source": "Pinpoint",
@@ -2511,7 +2527,11 @@ SEED_ROWS = [
         "applied_date": "2026-09-22",
         "source": "LinkedIn",
         "notes": "Full posting shared directly by Regina. Per LinkedIn's applicant-insight panel at the time "
-                 "she applied: 42 candidates had clicked apply total, all 42 within the past day.",
+                 "she applied: 42 candidates had clicked apply total, all 42 within the past day. Confirmation "
+                 "arrived as a generic \"thank you for your application to the Omnicom network\" email (BBDO "
+                 "is part of the Omnicom network, so it routes through their shared Workday ATS rather than "
+                 "naming BBDO directly) -- initially miscounted as a separate 3rd Omnicom general application "
+                 "before Regina clarified it's this same BBDO application.",
         "pay_range": "$95K-$110K/yr",
         "applicant_count": 42,
         "job_fit": "Fair",
@@ -2552,19 +2572,6 @@ SEED_ROWS = [
                          "differently-titled reqs turned up), so there's nothing concrete to assess fit "
                          "against.",
     },
-    {
-        "company": "Omnicom Network",
-        "position": "General network application (3rd)",
-        "status": "Applied",
-        "applied_date": "2026-09-22",
-        "source": "Workday",
-        "notes": "Reported directly by Regina as a 3rd, distinct Omnicom application -- generic \"thank you "
-                 "for your application to the Omnicom network\" confirmation didn't name a role. Distinct "
-                 "from the 2026-07-27 and 2026-09-09 general network applications, and the 2026-09-06 "
-                 "Presentation Designer, Brand Experience application.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "No specific role attached to confirm a posting against.",
-    },
 ]
 
 
@@ -2585,11 +2592,12 @@ def main():
         row.setdefault("job_fit", None)
         row.setdefault("job_fit_notes", None)
         row.setdefault("applicant_count", None)
+        row.setdefault("had_interview", 0)
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :created_at, :updated_at)
             """,
             {**row, "created_at": now, "updated_at": now},
         )
