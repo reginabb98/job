@@ -640,6 +640,13 @@ Scan history:
     had_interview=1 for now; the other two Craft rows stay Applied.
     Flagged in all three rows' next_step/notes as a placeholder
     assignment to be corrected once Anna confirms the actual role.
+  - 2026-09-23 (rescan): 1 new row, 2 updates. Polonsky & Friends --
+    Junior Graphic Designer, Fair fit -- new internship application
+    (20 hrs/week, 6-12 months) found via referral, applied same day.
+    The New York Times -- Senior Designer, Games Marketing (Temporary)
+    flipped to Rejected (generic decline email). Canopy's next_step
+    updated: the intro call with Katy Spore is now confirmed for
+    3:00-3:30pm ET today, not just requested.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2259,12 +2266,13 @@ SEED_ROWS = [
     {
         "company": "The New York Times",
         "position": "Senior Designer, Games Marketing (Temporary)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-14",
         "source": "Greenhouse",
         "notes": "2nd, distinct New York Times application -- separate from the earlier Designer, Marketing "
                  "role (applied 07-22). This one is a temporary (6-month) role reporting to the Associate "
-                 "Creative Director, Marketing, Games.",
+                 "Creative Director, Marketing, Games. Rejected 2026-09-23: generic \"will not be advancing "
+                 "you in the process\" email.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: concepting/producing Games marketing campaigns, refined "
                          "aesthetic, strong typography/layout/color, and motion design as a called-out core "
@@ -2710,9 +2718,9 @@ SEED_ROWS = [
         "position": "Graphic Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-23",
-        "next_step": "Katy Spore (Senior Graphic Designer, Canopy) invited Regina to pick a time for a 30-min "
-                     "intro call -- not yet scheduled. Full process if it progresses: intro call, possible "
-                     "assessment, team/project presentation, then an offer.",
+        "next_step": "Katy Spore (Senior Graphic Designer, Canopy) invited Regina to a 30-min intro call -- "
+                     "booked for Wed, Sept 23, 3:00-3:30pm ET. Full process if it progresses: intro call, "
+                     "possible assessment, team/project presentation, then an offer.",
         "source": "Email",
         "notes": "No original application-confirmation email or Sent-mail record was found for this one -- "
                  "picked up directly from the interview-invite email, so the true applied_date is unconfirmed "
@@ -2721,6 +2729,22 @@ SEED_ROWS = [
         "job_fit_notes": "Couldn't confirm the exact posting or which 'Canopy' this is with certainty (a "
                          "Graphic Designer, Mid opening in the NYC Metro area turned up under the getcanopy "
                          "name, but wasn't confirmed as this exact req).",
+    },
+    {
+        "company": "Polonsky & Friends",
+        "position": "Junior Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-23",
+        "source": "Jotform (direct application)",
+        "notes": "Found via a friend's referral (posting was shared to her directly) -- applied via Jotform "
+                 "with resume and portfolio (reginabbsv.cargo.site) attached. Confirmed via the Jotform "
+                 "submission-receipt email, which includes her full application answers.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: a food & hospitality branding studio (P&F), internship-level "
+                         "role at 20 hrs/week for 6-12 months. Strong stylistic/content fit -- brand identity, "
+                         "packaging, and food/hospitality work all line up with Regina's background (including "
+                         "prior work with Mexican food brands) -- but it's an internship/junior title and "
+                         "part-time hours, well below her 7 years of agency experience.",
     },
 ]
 

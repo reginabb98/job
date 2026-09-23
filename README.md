@@ -633,6 +633,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   for now; the other two Craft rows stay Applied. Flagged in all three
   rows' next_step/notes as a placeholder assignment to be corrected
   once Anna confirms the actual role.
+- **2026-09-23 (rescan)** — 1 new row, 2 updates: Polonsky & Friends —
+  Junior Graphic Designer, Fair fit — new internship application (20
+  hrs/week, 6-12 months) found via referral, applied same day. The New
+  York Times — Senior Designer, Games Marketing (Temporary) flipped to
+  Rejected (generic decline email). Canopy's next_step updated: the
+  intro call with Katy Spore is now confirmed for 3:00-3:30pm ET today,
+  not just requested.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
