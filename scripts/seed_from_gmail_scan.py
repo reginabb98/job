@@ -647,6 +647,14 @@ Scan history:
     flipped to Rejected (generic decline email). Canopy's next_step
     updated: the intro call with Katy Spore is now confirmed for
     3:00-3:30pm ET today, not just requested.
+  - 2026-09-23 (correction): Regina confirmed the identities behind two
+    of the three Craft applications. Craft -- Senior Designer is Red
+    Antler (the Anna Callagher call held today was for this one) --
+    renamed to Red Antler, Good fit, stays Interviewing/had_interview=1.
+    Craft -- Brand Designer is Vault 49 (the CPG-focused one) --
+    renamed to Vault 49, Good fit. Craft -- Freelance Senior Brand
+    Designer remains unresolved -- the one application whose client
+    company is still unknown.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2207,26 +2215,27 @@ SEED_ROWS = [
                          "gallery role rather than her usual full-time agency work.",
     },
     {
-        "company": "Craft",
+        "company": "Red Antler",
         "position": "Senior Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Had the call with Anna Callagher on Wednesday, Sept 23.",
-        "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
-                 "company itself -- Regina submitted three distinct applications through their ATS within "
-                 "minutes of each other. Craft runs many concurrently open, similarly-titled reqs across "
-                 "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down. "
-                 "Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn on 2026-09-22 asking to book a "
-                 "call about one of Regina's three Craft applications -- didn't say which, and it was never "
-                 "confirmed before the call happened on 2026-09-23. This application was picked arbitrarily "
-                 "to hold the Interviewing status/had_interview flag for the call -- reassign to whichever of "
-                 "the three it actually was once Anna confirms.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
-                         "Senior Designer listings; a comparable NY-based Senior Designer req seen on their "
-                         "board (5-7 yrs agency/branding experience, $95K-$140K) would be a solid match to "
-                         "Regina's Common Matter background, but that's not confirmed as the actual posting.",
+        "next_step": "Had the recruiter call with Anna Callagher on Wednesday, Sept 23 -- this was confirmed "
+                     "to be the Red Antler req. If shortlisted: 30-min intro call with a creative director, "
+                     "then the ECDs.",
+        "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
+                 "the hiring company itself -- one of three distinct applications Regina submitted through "
+                 "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
+                 "Craft, messaged via LinkedIn on 2026-09-22 to book a call without saying which of the three "
+                 "it was for; confirmed by Regina on 2026-09-23 (after the call) that this one was Red Antler.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed via Regina/Anna: a senior (and mid-senior/lead) brand designer role, "
+                         "hiring across levels due to high project volume -- large-scale branding and brand "
+                         "strategy for tech brands, NY-based with flexible remote days. Key fit criteria are "
+                         "strategic thinking, a strong process rationale, and confident client presentation "
+                         "(they'll reject candidates who can't walk through design decisions clearly). Regina "
+                         "sees the strategy angle as her differentiator here, especially relevant in the AI "
+                         "era -- a strong match to her SVA Branding background.",
         "had_interview": 1,
     },
     {
@@ -2235,33 +2244,35 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Anna Callagher's Sept 23 call was logged against the Senior Designer application "
-                     "(unconfirmed) since it wasn't specified which of the 3 Craft applications it was for.",
+        "next_step": "Still unresolved -- the other two Craft applications were confirmed as Red Antler and "
+                     "Vault 49, so this is the one remaining application whose client company is unconfirmed.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
-                 "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
-                 "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which, and it was never confirmed before the call happened on 2026-09-23.",
+                 "within minutes of each other on 2026-09-14.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client/freelance req this was among Craft's several "
                          "open Senior Brand Designer listings.",
     },
     {
-        "company": "Craft",
+        "company": "Vault 49",
         "position": "Brand Designer",
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Anna Callagher's Sept 23 call was logged against the Senior Designer application "
-                     "(unconfirmed) since it wasn't specified which of the 3 Craft applications it was for.",
-        "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
-                 "company itself -- one of three distinct applications Regina submitted through their ATS "
-                 "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
-                 "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which, and it was never confirmed before the call happened on 2026-09-23.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
-                         "Brand Designer listings.",
+        "next_step": "Confirmed by Regina on 2026-09-23 as the 'more CPG one' of the two Craft/Anna Callagher "
+                     "reqs discussed -- no call scheduled yet as of 2026-09-23.",
+        "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
+                 "the hiring company itself -- one of three distinct applications Regina submitted through "
+                 "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
+                 "Craft, was working this req alongside the Red Antler one; confirmed by Regina on 2026-09-23 "
+                 "as Vault 49.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed via Regina/Anna: mid-to-senior brand designer, pays up to $100K, "
+                         "CPG-focused (PepsiCo, Diageo brands, food and drink, expanding beyond alcohol/beer). "
+                         "Creative director Sam Wilkes (10 years at the agency). Strong craft focus, good "
+                         "work-life balance, values diverse perspectives and eagerness to learn. In-office "
+                         "Tue/Wed/Thu in Manhattan (can go more) -- Regina is enthusiastic about being "
+                         "in-person, and her brand-identity/craft background is a solid match.",
     },
     {
         "company": "The New York Times",

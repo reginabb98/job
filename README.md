@@ -640,6 +640,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Rejected (generic decline email). Canopy's next_step updated: the
   intro call with Katy Spore is now confirmed for 3:00-3:30pm ET today,
   not just requested.
+- **2026-09-23 (correction)** — Regina confirmed the identities behind
+  two of the three Craft applications. Craft — Senior Designer is Red
+  Antler (the Anna Callagher call held today was for this one) —
+  renamed to Red Antler, Good fit, stays Interviewing/`had_interview=1`.
+  Craft — Brand Designer is Vault 49 (the CPG-focused one) — renamed to
+  Vault 49, Good fit. Craft — Freelance Senior Brand Designer remains
+  unresolved — the one application whose client company is still
+  unknown.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
