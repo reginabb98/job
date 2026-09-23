@@ -633,6 +633,13 @@ Scan history:
     Katy Spore (Senior Graphic Designer) invited Regina directly to
     pick a time for a 30-min intro call; applied_date is a placeholder
     since the true application date couldn't be traced.
+  - 2026-09-23 (correction): Anna Callagher's (Craft) call happened
+    today as scheduled, but she never confirmed which of the 3 Craft
+    applications it was for. Per Regina's request, picked one --
+    Craft -- Senior Designer -- to hold Interviewing status and
+    had_interview=1 for now; the other two Craft rows stay Applied.
+    Flagged in all three rows' next_step/notes as a placeholder
+    assignment to be corrected once Anna confirms the actual role.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2195,25 +2202,25 @@ SEED_ROWS = [
     {
         "company": "Craft",
         "position": "Senior Designer",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
-                     "the 3 Craft applications it's for.",
+        "next_step": "Had the call with Anna Callagher on Wednesday, Sept 23.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- Regina submitted three distinct applications through their ATS within "
                  "minutes of each other. Craft runs many concurrently open, similarly-titled reqs across "
                  "London/NY/Manchester/Leeds, so the exact listing she applied to couldn't be pinned down. "
                  "Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn on 2026-09-22 asking to book a "
-                 "call about one of Regina's three Craft applications -- didn't say which. Regina booked a "
-                 "spot for Wednesday, Sept 23, and asked Anna again which company/role it's for -- not yet "
-                 "answered as of 2026-09-22, so `had_interview` isn't set on any of the three yet to avoid "
-                 "triple-counting a single call across all of them.",
+                 "call about one of Regina's three Craft applications -- didn't say which, and it was never "
+                 "confirmed before the call happened on 2026-09-23. This application was picked arbitrarily "
+                 "to hold the Interviewing status/had_interview flag for the call -- reassign to whichever of "
+                 "the three it actually was once Anna confirms.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Senior Designer listings; a comparable NY-based Senior Designer req seen on their "
                          "board (5-7 yrs agency/branding experience, $95K-$140K) would be a solid match to "
                          "Regina's Common Matter background, but that's not confirmed as the actual posting.",
+        "had_interview": 1,
     },
     {
         "company": "Craft",
@@ -2221,14 +2228,13 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
-                     "the 3 Craft applications it's for.",
+        "next_step": "Anna Callagher's Sept 23 call was logged against the Senior Designer application "
+                     "(unconfirmed) since it wasn't specified which of the 3 Craft applications it was for.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
                  "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
                  "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which. Regina booked a spot for Wednesday, Sept 23, and asked Anna again which company/"
-                 "role it's for -- not yet answered as of 2026-09-22.",
+                 "say which, and it was never confirmed before the call happened on 2026-09-23.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client/freelance req this was among Craft's several "
                          "open Senior Brand Designer listings.",
@@ -2239,14 +2245,13 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Call with Anna Callagher booked for Wednesday, Sept 23 -- still unconfirmed which of "
-                     "the 3 Craft applications it's for.",
+        "next_step": "Anna Callagher's Sept 23 call was logged against the Senior Designer application "
+                     "(unconfirmed) since it wasn't specified which of the 3 Craft applications it was for.",
         "notes": "Craft is a UK/NY creative & design recruitment consultancy (itscraft.com), not the hiring "
                  "company itself -- one of three distinct applications Regina submitted through their ATS "
                  "within minutes of each other. Anna Callagher, Lead Recruiter @ Craft, messaged via LinkedIn "
                  "on 2026-09-22 asking to book a call about one of Regina's three Craft applications -- didn't "
-                 "say which. Regina booked a spot for Wednesday, Sept 23, and asked Anna again which company/"
-                 "role it's for -- not yet answered as of 2026-09-22.",
+                 "say which, and it was never confirmed before the call happened on 2026-09-23.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client req this was among Craft's several open "
                          "Brand Designer listings.",

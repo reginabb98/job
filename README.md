@@ -626,6 +626,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Spore (Senior Graphic Designer) invited Regina directly to pick a
   time for a 30-min intro call; applied_date is a placeholder since
   the true application date couldn't be traced.
+- **2026-09-23 (correction)** — Anna Callagher's (Craft) call happened
+  today as scheduled, but she never confirmed which of the 3 Craft
+  applications it was for. Per Regina's request, picked one — Craft —
+  Senior Designer — to hold Interviewing status and `had_interview=1`
+  for now; the other two Craft rows stay Applied. Flagged in all three
+  rows' next_step/notes as a placeholder assignment to be corrected
+  once Anna confirms the actual role.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
