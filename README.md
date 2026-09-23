@@ -620,6 +620,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   interview call with Angela happened Monday, Sept 21 as scheduled —
   she followed up 09-22 asking for an updated resume, which Regina
   sent same day. Updated next_step accordingly; still Interviewing.
+- **2026-09-23 (later)** — 1 new row, found via Gmail — no original
+  confirmation email or Sent-mail record exists for this application:
+  Canopy — Graphic Designer, Unknown fit, status Interviewing — Katy
+  Spore (Senior Graphic Designer) invited Regina directly to pick a
+  time for a 30-min intro call; applied_date is a placeholder since
+  the true application date couldn't be traced.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

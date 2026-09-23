@@ -627,6 +627,12 @@ Scan history:
     interview call with Angela happened Monday, Sept 21 as scheduled --
     she followed up 09-22 asking for an updated resume, which Regina
     sent same day. Updated next_step accordingly; still Interviewing.
+  - 2026-09-23 (later): 1 new row, found via Gmail -- no original
+    confirmation email or Sent-mail record exists for this application.
+    Canopy -- Graphic Designer, Unknown fit, status Interviewing --
+    Katy Spore (Senior Graphic Designer) invited Regina directly to
+    pick a time for a 30-min intro call; applied_date is a placeholder
+    since the true application date couldn't be traced.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2690,6 +2696,26 @@ SEED_ROWS = [
                          "SVA Branding Master's and brand-strategy/positioning/research/messaging background "
                          "is a solid general match, though the studio's focus tilts more toward video/content "
                          "production than her more identity-and-print-centric Common Matter background.",
+    },
+    # -- 2026-09-23: found via Gmail -- no prior confirmation email or --
+    # Sent-mail record exists for the original application; picked up --
+    # here directly from the interview-invite email --
+    {
+        "company": "Canopy",
+        "position": "Graphic Designer",
+        "status": "Interviewing",
+        "applied_date": "2026-09-23",
+        "next_step": "Katy Spore (Senior Graphic Designer, Canopy) invited Regina to pick a time for a 30-min "
+                     "intro call -- not yet scheduled. Full process if it progresses: intro call, possible "
+                     "assessment, team/project presentation, then an offer.",
+        "source": "Email",
+        "notes": "No original application-confirmation email or Sent-mail record was found for this one -- "
+                 "picked up directly from the interview-invite email, so the true applied_date is unconfirmed "
+                 "(using the invite date as a placeholder).",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm the exact posting or which 'Canopy' this is with certainty (a "
+                         "Graphic Designer, Mid opening in the NYC Metro area turned up under the getcanopy "
+                         "name, but wasn't confirmed as this exact req).",
     },
 ]
 
