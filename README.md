@@ -665,6 +665,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   — Senior Designer: Regina resent the corrected strategy portfolio
   link (reginabbs.cargo.site) to Anna Callagher the same day, after
   the original link didn't work on her end.
+- **2026-09-24 (evening)** — no new rows, 2 flips: The New York Times —
+  Senior Strategist (T Brand Studio, applied 09-18) rejected via a
+  generic decline email. Day One — Senior Designer rejected: Angela
+  (The Change Agents, the recruiter handling this candidacy) confirmed
+  Day One's internal policy doesn't allow considering candidates who
+  may need future visa sponsorship — not a fit/performance rejection.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

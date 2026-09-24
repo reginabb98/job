@@ -671,6 +671,12 @@ Scan history:
     Senior Designer: Regina resent the corrected strategy portfolio
     link (reginabbs.cargo.site) to Anna Callagher the same day, after
     the original link didn't work on her end.
+  - 2026-09-24 (evening): no new rows, 2 flips. The New York Times --
+    Senior Strategist (T Brand Studio, applied 09-18) rejected via a
+    generic decline email. Day One -- Senior Designer rejected: Angela
+    (The Change Agents, the recruiter handling this candidacy) confirmed
+    Day One's internal policy doesn't allow considering candidates who
+    may need future visa sponsorship -- not a fit/performance rejection.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2031,13 +2037,15 @@ SEED_ROWS = [
     {
         "company": "Day One",
         "position": "Senior Designer",
-        "status": "Interviewing",
+        "status": "Rejected",
         "applied_date": "2026-09-06",
         "had_interview": 1,
-        "next_step": "Call with Angela happened Mon, Sept 21 as scheduled -- she followed up 09-22 asking "
-                     "for an updated resume; Regina sent resume + portfolio same day. Awaiting next steps.",
+        "next_step": "Rejected 2026-09-24: Angela (The Change Agents, the talent agency handling this "
+                     "candidacy) confirmed Day One's internal policy doesn't allow them to consider candidates "
+                     "who may need future visa sponsorship -- not a fit/performance rejection.",
         "source": "Pinpoint",
-        "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS.",
+        "notes": "Confirmation came from D1A (Day One Agency)'s Pinpoint ATS. Angela Boyes of The Change "
+                 "Agents (thechangeagents.co) was the recruiter handling this candidacy on Day One's behalf.",
         "pay_range": "$80K-$95K/yr",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: 4+ yrs at an agency/design studio, multi-disciplinary portfolio "
@@ -2476,13 +2484,14 @@ SEED_ROWS = [
     {
         "company": "The New York Times",
         "position": "Senior Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-18",
         "source": "Greenhouse",
         "notes": "3rd, distinct New York Times application -- separate from the Designer, Marketing role "
                  "(applied 07-22) and the Senior Designer, Games Marketing role (applied 09-14). Confirmed by "
                  "Regina as the T Brand Studio Creative Strategy team req (LinkedIn posting shared directly): "
-                 "REQ-020117, $90K-$100K, reporting to the Director of Strategy.",
+                 "REQ-020117, $90K-$100K, reporting to the Director of Strategy. Rejected 2026-09-24: generic "
+                 "\"will not be advancing you in the process\" email.",
         "applicant_count": 173,
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting (REQ-020117): 6+ yrs advertising/marketing experience building "
