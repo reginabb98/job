@@ -667,6 +667,10 @@ Scan history:
     49 -- Brand Designer: Regina sent an updated design portfolio with
     a new packaging project; Anna said it looks great. Anna will follow
     up on her thoughts on both -- no calls scheduled yet for either.
+  - 2026-09-24 (later): no new rows, 1 next_step update. Red Antler --
+    Senior Designer: Regina resent the corrected strategy portfolio
+    link (reginabbs.cargo.site) to Anna Callagher the same day, after
+    the original link didn't work on her end.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2234,8 +2238,9 @@ SEED_ROWS = [
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Had the recruiter call with Anna Callagher on Wednesday, Sept 23 -- this was confirmed "
                      "to be the Red Antler req. Regina sent her strategy portfolio (reginabbs.cargo.site) on "
-                     "2026-09-24; Anna said the link wasn't working and will keep Regina posted on her "
-                     "thoughts. If shortlisted: 30-min intro call with a creative director, then the ECDs.",
+                     "2026-09-24; Anna flagged the link wasn't working, and Regina resent the corrected link "
+                     "the same day. Anna will keep Regina posted on her thoughts. If shortlisted: 30-min intro "
+                     "call with a creative director, then the ECDs.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "

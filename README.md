@@ -661,6 +661,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   portfolio with a new packaging project; Anna said it looks great.
   Anna will follow up on her thoughts on both — no calls scheduled yet
   for either.
+- **2026-09-24 (later)** — no new rows, 1 next_step update: Red Antler
+  — Senior Designer: Regina resent the corrected strategy portfolio
+  link (reginabbs.cargo.site) to Anna Callagher the same day, after
+  the original link didn't work on her end.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
