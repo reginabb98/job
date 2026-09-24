@@ -654,6 +654,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   checked in with Fionn Andrews about next steps; he confirmed it's now
   with Taste's own team to review and reach out directly, not something
   to chase with him. No other contact was named.
+- **2026-09-24 (rescan)** — no new rows, 2 next_step updates: Red
+  Antler — Senior Designer: Regina sent Anna Callagher her strategy
+  portfolio; the link didn't work on Anna's end, so it may need
+  resending. Vault 49 — Brand Designer: Regina sent an updated design
+  portfolio with a new packaging project; Anna said it looks great.
+  Anna will follow up on her thoughts on both — no calls scheduled yet
+  for either.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

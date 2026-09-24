@@ -661,6 +661,12 @@ Scan history:
     checked in with Fionn Andrews about next steps; he confirmed it's
     now with Taste's own team to review and reach out directly, not
     something to chase with him. No other contact was named.
+  - 2026-09-24 (rescan): no new rows, 2 next_step updates. Red Antler --
+    Senior Designer: Regina sent Anna Callagher her strategy portfolio;
+    the link didn't work on Anna's end, so it may need resending. Vault
+    49 -- Brand Designer: Regina sent an updated design portfolio with
+    a new packaging project; Anna said it looks great. Anna will follow
+    up on her thoughts on both -- no calls scheduled yet for either.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2227,8 +2233,9 @@ SEED_ROWS = [
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Had the recruiter call with Anna Callagher on Wednesday, Sept 23 -- this was confirmed "
-                     "to be the Red Antler req. If shortlisted: 30-min intro call with a creative director, "
-                     "then the ECDs.",
+                     "to be the Red Antler req. Regina sent her strategy portfolio (reginabbs.cargo.site) on "
+                     "2026-09-24; Anna said the link wasn't working and will keep Regina posted on her "
+                     "thoughts. If shortlisted: 30-min intro call with a creative director, then the ECDs.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2266,7 +2273,9 @@ SEED_ROWS = [
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Confirmed by Regina on 2026-09-23 as the 'more CPG one' of the two Craft/Anna Callagher "
-                     "reqs discussed -- no call scheduled yet as of 2026-09-23.",
+                     "reqs discussed. Regina sent an updated design portfolio (reginabbsv.cargo.site, with a "
+                     "new packaging project) on 2026-09-24; Anna said it looks great and will keep Regina "
+                     "posted on her thoughts -- no call scheduled yet.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
