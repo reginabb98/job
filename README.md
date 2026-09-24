@@ -648,6 +648,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Vault 49, Good fit. Craft — Freelance Senior Brand Designer remains
   unresolved — the one application whose client company is still
   unknown.
+- **2026-09-24 (update)** — Craft (Taste freelance platform) — Senior
+  Designer, Brand Guidelines and Identity next_step updated. Regina
+  completed identity verification on the portal (2026-09-23) and
+  checked in with Fionn Andrews about next steps; he confirmed it's now
+  with Taste's own team to review and reach out directly, not something
+  to chase with him. No other contact was named.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

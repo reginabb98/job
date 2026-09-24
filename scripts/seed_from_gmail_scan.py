@@ -655,6 +655,12 @@ Scan history:
     renamed to Vault 49, Good fit. Craft -- Freelance Senior Brand
     Designer remains unresolved -- the one application whose client
     company is still unknown.
+  - 2026-09-24 (update): Craft (Taste freelance platform) -- Senior
+    Designer, Brand Guidelines and Identity next_step updated. Regina
+    completed identity verification on the portal (2026-09-23) and
+    checked in with Fionn Andrews about next steps; he confirmed it's
+    now with Taste's own team to review and reach out directly, not
+    something to chase with him. No other contact was named.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2681,14 +2687,18 @@ SEED_ROWS = [
         "status": "Offer",
         "applied_date": "2026-09-22",
         "had_interview": 1,
-        "next_step": "Selected to move forward -- identity verification, then signing a Master Freelance "
-                     "Agreement + Statement of Work. Portal: portal.tastelabs.com.",
+        "next_step": "Identity verification completed on the portal (2026-09-23). Now waiting on Taste to "
+                     "send the Master Freelance Agreement + Statement of Work -- Fionn's guidance (2026-09-23) "
+                     "was to wait for Taste's team to review and come back directly; he isn't the one to chase "
+                     "for the contract itself. Portal: portal.tastelabs.com.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
                  "day: assessment submitted, reviewed, and selected to move forward, with a Master Freelance "
                  "Agreement/Statement of Work now being sent -- treated as Offer status since a freelance "
-                 "engagement contract is being extended, pending identity verification and paperwork.",
+                 "engagement contract is being extended, pending identity verification and paperwork. "
+                 "2026-09-23: Regina completed identity verification and checked in with Fionn about next "
+                 "steps; he confirmed it's now with Taste's team to review and reach out directly.",
         "job_fit": "Strong",
         "job_fit_notes": "Brand guidelines and identity design is squarely Regina's specialty from her "
                          "Common Matter agency background and SVA Branding Master's -- a direct match, "
