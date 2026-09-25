@@ -671,6 +671,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (The Change Agents, the recruiter handling this candidacy) confirmed
   Day One's internal policy doesn't allow considering candidates who
   may need future visa sponsorship — not a fit/performance rejection.
+- **2026-09-25** — 1 new row: Craft — Graphic Designer, Unknown fit,
+  status Applied — a 4th, distinct Craft application, confirmed only
+  via Craft's generic "application received" auto-reply. Which client
+  req this is for is unconfirmed (separate from the already-resolved
+  Red Antler and Vault 49 reqs, and the still-unresolved Freelance
+  Senior Brand Designer one).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -677,6 +677,12 @@ Scan history:
     (The Change Agents, the recruiter handling this candidacy) confirmed
     Day One's internal policy doesn't allow considering candidates who
     may need future visa sponsorship -- not a fit/performance rejection.
+  - 2026-09-25: 1 new row. Craft -- Graphic Designer, Unknown fit,
+    status Applied -- a 4th, distinct Craft application, confirmed only
+    via Craft's generic "application received" auto-reply. Which client
+    req this is for is unconfirmed (separate from the already-resolved
+    Red Antler and Vault 49 reqs, and the still-unresolved Freelance
+    Senior Brand Designer one).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2789,6 +2795,20 @@ SEED_ROWS = [
                          "packaging, and food/hospitality work all line up with Regina's background (including "
                          "prior work with Mexican food brands) -- but it's an internship/junior title and "
                          "part-time hours, well below her 7 years of agency experience.",
+    },
+    {
+        "company": "Craft",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-25",
+        "source": "Craft (recruitment agency ATS)",
+        "notes": "4th, distinct Craft application -- separate from the earlier Red Antler (Senior Designer), "
+                 "Vault 49 (Brand Designer), and still-unresolved Freelance Senior Brand Designer applications. "
+                 "Confirmed only via Craft's generic \"application received\" auto-reply (applications@itscraft.com); "
+                 "no Sent-mail record or client name surfaced, so which client req this is for is unconfirmed.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No client or posting details available -- only a generic Craft confirmation email, "
+                         "with no specifics about the hiring company or the exact role requirements.",
     },
 ]
 
