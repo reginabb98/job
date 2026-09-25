@@ -683,6 +683,11 @@ Scan history:
     req this is for is unconfirmed (separate from the already-resolved
     Red Antler and Vault 49 reqs, and the still-unresolved Freelance
     Senior Brand Designer one).
+  - 2026-09-25 (later): 1 new row, 1 next_step update. Morning Brew --
+    Associate, GTM Strategy, Fair fit -- new application, confirmed via
+    Lever's auto-reply. Anna-Rae Morris (networking, JKR Global): a
+    follow-up call is now being actively scheduled for the week of
+    2026-09-28 after a reschedule.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1569,8 +1574,11 @@ SEED_ROWS = [
         "status": "Networking",
         "applied_date": "2026-08-31",
         "source": "LinkedIn",
-        "notes": "Networking call with Anna-Rae Morris via LinkedIn outreach. Regina may have a follow-up "
-                 "call with her -- not yet confirmed/scheduled.",
+        "next_step": "Follow-up call being scheduled for next week (2026-09-25) after a reschedule -- exact "
+                     "time not yet confirmed.",
+        "notes": "Networking call with Anna-Rae Morris via LinkedIn outreach -- she's at JKR Global "
+                 "(annarae.morris@jkrglobal.com). A follow-up call was rescheduled, and Regina is now finding "
+                 "a new time with her for the week of 2026-09-28.",
     },
     {
         "company": "Angel Bellon",
@@ -2809,6 +2817,22 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "No client or posting details available -- only a generic Craft confirmation email, "
                          "with no specifics about the hiring company or the exact role requirements.",
+    },
+    {
+        "company": "Morning Brew",
+        "position": "Associate, GTM Strategy",
+        "status": "Applied",
+        "applied_date": "2026-09-25",
+        "source": "Lever",
+        "notes": "Confirmed via Lever's \"Thank you for your application\" auto-reply.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: an early-career (Associate-level) role building sales/sponsorship "
+                         "decks and packages for Morning Brew's GTM/ad-sales team -- turning research and "
+                         "editorial ideas into clean, persuasive slides, with some exposure to pricing/packaging "
+                         "strategy. Remote-friendly, $75K-$80K per Glassdoor. Regina's storytelling and "
+                         "deck/presentation craft overlap, but it's a sales-enablement function rather than "
+                         "brand/design work, and an Associate title is a level down from her 7 years of agency "
+                         "experience.",
     },
 ]
 

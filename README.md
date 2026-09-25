@@ -677,6 +677,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   req this is for is unconfirmed (separate from the already-resolved
   Red Antler and Vault 49 reqs, and the still-unresolved Freelance
   Senior Brand Designer one).
+- **2026-09-25 (later)** — 1 new row, 1 next_step update: Morning Brew
+  — Associate, GTM Strategy, Fair fit — new application, confirmed via
+  Lever's auto-reply. Anna-Rae Morris (networking, JKR Global): a
+  follow-up call is now being actively scheduled for the week of
+  2026-09-28 after a reschedule.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
