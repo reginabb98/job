@@ -688,6 +688,9 @@ Scan history:
     Lever's auto-reply. Anna-Rae Morris (networking, JKR Global): a
     follow-up call is now being actively scheduled for the week of
     2026-09-28 after a reschedule.
+  - 2026-09-26: no new rows, 1 flip. Gigs -- Senior Brand Designer
+    rejected: position filled ("we have recently filled this
+    position").
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1527,11 +1530,12 @@ SEED_ROWS = [
     {
         "company": "Gigs",
         "position": "Senior Brand Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "Greenhouse",
         "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; title confirmed from "
-                 "Regina's copy of the posting. New York, salary range $170K-$200K.",
+                 "Regina's copy of the posting. New York, salary range $170K-$200K. Rejected 2026-09-25: "
+                 "position filled (\"we have recently filled this position\").",
         "pay_range": "$170K-$200K/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: Figma/Adobe CS proficiency and agency/scale-up background line "

@@ -682,6 +682,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Lever's auto-reply. Anna-Rae Morris (networking, JKR Global): a
   follow-up call is now being actively scheduled for the week of
   2026-09-28 after a reschedule.
+- **2026-09-26** — no new rows, 1 flip: Gigs — Senior Brand Designer
+  rejected: position filled ("we have recently filled this position").
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
