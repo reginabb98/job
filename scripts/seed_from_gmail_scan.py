@@ -691,6 +691,12 @@ Scan history:
   - 2026-09-26: no new rows, 1 flip. Gigs -- Senior Brand Designer
     rejected: position filled ("we have recently filled this
     position").
+  - 2026-09-27: no new rows, 1 next_step update. Craft (Taste freelance
+    platform) -- Senior Designer, Brand Guidelines and Identity: Taste
+    confirmed the concrete project assignment ("GoldenStone Slides &
+    Docs", role Brand Designer), rate ($85/hr, $510/deliverable), and
+    start date (Thursday, Oct 1, pending ID/background check). Stays
+    Offer status.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2728,10 +2734,11 @@ SEED_ROWS = [
         "status": "Offer",
         "applied_date": "2026-09-22",
         "had_interview": 1,
-        "next_step": "Identity verification completed on the portal (2026-09-23). Now waiting on Taste to "
-                     "send the Master Freelance Agreement + Statement of Work -- Fionn's guidance (2026-09-23) "
-                     "was to wait for Taste's team to review and come back directly; he isn't the one to chase "
-                     "for the contract itself. Portal: portal.tastelabs.com.",
+        "pay_range": "$85/hr, paid as $510 per deliverable (6 hrs budgeted per deliverable)",
+        "next_step": "2026-09-27: Confirmed in for the 'GoldenStone Slides & Docs' project as Brand Designer, "
+                     "$85/hr ($510/deliverable), starting Thursday, Oct 1 -- pending ID check and background "
+                     "check. Remaining steps: finish ID/background check, review and sign the SOW, set up a "
+                     "tastemaker.pro email, get added to the project Slack, and watch for a kickoff call invite.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
@@ -2739,7 +2746,8 @@ SEED_ROWS = [
                  "Agreement/Statement of Work now being sent -- treated as Offer status since a freelance "
                  "engagement contract is being extended, pending identity verification and paperwork. "
                  "2026-09-23: Regina completed identity verification and checked in with Fionn about next "
-                 "steps; he confirmed it's now with Taste's team to review and reach out directly.",
+                 "steps; he confirmed it's now with Taste's team to review and reach out directly. 2026-09-27: "
+                 "Taste (Dave, recruiting@tastelabs.com) confirmed the project assignment, rate, and start date.",
         "job_fit": "Strong",
         "job_fit_notes": "Brand guidelines and identity design is squarely Regina's specialty from her "
                          "Common Matter agency background and SVA Branding Master's -- a direct match, "

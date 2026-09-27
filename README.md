@@ -684,6 +684,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   2026-09-28 after a reschedule.
 - **2026-09-26** — no new rows, 1 flip: Gigs — Senior Brand Designer
   rejected: position filled ("we have recently filled this position").
+- **2026-09-27** — no new rows, 1 next_step update: Craft (Taste
+  freelance platform) — Senior Designer, Brand Guidelines and Identity:
+  Taste confirmed the concrete project assignment ("GoldenStone Slides
+  & Docs", role Brand Designer), rate ($85/hr, $510/deliverable), and
+  start date (Thursday, Oct 1, pending ID/background check). Stays
+  Offer status.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
