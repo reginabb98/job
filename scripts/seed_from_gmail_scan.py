@@ -738,6 +738,10 @@ Scan history:
     Designer, Creative Studio (Good) and the contract variant of the
     same role (Good). Conduit Health -- Brand Designer (Good). FP
     Movement -- Graphic Designer (Fair, Free People/Urban Outfitters).
+  - 2026-09-28 (rescan): Conveo -- Design Lead flipped Applied -> Rejected
+    (generic decline, no reason given). Rejection email arrived without
+    the application in the same scan; original confirmation traced back
+    to 2026-09-06, already logged with the correct applied_date.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2072,10 +2076,11 @@ SEED_ROWS = [
     {
         "company": "Conveo",
         "position": "Design Lead",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-06",
         "source": "Ashby",
-        "notes": None,
+        "notes": "Rejected 2026-09-28 -- generic decline (\"decided not to move forward at this time\"), "
+                 "no specific reason given.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: 6+ yrs design with strong B2B/SaaS exposure, owning a full "
                          "brand-identity rebuild end to end, casting/directing freelance designers and "

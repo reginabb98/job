@@ -731,6 +731,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Studio (Good) and the contract variant of the same role (Good).
   Conduit Health — Brand Designer (Good). FP Movement — Graphic
   Designer (Fair, Free People/Urban Outfitters).
+- **2026-09-28 (rescan)** — Conveo — Design Lead flipped Applied →
+  Rejected (generic decline, no reason given). The rejection email
+  arrived without the application in the same scan; original
+  confirmation traced back to 2026-09-06, already logged with the
+  correct applied_date.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
