@@ -701,6 +701,19 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   generic confirmation, client/req unconfirmed). Thyme Care — Visual
   Designer, Marketing (Good, oncology care company). All confirmed via
   ATS auto-replies (Ashby/Greenhouse) except the two 2x4 cold emails.
+- **2026-09-28 (later)** — 8 more new rows, continuation of the same
+  2026-09-27 application sprint (later that same night), plus 1
+  next_step update: ShopMy — Unspecified role/Design (Unknown, generic
+  confirmation, multiple open design roles). Rightway — Sr. Graphic
+  Designer (Good, healthcare-navigation tech). Code and Theory —
+  Unspecified role/Design (Unknown, generic confirmation, multiple open
+  designer roles). SHADOW — Designer (Good, creative agency). webAI —
+  Marketing Designer (Unknown, no posting found). The Farmer's Dog —
+  Brand Designer (Good, DTC pet food). Fanatics Collectibles — Senior
+  Graphic Designer (Fair, trading-card print production). Agentio —
+  Brand Designer (Good, creator-ads adtech). Craft (Taste freelance
+  platform) next_step updated: Taste flagged an incoming Checkr
+  background-check email.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

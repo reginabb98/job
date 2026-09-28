@@ -708,6 +708,19 @@ Scan history:
     generic confirmation, client/req unconfirmed). Thyme Care -- Visual
     Designer, Marketing (Good, oncology care company). All confirmed via
     ATS auto-replies (Ashby/Greenhouse) except the two 2x4 cold emails.
+  - 2026-09-28 (later): 8 more new rows, continuation of the same
+    2026-09-27 application sprint (later that same night), plus 1
+    next_step update. ShopMy -- Unspecified role/Design (Unknown, generic
+    confirmation, multiple open design roles). Rightway -- Sr. Graphic
+    Designer (Good, healthcare-navigation tech). Code and Theory --
+    Unspecified role/Design (Unknown, generic confirmation, multiple
+    open designer roles). SHADOW -- Designer (Good, creative agency).
+    webAI -- Marketing Designer (Unknown, no posting found). The
+    Farmer's Dog -- Brand Designer (Good, DTC pet food). Fanatics
+    Collectibles -- Senior Graphic Designer (Fair, trading-card print
+    production). Agentio -- Brand Designer (Good, creator-ads adtech).
+    Craft (Taste freelance platform) next_step updated: Taste flagged an
+    incoming Checkr background-check email.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2748,7 +2761,9 @@ SEED_ROWS = [
         "pay_range": "$85/hr, paid as $510 per deliverable (6 hrs budgeted per deliverable)",
         "next_step": "2026-09-27: Confirmed in for the 'GoldenStone Slides & Docs' project as Brand Designer, "
                      "$85/hr ($510/deliverable), starting Thursday, Oct 1 -- pending ID check and background "
-                     "check. Remaining steps: finish ID/background check, review and sign the SOW, set up a "
+                     "check. Taste flagged (2026-09-27, later) that a Checkr background-check email was on its "
+                     "way, requiring full legal name/DOB/SSN (or equivalent) plus employment history. Remaining "
+                     "steps: complete the Checkr background check, review and sign the SOW, set up a "
                      "tastemaker.pro email, get added to the project Slack, and watch for a kickoff call invite.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
@@ -2980,6 +2995,115 @@ SEED_ROWS = [
                          "established brand system (Figma/Adobe CS/Google Workspace). 4+ yrs experience -- a "
                          "solid match to Regina's brand-production background, with healthcare/oncology as a "
                          "new industry context for her. Remote.",
+    },
+    {
+        "company": "ShopMy",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse confirmation (\"Thanks for applying to ShopMy\") did not name the role. "
+                 "ShopMy (creator-commerce/influencer platform) had several open design roles at the time -- "
+                 "Senior Product Designer, Associate UI Product Designer, and Senior Brand Designer -- most "
+                 "likely the Senior Brand Designer given her background, but not confirmed.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which of ShopMy's several open design roles this application was "
+                         "for.",
+    },
+    {
+        "company": "Rightway",
+        "position": "Sr. Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Rightway is a healthcare-navigation tech company; this Sr. "
+                         "Graphic Designer role stewards the brand across marketing assets (web, email, social, "
+                         "print) -- landing pages, sellsheets, presentations, posters, social graphics -- a "
+                         "solid match to Regina's brand-production background, with healthcare as a new "
+                         "industry context for her.",
+    },
+    {
+        "company": "Code and Theory",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Email",
+        "notes": "Generic confirmation (\"Thank you for your interest in Code and Theory\") did not name the "
+                 "role. Code and Theory is a digital-first creative agency with several open designer roles at "
+                 "the time -- Senior Experience Designer, Senior Designer, and Junior Designer -- not confirmed "
+                 "which one this was for.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which of Code and Theory's several open designer roles this "
+                         "application was for.",
+    },
+    {
+        "company": "SHADOW",
+        "position": "Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply; role title inferred from SHADOW's only open design "
+                 "listing found (Creative Division).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: SHADOW is a creative marketing/communications agency; this "
+                         "Creative Division Designer role wants 3-5 yrs, preferably agency or consumer-brand "
+                         "experience, working across print, UI, email, spatial, packaging, and merch -- a solid "
+                         "match to Regina's Common Matter agency background.",
+    },
+    {
+        "company": "webAI",
+        "position": "Marketing Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
+                         "appears to be an AI-focused company, but no further detail was available.",
+    },
+    {
+        "company": "The Farmer's Dog",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "pay_range": "$80K-$90K/yr",
+        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: The Farmer's Dog is a DTC fresh-pet-food subscription company; "
+                         "this Brand Designer role creates marketing/digital/print creative across channels "
+                         "(email, social, landing pages, print) and develops brand standards/physical touchpoints "
+                         "including packaging. 3+ yrs, agency and/or client-side -- a solid match to Regina's "
+                         "background.",
+    },
+    {
+        "company": "Fanatics Collectibles",
+        "position": "Senior Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Email",
+        "notes": "Confirmed via automated confirmation email.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed general scope: designs trading cards, branding, and marketing assets for "
+                         "Fanatics Collectibles, managing projects through print production. Print-design craft "
+                         "overlaps with Regina's background, but the trading-card/collectibles print-production "
+                         "specialization is a narrower niche than her branding-agency experience.",
+    },
+    {
+        "company": "Agentio",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "pay_range": "$72K-$108K/yr",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Agentio is a creator-ads adtech startup; this Brand Designer role "
+                         "drives design from concept to execution across digital, print, video, and events, "
+                         "wanting 3-6+ yrs in brand design with strong storytelling skills -- a solid match to "
+                         "Regina's background. On-site, New York, NY.",
     },
 ]
 
