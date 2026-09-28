@@ -721,6 +721,23 @@ Scan history:
     production). Agentio -- Brand Designer (Good, creator-ads adtech).
     Craft (Taste freelance platform) next_step updated: Taste flagged an
     incoming Checkr background-check email.
+  - 2026-09-28 (still later): 16 more new rows, the same 2026-09-27
+    application sprint running well past midnight. OLIVER -- Digital
+    Content Designer (Fair, 5th distinct OLIVER application). Digital
+    Asset -- Brand Designer (Unknown). Bespoke Post -- Graphic Designer
+    (Unknown, 2nd distinct Bespoke Post application). Wpromote -- Senior
+    Pitch Designer (Fair). Verve -- Unspecified role/Design (Unknown,
+    multiple open design roles). J.Crew -- Sr. Digital Designer (Fair).
+    VaynerMedia -- Designer (Good). goop -- Unspecified role/Design
+    (Unknown, most likely Senior Graphic Designer). Warner Bros.
+    Discovery -- Digital Designer, CNN (Unknown, no posting found). TRM
+    Labs -- Senior Brand Designer (Good). Alpaca Markets -- Senior
+    Graphic Designer (Good). Red Antler -- Senior Digital Designer
+    (Good, 2nd distinct Red Antler application, direct via Breezy --
+    separate from the Craft-routed Interviewing req). Suno -- Senior
+    Designer, Creative Studio (Good) and the contract variant of the
+    same role (Good). Conduit Health -- Brand Designer (Good). FP
+    Movement -- Graphic Designer (Fair, Free People/Urban Outfitters).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3104,6 +3121,218 @@ SEED_ROWS = [
                          "drives design from concept to execution across digital, print, video, and events, "
                          "wanting 3-6+ yrs in brand design with strong storytelling skills -- a solid match to "
                          "Regina's background. On-site, New York, NY.",
+    },
+    {
+        "company": "OLIVER",
+        "position": "Digital Content Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "5th, distinct OLIVER application -- a genuinely different title from the other four OLIVER "
+                 "applications (Social & Culture Strategist; Senior Designer x3). Confirmed via Greenhouse's "
+                 "auto-reply (\"Thank you for interest in the Digital Content Designer posting\").",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed general scope: end-to-end design and production of content for a client's "
+                         "flagship digital display platform, with motion graphics/video editing/Gen AI tool "
+                         "proficiency called out. Digital-production overlap with Regina's background, but "
+                         "motion/video work is the recurring gap seen on several other OLIVER and Meta roles.",
+    },
+    {
+        "company": "Digital Asset",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "HiBob",
+        "notes": "Confirmed via HiBob's auto-reply, which did not include posting details.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- Digital "
+                         "Asset appears to be a blockchain/DLT company, but no further detail was available.",
+    },
+    {
+        "company": "Bespoke Post",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Lever",
+        "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
+                 "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find the specific Graphic Designer posting to confirm requirements.",
+    },
+    {
+        "company": "Wpromote",
+        "position": "Senior Pitch Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Lever",
+        "pay_range": "$75K-$90K/yr",
+        "notes": "Confirmed via Lever's auto-reply.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: design lead on Wpromote's enterprise new-business pitches, turning "
+                         "strategy docs, audit findings, and media plans into pitch decks, data visualizations, "
+                         "and motion/video assets (PowerPoint/Google Slides, Adobe CS, Figma, Premiere, After "
+                         "Effects). Overlaps with Regina's strategy-and-deck-building skills (similar to the "
+                         "Morning Brew GTM Strategy role), but the motion/video tools aren't a demonstrated "
+                         "strength.",
+    },
+    {
+        "company": "Verve",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Generic confirmation (\"Thank you for your interest in Verve\") did not name the role. Verve "
+                 "(ad-tech company) had multiple open design roles at the time -- Visual Designer, Marketing "
+                 "($75K-$85K, 2+ yrs) and Strategy & Presentation Designer -- not confirmed which.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which of Verve's open design roles this application was for.",
+    },
+    {
+        "company": "J.Crew",
+        "position": "Sr. Digital Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: Senior-level, hybrid, NY HQ, wants 7+ yrs experience with Figma/"
+                         "InDesign/Photoshop. The 7+ yrs bar is a bit beyond Regina's ~7 years, and retail/"
+                         "fashion digital design is a different context from her branding-agency background, "
+                         "though the core design skills overlap.",
+    },
+    {
+        "company": "VaynerMedia",
+        "position": "Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 2+ yrs experience, skills in motion graphics, color grading, and "
+                         "Photoshop, agency environment -- a solid general match to Regina's agency background, "
+                         "though motion/color-grading specifics aren't strongly evidenced on her resume.",
+    },
+    {
+        "company": "goop",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Greenhouse",
+        "notes": "Generic confirmation (\"Thank you for your application to goop\") did not name the role. goop "
+                 "had a Senior Graphic Designer opening at the time (6+ yrs, beauty/wellness/fashion/luxury, "
+                 "$70K-$80K+equity) that's the most likely match, but not confirmed.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific goop design role this application was for.",
+    },
+    {
+        "company": "Warner Bros. Discovery",
+        "position": "Digital Designer, CNN",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply, which named the req (R000107792) but included no further "
+                 "posting details.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find the specific posting to confirm requirements.",
+    },
+    {
+        "company": "TRM Labs",
+        "position": "Senior Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: TRM Labs builds AI-powered blockchain-intelligence software for "
+                         "public/private-sector crime investigation. This Senior Brand Designer role owns brand "
+                         "design end-to-end -- campaigns, web, social, events, sales/marketing materials, "
+                         "reports -- including turning data-heavy topics into infographics with AI-assisted "
+                         "workflows. A solid match to Regina's brand-design and creative-briefing background; "
+                         "blockchain/crime-intelligence is a new industry context for her.",
+    },
+    {
+        "company": "Alpaca Markets",
+        "position": "Senior Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Email",
+        "notes": "Confirmed via automated confirmation email.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 7+ yrs professional graphic/visual/brand/marketing design "
+                         "experience producing multi-channel go-to-market assets -- campaigns, product launches, "
+                         "demand gen, sales enablement, events, corporate comms -- within an established brand "
+                         "system. Seniority and production breadth line up well with Regina's background.",
+    },
+    {
+        "company": "Red Antler",
+        "position": "Senior Digital Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Breezy",
+        "notes": "2nd, distinct Red Antler application -- separate from the Craft-routed 'Senior Designer' req "
+                 "(applied 09-14, currently Interviewing via Anna Callagher) and the earlier cold-outreach "
+                 "networking attempts (08-25, no replies). This was a direct application through Red Antler's "
+                 "own Breezy ATS. Confirmed via Breezy's auto-reply, which did not include full posting details.",
+        "job_fit": "Good",
+        "job_fit_notes": "No separate posting text found, but Red Antler's confirmed hiring focus (per the "
+                         "Craft/Anna Callagher req) is large-scale branding and brand strategy for tech brands, "
+                         "hiring across levels -- a 'Digital Designer' title suggests more digital-execution "
+                         "focus, which still overlaps well with Regina's background.",
+    },
+    {
+        "company": "Suno",
+        "position": "Senior Designer, Creative Studio",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Suno (AI music-creation platform) is hiring a multidisciplinary "
+                         "Senior Designer for its Brand & Creative Team, working at the intersection of brand, "
+                         "culture, and product -- marketing campaigns, artist partnerships, in-product brand "
+                         "moments, culture-defining activations. A solid match to Regina's brand-design "
+                         "background in an exciting music-tech context.",
+    },
+    {
+        "company": "Suno",
+        "position": "Senior Designer, Creative Studio & Brand Campaigns (Contract)",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Ashby",
+        "notes": "2nd, distinct Suno application -- a contract variant of the same Brand & Creative Team role, "
+                 "applied minutes after the full-time req. Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Same Brand & Creative Team scope as the full-time Suno req (brand/culture/product "
+                         "design across campaigns, artist partnerships, and activations) but structured as a "
+                         "contract engagement -- a solid match to Regina's brand-design background.",
+    },
+    {
+        "company": "Conduit Health",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Conduit Health (post-acute-care/AI-powered platform) is building "
+                         "its first scalable brand and creative engine -- visual identity, voice, design "
+                         "systems, and creative across ads, web, landing pages, decks, and lifecycle. 3+ yrs "
+                         "brand/marketing design experience -- a close match to Regina's SVA Branding Master's "
+                         "and Common Matter identity-systems background. NYC, hybrid.",
+    },
+    {
+        "company": "FP Movement",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-28",
+        "source": "iCIMS",
+        "notes": "Confirmed via iCIMS's auto-reply (FP Movement is a Free People/Urban Outfitters brand).",
+        "job_fit": "Fair",
+        "job_fit_notes": "Couldn't confirm the exact req behind this generic confirmation, but FP Movement's "
+                         "design postings around this time centered on seasonal apparel/activewear graphics -- "
+                         "photo- and artwork-driven design and typography overlap generally with Regina's "
+                         "background, though the apparel/activewear graphics niche is a different focus from "
+                         "her brand-identity work.",
     },
 ]
 

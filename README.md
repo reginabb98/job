@@ -714,6 +714,23 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Brand Designer (Good, creator-ads adtech). Craft (Taste freelance
   platform) next_step updated: Taste flagged an incoming Checkr
   background-check email.
+- **2026-09-28 (still later)** — 16 more new rows, the same 2026-09-27
+  application sprint running well past midnight: OLIVER — Digital
+  Content Designer (Fair, 5th distinct OLIVER application). Digital
+  Asset — Brand Designer (Unknown). Bespoke Post — Graphic Designer
+  (Unknown, 2nd distinct Bespoke Post application). Wpromote — Senior
+  Pitch Designer (Fair). Verve — Unspecified role/Design (Unknown,
+  multiple open design roles). J.Crew — Sr. Digital Designer (Fair).
+  VaynerMedia — Designer (Good). goop — Unspecified role/Design
+  (Unknown, most likely Senior Graphic Designer). Warner Bros.
+  Discovery — Digital Designer, CNN (Unknown, no posting found). TRM
+  Labs — Senior Brand Designer (Good). Alpaca Markets — Senior Graphic
+  Designer (Good). Red Antler — Senior Digital Designer (Good, 2nd
+  distinct Red Antler application, direct via Breezy — separate from
+  the Craft-routed Interviewing req). Suno — Senior Designer, Creative
+  Studio (Good) and the contract variant of the same role (Good).
+  Conduit Health — Brand Designer (Good). FP Movement — Graphic
+  Designer (Fair, Free People/Urban Outfitters).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
