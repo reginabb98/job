@@ -742,6 +742,15 @@ Scan history:
     (generic decline, no reason given). Rejection email arrived without
     the application in the same scan; original confirmation traced back
     to 2026-09-06, already logged with the correct applied_date.
+  - 2026-09-28 (later rescan): 3 status updates, no new applications.
+    Bumble -- Graphic Designer flipped Applied -> Rejected (role closed,
+    not a fit rejection). Vault 49 -- Brand Designer flipped Applied ->
+    Interviewing: Anna Callagher (Craft) is scheduling an interview this
+    week with Vault 49's own team (Laura/Operations, Nick Corey/ADD,
+    Steve Baust/ADD). Canopy -- Graphic Designer next_step updated:
+    Regina sent a check-in email after no word since the 2026-09-23
+    intro call; had_interview backfilled to 1 since that call already
+    happened.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1553,10 +1562,10 @@ SEED_ROWS = [
     {
         "company": "Bumble",
         "position": "Graphic Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "Ashby",
-        "notes": None,
+        "notes": "Rejected 2026-09-28 -- role was closed, not a fit-based rejection.",
         "job_fit": "Good",
         "job_fit_notes": "3+ yrs graphic design (tech sector preferred, not required), in-house creative "
                          "studio work across print/digital/social/campaign -- a good match for Regina's "
@@ -2352,13 +2361,13 @@ SEED_ROWS = [
     {
         "company": "Vault 49",
         "position": "Brand Designer",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Confirmed by Regina on 2026-09-23 as the 'more CPG one' of the two Craft/Anna Callagher "
-                     "reqs discussed. Regina sent an updated design portfolio (reginabbsv.cargo.site, with a "
-                     "new packaging project) on 2026-09-24; Anna said it looks great and will keep Regina "
-                     "posted on her thoughts -- no call scheduled yet.",
+        "next_step": "Anna Callagher (Craft) reached out 2026-09-28 to schedule an interview this week with "
+                     "Laura (Operations), Nick Corey (ADD), and Steve Baust (ADD) -- Vault 49's own team, not "
+                     "just Craft. Regina needs to pick a time slot. Follows the 2026-09-24 portfolio update "
+                     "(new packaging project) that Anna said looked great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2836,9 +2845,10 @@ SEED_ROWS = [
         "position": "Graphic Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-23",
-        "next_step": "Katy Spore (Senior Graphic Designer, Canopy) invited Regina to a 30-min intro call -- "
-                     "booked for Wed, Sept 23, 3:00-3:30pm ET. Full process if it progresses: intro call, "
-                     "possible assessment, team/project presentation, then an offer.",
+        "next_step": "Intro call with Katy Spore happened as scheduled on 2026-09-23. No word since, so "
+                     "Regina sent a check-in email on 2026-09-28 reaffirming interest and addressing an "
+                     "experience concern Katy raised on the call. Awaiting Katy's response. Full process if "
+                     "it progresses: possible assessment, team/project presentation, then an offer.",
         "source": "Email",
         "notes": "No original application-confirmation email or Sent-mail record was found for this one -- "
                  "picked up directly from the interview-invite email, so the true applied_date is unconfirmed "
@@ -2847,6 +2857,7 @@ SEED_ROWS = [
         "job_fit_notes": "Couldn't confirm the exact posting or which 'Canopy' this is with certainty (a "
                          "Graphic Designer, Mid opening in the NYC Metro area turned up under the getcanopy "
                          "name, but wasn't confirmed as this exact req).",
+        "had_interview": 1,
     },
     {
         "company": "Polonsky & Friends",

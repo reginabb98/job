@@ -736,6 +736,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   arrived without the application in the same scan; original
   confirmation traced back to 2026-09-06, already logged with the
   correct applied_date.
+- **2026-09-28 (later rescan)** — 3 status updates, no new applications.
+  Bumble — Graphic Designer flipped Applied → Rejected (role closed, not
+  a fit rejection). Vault 49 — Brand Designer flipped Applied →
+  Interviewing: Anna Callagher (Craft) is scheduling an interview this
+  week with Vault 49's own team (Laura/Operations, Nick Corey/ADD, Steve
+  Baust/ADD). Canopy — Graphic Designer next_step updated: Regina sent a
+  check-in email after no word since the 2026-09-23 intro call;
+  had_interview backfilled to 1 since that call already happened.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
