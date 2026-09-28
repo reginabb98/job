@@ -744,6 +744,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Baust/ADD). Canopy — Graphic Designer next_step updated: Regina sent a
   check-in email after no word since the 2026-09-23 intro call;
   had_interview backfilled to 1 since that call already happened.
+- **2026-09-28 (evening rescan)** — 2 next_step updates, no new
+  applications. Vault 49 — interview time confirmed: Wednesday, Oct 1 at
+  1:00pm ET. Craft (Taste freelance platform) — Senior Designer, Brand
+  Guidelines and Identity: Regina submitted her background check and
+  flagged a discrepancy to Dave (recruiting@tastelabs.com) — the
+  confirmed project is "GoldenStone Slides & Docs" but she'd understood
+  she was joining "Guidelines and Identity"; also hasn't received the
+  SOW yet. Awaiting his reply on both — worth watching since it could
+  mean a different project scope than expected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

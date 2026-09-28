@@ -751,6 +751,16 @@ Scan history:
     Regina sent a check-in email after no word since the 2026-09-23
     intro call; had_interview backfilled to 1 since that call already
     happened.
+  - 2026-09-28 (evening rescan): 2 next_step updates, no new
+    applications. Vault 49 -- interview time confirmed: Wednesday,
+    Oct 1 at 1:00pm ET. Craft (Taste freelance platform) -- Senior
+    Designer, Brand Guidelines and Identity: Regina submitted her
+    background check and flagged a discrepancy to Dave (recruiting@
+    tastelabs.com) -- the confirmed project is "GoldenStone Slides &
+    Docs" but she'd understood she was joining "Guidelines and
+    Identity"; also hasn't received the SOW yet. Awaiting his reply on
+    both -- worth watching since it could mean a different project
+    scope than expected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2364,10 +2374,10 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Anna Callagher (Craft) reached out 2026-09-28 to schedule an interview this week with "
-                     "Laura (Operations), Nick Corey (ADD), and Steve Baust (ADD) -- Vault 49's own team, not "
-                     "just Craft. Regina needs to pick a time slot. Follows the 2026-09-24 portfolio update "
-                     "(new packaging project) that Anna said looked great.",
+        "next_step": "Interview confirmed for Wednesday, Oct 1 at 1:00pm ET with Laura (Operations), Nick Corey "
+                     "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Anna Callagher "
+                     "(Craft) proposed times on 2026-09-28; Regina confirmed same day. Follows the 2026-09-24 "
+                     "portfolio update (new packaging project) that Anna said looked great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2793,9 +2803,13 @@ SEED_ROWS = [
         "next_step": "2026-09-27: Confirmed in for the 'GoldenStone Slides & Docs' project as Brand Designer, "
                      "$85/hr ($510/deliverable), starting Thursday, Oct 1 -- pending ID check and background "
                      "check. Taste flagged (2026-09-27, later) that a Checkr background-check email was on its "
-                     "way, requiring full legal name/DOB/SSN (or equivalent) plus employment history. Remaining "
-                     "steps: complete the Checkr background check, review and sign the SOW, set up a "
-                     "tastemaker.pro email, get added to the project Slack, and watch for a kickoff call invite.",
+                     "way, requiring full legal name/DOB/SSN (or equivalent) plus employment history. "
+                     "2026-09-28: Regina submitted the background check and replied to Dave flagging a "
+                     "discrepancy -- the confirmed project is 'GoldenStone Slides & Docs' but she'd understood "
+                     "she was joining 'Guidelines and Identity' (the position title/assessment this row is "
+                     "under). Also hasn't received the SOW yet. Awaiting Dave's reply on both. Remaining steps: "
+                     "review and sign the SOW, set up a tastemaker.pro email, get added to the project Slack, "
+                     "and watch for a kickoff call invite.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
