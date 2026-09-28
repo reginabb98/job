@@ -697,6 +697,17 @@ Scan history:
     Docs", role Brand Designer), rate ($85/hr, $510/deliverable), and
     start date (Thursday, Oct 1, pending ID/background check). Stays
     Offer status.
+  - 2026-09-28: 8 new rows, an application sprint late on 2026-09-27.
+    2x4 -- Design Intern / Branding (Fair) and Designer / Digital (Good),
+    both direct cold emails to the studio. Onebrief -- Senior Brand
+    Designer (Good, AI military-planning software). Meta -- Brand
+    Designer, Foundations - Instagram Brand Studio (Fair, 6th distinct
+    Meta application). Profound -- Brand Designer (Good, AI marketing
+    platform). HappyRobot -- Brand Designer (Good, AI-worker
+    infrastructure). OLIVER -- Senior Designer, 3rd application (Unknown,
+    generic confirmation, client/req unconfirmed). Thyme Care -- Visual
+    Designer, Marketing (Good, oncology care company). All confirmed via
+    ATS auto-replies (Ashby/Greenhouse) except the two 2x4 cold emails.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2845,6 +2856,130 @@ SEED_ROWS = [
                          "deck/presentation craft overlap, but it's a sales-enablement function rather than "
                          "brand/design work, and an Associate title is a level down from her 7 years of agency "
                          "experience.",
+    },
+    {
+        "company": "2x4",
+        "position": "Design Intern / Branding",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Email",
+        "notes": "Direct cold-email application to internships@2x4.org, resume and portfolio "
+                 "(reginabbsv.cargo.site) attached -- found via Gmail Sent search.",
+        "job_fit": "Fair",
+        "job_fit_notes": "No formal posting found, only 2x4's internship inbox -- 2x4 is a well-known NYC "
+                         "branding and design studio spanning identity, campaigns, editorial, packaging, "
+                         "digital, and print. Strong stylistic overlap with Regina's Common Matter/SVA Branding "
+                         "background, but an internship-level Branding-team role is well below her 7 years of "
+                         "agency experience.",
+    },
+    {
+        "company": "2x4",
+        "position": "Designer / Digital",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Email",
+        "notes": "Direct cold-email application to jobinquiries@2x4.org, resume attached -- found via Gmail "
+                 "Sent search. Sent 5 minutes after the 2x4 Design Intern / Branding application, same studio.",
+        "job_fit": "Good",
+        "job_fit_notes": "No formal posting found, only 2x4's general inquiries inbox -- this is a Digital-team "
+                         "role, not explicitly senior/junior. Regina's background spans brand and digital "
+                         "design (identities, visual systems, websites, digital experiences, campaigns), a "
+                         "solid general match, though the exact seniority/level of this specific opening "
+                         "couldn't be confirmed.",
+    },
+    {
+        "company": "Onebrief",
+        "position": "Senior Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Onebrief builds AI-powered military-planning/collaboration "
+                         "software (backed by General Catalyst, Battery, Insight, valued $2B+); this Senior "
+                         "Brand Designer role shapes visual identity across marketing/sales touchpoints and "
+                         "translates complex operational/technical concepts into cohesive visual design. "
+                         "Remote, US. A solid match to Regina's brand-identity and visual-systems background, "
+                         "though the defense/military-planning subject matter is a new domain for her.",
+    },
+    {
+        "company": "Meta",
+        "position": "Brand Designer, Foundations - Instagram Brand Studio",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Email",
+        "pay_range": "$149K-$209K/yr",
+        "notes": "6th, distinct Meta application -- same Instagram Brand Studio team as the existing "
+                 "\"Strategic Initiatives\" (applied 07-26) and \"Iconography & Illustration\" (applied 09-06) "
+                 "roles, but a different req/specialization within it.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: owns the strategic design and scaling of Instagram's visual "
+                         "identity system -- typography, color, layout systems, multi-channel applications -- "
+                         "translating brand strategy into scalable design systems. Overlaps with Regina's "
+                         "brand-identity/systems background, but like the other Instagram Brand Studio roles, "
+                         "this reads as a senior/strategic-track position, and desirable motion/creative-coding/"
+                         "AI-workflow skills aren't evidenced on her resume.",
+    },
+    {
+        "company": "Profound",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Profound is an AI-era marketing platform (backed by Lightspeed, "
+                         "Sequoia, Kleiner Perkins, Khosla; ~$1B valuation; NYC/SF/Buenos Aires/London). This "
+                         "Brand Designer role defines and shapes how Profound looks and feels across every "
+                         "channel -- campaigns, events, and the visual systems that scale the brand -- a close "
+                         "match to Regina's brand-identity and visual-systems background.",
+    },
+    {
+        "company": "HappyRobot",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "pay_range": "$120K-$150K/yr",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: HappyRobot builds AI-worker infrastructure for enterprises (Y "
+                         "Combinator S23, backed by a16z/Base10/Prysm/Eurazeo, $150M+ raised). This Brand "
+                         "Designer role maintains and evolves the brand's visual language across a high volume "
+                         "of brand/marketing work -- social, print, physical formats, OOH, merch -- a solid "
+                         "match to Regina's broad brand-production background. San Francisco with a remote "
+                         "option.",
+    },
+    {
+        "company": "OLIVER",
+        "position": "Senior Designer (3rd application)",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Greenhouse",
+        "notes": "Third, distinct Greenhouse confirmation for a same-titled 'Senior Designer' posting -- OLIVER "
+                 "runs many concurrent Senior Designer reqs across different client accounts, so this reads as "
+                 "a separate opening from the 09-06 and 09-19 applications rather than a duplicate. Generic "
+                 "confirmation email (\"Thank you for interest in the Senior Designer posting\") did not name "
+                 "the specific client account or req.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific client account or req this confirmation was for "
+                         "among OLIVER's several concurrently open Senior Designer listings.",
+    },
+    {
+        "company": "Thyme Care",
+        "position": "Visual Designer, Marketing",
+        "status": "Applied",
+        "applied_date": "2026-09-27",
+        "source": "Ashby",
+        "pay_range": "$115K-$135K/yr",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: Thyme Care is a value-based oncology care company; this Visual "
+                         "Designer role on the Marketing team owns design/production of campaigns, digital "
+                         "assets, social content, presentations, and experiential materials within an "
+                         "established brand system (Figma/Adobe CS/Google Workspace). 4+ yrs experience -- a "
+                         "solid match to Regina's brand-production background, with healthcare/oncology as a "
+                         "new industry context for her. Remote.",
     },
 ]
 

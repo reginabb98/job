@@ -690,6 +690,17 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   & Docs", role Brand Designer), rate ($85/hr, $510/deliverable), and
   start date (Thursday, Oct 1, pending ID/background check). Stays
   Offer status.
+- **2026-09-28** — 8 new rows, an application sprint late on 2026-09-27:
+  2x4 — Design Intern / Branding (Fair) and Designer / Digital (Good),
+  both direct cold emails to the studio. Onebrief — Senior Brand
+  Designer (Good, AI military-planning software). Meta — Brand
+  Designer, Foundations - Instagram Brand Studio (Fair, 6th distinct
+  Meta application). Profound — Brand Designer (Good, AI marketing
+  platform). HappyRobot — Brand Designer (Good, AI-worker
+  infrastructure). OLIVER — Senior Designer, 3rd application (Unknown,
+  generic confirmation, client/req unconfirmed). Thyme Care — Visual
+  Designer, Marketing (Good, oncology care company). All confirmed via
+  ATS auto-replies (Ashby/Greenhouse) except the two 2x4 cold emails.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
