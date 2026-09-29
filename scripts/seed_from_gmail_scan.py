@@ -776,6 +776,18 @@ Scan history:
     Interviewing thread. (Vault 49's calendar invite for Wed Sept 30,
     1:00-1:45pm ET also came through from Laura Negin -- confirms what
     was already logged, no content change.)
+  - 2026-09-29 (evening rescan): 4 updates, no new applications. Craft
+    -- 4th distinct application (Graphic Designer, client still
+    unknown) flipped Applied -> Rejected, generic decline direct from
+    Craft. Bespoke Post -- 2nd distinct application (Graphic Designer)
+    flipped Applied -> Interviewing: Kate Mulcahy wants to schedule a
+    phone call, Regina hasn't replied yet. Mother -- Regina's 2026-09-25
+    check-in with a contact named Rachel (rachel@motherusa.com, name
+    doesn't match the original Maggie Murphy contact -- not guessing if
+    same person) got a reply: still quiet on the strategy side, will
+    flag if something opens up. Red Antler (Craft-routed, Interviewing)
+    -- Regina replied to Anna with her availability (Wed/Thu before 3pm
+    or Mon/Tue next week); awaiting a locked-in time.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1684,6 +1696,12 @@ SEED_ROWS = [
         "status": "Networking",
         "applied_date": "2026-09-10",
         "source": "Referral",
+        "next_step": "Regina sent a check-in email on 2026-09-25 to a contact at Mother named Rachel "
+                     "(rachel@motherusa.com), asking about strategy-side openings -- note: this name doesn't "
+                     "match Maggie Murphy from the original follow-up call, so it's unclear if this is the "
+                     "same contact under a different name or a separate person at Mother; not guessing which. "
+                     "Rachel replied 2026-09-29: still quiet on the strategy side, will flag if anything opens "
+                     "up.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -2352,8 +2370,9 @@ SEED_ROWS = [
                      "to be the Red Antler req. Regina sent her strategy portfolio (reginabbs.cargo.site) on "
                      "2026-09-24; Anna flagged the link wasn't working, and Regina resent the corrected link "
                      "the same day. 2026-09-29: Anna reported Red Antler came back wanting to chat, and asked "
-                     "Regina to share her availability for this week and early next -- Regina hasn't replied "
-                     "yet. If shortlisted: 30-min intro call with a creative director, then the ECDs.",
+                     "Regina to share her availability; Regina replied same day offering Wed/Thu before 3pm or "
+                     "Mon/Tue the following week -- awaiting Anna to lock in a time. If shortlisted: 30-min "
+                     "intro call with a creative director, then the ECDs.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2910,13 +2929,15 @@ SEED_ROWS = [
     {
         "company": "Craft",
         "position": "Graphic Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-25",
         "source": "Craft (recruitment agency ATS)",
         "notes": "4th, distinct Craft application -- separate from the earlier Red Antler (Senior Designer), "
                  "Vault 49 (Brand Designer), and still-unresolved Freelance Senior Brand Designer applications. "
                  "Confirmed only via Craft's generic \"application received\" auto-reply (applications@itscraft.com); "
-                 "no Sent-mail record or client name surfaced, so which client req this is for is unconfirmed.",
+                 "no Sent-mail record or client name surfaced, so which client req this was for was never "
+                 "confirmed. Rejected 2026-09-29 via a generic \"not progressing\" decline, also from Craft "
+                 "directly rather than naming a client -- so the underlying company is still unknown.",
         "job_fit": "Unknown",
         "job_fit_notes": "No client or posting details available -- only a generic Craft confirmation email, "
                          "with no specifics about the hiring company or the exact role requirements.",
@@ -3199,9 +3220,11 @@ SEED_ROWS = [
     {
         "company": "Bespoke Post",
         "position": "Graphic Designer",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-09-27",
         "source": "Lever",
+        "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call to discuss Regina's "
+                     "background and Bespoke Post's work -- Regina hasn't replied yet.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

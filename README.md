@@ -767,6 +767,18 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Interviewing thread. (Vault 49's calendar invite for Wed Sept 30,
   1:00–1:45pm ET also came through from Laura Negin — confirms what was
   already logged, no content change.)
+- **2026-09-29 (evening rescan)** — 4 updates, no new applications.
+  Craft — 4th distinct application (Graphic Designer, client still
+  unknown) flipped Applied → Rejected, generic decline direct from
+  Craft. Bespoke Post — 2nd distinct application (Graphic Designer)
+  flipped Applied → Interviewing: Kate Mulcahy wants to schedule a
+  phone call, Regina hasn't replied yet. Mother — Regina's 2026-09-25
+  check-in with a contact named Rachel (rachel@motherusa.com, name
+  doesn't match the original Maggie Murphy contact — not guessing if
+  same person) got a reply: still quiet on the strategy side, will flag
+  if something opens up. Red Antler (Craft-routed, Interviewing) —
+  Regina replied to Anna with her availability (Wed/Thu before 3pm or
+  Mon/Tue next week); awaiting a locked-in time.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
