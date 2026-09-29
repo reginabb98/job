@@ -761,6 +761,13 @@ Scan history:
     Identity"; also hasn't received the SOW yet. Awaiting his reply on
     both -- worth watching since it could mean a different project
     scope than expected.
+  - 2026-09-29 (morning rescan): 2 updates, no new applications.
+    Wpromote -- Senior Pitch Designer flipped Applied -> Rejected
+    (generic "moving forward with other candidates" decline; subject
+    line read "Wpromote x Giant Spoon", suggesting an agency-partner
+    req). Vault 49 -- next_step updated with interview format details:
+    a 45-minute call presenting a couple of projects, calendar invite
+    to come from Laura.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2375,9 +2382,11 @@ SEED_ROWS = [
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Interview confirmed for Wednesday, Oct 1 at 1:00pm ET with Laura (Operations), Nick Corey "
-                     "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Anna Callagher "
-                     "(Craft) proposed times on 2026-09-28; Regina confirmed same day. Follows the 2026-09-24 "
-                     "portfolio update (new packaging project) that Anna said looked great.",
+                     "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
+                     "get-to-know-you call where Regina presents a couple of projects, walking through her "
+                     "thinking/process. Calendar invite to come from Laura. Anna Callagher (Craft) proposed "
+                     "times on 2026-09-28; Regina confirmed same day. Follows the 2026-09-24 portfolio update "
+                     "(new packaging project) that Anna said looked great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3192,11 +3201,13 @@ SEED_ROWS = [
     {
         "company": "Wpromote",
         "position": "Senior Pitch Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Lever",
         "pay_range": "$75K-$90K/yr",
-        "notes": "Confirmed via Lever's auto-reply.",
+        "notes": "Confirmed via Lever's auto-reply. Rejected 2026-09-29 -- generic 'moving forward with other "
+                 "candidates' decline (email subject referenced 'Wpromote x Giant Spoon', suggesting this req "
+                 "was a joint/agency-partner listing).",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: design lead on Wpromote's enterprise new-business pitches, turning "
                          "strategy docs, audit findings, and media plans into pitch decks, data visualizations, "

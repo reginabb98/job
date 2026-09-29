@@ -753,6 +753,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   she was joining "Guidelines and Identity"; also hasn't received the
   SOW yet. Awaiting his reply on both — worth watching since it could
   mean a different project scope than expected.
+- **2026-09-29 (morning rescan)** — 2 updates, no new applications.
+  Wpromote — Senior Pitch Designer flipped Applied → Rejected (generic
+  "moving forward with other candidates" decline; subject line read
+  "Wpromote x Giant Spoon", suggesting an agency-partner req). Vault 49
+  — next_step updated with interview format details: a 45-minute call
+  presenting a couple of projects, calendar invite to come from Laura.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
