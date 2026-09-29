@@ -759,6 +759,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   "Wpromote x Giant Spoon", suggesting an agency-partner req). Vault 49
   — next_step updated with interview format details: a 45-minute call
   presenting a couple of projects, calendar invite to come from Laura.
+- **2026-09-29 (afternoon rescan)** — 1 update, no new applications. Red
+  Antler (Craft-routed Senior Designer req, Interviewing) — Anna
+  Callagher reported Red Antler came back wanting to chat again and
+  asked for Regina's availability this week and early next; Regina
+  hasn't replied yet — worth a nudge since it's a live, advancing
+  Interviewing thread. (Vault 49's calendar invite for Wed Sept 30,
+  1:00–1:45pm ET also came through from Laura Negin — confirms what was
+  already logged, no content change.)
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -768,6 +768,14 @@ Scan history:
     req). Vault 49 -- next_step updated with interview format details:
     a 45-minute call presenting a couple of projects, calendar invite
     to come from Laura.
+  - 2026-09-29 (afternoon rescan): 1 update, no new applications. Red
+    Antler (Craft-routed Senior Designer req, Interviewing) -- Anna
+    Callagher reported Red Antler came back wanting to chat again and
+    asked for Regina's availability this week and early next; Regina
+    hasn't replied yet -- worth a nudge since it's a live, advancing
+    Interviewing thread. (Vault 49's calendar invite for Wed Sept 30,
+    1:00-1:45pm ET also came through from Laura Negin -- confirms what
+    was already logged, no content change.)
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2343,8 +2351,9 @@ SEED_ROWS = [
         "next_step": "Had the recruiter call with Anna Callagher on Wednesday, Sept 23 -- this was confirmed "
                      "to be the Red Antler req. Regina sent her strategy portfolio (reginabbs.cargo.site) on "
                      "2026-09-24; Anna flagged the link wasn't working, and Regina resent the corrected link "
-                     "the same day. Anna will keep Regina posted on her thoughts. If shortlisted: 30-min intro "
-                     "call with a creative director, then the ECDs.",
+                     "the same day. 2026-09-29: Anna reported Red Antler came back wanting to chat, and asked "
+                     "Regina to share her availability for this week and early next -- Regina hasn't replied "
+                     "yet. If shortlisted: 30-min intro call with a creative director, then the ECDs.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
