@@ -779,6 +779,22 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   if something opens up. Red Antler (Craft-routed, Interviewing) —
   Regina replied to Anna with her availability (Wed/Thu before 3pm or
   Mon/Tue next week); awaiting a locked-in time.
+- **2026-09-30 (midday rescan)** — 4 updates, no new applications. Red
+  Antler (Craft-routed Senior Designer req) — advanced from "awaiting a
+  time" to an actual interview: Amanda Almeida (Red Antler EA) is
+  coordinating a meeting with Rogerio Lionzo, Creative Director,
+  offering Thu Oct 1 2:00–2:45pm or Fri Oct 2 1:00–1:45pm; Regina hasn't
+  picked a slot yet — notable since this is the process moving past the
+  recruiter and into Red Antler's own interview loop as expected. The
+  Collected Works — Brand Designer flipped Applied → Rejected (high
+  volume of applicants, generic). Polonsky & Friends — Junior Graphic
+  Designer flipped Applied → Rejected (explicitly overqualified — role
+  is for someone earlier in their career). Craft (Taste freelance
+  platform) — Senior Designer, Brand Guidelines and Identity: kickoff
+  call invite arrived for Thu Oct 1, 1:00–1:30pm ET (large group invite,
+  11+ other designers cc'd), confirming the project is proceeding on
+  schedule even though the project-name discrepancy Regina flagged was
+  never explicitly answered.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

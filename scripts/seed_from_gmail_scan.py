@@ -788,6 +788,23 @@ Scan history:
     flag if something opens up. Red Antler (Craft-routed, Interviewing)
     -- Regina replied to Anna with her availability (Wed/Thu before 3pm
     or Mon/Tue next week); awaiting a locked-in time.
+  - 2026-09-30 (midday rescan): 4 updates, no new applications. Red
+    Antler (Craft-routed Senior Designer req) -- advanced from
+    "awaiting a time" to an actual interview: Amanda Almeida (Red
+    Antler EA) is coordinating a meeting with Rogerio Lionzo, Creative
+    Director, offering Thu Oct 1 2:00-2:45pm or Fri Oct 2 1:00-1:45pm;
+    Regina hasn't picked a slot yet -- notable since this is the
+    process moving past the recruiter and into Red Antler's own
+    interview loop as expected. The Collected Works -- Brand Designer
+    flipped Applied -> Rejected (high volume of applicants, generic).
+    Polonsky & Friends -- Junior Graphic Designer flipped Applied ->
+    Rejected (explicitly overqualified -- role is for someone earlier
+    in their career). Craft (Taste freelance platform) -- Senior
+    Designer, Brand Guidelines and Identity: kickoff call invite
+    arrived for Thu Oct 1, 1:00-1:30pm ET (large group invite, 11+
+    other designers cc'd), confirming the project is proceeding on
+    schedule even though the project-name discrepancy Regina flagged
+    was never explicitly answered.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2371,8 +2388,11 @@ SEED_ROWS = [
                      "2026-09-24; Anna flagged the link wasn't working, and Regina resent the corrected link "
                      "the same day. 2026-09-29: Anna reported Red Antler came back wanting to chat, and asked "
                      "Regina to share her availability; Regina replied same day offering Wed/Thu before 3pm or "
-                     "Mon/Tue the following week -- awaiting Anna to lock in a time. If shortlisted: 30-min "
-                     "intro call with a creative director, then the ECDs.",
+                     "Mon/Tue the following week. 2026-09-30: this advanced to a real interview -- Amanda "
+                     "Almeida (Red Antler EA, on behalf of Sabrina Frometa) is coordinating a meeting with "
+                     "Rogerio Lionzo, Creative Director, offering Thu Oct 1 2:00-2:45pm or Fri Oct 2 "
+                     "1:00-1:45pm. Regina hasn't picked a slot yet. Confirms the process moving past Craft "
+                     "into Red Antler's own team, as expected (creative director, then the ECDs).",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2749,11 +2769,12 @@ SEED_ROWS = [
     {
         "company": "The Collected Works",
         "position": "Brand Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-22",
         "source": "Cold email",
         "notes": "Direct cold-email application to jobs@thecollectedworks.com, resume attached -- no listed "
-                 "opening found, general outreach to their jobs inbox.",
+                 "opening found, general outreach to their jobs inbox. Rejected 2026-09-30 -- high volume of "
+                 "applicants, not a fit-specific decline.",
         "job_fit": "Good",
         "job_fit_notes": "The Collected Works is an independent NYC/New Orleans identity, motion, and 3D "
                          "design studio co-founded by two SVA grads (Nike, The National, The New York Times "
@@ -2844,9 +2865,13 @@ SEED_ROWS = [
                      "2026-09-28: Regina submitted the background check and replied to Dave flagging a "
                      "discrepancy -- the confirmed project is 'GoldenStone Slides & Docs' but she'd understood "
                      "she was joining 'Guidelines and Identity' (the position title/assessment this row is "
-                     "under). Also hasn't received the SOW yet. Awaiting Dave's reply on both. Remaining steps: "
-                     "review and sign the SOW, set up a tastemaker.pro email, get added to the project Slack, "
-                     "and watch for a kickoff call invite.",
+                     "under). Also hasn't received the SOW yet. 2026-09-30: Ceren Berk (tastemaker.pro) sent a "
+                     "kickoff call invite for the 'Goldenstone Slides & Docs Project - Brand Designers' group, "
+                     "Thu Oct 1, 1:00-1:30pm ET -- a large group invite (11+ other designers cc'd), confirming "
+                     "the project is proceeding on schedule despite the project-name question still not "
+                     "explicitly answered by Dave. Remaining steps: review and sign the SOW (still not "
+                     "received), set up a tastemaker.pro email, get added to the project Slack, attend the "
+                     "kickoff call.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
@@ -2913,12 +2938,13 @@ SEED_ROWS = [
     {
         "company": "Polonsky & Friends",
         "position": "Junior Graphic Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-23",
         "source": "Jotform (direct application)",
         "notes": "Found via a friend's referral (posting was shared to her directly) -- applied via Jotform "
                  "with resume and portfolio (reginabbsv.cargo.site) attached. Confirmed via the Jotform "
-                 "submission-receipt email, which includes her full application answers.",
+                 "submission-receipt email, which includes her full application answers. Rejected 2026-09-30 -- "
+                 "explicitly cited as overqualified: the role is set up for someone earlier in their career.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: a food & hospitality branding studio (P&F), internship-level "
                          "role at 20 hrs/week for 6-12 months. Strong stylistic/content fit -- brand identity, "
