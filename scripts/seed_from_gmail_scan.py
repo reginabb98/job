@@ -805,6 +805,15 @@ Scan history:
     other designers cc'd), confirming the project is proceeding on
     schedule even though the project-name discrepancy Regina flagged
     was never explicitly answered.
+  - 2026-09-30 (evening rescan): 4 updates, no new applications.
+    Onebrief -- Senior Brand Designer flipped Applied -> Rejected
+    (generic decline). Red Antler (Craft-routed Senior Designer req)
+    -- Regina confirmed Thu Oct 1, 2:00-2:45pm ET for the Rogerio
+    Lionzo interview; calendar invite followed. Bespoke Post -- Graphic
+    Designer: call confirmed for Thu Oct 1, 12:15-12:45pm ET (phone
+    call despite an auto-generated Meet link). Polonsky & Friends --
+    Regina replied to the rejection asking to be kept in mind for
+    future openings (no status change).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2390,9 +2399,9 @@ SEED_ROWS = [
                      "Regina to share her availability; Regina replied same day offering Wed/Thu before 3pm or "
                      "Mon/Tue the following week. 2026-09-30: this advanced to a real interview -- Amanda "
                      "Almeida (Red Antler EA, on behalf of Sabrina Frometa) is coordinating a meeting with "
-                     "Rogerio Lionzo, Creative Director, offering Thu Oct 1 2:00-2:45pm or Fri Oct 2 "
-                     "1:00-1:45pm. Regina hasn't picked a slot yet. Confirms the process moving past Craft "
-                     "into Red Antler's own team, as expected (creative director, then the ECDs).",
+                     "Rogerio Lionzo, Creative Director. Regina confirmed Thu Oct 1, 2:00-2:45pm ET the same "
+                     "day; a calendar invite followed. Confirms the process moving past Craft into Red "
+                     "Antler's own team, as expected (creative director, then the ECDs).",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2944,7 +2953,8 @@ SEED_ROWS = [
         "notes": "Found via a friend's referral (posting was shared to her directly) -- applied via Jotform "
                  "with resume and portfolio (reginabbsv.cargo.site) attached. Confirmed via the Jotform "
                  "submission-receipt email, which includes her full application answers. Rejected 2026-09-30 -- "
-                 "explicitly cited as overqualified: the role is set up for someone earlier in their career.",
+                 "explicitly cited as overqualified: the role is set up for someone earlier in their career. "
+                 "Regina replied same day thanking them and asking to be kept in mind for future openings.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: a food & hospitality branding studio (P&F), internship-level "
                          "role at 20 hrs/week for 6-12 months. Strong stylistic/content fit -- brand identity, "
@@ -3017,10 +3027,11 @@ SEED_ROWS = [
     {
         "company": "Onebrief",
         "position": "Senior Brand Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Ashby",
-        "notes": "Confirmed via Ashby's auto-reply.",
+        "notes": "Confirmed via Ashby's auto-reply. Rejected 2026-09-30 -- generic \"moving forward with other "
+                 "candidates\" decline.",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: Onebrief builds AI-powered military-planning/collaboration "
                          "software (backed by General Catalyst, Battery, Insight, valued $2B+); this Senior "
@@ -3249,8 +3260,9 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "source": "Lever",
-        "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call to discuss Regina's "
-                     "background and Bespoke Post's work -- Regina hasn't replied yet.",
+        "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
+                     "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
+                     "ET (phone call, despite the auto-generated Google Meet link on the invite).",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

@@ -795,6 +795,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   11+ other designers cc'd), confirming the project is proceeding on
   schedule even though the project-name discrepancy Regina flagged was
   never explicitly answered.
+- **2026-09-30 (evening rescan)** — 4 updates, no new applications.
+  Onebrief — Senior Brand Designer flipped Applied → Rejected (generic
+  decline). Red Antler (Craft-routed Senior Designer req) — Regina
+  confirmed Thu Oct 1, 2:00–2:45pm ET for the Rogerio Lionzo interview;
+  calendar invite followed. Bespoke Post — Graphic Designer: call
+  confirmed for Thu Oct 1, 12:15–12:45pm ET (phone call despite an
+  auto-generated Meet link). Polonsky & Friends — Regina replied to the
+  rejection asking to be kept in mind for future openings (no status
+  change).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
