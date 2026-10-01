@@ -820,6 +820,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Barrera & Taste Tech Inc. - Slides&Docs Project - Brand Designer");
   not yet signed. (Red Antler's Rogerio Lionzo interview, scheduled for
   2pm ET today, hadn't happened yet as of this scan.)
+- **2026-10-01 (evening rescan)** — 1 update, no new applications. Red
+  Antler — the Rogerio Lionzo interview happened; Regina told Anna it
+  went really well — a strong conversation about how strategy and
+  design overlap at Red Antler, she clarified her hands-on-design-
+  plus-strategy fit, and sent Rogerio her design portfolio as a
+  follow-up. She said the role sounds well-aligned and wants to move
+  forward; awaiting word from Red Antler's side.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

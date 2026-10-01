@@ -830,6 +830,13 @@ Scan history:
     ("Regina Barrera & Taste Tech Inc. - Slides&Docs Project - Brand
     Designer"); not yet signed. (Red Antler's Rogerio Lionzo interview,
     scheduled for 2pm ET today, hadn't happened yet as of this scan.)
+  - 2026-10-01 (evening rescan): 1 update, no new applications. Red
+    Antler -- the Rogerio Lionzo interview happened; Regina told Anna
+    it went really well -- a strong conversation about how strategy
+    and design overlap at Red Antler, she clarified her hands-on-
+    design-plus-strategy fit, and sent Rogerio her design portfolio as
+    a follow-up. She said the role sounds well-aligned and wants to
+    move forward; awaiting word from Red Antler's side.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2416,8 +2423,15 @@ SEED_ROWS = [
                      "Mon/Tue the following week. 2026-09-30: this advanced to a real interview -- Amanda "
                      "Almeida (Red Antler EA, on behalf of Sabrina Frometa) is coordinating a meeting with "
                      "Rogerio Lionzo, Creative Director. Regina confirmed Thu Oct 1, 2:00-2:45pm ET the same "
-                     "day; a calendar invite followed. Confirms the process moving past Craft into Red "
-                     "Antler's own team, as expected (creative director, then the ECDs).",
+                     "day; a calendar invite followed (link had to be re-sent after Regina couldn't find it). "
+                     "2026-10-01: the interview happened -- Regina told Anna it went really well, with a "
+                     "strong conversation about how strategy and design overlap at Red Antler; she clarified "
+                     "she wants to stay hands-on with design while staying close to strategic/conceptual "
+                     "thinking (the two separate portfolios had caused some initial confusion), and sent "
+                     "Rogerio her design portfolio as a follow-up. Regina says the role sounds well-aligned "
+                     "and she wants to move forward. Awaiting word from Red Antler. Confirms the process "
+                     "moving past Craft into Red Antler's own team, as expected (creative director, then the "
+                     "ECDs).",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
