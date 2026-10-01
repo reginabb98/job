@@ -804,6 +804,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   auto-generated Meet link). Polonsky & Friends — Regina replied to the
   rejection asking to be kept in mind for future openings (no status
   change).
+- **2026-10-01 (morning rescan)** — 1 update, no new applications.
+  Vault 49 — Anna Callagher relayed positive feedback from the Sept 30
+  interview: Vault 49 wants a second round with Sam (CD) and Jenn (DD),
+  proposing Thu Oct 8 2pm or Fri Oct 9 11am, and asked Regina to
+  present her work as a deck this time. Regina hasn't replied yet —
+  notable since the process is advancing well. (Also corrected a date
+  typo on this row: the first interview happened Wed Sept 30, not "Oct
+  1" as a prior entry mistakenly said.)
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

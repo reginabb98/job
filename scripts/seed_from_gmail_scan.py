@@ -814,6 +814,14 @@ Scan history:
     call despite an auto-generated Meet link). Polonsky & Friends --
     Regina replied to the rejection asking to be kept in mind for
     future openings (no status change).
+  - 2026-10-01 (morning rescan): 1 update, no new applications. Vault
+    49 -- Anna Callagher relayed positive feedback from the Sept 30
+    interview: Vault 49 wants a second round with Sam (CD) and Jenn
+    (DD), proposing Thu Oct 8 2pm or Fri Oct 9 11am, and asked Regina
+    to present her work as a deck this time. Regina hasn't replied yet
+    -- notable since the process is advancing well. (Also corrected a
+    date typo on this row: the first interview happened Wed Sept 30,
+    not "Oct 1" as a prior entry mistakenly said.)
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2438,12 +2446,14 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
-        "next_step": "Interview confirmed for Wednesday, Oct 1 at 1:00pm ET with Laura (Operations), Nick Corey "
+        "next_step": "Interview happened Wednesday, Sept 30 at 1:00pm ET with Laura (Operations), Nick Corey "
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
-                     "get-to-know-you call where Regina presents a couple of projects, walking through her "
-                     "thinking/process. Calendar invite to come from Laura. Anna Callagher (Craft) proposed "
-                     "times on 2026-09-28; Regina confirmed same day. Follows the 2026-09-24 portfolio update "
-                     "(new packaging project) that Anna said looked great.",
+                     "get-to-know-you call where Regina presented a couple of projects, walking through her "
+                     "thinking/process. 2026-10-01: Anna Callagher relayed positive feedback -- Vault 49 wants "
+                     "a second round with Sam (CD) and Jenn (DD), proposing Thu Oct 8 at 2pm or Fri Oct 9 at "
+                     "11am, and asked Regina to present her work as a deck this time (deck-building is an "
+                     "important part of their work). Regina hasn't replied yet. Follows the 2026-09-24 "
+                     "portfolio update (new packaging project) that Anna said looked great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
