@@ -812,6 +812,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   notable since the process is advancing well. (Also corrected a date
   typo on this row: the first interview happened Wed Sept 30, not "Oct
   1" as a prior entry mistakenly said.)
+- **2026-10-01 (afternoon rescan)** — 2 updates, no new applications.
+  Vault 49 — Regina confirmed the second round for Thu Oct 8,
+  2:00–2:45pm ET with Sam Wilkes (CD) and Jennifer Yelk (DD), and
+  agreed to prepare a deck; calendar invite followed. Craft (Taste
+  freelance platform) — the SOW finally arrived via PandaDoc ("Regina
+  Barrera & Taste Tech Inc. - Slides&Docs Project - Brand Designer");
+  not yet signed. (Red Antler's Rogerio Lionzo interview, scheduled for
+  2pm ET today, hadn't happened yet as of this scan.)
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

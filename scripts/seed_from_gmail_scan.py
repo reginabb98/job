@@ -822,6 +822,14 @@ Scan history:
     -- notable since the process is advancing well. (Also corrected a
     date typo on this row: the first interview happened Wed Sept 30,
     not "Oct 1" as a prior entry mistakenly said.)
+  - 2026-10-01 (afternoon rescan): 2 updates, no new applications.
+    Vault 49 -- Regina confirmed the second round for Thu Oct 8,
+    2:00-2:45pm ET with Sam Wilkes (CD) and Jennifer Yelk (DD), and
+    agreed to prepare a deck; calendar invite followed. Craft (Taste
+    freelance platform) -- the SOW finally arrived via PandaDoc
+    ("Regina Barrera & Taste Tech Inc. - Slides&Docs Project - Brand
+    Designer"); not yet signed. (Red Antler's Rogerio Lionzo interview,
+    scheduled for 2pm ET today, hadn't happened yet as of this scan.)
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2450,10 +2458,11 @@ SEED_ROWS = [
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
                      "get-to-know-you call where Regina presented a couple of projects, walking through her "
                      "thinking/process. 2026-10-01: Anna Callagher relayed positive feedback -- Vault 49 wants "
-                     "a second round with Sam (CD) and Jenn (DD), proposing Thu Oct 8 at 2pm or Fri Oct 9 at "
-                     "11am, and asked Regina to present her work as a deck this time (deck-building is an "
-                     "important part of their work). Regina hasn't replied yet. Follows the 2026-09-24 "
-                     "portfolio update (new packaging project) that Anna said looked great.",
+                     "a second round with Sam Wilkes (CD) and Jennifer Yelk (DD), proposing Thu Oct 8 at 2pm or "
+                     "Fri Oct 9 at 11am, and asked Regina to present her work as a deck this time (deck-"
+                     "building is an important part of their work). Regina confirmed Thu Oct 8, 2:00-2:45pm "
+                     "ET and agreed to prepare a deck; calendar invite followed same day. Follows the "
+                     "2026-09-24 portfolio update (new packaging project) that Anna said looked great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2888,9 +2897,10 @@ SEED_ROWS = [
                      "kickoff call invite for the 'Goldenstone Slides & Docs Project - Brand Designers' group, "
                      "Thu Oct 1, 1:00-1:30pm ET -- a large group invite (11+ other designers cc'd), confirming "
                      "the project is proceeding on schedule despite the project-name question still not "
-                     "explicitly answered by Dave. Remaining steps: review and sign the SOW (still not "
-                     "received), set up a tastemaker.pro email, get added to the project Slack, attend the "
-                     "kickoff call.",
+                     "explicitly answered by Dave. 2026-10-01: the SOW arrived via PandaDoc (sent by David "
+                     "Barner, 'Regina Barrera & Taste Tech Inc. - Slides&Docs Project - Brand Designer') -- "
+                     "Regina hasn't signed it yet. Remaining steps: review and sign the SOW, set up a "
+                     "tastemaker.pro email, get added to the project Slack, attend the kickoff call.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
