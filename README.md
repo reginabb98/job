@@ -832,6 +832,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   signed by all participants. Remaining steps: set up a tastemaker.pro
   email, join the project Slack, attend the kickoff call (was
   scheduled for Thu Oct 1).
+- **2026-10-02 (evening rescan)** — 2 updates, no new applications.
+  webAI — Marketing Designer flipped Applied → Interviewing: Michael
+  Hale (Technical Recruiter) reached out, Regina booked an intro call
+  for Mon Oct 5, 11:30am–12pm ET. Vault 49 — the Oct 8 second-round
+  interview was rescheduled to Friday, Oct 9, 11:00–11:45am ET at
+  Regina's request due to a family matter (her mother having surgery,
+  requiring travel to Houston).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

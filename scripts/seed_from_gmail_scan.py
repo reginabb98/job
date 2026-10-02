@@ -842,6 +842,13 @@ Scan history:
     signed by all participants. Remaining steps: set up a
     tastemaker.pro email, join the project Slack, attend the kickoff
     call (was scheduled for Thu Oct 1).
+  - 2026-10-02 (evening rescan): 2 updates, no new applications. webAI
+    -- Marketing Designer flipped Applied -> Interviewing: Michael Hale
+    (Technical Recruiter) reached out, Regina booked an intro call for
+    Mon Oct 5, 11:30am-12pm ET. Vault 49 -- the Oct 8 second-round
+    interview was rescheduled to Friday, Oct 9, 11:00-11:45am ET at
+    Regina's request due to a family matter (her mother having surgery,
+    requiring travel to Houston).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2480,8 +2487,11 @@ SEED_ROWS = [
                      "a second round with Sam Wilkes (CD) and Jennifer Yelk (DD), proposing Thu Oct 8 at 2pm or "
                      "Fri Oct 9 at 11am, and asked Regina to present her work as a deck this time (deck-"
                      "building is an important part of their work). Regina confirmed Thu Oct 8, 2:00-2:45pm "
-                     "ET and agreed to prepare a deck; calendar invite followed same day. Follows the "
-                     "2026-09-24 portfolio update (new packaging project) that Anna said looked great.",
+                     "ET and agreed to prepare a deck; calendar invite followed same day. 2026-10-02: Regina "
+                     "asked to reschedule due to a family matter (her mother having surgery, requiring travel "
+                     "to Houston) -- moved to Friday, Oct 9, 11:00-11:45am ET; calendar invite updated. "
+                     "Follows the 2026-09-24 portfolio update (new packaging project) that Anna said looked "
+                     "great.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3219,9 +3229,12 @@ SEED_ROWS = [
     {
         "company": "webAI",
         "position": "Marketing Designer",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-09-27",
         "source": "Ashby",
+        "next_step": "Michael Hale (Technical Recruiter) reached out 2026-10-02 to schedule an intro call; "
+                     "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
+                     "video call).",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
