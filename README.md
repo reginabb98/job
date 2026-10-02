@@ -827,6 +827,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   plus-strategy fit, and sent Rogerio her design portfolio as a
   follow-up. She said the role sounds well-aligned and wants to move
   forward; awaiting word from Red Antler's side.
+- **2026-10-02 (morning rescan)** — 1 update, no new applications.
+  Craft (Taste freelance platform) — the SOW was completed and fully
+  signed by all participants. Remaining steps: set up a tastemaker.pro
+  email, join the project Slack, attend the kickoff call (was
+  scheduled for Thu Oct 1).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

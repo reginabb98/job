@@ -837,6 +837,11 @@ Scan history:
     design-plus-strategy fit, and sent Rogerio her design portfolio as
     a follow-up. She said the role sounds well-aligned and wants to
     move forward; awaiting word from Red Antler's side.
+  - 2026-10-02 (morning rescan): 1 update, no new applications. Craft
+    (Taste freelance platform) -- the SOW was completed and fully
+    signed by all participants. Remaining steps: set up a
+    tastemaker.pro email, join the project Slack, attend the kickoff
+    call (was scheduled for Thu Oct 1).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2913,8 +2918,10 @@ SEED_ROWS = [
                      "the project is proceeding on schedule despite the project-name question still not "
                      "explicitly answered by Dave. 2026-10-01: the SOW arrived via PandaDoc (sent by David "
                      "Barner, 'Regina Barrera & Taste Tech Inc. - Slides&Docs Project - Brand Designer') -- "
-                     "Regina hasn't signed it yet. Remaining steps: review and sign the SOW, set up a "
-                     "tastemaker.pro email, get added to the project Slack, attend the kickoff call.",
+                     "Regina hasn't signed it yet. 2026-10-01 (later): the SOW was completed by all "
+                     "participants -- fully signed. Remaining steps: set up a tastemaker.pro email, get added "
+                     "to the project Slack, attend the kickoff call (was scheduled for Thu Oct 1, so should "
+                     "have happened by now).",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
