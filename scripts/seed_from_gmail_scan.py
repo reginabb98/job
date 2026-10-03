@@ -849,6 +849,11 @@ Scan history:
     interview was rescheduled to Friday, Oct 9, 11:00-11:45am ET at
     Regina's request due to a family matter (her mother having surgery,
     requiring travel to Houston).
+  - 2026-10-03 (rescan): 2 updates, no new applications. JPMorgan Chase
+    & Co. -- Olympic & Paralympic, Graphic Designer, Senior Associate
+    (Job #210766619) flipped Applied -> Rejected (generic, high
+    volume). SHADOW -- Designer flipped Applied -> Rejected (generic
+    decline).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1271,11 +1276,12 @@ SEED_ROWS = [
     {
         "company": "JPMorgan Chase & Co.",
         "position": "Olympic & Paralympic, Graphic Designer, Senior Associate (Job #210766619)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-08-17",
         "source": "Oracle Recruiting Cloud",
         "notes": "Third, distinct JPMorgan application, found via JPMC's own Candidate Experience "
-                 "portal (Oracle HCM) rather than a Gmail confirmation. \"Under Consideration.\"",
+                 "portal (Oracle HCM) rather than a Gmail confirmation. \"Under Consideration.\" Rejected "
+                 "2026-10-03 -- high volume of applicants, generic decline.",
         "job_fit": "Strong",
         "job_fit_notes": "3+ yrs brand design across disciplines, a portfolio in brand systems and multi-channel campaigns, Adobe CS + Figma, and interest in generative AI -- a very close, direct match to Regina's actual design background and tools.",
     },
@@ -3215,11 +3221,12 @@ SEED_ROWS = [
     {
         "company": "SHADOW",
         "position": "Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Greenhouse",
         "notes": "Confirmed via Greenhouse's auto-reply; role title inferred from SHADOW's only open design "
-                 "listing found (Creative Division).",
+                 "listing found (Creative Division). Rejected 2026-10-03 -- generic decline, not deciding to "
+                 "proceed with the candidacy.",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: SHADOW is a creative marketing/communications agency; this "
                          "Creative Division Designer role wants 3-5 yrs, preferably agency or consumer-brand "

@@ -839,6 +839,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   interview was rescheduled to Friday, Oct 9, 11:00–11:45am ET at
   Regina's request due to a family matter (her mother having surgery,
   requiring travel to Houston).
+- **2026-10-03 (rescan)** — 2 updates, no new applications. JPMorgan
+  Chase & Co. — Olympic & Paralympic, Graphic Designer, Senior
+  Associate (Job #210766619) flipped Applied → Rejected (generic, high
+  volume). SHADOW — Designer flipped Applied → Rejected (generic
+  decline).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
