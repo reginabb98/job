@@ -854,6 +854,9 @@ Scan history:
     (Job #210766619) flipped Applied -> Rejected (generic, high
     volume). SHADOW -- Designer flipped Applied -> Rejected (generic
     decline).
+  - 2026-10-04 (rescan): 1 update, no new applications. Fanatics
+    Collectibles -- Senior Graphic Designer flipped Applied -> Rejected
+    (generic decline).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3265,10 +3268,11 @@ SEED_ROWS = [
     {
         "company": "Fanatics Collectibles",
         "position": "Senior Graphic Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Email",
-        "notes": "Confirmed via automated confirmation email.",
+        "notes": "Confirmed via automated confirmation email. Rejected 2026-10-04 -- generic decline, "
+                 "decided to move forward with other candidates.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed general scope: designs trading cards, branding, and marketing assets for "
                          "Fanatics Collectibles, managing projects through print production. Print-design craft "

@@ -844,6 +844,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Associate (Job #210766619) flipped Applied → Rejected (generic, high
   volume). SHADOW — Designer flipped Applied → Rejected (generic
   decline).
+- **2026-10-04 (rescan)** — 1 update, no new applications. Fanatics
+  Collectibles — Senior Graphic Designer flipped Applied → Rejected
+  (generic decline).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
