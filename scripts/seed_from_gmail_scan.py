@@ -866,6 +866,15 @@ Scan history:
     screen happened and went well; Michael Hale passed Regina's info to
     the Hiring Manager, who wants to chat next -- awaiting Regina to
     book that call.
+  - 2026-10-05 (evening rescan): 1 new row, 2 updates. Porto Rocha --
+    a cold-outreach email from 2026-08-26 (resume attached, no open
+    role at the time) finally got a real reply: no Associate Strategist
+    opening, but a paid strategy internship was floated; Regina said
+    she's open to hearing more. Bespoke Post -- the Graphic Designer
+    phone call happened and went well; Kate Mulcahy wants to schedule a
+    follow-up with the Associate Creative Director next. webAI --
+    Regina booked the Hiring Manager call for Thursday, Oct 15,
+    1:00-1:30pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3254,8 +3263,8 @@ SEED_ROWS = [
         "next_step": "Michael Hale (Technical Recruiter) reached out 2026-10-02 to schedule an intro call; "
                      "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
                      "video call). That recruiter screen happened; the same day, Michael emailed that he'd "
-                     "shared her info with the Hiring Manager, who wants to chat next -- awaiting Regina to "
-                     "book that call via an Ashby scheduling link.",
+                     "shared her info with the Hiring Manager, who wants to chat next. Regina booked that "
+                     "call for Thursday, Oct 15, 1:00-1:30pm ET via Ashby (Google Meet).",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
@@ -3338,7 +3347,10 @@ SEED_ROWS = [
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
-                     "ET (phone call, despite the auto-generated Google Meet link on the invite).",
+                     "ET (phone call, despite the auto-generated Google Meet link on the invite). That call "
+                     "happened and went well; Kate followed up 2026-10-05 wanting to schedule a next "
+                     "conversation with Bespoke Post's Associate Creative Director -- awaiting Regina's "
+                     "availability.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
@@ -3522,6 +3534,25 @@ SEED_ROWS = [
                          "photo- and artwork-driven design and typography overlap generally with Regina's "
                          "background, though the apparel/activewear graphics niche is a different focus from "
                          "her brand-identity work.",
+    },
+    # -- 2026-10-05 (evening): 1 new row --
+    {
+        "company": "Porto Rocha",
+        "position": "Brand Strategy (cold outreach -- no open role at time of contact)",
+        "status": "Applied",
+        "applied_date": "2026-08-26",
+        "source": "Email",
+        "notes": "Direct cold-outreach email to Natalee Ranii-Dropcho (Strategy & Copy Director) with resume "
+                 "attached; no open strategy role existed at the time. Went unanswered for over a month, "
+                 "then got a real reply 2026-10-05: Natalee asked which portfolio projects were speculative "
+                 "vs. real client work, then said there's no Associate Strategist opening but asked if "
+                 "Regina would consider a paid strategy internship. Regina said she's open to hearing more "
+                 "though she's looking for full-time strategy work; awaiting Natalee's next message.",
+        "job_fit": "Good",
+        "job_fit_notes": "Porto Rocha is a well-regarded NYC branding studio; this was a speculative intro, "
+                         "not a response to a specific posting. The paid-strategy-internship path now being "
+                         "discussed is a good match for Regina's design-to-strategy transition, though it's "
+                         "not the full-time strategy role she's ultimately after.",
     },
 ]
 

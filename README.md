@@ -855,6 +855,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Suno req remains open. webAI — the Oct 5 recruiter screen happened
   and went well; Michael Hale passed Regina's info to the Hiring
   Manager, who wants to chat next — awaiting Regina to book that call.
+- **2026-10-05 (evening rescan)** — 1 new row, 2 updates. Porto Rocha —
+  a cold-outreach email from 2026-08-26 (resume attached, no open role
+  at the time) finally got a real reply: no Associate Strategist
+  opening, but a paid strategy internship was floated; Regina said
+  she's open to hearing more. Bespoke Post — the Graphic Designer phone
+  call happened and went well; Kate Mulcahy wants to schedule a
+  follow-up with the Associate Creative Director next. webAI — Regina
+  booked the Hiring Manager call for Thursday, Oct 15, 1:00–1:30pm ET.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
