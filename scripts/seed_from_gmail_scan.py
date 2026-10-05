@@ -857,6 +857,15 @@ Scan history:
   - 2026-10-04 (rescan): 1 update, no new applications. Fanatics
     Collectibles -- Senior Graphic Designer flipped Applied -> Rejected
     (generic decline).
+  - 2026-10-05 (rescan): 3 updates, no new applications. Amazon --
+    Brand Designer, Brand Innovation Lab (ID: 10525009) flipped Applied
+    -> Rejected (generic decline via Amazon.jobs). Suno -- the Senior
+    Designer, Creative Studio & Brand Campaigns (Contract) application
+    flipped Applied -> Rejected (generic decline); the distinct
+    full-time Suno req remains open. webAI -- the Oct 5 recruiter
+    screen happened and went well; Michael Hale passed Regina's info to
+    the Hiring Manager, who wants to chat next -- awaiting Regina to
+    book that call.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1472,12 +1481,12 @@ SEED_ROWS = [
     {
         "company": "Amazon",
         "position": "Brand Designer, Brand Innovation Lab (ID: 10525009)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "Amazon Jobs",
-        "notes": "Applied 2026-09-05, briefly withdrew, then reapplied the same day per Regina -- currently "
-                 "a live application. Distinct from the earlier, already-rejected Art Director, Elevated "
-                 "Shopping application.",
+        "notes": "Applied 2026-09-05, briefly withdrew, then reapplied the same day per Regina. Distinct "
+                 "from the earlier, already-rejected Art Director, Elevated Shopping application. Rejected "
+                 "2026-10-05 -- generic decline via Amazon.jobs status update email.",
         "job_fit": "Strong",
         "job_fit_notes": "Confirmed posting (Job ID 10525009): 4+ yrs brand design at agencies or in-house "
                          "creative, Adobe Creative Suite, presentation decks, campaign work spanning film, "
@@ -3244,7 +3253,9 @@ SEED_ROWS = [
         "source": "Ashby",
         "next_step": "Michael Hale (Technical Recruiter) reached out 2026-10-02 to schedule an intro call; "
                      "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
-                     "video call).",
+                     "video call). That recruiter screen happened; the same day, Michael emailed that he'd "
+                     "shared her info with the Hiring Manager, who wants to chat next -- awaiting Regina to "
+                     "book that call via an Ashby scheduling link.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
@@ -3472,11 +3483,13 @@ SEED_ROWS = [
     {
         "company": "Suno",
         "position": "Senior Designer, Creative Studio & Brand Campaigns (Contract)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-28",
         "source": "Ashby",
         "notes": "2nd, distinct Suno application -- a contract variant of the same Brand & Creative Team role, "
-                 "applied minutes after the full-time req. Confirmed via Ashby's auto-reply.",
+                 "applied minutes after the full-time req. Confirmed via Ashby's auto-reply. Rejected "
+                 "2026-10-05 -- \"isn't a fit at this time,\" generic decline. The full-time req (Senior "
+                 "Designer, Creative Studio) remains open/unanswered as of this scan.",
         "job_fit": "Good",
         "job_fit_notes": "Same Brand & Creative Team scope as the full-time Suno req (brand/culture/product "
                          "design across campaigns, artist partnerships, and activations) but structured as a "

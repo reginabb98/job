@@ -847,6 +847,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-10-04 (rescan)** — 1 update, no new applications. Fanatics
   Collectibles — Senior Graphic Designer flipped Applied → Rejected
   (generic decline).
+- **2026-10-05 (rescan)** — 3 updates, no new applications. Amazon —
+  Brand Designer, Brand Innovation Lab (ID: 10525009) flipped Applied
+  → Rejected (generic decline via Amazon.jobs). Suno — the Senior
+  Designer, Creative Studio & Brand Campaigns (Contract) application
+  flipped Applied → Rejected (generic decline); the distinct full-time
+  Suno req remains open. webAI — the Oct 5 recruiter screen happened
+  and went well; Michael Hale passed Regina's info to the Hiring
+  Manager, who wants to chat next — awaiting Regina to book that call.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
