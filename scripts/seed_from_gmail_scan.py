@@ -875,6 +875,10 @@ Scan history:
     follow-up with the Associate Creative Director next. webAI --
     Regina booked the Hiring Manager call for Thursday, Oct 15,
     1:00-1:30pm ET.
+  - 2026-10-06 (rescan): 1 update, no new applications. Bespoke Post --
+    Regina replied to Kate Mulcahy with her availability (Wednesday and
+    most of Friday) for the Associate Creative Director conversation;
+    awaiting Kate to confirm a specific time.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3349,8 +3353,9 @@ SEED_ROWS = [
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
                      "ET (phone call, despite the auto-generated Google Meet link on the invite). That call "
                      "happened and went well; Kate followed up 2026-10-05 wanting to schedule a next "
-                     "conversation with Bespoke Post's Associate Creative Director -- awaiting Regina's "
-                     "availability.",
+                     "conversation with Bespoke Post's Associate Creative Director. Regina replied 2026-10-06 "
+                     "that she's flexible Wednesday and most of Friday -- awaiting Kate to confirm a specific "
+                     "time.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

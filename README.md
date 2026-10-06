@@ -863,6 +863,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   call happened and went well; Kate Mulcahy wants to schedule a
   follow-up with the Associate Creative Director next. webAI — Regina
   booked the Hiring Manager call for Thursday, Oct 15, 1:00–1:30pm ET.
+- **2026-10-06 (rescan)** — 1 update, no new applications. Bespoke
+  Post — Regina replied to Kate Mulcahy with her availability
+  (Wednesday and most of Friday) for the Associate Creative Director
+  conversation; awaiting Kate to confirm a specific time.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
