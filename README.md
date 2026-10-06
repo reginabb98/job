@@ -867,6 +867,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Post — Regina replied to Kate Mulcahy with her availability
   (Wednesday and most of Friday) for the Associate Creative Director
   conversation; awaiting Kate to confirm a specific time.
+- **2026-10-06 (afternoon rescan)** — 2 updates, no new applications.
+  Bespoke Post — after some back-and-forth (the ACD was OOO), the
+  Associate Creative Director conversation is confirmed for Monday,
+  Oct 12, 1:30–2:00pm ET with Joelyn Dalit; Kate also mentioned she's
+  researching possible TN visa support for Regina. Mother — a calendar
+  invite appeared for a Zoom call with a third, previously untracked
+  contact (Veronica Thew) on Tuesday, Oct 13, 3:00–3:30pm ET; no
+  explanatory email, so its connection to the earlier Maggie
+  Murphy/Rachel threads is unclear.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -879,6 +879,15 @@ Scan history:
     Regina replied to Kate Mulcahy with her availability (Wednesday and
     most of Friday) for the Associate Creative Director conversation;
     awaiting Kate to confirm a specific time.
+  - 2026-10-06 (afternoon rescan): 2 updates, no new applications.
+    Bespoke Post -- after some back-and-forth (the ACD was OOO), the
+    Associate Creative Director conversation is confirmed for Monday,
+    Oct 12, 1:30-2:00pm ET with Joelyn Dalit; Kate also mentioned she's
+    researching possible TN visa support for Regina. Mother -- a
+    calendar invite appeared for a Zoom call with a third, previously
+    untracked contact (Veronica Thew) on Tuesday, Oct 13, 3:00-3:30pm
+    ET; no explanatory email, so its connection to the earlier Maggie
+    Murphy/Rachel threads is unclear.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1793,7 +1802,10 @@ SEED_ROWS = [
                      "match Maggie Murphy from the original follow-up call, so it's unclear if this is the "
                      "same contact under a different name or a separate person at Mother; not guessing which. "
                      "Rachel replied 2026-09-29: still quiet on the strategy side, will flag if anything opens "
-                     "up.",
+                     "up. A calendar invite appeared 2026-10-06 for a Zoom call with a third named contact, "
+                     "Veronica Thew (veronica@mothernewyork.com), on Tuesday, Oct 13, 3:00-3:30pm ET -- no "
+                     "explanatory email accompanied it, so it's unclear whether this connects to the Maggie "
+                     "Murphy or Rachel threads or is a separate outreach; not guessing which.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -3353,9 +3365,13 @@ SEED_ROWS = [
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
                      "ET (phone call, despite the auto-generated Google Meet link on the invite). That call "
                      "happened and went well; Kate followed up 2026-10-05 wanting to schedule a next "
-                     "conversation with Bespoke Post's Associate Creative Director. Regina replied 2026-10-06 "
-                     "that she's flexible Wednesday and most of Friday -- awaiting Kate to confirm a specific "
-                     "time.",
+                     "conversation with Bespoke Post's Associate Creative Director. After some back-and-forth "
+                     "(the ACD was OOO until Monday), the call is confirmed for Monday, Oct 12, 1:30-2:00pm ET "
+                     "with Joelyn Dalit (Associate Creative Director). Note: in the scheduling exchange, Kate "
+                     "mentioned she's researching whether Bespoke Post could support a TN visa for Regina in "
+                     "the future -- Regina said it's light on the employer side (a support letter rather than "
+                     "formal sponsorship). Visa sponsorship/support may be a relevant factor for Regina's "
+                     "search generally.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
