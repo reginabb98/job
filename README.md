@@ -876,6 +876,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   contact (Veronica Thew) on Tuesday, Oct 13, 3:00–3:30pm ET; no
   explanatory email, so its connection to the earlier Maggie
   Murphy/Rachel threads is unclear.
+- **2026-10-06 (evening rescan)** — 1 ambiguous rejection, no new
+  applications. OLIVER — a generic rejection email arrived with no job
+  title or req ID, identical boilerplate to the already-logged Social
+  & Culture Strategist rejection from 08-14. With four other OLIVER
+  applications still Applied (Senior Designer x3, Digital Content
+  Designer), couldn't determine which one this pertains to; flagged a
+  note on all four rather than guess which to flip to Rejected.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

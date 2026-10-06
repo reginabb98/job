@@ -888,6 +888,14 @@ Scan history:
     untracked contact (Veronica Thew) on Tuesday, Oct 13, 3:00-3:30pm
     ET; no explanatory email, so its connection to the earlier Maggie
     Murphy/Rachel threads is unclear.
+  - 2026-10-06 (evening rescan): 1 ambiguous rejection, no new
+    applications. OLIVER -- a generic rejection email arrived with no
+    job title or req ID, identical boilerplate to the already-logged
+    Social & Culture Strategist rejection from 08-14. With four other
+    OLIVER applications still Applied (Senior Designer x3, Digital
+    Content Designer), couldn't determine which one this pertains to;
+    flagged a note on all four rather than guess which to flip to
+    Rejected.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2794,7 +2802,12 @@ SEED_ROWS = [
         "notes": "Distinct from the two other already-tracked OLIVER applications (Social & Culture "
                  "Strategist, applied 07-23; and a separate role rejected 08-14). Confirmation was missed by "
                  "prior scans; found via targeted search after Regina flagged it from LinkedIn's own "
-                 "applicant-insight panel (113 applicants total, 4 in the past day, per her screenshot).",
+                 "applicant-insight panel (113 applicants total, 4 in the past day, per her screenshot). A "
+                 "generic OLIVER rejection email arrived 2026-10-06 (\"skill sets are not exactly aligned,\" "
+                 "same boilerplate as the earlier Social & Culture Strategist rejection) with no job title or "
+                 "req ID -- it could pertain to this application or to any of OLIVER's three other still-open "
+                 "ones (Senior Designer x2 more, Digital Content Designer); not guessing which, so this row's "
+                 "status is left unchanged pending a confirmation that names the role.",
         "applicant_count": 113,
         "job_fit": "Good",
         "job_fit_notes": "Confirmed general scope: a Senior Designer role on a global financial-services "
@@ -2815,7 +2828,10 @@ SEED_ROWS = [
                  "duplicate resubmission. Likely matches the full posting Regina later shared (Req ID: 18584, "
                  "$114,750-$128,250, hybrid onsite 4 days/wk) -- distinct pay range and onsite schedule from "
                  "the already-confirmed 09-06 application ($106,250-$118,750, 2 days/wk), though not 100% "
-                 "certain which req this specific confirmation email was for.",
+                 "certain which req this specific confirmation email was for. A generic OLIVER rejection "
+                 "email arrived 2026-10-06 with no job title or req ID -- could pertain to this application "
+                 "or to any of OLIVER's three other still-open ones; not guessing which, status left "
+                 "unchanged.",
         "pay_range": "$114,750-$128,250/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting (Req 18584): leading creative delivery for a high-volume "
@@ -3192,7 +3208,9 @@ SEED_ROWS = [
                  "runs many concurrent Senior Designer reqs across different client accounts, so this reads as "
                  "a separate opening from the 09-06 and 09-19 applications rather than a duplicate. Generic "
                  "confirmation email (\"Thank you for interest in the Senior Designer posting\") did not name "
-                 "the specific client account or req.",
+                 "the specific client account or req. A generic OLIVER rejection email arrived 2026-10-06 with "
+                 "no job title or req ID -- could pertain to this application or to any of OLIVER's three "
+                 "other still-open ones; not guessing which, status left unchanged.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which specific client account or req this confirmation was for "
                          "among OLIVER's several concurrently open Senior Designer listings.",
@@ -3337,7 +3355,10 @@ SEED_ROWS = [
         "source": "Greenhouse",
         "notes": "5th, distinct OLIVER application -- a genuinely different title from the other four OLIVER "
                  "applications (Social & Culture Strategist; Senior Designer x3). Confirmed via Greenhouse's "
-                 "auto-reply (\"Thank you for interest in the Digital Content Designer posting\").",
+                 "auto-reply (\"Thank you for interest in the Digital Content Designer posting\"). A generic "
+                 "OLIVER rejection email arrived 2026-10-06 with no job title or req ID -- could pertain to "
+                 "this application or to any of OLIVER's three other still-open ones (Senior Designer x3); "
+                 "not guessing which, status left unchanged.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed general scope: end-to-end design and production of content for a client's "
                          "flagship digital display platform, with motion graphics/video editing/Gen AI tool "
