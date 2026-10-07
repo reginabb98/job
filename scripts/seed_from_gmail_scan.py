@@ -896,6 +896,21 @@ Scan history:
     Content Designer), couldn't determine which one this pertains to;
     flagged a note on all four rather than guess which to flip to
     Rejected.
+  - 2026-10-07 (rescan): 8 new rows, 2 updates. A late-night
+    application sprint (2026-10-06, ~8:20-9:03pm ET) produced
+    confirmations from Google (Unspecified role, 4th distinct Google
+    application), Mammoth Brands (Junior Creative Strategist, 2nd
+    distinct application), Whatnot (Lead Brand Designer), Apple Bank
+    (Senior Visual Designer), WGACA (Unspecified role), Authentic
+    Brands Group (Graphic Designer), and EliseAI (Graphic Designer) --
+    plus a cold-outreach application to PictureStudio (Senior
+    Designer, resume emailed directly). J.Crew -- Sr. Digital Designer
+    flipped Applied -> Rejected (generic decline). Rightway -- a
+    second, identical confirmation arrived for the same Sr. Graphic
+    Designer posting; treated as a likely accidental duplicate
+    re-application rather than a new row. Craft (Taste freelance
+    platform) -- Checkr confirmed the background check is complete,
+    report sent to Taste AI.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2990,7 +3005,8 @@ SEED_ROWS = [
                      "Regina hasn't signed it yet. 2026-10-01 (later): the SOW was completed by all "
                      "participants -- fully signed. Remaining steps: set up a tastemaker.pro email, get added "
                      "to the project Slack, attend the kickoff call (was scheduled for Thu Oct 1, so should "
-                     "have happened by now).",
+                     "have happened by now). 2026-10-06: Checkr confirmed the background check is complete and "
+                     "the report was sent to Taste AI, who will notify Regina of next steps.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "
@@ -3251,7 +3267,10 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-09-27",
         "source": "Greenhouse",
-        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "notes": "Confirmed via Greenhouse's auto-reply. A second, identical confirmation email arrived "
+                 "2026-10-07, same title/company, no req ID or distinguishing detail -- likely an accidental "
+                 "duplicate re-application during a late-night application sprint rather than a genuinely "
+                 "separate posting; not logged as a second row.",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: Rightway is a healthcare-navigation tech company; this Sr. "
                          "Graphic Designer role stewards the brand across marketing assets (web, email, social, "
@@ -3431,10 +3450,11 @@ SEED_ROWS = [
     {
         "company": "J.Crew",
         "position": "Sr. Digital Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Workday",
-        "notes": "Confirmed via Workday's auto-reply.",
+        "notes": "Confirmed via Workday's auto-reply. Rejected 2026-10-07 -- generic decline, resume kept on "
+                 "file.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: Senior-level, hybrid, NY HQ, wants 7+ yrs experience with Figma/"
                          "InDesign/Photoshop. The 7+ yrs bar is a bit beyond Regina's ~7 years, and retail/"
@@ -3595,6 +3615,112 @@ SEED_ROWS = [
                          "not a response to a specific posting. The paid-strategy-internship path now being "
                          "discussed is a good match for Regina's design-to-strategy transition, though it's "
                          "not the full-time strategy role she's ultimately after.",
+    },
+    # -- 2026-10-07 (rescan): 7 new rows from a late-night application sprint (2026-10-06, ~8:20-9:03pm ET) --
+    {
+        "company": "Google",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Email",
+        "notes": "4th, distinct Google application -- separate from the 3 already-tracked and already-"
+                 "rejected Google rows (all from July). Fully generic confirmation email with no job title, "
+                 "req ID, or team named.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No role title or posting details available to rate fit.",
+    },
+    {
+        "company": "Mammoth Brands",
+        "position": "Junior Creative Strategist",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Greenhouse",
+        "notes": "2nd, distinct Mammoth Brands application -- separate from the earlier Creative Strategist "
+                 "application (applied 07-22, already Rejected). Confirmed via Greenhouse's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "A Junior Creative Strategist posting at Lume Deodorant (a Mammoth Brands company), "
+                         "$90,800-$113,500, described as early-career with room to learn from senior creative "
+                         "leadership and grow quickly -- a good match for Regina's design-to-strategy "
+                         "transition, since it's explicitly junior-level rather than requiring years of prior "
+                         "strategy experience.",
+    },
+    {
+        "company": "Whatnot",
+        "position": "Lead Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find a posting with this exact title -- Whatnot's other senior/lead brand "
+                         "creative roles found (Lead Illustrator, Lead Motion Designer, Senior Art Director "
+                         "2D Illustration) lean heavily toward illustration/motion specialties and pay "
+                         "$155K-$200K, which would suggest a 'Lead' title here also implies significant "
+                         "seniority and a specialist skill set beyond Regina's core brand-identity background, "
+                         "but the exact Brand Designer req's requirements aren't confirmed.",
+    },
+    {
+        "company": "Apple Bank",
+        "position": "Senior Visual Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply.",
+        "job_fit": "Weak",
+        "job_fit_notes": "Confirmed posting: $150K-$180K, NY hybrid, requires 8+ years of visual design "
+                         "experience with financial-services/bank or credit-union experience required or "
+                         "preferred. Regina's ~7 years is under the bar, and she has no financial-services "
+                         "industry experience.",
+    },
+    {
+        "company": "WGACA",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Excelforce (ATS)",
+        "notes": "Generic account-creation email from WGACA's (What Goes Around Comes Around, luxury vintage "
+                 "resale) ATS -- no job title, req ID, or team named.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No role title or posting details available to rate fit.",
+    },
+    {
+        "company": "Authentic Brands Group",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Couldn't confirm the exact req, but Authentic Brands Group's other current Graphic "
+                         "Designer and Junior Graphic Designer postings pay $70K-$75K and read as junior-"
+                         "leaning (supporting brand storytelling for entertainment/sports licensing brands) -- "
+                         "core design skills overlap with Regina's background, but the pay level and seniority "
+                         "framing suggest a more junior seat than her ~7 years would typically target.",
+    },
+    {
+        "company": "EliseAI",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: $125K-$160K, NYC on-site, 2-5 years as a Brand/Graphic/Marketing "
+                         "Designer, driving visual identity and brand expression, building design-system "
+                         "components and reusable templates, Figma/Adobe Creative Suite -- a solid match to "
+                         "Regina's brand-identity and design-system background.",
+    },
+    {
+        "company": "PictureStudio",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Email",
+        "notes": "Direct cold-outreach email (resume attached) to jobs@picturestudio.ai, stating expected "
+                 "salary $110,000-$130,000 and earliest start date November 1. No confirmation reply yet.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find PictureStudio's posting or confirm the company's specific focus to "
+                         "rate fit confidently.",
     },
 ]
 

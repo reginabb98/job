@@ -883,6 +883,20 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   applications still Applied (Senior Designer x3, Digital Content
   Designer), couldn't determine which one this pertains to; flagged a
   note on all four rather than guess which to flip to Rejected.
+- **2026-10-07 (rescan)** — 8 new rows, 2 updates. A late-night
+  application sprint (2026-10-06, ~8:20–9:03pm ET) produced
+  confirmations from Google (Unspecified role, 4th distinct Google
+  application), Mammoth Brands (Junior Creative Strategist, 2nd
+  distinct application), Whatnot (Lead Brand Designer), Apple Bank
+  (Senior Visual Designer), WGACA (Unspecified role), Authentic Brands
+  Group (Graphic Designer), and EliseAI (Graphic Designer) — plus a
+  cold-outreach application to PictureStudio (Senior Designer, resume
+  emailed directly). J.Crew — Sr. Digital Designer flipped Applied →
+  Rejected (generic decline). Rightway — a second, identical
+  confirmation arrived for the same Sr. Graphic Designer posting;
+  treated as a likely accidental duplicate re-application rather than
+  a new row. Craft (Taste freelance platform) — Checkr confirmed the
+  background check is complete, report sent to Taste AI.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
