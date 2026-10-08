@@ -938,6 +938,14 @@ Scan history:
     Network application was for an Art Supervisor role at Area 23
     (healthcare-focused creative agency, part of Omnicom's network) --
     updated the row's title and fit notes accordingly.
+  - 2026-10-08 (early morning rescan): 1 new row. HarperCollins
+    Publishers -- Senior Designer, Art Department (NYC Hybrid),
+    confirmed via iCIMS. Morrow imprint book-cover design role; good
+    match to Regina's visual-design/conceptual-branding background.
+    Also added a 2nd interview_dates entry (round 2) for Bespoke Post
+    -- Kate Mulcahy confirmed a follow-up call with Associate Creative
+    Director Joelyn Dalit for Mon, Oct 12, scheduled ahead of this
+    rescan's inbox activity but only now reflected in interview_dates.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3444,7 +3452,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "had_interview": 1,
-        "interview_dates": ["2026-10-01"],
+        "interview_dates": ["2026-10-01", "2026-10-12"],
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
@@ -3816,6 +3824,20 @@ SEED_ROWS = [
                          "Director) involving managing junior art staff on specific accounts -- Area 23's focus "
                          "is healthcare/pharma advertising, an industry Regina hasn't worked in before, and the "
                          "people-management scope is a step beyond her individual-contributor-focused resume.",
+    },
+    {
+        "company": "HarperCollins Publishers",
+        "position": "Senior Designer, Art Department (NYC Hybrid)",
+        "status": "Applied",
+        "applied_date": "2026-10-07",
+        "source": "iCIMS",
+        "notes": "Confirmed via iCIMS's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: sits in the Morrow imprint's Art Department designing book covers "
+                         "(hardcover/paperback, fiction and nonfiction) -- conceptual thinking, typography, and "
+                         "image-making, working with an Art Director and editors. A solid match to Regina's "
+                         "visual-design and conceptual branding background, though she has no prior book-cover "
+                         "or publishing-specific design experience.",
     },
 ]
 

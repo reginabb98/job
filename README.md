@@ -923,6 +923,20 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Omnicom Network application was for an Art Supervisor role at
   Area 23 (healthcare-focused creative agency, part of Omnicom's
   network) — updated the row's title and fit notes accordingly.
+- **2026-10-08 (early morning rescan)** — 1 new row. HarperCollins
+  Publishers — Senior Designer, Art Department (NYC Hybrid), confirmed
+  via iCIMS. Morrow imprint book-cover design role; good match to
+  Regina's visual-design/conceptual-branding background. Also added a
+  2nd interview_dates entry (round 2) for Bespoke Post — Kate Mulcahy
+  confirmed a follow-up call with Associate Creative Director Joelyn
+  Dalit for Mon, Oct 12.
+- **Dashboard update** — added interview-round tracking: each
+  application's `interview_dates` entries are now treated as
+  chronological rounds (1st date = Round 1, 2nd = Round 2, etc.),
+  shown in the expanded row view. The "Total interviews" hero stat
+  was relabeled "Interviewed by" and now distinguishes the number of
+  companies/processes that interviewed Regina from the total number
+  of interview rounds across all of them.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
