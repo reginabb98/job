@@ -934,6 +934,10 @@ Scan history:
     -- a 3rd, distinct generic "thank you for your application"
     confirmation with no role named, separate from the two earlier
     general network applications and the Presentation Designer req.
+  - 2026-10-08 (later): Regina confirmed directly that the 3rd Omnicom
+    Network application was for an Art Supervisor role at Area 23
+    (healthcare-focused creative agency, part of Omnicom's network) --
+    updated the row's title and fit notes accordingly.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3797,16 +3801,21 @@ SEED_ROWS = [
     },
     {
         "company": "Omnicom Network",
-        "position": "General network application (3rd)",
+        "position": "Art Supervisor (Area 23)",
         "status": "Applied",
         "applied_date": "2026-10-07",
         "source": "Workday",
         "notes": "Generic \"thank you for your application to the Omnicom network\" confirmation didn't name a "
-                 "role. Distinct from the 2026-07-27 and 2026-09-09 general network applications and the "
-                 "2026-09-06 Presentation Designer application -- a new confirmation on a new date, so logged "
-                 "as a 3rd, separate general application rather than assumed to be a duplicate.",
+                 "role; Regina confirmed directly it was for an Art Supervisor opening at Area 23, a "
+                 "healthcare-focused creative agency that routes through Omnicom's shared Workday ATS. "
+                 "Distinct from the 2026-07-27 and 2026-09-09 general network applications and the "
+                 "2026-09-06 Presentation Designer application.",
         "job_fit": "Unknown",
-        "job_fit_notes": "No specific role attached to confirm a posting against.",
+        "job_fit_notes": "Couldn't find the specific Area 23 Art Supervisor posting to confirm requirements. "
+                         "Art Supervisor is typically a senior agency-hierarchy title (parallel to/above Art "
+                         "Director) involving managing junior art staff on specific accounts -- Area 23's focus "
+                         "is healthcare/pharma advertising, an industry Regina hasn't worked in before, and the "
+                         "people-management scope is a step beyond her individual-contributor-focused resume.",
     },
 ]
 

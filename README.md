@@ -919,6 +919,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Network — a 3rd, distinct generic "thank you for your application"
   confirmation with no role named, separate from the two earlier
   general network applications and the Presentation Designer req.
+- **2026-10-08 (later)** — Regina confirmed directly that the 3rd
+  Omnicom Network application was for an Art Supervisor role at
+  Area 23 (healthcare-focused creative agency, part of Omnicom's
+  network) — updated the row's title and fit notes accordingly.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
