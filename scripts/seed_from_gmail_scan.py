@@ -952,6 +952,13 @@ Scan history:
     currently Porto Rocha, PictureStudio, and Solomon Page. None of
     the 3 are interviewing yet, so this has no visible effect until
     one of them (or a future row like them) is.
+  - 2026-10-08 (reported directly by Regina): Red Antler -- Senior
+    Designer flipped Interviewing -> Rejected. Anna Callagher reported
+    Rogerio enjoyed meeting Regina but Red Antler is moving forward
+    with another candidate with stronger technical skill. Same email:
+    Anna met Vault49's Creative Director in person, who's excited to
+    meet Regina and wants her to lead with personality/thinking over
+    technical polish.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2539,7 +2546,7 @@ SEED_ROWS = [
     {
         "company": "Red Antler",
         "position": "Senior Designer",
-        "status": "Interviewing",
+        "status": "Rejected",
         "applied_date": "2026-09-14",
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Had the recruiter call with Anna Callagher on Wednesday, Sept 23 -- this was confirmed "
@@ -2559,7 +2566,12 @@ SEED_ROWS = [
                      "and she wants to move forward. Awaiting word from Red Antler. Confirms the process "
                      "moving past Craft into Red Antler's own team, as expected (creative director, then the "
                      "ECDs). 2026-10-07: Regina checked in with Anna asking if she's heard anything back from "
-                     "Red Antler since they last spoke; no reply yet.",
+                     "Red Antler since they last spoke; no reply yet. 2026-10-08: Anna replied -- Rogerio "
+                     "enjoyed meeting Regina, but Red Antler is moving forward with another candidate who had "
+                     "stronger technical skill. In the same email, Anna said she'd met with Vault49 in person "
+                     "the day before and their Creative Director is excited to meet Regina, loved her "
+                     "enthusiasm and drive from the first stage, and that leading with personality/thinking "
+                     "(not just technical polish) is the key thing to land there.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "

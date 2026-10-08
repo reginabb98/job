@@ -943,6 +943,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   than a response to a posting, via a new explicit `cold_outreach`
   flag (set on Porto Rocha, PictureStudio, and Solomon Page so far —
   none interviewing yet, so no visible ring until one of them is).
+- **2026-10-08 (reported directly by Regina)** — Red Antler — Senior
+  Designer flipped Interviewing → Rejected. Anna Callagher reported
+  Rogerio enjoyed meeting Regina but Red Antler is moving forward
+  with another candidate with stronger technical skill. Same email:
+  Anna met Vault49's Creative Director in person, who's excited to
+  meet Regina and wants her to lead with personality/thinking over
+  technical polish.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
