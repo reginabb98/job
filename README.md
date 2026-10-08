@@ -950,6 +950,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Anna met Vault49's Creative Director in person, who's excited to
   meet Regina and wants her to lead with personality/thinking over
   technical polish.
+- **2026-10-08 (night rescan)** — 1 update, no new rows. Red Antler —
+  found Regina's reply to Anna (sent 2026-10-08): gracious, asked to
+  stay on Red Antler's radar, and asked whether Rogerio named the
+  specific technical skills she was missing — no answer yet. Also
+  confirmed she's preparing her deck for Vault 49's second round the
+  next day (Fri Oct 9), already captured on the Vault 49 row.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

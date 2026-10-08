@@ -959,6 +959,12 @@ Scan history:
     Anna met Vault49's Creative Director in person, who's excited to
     meet Regina and wants her to lead with personality/thinking over
     technical polish.
+  - 2026-10-08 (night rescan): 1 update, no new rows. Red Antler --
+    found Regina's reply to Anna (sent 2026-10-08): gracious, asked to
+    stay on Red Antler's radar, and asked whether Rogerio named the
+    specific technical skills she was missing -- no answer yet. Also
+    confirmed she's preparing her deck for Vault 49's second round the
+    next day (Fri Oct 9), already captured on the Vault 49 row.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2571,7 +2577,11 @@ SEED_ROWS = [
                      "stronger technical skill. In the same email, Anna said she'd met with Vault49 in person "
                      "the day before and their Creative Director is excited to meet Regina, loved her "
                      "enthusiasm and drive from the first stage, and that leading with personality/thinking "
-                     "(not just technical polish) is the key thing to land there.",
+                     "(not just technical polish) is the key thing to land there. Regina replied same day: "
+                     "disappointed but gracious, asked to stay on Red Antler's radar for future openings, and "
+                     "asked Anna whether Rogerio mentioned which specific technical skills were missing (for "
+                     "her own learning) -- no answer yet. She also confirmed she's preparing her deck for the "
+                     "Vault 49 second round the next day (Fri Oct 9).",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
