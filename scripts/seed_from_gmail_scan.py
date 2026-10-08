@@ -946,6 +946,12 @@ Scan history:
     -- Kate Mulcahy confirmed a follow-up call with Associate Creative
     Director Joelyn Dalit for Mon, Oct 12, scheduled ahead of this
     rescan's inbox activity but only now reflected in interview_dates.
+  - 2026-10-08 (dashboard feature): added a "cold_outreach" flag,
+    explicitly set (not inferred) on rows that were Regina's own
+    unsolicited outbound email rather than a response to a posting --
+    currently Porto Rocha, PictureStudio, and Solomon Page. None of
+    the 3 are interviewing yet, so this has no visible effect until
+    one of them (or a future row like them) is.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3668,6 +3674,7 @@ SEED_ROWS = [
                          "not a response to a specific posting. The paid-strategy-internship path now being "
                          "discussed is a good match for Regina's design-to-strategy transition, though it's "
                          "not the full-time strategy role she's ultimately after.",
+        "cold_outreach": 1,
     },
     # -- 2026-10-07 (rescan): 7 new rows from a late-night application sprint (2026-10-06, ~8:20-9:03pm ET) --
     {
@@ -3774,6 +3781,7 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find PictureStudio's posting or confirm the company's specific focus to "
                          "rate fit confidently.",
+        "cold_outreach": 1,
     },
     # -- 2026-10-08: found via a Sent-mail sweep (checking outgoing emails, not just inbound confirmations) --
     {
@@ -3790,6 +3798,7 @@ SEED_ROWS = [
                  "yet.",
         "job_fit": "Unknown",
         "job_fit_notes": "No specific role or client named to rate fit against.",
+        "cold_outreach": 1,
     },
     # -- 2026-10-08 (evening rescan): 1 new row, 1 update --
     {
@@ -3861,12 +3870,13 @@ def main():
         row.setdefault("applicant_count", None)
         row.setdefault("had_interview", 0)
         row.setdefault("interview_dates", None)
+        row.setdefault("cold_outreach", 0)
         interview_dates = json.dumps(row["interview_dates"]) if row["interview_dates"] else None
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, had_interview, interview_dates, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :interview_dates, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, had_interview, interview_dates, cold_outreach, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :interview_dates, :cold_outreach, :created_at, :updated_at)
             """,
             {**row, "interview_dates": interview_dates, "created_at": now, "updated_at": now},
         )

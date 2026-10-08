@@ -937,6 +937,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   was relabeled "Interviewed by" and now distinguishes the number of
   companies/processes that interviewed Regina from the total number
   of interview rounds across all of them.
+- **Dashboard update** — the Weekly Activity chart's interview ticks
+  are now colored by round (deeper color = later round) and ringed
+  when the interview grew out of a cold-outreach application rather
+  than a response to a posting, via a new explicit `cold_outreach`
+  flag (set on Porto Rocha, PictureStudio, and Solomon Page so far —
+  none interviewing yet, so no visible ring until one of them is).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
