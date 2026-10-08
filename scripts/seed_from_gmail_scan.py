@@ -930,6 +930,10 @@ Scan history:
     replied warmly, looped in Lauren Martinovic, and the call is now
     confirmed for Tue, Oct 13, 3:00-4:00pm ET with Lauren (Veronica
     cc'd).
+  - 2026-10-08 (night rescan): 1 new row, no updates. Omnicom Network
+    -- a 3rd, distinct generic "thank you for your application"
+    confirmation with no role named, separate from the two earlier
+    general network applications and the Presentation Designer req.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3790,6 +3794,19 @@ SEED_ROWS = [
                          "communication, Adobe Creative Cloud, Figma, Google Slides. A strong match to Regina's "
                          "agency deck-building and presentation-design background. Pay varies widely by listing "
                          "($117K-$261K); office policy also varies (remote vs. 3 days/wk in-office).",
+    },
+    {
+        "company": "Omnicom Network",
+        "position": "General network application (3rd)",
+        "status": "Applied",
+        "applied_date": "2026-10-07",
+        "source": "Workday",
+        "notes": "Generic \"thank you for your application to the Omnicom network\" confirmation didn't name a "
+                 "role. Distinct from the 2026-07-27 and 2026-09-09 general network applications and the "
+                 "2026-09-06 Presentation Designer application -- a new confirmation on a new date, so logged "
+                 "as a 3rd, separate general application rather than assumed to be a duplicate.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No specific role attached to confirm a posting against.",
     },
 ]
 

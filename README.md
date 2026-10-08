@@ -915,6 +915,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   downstream scheduling step of this same thread. Veronica replied
   warmly, looped in Lauren Martinovic, and the call is now confirmed
   for Tue, Oct 13, 3:00–4:00pm ET with Lauren (Veronica cc'd).
+- **2026-10-08 (night rescan)** — 1 new row, no updates. Omnicom
+  Network — a 3rd, distinct generic "thank you for your application"
+  confirmation with no role named, separate from the two earlier
+  general network applications and the Presentation Designer req.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
