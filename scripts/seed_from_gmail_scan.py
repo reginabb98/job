@@ -919,6 +919,17 @@ Scan history:
     cold-outreach threads (Accenture/Monica de Armas, Mother/Rachel
     Boyle's first contact, a personal resume review with Mike
     McCulloch) against existing rows -- all were already captured.
+  - 2026-10-08 (evening rescan): 1 new row, 2 updates. Salesforce --
+    Communications Designer, confirmed via Workday. Red Antler --
+    Regina checked in with Anna Callagher on the Senior Designer
+    process; no reply yet. Mother -- found the original 2026-09-25
+    cold-outreach email to Veronica Thew (a third, distinct Mother
+    contact) in a Sent-mail sweep prompted by the user; this resolves
+    the previously-logged "unexplained" Oct 6 calendar invite -- it
+    was the downstream scheduling step of this same thread. Veronica
+    replied warmly, looped in Lauren Martinovic, and the call is now
+    confirmed for Tue, Oct 13, 3:00-4:00pm ET with Lauren (Veronica
+    cc'd).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1836,10 +1847,14 @@ SEED_ROWS = [
                      "match Maggie Murphy from the original follow-up call, so it's unclear if this is the "
                      "same contact under a different name or a separate person at Mother; not guessing which. "
                      "Rachel replied 2026-09-29: still quiet on the strategy side, will flag if anything opens "
-                     "up. A calendar invite appeared 2026-10-06 for a Zoom call with a third named contact, "
-                     "Veronica Thew (veronica@mothernewyork.com), on Tuesday, Oct 13, 3:00-3:30pm ET -- no "
-                     "explanatory email accompanied it, so it's unclear whether this connects to the Maggie "
-                     "Murphy or Rachel threads or is a separate outreach; not guessing which.",
+                     "up. Separately, Regina directly cold-emailed a third Mother contact, Veronica Thew "
+                     "(veronica@mothernewyork.com), on 2026-09-25, introducing herself and noting she'd "
+                     "already spoken with Rachel and Maggie -- portfolio linked, no resume attached. Veronica "
+                     "replied warmly on 2026-10-04 and looped in Lauren Martinovic to schedule a call; after a "
+                     "few back-and-forth messages, the call is confirmed for Tuesday, Oct 13, 3:00-4:00pm ET "
+                     "with Lauren (Veronica cc'd) -- this resolves the previously-logged \"unexplained\" "
+                     "calendar invite from 2026-10-06, which was just the downstream scheduling step of this "
+                     "same thread.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -2521,7 +2536,8 @@ SEED_ROWS = [
                      "Rogerio her design portfolio as a follow-up. Regina says the role sounds well-aligned "
                      "and she wants to move forward. Awaiting word from Red Antler. Confirms the process "
                      "moving past Craft into Red Antler's own team, as expected (creative director, then the "
-                     "ECDs).",
+                     "ECDs). 2026-10-07: Regina checked in with Anna asking if she's heard anything back from "
+                     "Red Antler since they last spoke; no reply yet.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3758,6 +3774,22 @@ SEED_ROWS = [
                  "yet.",
         "job_fit": "Unknown",
         "job_fit_notes": "No specific role or client named to rate fit against.",
+    },
+    # -- 2026-10-08 (evening rescan): 1 new row, 1 update --
+    {
+        "company": "Salesforce",
+        "position": "Communications Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-07",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: the role sits on Salesforce's Professional Services team, working "
+                         "like an in-house creative agency building customer-proposal decks, graphics, and "
+                         "social content for Customer Success teams -- 5+ yrs graphic design/visual "
+                         "communication, Adobe Creative Cloud, Figma, Google Slides. A strong match to Regina's "
+                         "agency deck-building and presentation-design background. Pay varies widely by listing "
+                         "($117K-$261K); office policy also varies (remote vs. 3 days/wk in-office).",
     },
 ]
 

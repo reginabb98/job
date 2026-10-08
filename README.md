@@ -905,6 +905,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   threads (Accenture/Monica de Armas, Mother/Rachel Boyle's first
   contact, a personal resume review with Mike McCulloch) against
   existing rows — all were already captured.
+- **2026-10-08 (evening rescan)** — 1 new row, 2 updates. Salesforce —
+  Communications Designer, confirmed via Workday. Red Antler — Regina
+  checked in with Anna Callagher on the Senior Designer process; no
+  reply yet. Mother — found the original 2026-09-25 cold-outreach
+  email to Veronica Thew (a third, distinct Mother contact) in a
+  Sent-mail sweep prompted by the user; this resolves the
+  previously-logged "unexplained" Oct 6 calendar invite — it was the
+  downstream scheduling step of this same thread. Veronica replied
+  warmly, looped in Lauren Martinovic, and the call is now confirmed
+  for Tue, Oct 13, 3:00–4:00pm ET with Lauren (Veronica cc'd).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
