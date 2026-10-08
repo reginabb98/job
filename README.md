@@ -897,6 +897,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   treated as a likely accidental duplicate re-application rather than
   a new row. Craft (Taste freelance platform) — Checkr confirmed the
   background check is complete, report sent to Taste AI.
+- **2026-10-08** — 1 new row, from a full sweep of Sent mail (not just
+  inbound confirmations) at the user's request. Solomon Page — a
+  resume/portfolio sent to a staffing-agency recruiter via a personal
+  referral (Michele Cilione), general introduction, no specific role
+  or client. Cross-checked several other Sent-mail cold-outreach
+  threads (Accenture/Monica de Armas, Mother/Rachel Boyle's first
+  contact, a personal resume review with Mike McCulloch) against
+  existing rows — all were already captured.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

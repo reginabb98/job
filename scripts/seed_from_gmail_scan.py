@@ -911,10 +911,19 @@ Scan history:
     re-application rather than a new row. Craft (Taste freelance
     platform) -- Checkr confirmed the background check is complete,
     report sent to Taste AI.
+  - 2026-10-08: 1 new row, from a full sweep of Sent mail (not just
+    inbound confirmations) at the user's request. Solomon Page -- a
+    resume/portfolio sent to a staffing-agency recruiter via a
+    personal referral (Michele Cilione), general introduction, no
+    specific role or client. Cross-checked several other Sent-mail
+    cold-outreach threads (Accenture/Monica de Armas, Mother/Rachel
+    Boyle's first contact, a personal resume review with Mike
+    McCulloch) against existing rows -- all were already captured.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
 """
+import json
 import os
 import sqlite3
 from datetime import datetime
@@ -1003,6 +1012,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-07-24",
         "had_interview": 1,
+        "interview_dates": ["2026-07-29"],
         "next_step": "Interviewed Jul 29, 2PM ET -- awaiting outcome",
         "source": "Greenhouse",
         "notes": "Recruiter Ashley Hill (wppbrandconsulting.com) referenced this role under both the "
@@ -1557,6 +1567,7 @@ SEED_ROWS = [
         "status": "Rejected",
         "applied_date": "2026-08-18",
         "had_interview": 1,
+        "interview_dates": ["2026-08-24"],
         "source": "Teamtailor",
         "notes": "Interviewed with recruiter Ibrahim Thomas the week of 2026-08-24. Rejected 2026-08-27: "
                  "\"we are going to move forward with other candidates for this specific role.\" He offered "
@@ -2289,6 +2300,7 @@ SEED_ROWS = [
         "status": "Rejected",
         "applied_date": "2026-09-06",
         "had_interview": 1,
+        "interview_dates": ["2026-09-22"],
         "next_step": "Rejected 2026-09-24: Angela (The Change Agents, the talent agency handling this "
                      "candidacy) confirmed Day One's internal policy doesn't allow them to consider candidates "
                      "who may need future visa sponsorship -- not a fit/performance rejection.",
@@ -2524,6 +2536,7 @@ SEED_ROWS = [
                          "sees the strategy angle as her differentiator here, especially relevant in the AI "
                          "era -- a strong match to her SVA Branding background.",
         "had_interview": 1,
+        "interview_dates": ["2026-10-01"],
     },
     {
         "company": "Craft",
@@ -2545,6 +2558,8 @@ SEED_ROWS = [
         "position": "Brand Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-14",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-30"],
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Interview happened Wednesday, Sept 30 at 1:00pm ET with Laura (Operations), Nick Corey "
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
@@ -2988,6 +3003,7 @@ SEED_ROWS = [
         "status": "Offer",
         "applied_date": "2026-09-22",
         "had_interview": 1,
+        "interview_dates": ["2026-09-22"],
         "pay_range": "$85/hr, paid as $510 per deliverable (6 hrs budgeted per deliverable)",
         "next_step": "2026-09-27: Confirmed in for the 'GoldenStone Slides & Docs' project as Brand Designer, "
                      "$85/hr ($510/deliverable), starting Thursday, Oct 1 -- pending ID check and background "
@@ -3069,6 +3085,7 @@ SEED_ROWS = [
                          "Graphic Designer, Mid opening in the NYC Metro area turned up under the getcanopy "
                          "name, but wasn't confirmed as this exact req).",
         "had_interview": 1,
+        "interview_dates": ["2026-09-23"],
     },
     {
         "company": "Polonsky & Friends",
@@ -3312,6 +3329,8 @@ SEED_ROWS = [
         "position": "Marketing Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-27",
+        "had_interview": 1,
+        "interview_dates": ["2026-10-05"],
         "source": "Ashby",
         "next_step": "Michael Hale (Technical Recruiter) reached out 2026-10-02 to schedule an intro call; "
                      "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
@@ -3400,6 +3419,8 @@ SEED_ROWS = [
         "position": "Graphic Designer",
         "status": "Interviewing",
         "applied_date": "2026-09-27",
+        "had_interview": 1,
+        "interview_dates": ["2026-10-01"],
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
@@ -3722,6 +3743,22 @@ SEED_ROWS = [
         "job_fit_notes": "Couldn't find PictureStudio's posting or confirm the company's specific focus to "
                          "rate fit confidently.",
     },
+    # -- 2026-10-08: found via a Sent-mail sweep (checking outgoing emails, not just inbound confirmations) --
+    {
+        "company": "Solomon Page",
+        "position": "Unspecified role (Design, via staffing agency)",
+        "status": "Applied",
+        "applied_date": "2026-09-25",
+        "source": "Email",
+        "notes": "Direct cold-outreach email (resume and portfolio attached) to Marina Monsante at Solomon "
+                 "Page, a staffing agency -- contact passed along by a personal connection, Michele Cilione, "
+                 "after they discussed Michele's own job search. General introduction, no specific role or "
+                 "client named (\"in case anything comes up\"); per standing practice for recruitment "
+                 "agencies, logged under the agency name until a specific client/role is confirmed. No reply "
+                 "yet.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No specific role or client named to rate fit against.",
+    },
 ]
 
 
@@ -3743,13 +3780,15 @@ def main():
         row.setdefault("job_fit_notes", None)
         row.setdefault("applicant_count", None)
         row.setdefault("had_interview", 0)
+        row.setdefault("interview_dates", None)
+        interview_dates = json.dumps(row["interview_dates"]) if row["interview_dates"] else None
         db.execute(
             """
             INSERT INTO applications
-                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
-            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :created_at, :updated_at)
+                (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_fit, job_fit_notes, applicant_count, had_interview, interview_dates, created_at, updated_at)
+            VALUES (:company, :position, :status, :applied_date, :next_step, :job_url, :source, :referral, :notes, :pay_range, :job_fit, :job_fit_notes, :applicant_count, :had_interview, :interview_dates, :created_at, :updated_at)
             """,
-            {**row, "created_at": now, "updated_at": now},
+            {**row, "interview_dates": interview_dates, "created_at": now, "updated_at": now},
         )
     db.commit()
     print(f"Seeded {len(SEED_ROWS)} applications from the Gmail scan.")

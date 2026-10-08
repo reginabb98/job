@@ -1,5 +1,6 @@
 import csv
 import io
+import json
 import os
 import sqlite3
 from datetime import datetime, date
@@ -62,6 +63,8 @@ def init_db():
         db.execute("ALTER TABLE applications ADD COLUMN applicant_count INTEGER")
     if "had_interview" not in existing_cols:
         db.execute("ALTER TABLE applications ADD COLUMN had_interview INTEGER NOT NULL DEFAULT 0")
+    if "interview_dates" not in existing_cols:
+        db.execute("ALTER TABLE applications ADD COLUMN interview_dates TEXT")
     db.commit()
     db.close()
 
@@ -70,6 +73,7 @@ def row_to_dict(row):
     d = dict(row)
     d["referral"] = bool(d["referral"])
     d["had_interview"] = bool(d["had_interview"])
+    d["interview_dates"] = json.loads(d["interview_dates"]) if d.get("interview_dates") else []
     return d
 
 
@@ -113,8 +117,8 @@ def create_application():
     cur = db.execute(
         """
         INSERT INTO applications
-            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview, created_at, updated_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (company, position, status, applied_date, next_step, job_url, source, referral, notes, pay_range, job_description, job_fit, job_fit_notes, applicant_count, had_interview, interview_dates, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             company,
@@ -132,6 +136,7 @@ def create_application():
             data.get("job_fit_notes"),
             data.get("applicant_count"),
             1 if data.get("had_interview") else 0,
+            json.dumps(data.get("interview_dates")) if data.get("interview_dates") else None,
             now,
             now,
         ),
@@ -173,12 +178,15 @@ def update_application(app_id):
         "job_fit_notes",
         "applicant_count",
         "had_interview",
+        "interview_dates",
     ]
     updates = {k: data[k] for k in fields if k in data}
     if "referral" in updates:
         updates["referral"] = 1 if updates["referral"] else 0
     if "had_interview" in updates:
         updates["had_interview"] = 1 if updates["had_interview"] else 0
+    if "interview_dates" in updates:
+        updates["interview_dates"] = json.dumps(updates["interview_dates"]) if updates["interview_dates"] else None
 
     if updates:
         set_clause = ", ".join(f"{k} = ?" for k in updates)
