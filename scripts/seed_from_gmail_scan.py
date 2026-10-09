@@ -965,6 +965,19 @@ Scan history:
     specific technical skills she was missing -- no answer yet. Also
     confirmed she's preparing her deck for Vault 49's second round the
     next day (Fri Oct 9), already captured on the Vault 49 row.
+  - 2026-10-09 (afternoon rescan): 3 updates, no new rows. Red Antler
+    -- Anna answered the feedback question: the other candidate was
+    more into coding/digital branding, which read as more technical,
+    but that depth was never actually required by the brief. Vault 49
+    -- the second-round call with Sam Wilkes and Jennifer Yelk
+    happened as scheduled; Regina's own read (relayed to Anna right
+    after) was mixed -- Jen warm, Sam harder to read, ran short on
+    time, and she's not sure it was clear what she's best at (showed
+    a wide range; her specialty is packaging/layouts/lockups/type).
+    Still interested. Bespoke Post -- Regina asked to reschedule the
+    Oct 12 2nd-round call to later next week due to an unexpected
+    family trip; new date not yet confirmed, so the Oct 12
+    interview_dates entry was pulled until a real date is set.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2581,7 +2594,10 @@ SEED_ROWS = [
                      "disappointed but gracious, asked to stay on Red Antler's radar for future openings, and "
                      "asked Anna whether Rogerio mentioned which specific technical skills were missing (for "
                      "her own learning) -- no answer yet. She also confirmed she's preparing her deck for the "
-                     "Vault 49 second round the next day (Fri Oct 9).",
+                     "Vault 49 second round the next day (Fri Oct 9). 2026-10-09: Anna answered the feedback "
+                     "question -- the other candidate was more focused on coding/digital branding, which made "
+                     "them read as more technical overall; Anna noted that depth was never actually a "
+                     "requirement of the brief, Red Antler just found it interesting in that candidate's work.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -2619,7 +2635,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-14",
         "had_interview": 1,
-        "interview_dates": ["2026-09-30"],
+        "interview_dates": ["2026-09-30", "2026-10-09"],
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Interview happened Wednesday, Sept 30 at 1:00pm ET with Laura (Operations), Nick Corey "
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
@@ -2632,7 +2648,14 @@ SEED_ROWS = [
                      "asked to reschedule due to a family matter (her mother having surgery, requiring travel "
                      "to Houston) -- moved to Friday, Oct 9, 11:00-11:45am ET; calendar invite updated. "
                      "Follows the 2026-09-24 portfolio update (new packaging project) that Anna said looked "
-                     "great.",
+                     "great. 2026-10-09: the second-round call with Sam and Jen happened as scheduled -- "
+                     "Regina's own read, relayed to Anna right after: Jen was warm, Sam harder to read, and "
+                     "they ran a little short on time at the end. They asked whether she's more drawn to big "
+                     "brands or small ones; Regina suspects this came up because most of what she presented "
+                     "skewed toward smaller brands and spec work, even though she's interested in big-brand "
+                     "work too. She also showed a fairly wide range, so it may not have been clear what she's "
+                     "best at (packaging, layouts, lockups, and type specifically). Still interested -- liked "
+                     "that the team seems hands-on. Awaiting word from Anna.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3480,7 +3503,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "had_interview": 1,
-        "interview_dates": ["2026-10-01", "2026-10-12"],
+        "interview_dates": ["2026-10-01"],
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
@@ -3492,7 +3515,11 @@ SEED_ROWS = [
                      "mentioned she's researching whether Bespoke Post could support a TN visa for Regina in "
                      "the future -- Regina said it's light on the employer side (a support letter rather than "
                      "formal sponsorship). Visa sponsorship/support may be a relevant factor for Regina's "
-                     "search generally.",
+                     "search generally. 2026-10-09: Regina asked Kate to move the Oct 12 call to another day "
+                     "next week -- she had to travel home unexpectedly for a family matter and her schedule "
+                     "got tighter (unclear if related to the earlier Houston/mother's-surgery trip or a "
+                     "separate one; not guessing). New date not yet confirmed; round 2 removed from "
+                     "interview_dates until it actually happens.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

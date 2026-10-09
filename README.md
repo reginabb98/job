@@ -956,6 +956,19 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   specific technical skills she was missing — no answer yet. Also
   confirmed she's preparing her deck for Vault 49's second round the
   next day (Fri Oct 9), already captured on the Vault 49 row.
+- **2026-10-09 (afternoon rescan)** — 3 updates, no new rows. Red
+  Antler — Anna answered the feedback question: the other candidate
+  was more into coding/digital branding, which read as more
+  technical, but that depth was never actually required by the
+  brief. Vault 49 — the second-round call with Sam Wilkes and
+  Jennifer Yelk happened as scheduled; Regina's own read (relayed to
+  Anna right after) was mixed — Jen warm, Sam harder to read, ran
+  short on time, and she's not sure it was clear what she's best at
+  (showed a wide range; her specialty is packaging/layouts/lockups/
+  type). Still interested. Bespoke Post — Regina asked to reschedule
+  the Oct 12 2nd-round call to later next week due to an unexpected
+  family trip; new date not yet confirmed, so the Oct 12
+  interview_dates entry was pulled until a real date is set.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
