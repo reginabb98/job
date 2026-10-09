@@ -978,6 +978,10 @@ Scan history:
     Oct 12 2nd-round call to later next week due to an unexpected
     family trip; new date not yet confirmed, so the Oct 12
     interview_dates entry was pulled until a real date is set.
+  - 2026-10-09 (night rescan): 1 update, no new rows. Bespoke Post --
+    Kate offered Tue 10/13 3:00pm ET or Wed 10/14 1:30pm ET for the
+    rescheduled 2nd round; Regina hasn't picked one yet. Confirmed the
+    original Oct 12 calendar invite was canceled.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3519,7 +3523,9 @@ SEED_ROWS = [
                      "next week -- she had to travel home unexpectedly for a family matter and her schedule "
                      "got tighter (unclear if related to the earlier Houston/mother's-surgery trip or a "
                      "separate one; not guessing). New date not yet confirmed; round 2 removed from "
-                     "interview_dates until it actually happens.",
+                     "interview_dates until it actually happens. Kate replied the same evening offering Tue "
+                     "10/13 at 3:00pm ET or Wed 10/14 at 1:30pm ET -- Regina hasn't picked one yet. The "
+                     "original Oct 12 calendar invite was canceled.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

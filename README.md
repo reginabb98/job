@@ -969,6 +969,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   the Oct 12 2nd-round call to later next week due to an unexpected
   family trip; new date not yet confirmed, so the Oct 12
   interview_dates entry was pulled until a real date is set.
+- **2026-10-09 (night rescan)** — 1 update, no new rows. Bespoke Post
+  — Kate offered Tue 10/13 3:00pm ET or Wed 10/14 1:30pm ET for the
+  rescheduled 2nd round; Regina hasn't picked one yet. Confirmed the
+  original Oct 12 calendar invite was canceled.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
