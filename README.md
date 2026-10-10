@@ -973,6 +973,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   — Kate offered Tue 10/13 3:00pm ET or Wed 10/14 1:30pm ET for the
   rescheduled 2nd round; Regina hasn't picked one yet. Confirmed the
   original Oct 12 calendar invite was canceled.
+- **2026-10-10 (morning rescan)** — 1 update, no new rows. goop — the
+  "Unspecified role" placeholder was resolved: a Greenhouse rejection
+  named the role directly ("the Senior Graphic Designer position has
+  been filled"), confirming the earlier guess. Flipped Applied →
+  Rejected and filled in the real title.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

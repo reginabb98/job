@@ -982,6 +982,11 @@ Scan history:
     Kate offered Tue 10/13 3:00pm ET or Wed 10/14 1:30pm ET for the
     rescheduled 2nd round; Regina hasn't picked one yet. Confirmed the
     original Oct 12 calendar invite was canceled.
+  - 2026-10-10 (morning rescan): 1 update, no new rows. goop -- the
+    "Unspecified role" placeholder was resolved: a Greenhouse
+    rejection named the role directly ("the Senior Graphic Designer
+    position has been filled"), confirming the earlier guess. Flipped
+    Applied -> Rejected and filled in the real title.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3589,15 +3594,17 @@ SEED_ROWS = [
     },
     {
         "company": "goop",
-        "position": "Unspecified role (Design)",
-        "status": "Applied",
+        "position": "Senior Graphic Designer",
+        "status": "Rejected",
         "applied_date": "2026-09-28",
         "source": "Greenhouse",
         "notes": "Generic confirmation (\"Thank you for your application to goop\") did not name the role. goop "
                  "had a Senior Graphic Designer opening at the time (6+ yrs, beauty/wellness/fashion/luxury, "
-                 "$70K-$80K+equity) that's the most likely match, but not confirmed.",
+                 "$70K-$80K+equity) that was the most likely match -- confirmed 2026-10-09 when Greenhouse sent "
+                 "a rejection naming the role directly (\"the Senior Graphic Designer position has been "
+                 "filled\").",
         "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which specific goop design role this application was for.",
+        "job_fit_notes": "Couldn't confirm the specific posting's requirements before the role was filled.",
     },
     {
         "company": "Warner Bros. Discovery",
