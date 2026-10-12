@@ -984,6 +984,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   confirmation email was ever found; only a generic Greenhouse
   rejection surfaced, so logged directly as Rejected with the
   rejection date as an unconfirmed applied_date placeholder.
+- **2026-10-12 (night rescan)** — 2 updates, no new rows. The
+  Farmer's Dog — Brand Designer flipped Applied → Rejected (generic
+  decline). Bespoke Post — Regina confirmed Wednesday, Oct 14,
+  1:30pm ET for the rescheduled round 2 with Joelyn Dalit.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

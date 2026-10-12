@@ -993,6 +993,10 @@ Scan history:
     confirmation email was ever found; only a generic Greenhouse
     rejection surfaced, so logged directly as Rejected with the
     rejection date as an unconfirmed applied_date placeholder.
+  - 2026-10-12 (night rescan): 2 updates, no new rows. The Farmer's
+    Dog -- Brand Designer flipped Applied -> Rejected (generic
+    decline). Bespoke Post -- Regina confirmed Wednesday, Oct 14,
+    1:30pm ET for the rescheduled round 2 with Joelyn Dalit.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3443,11 +3447,12 @@ SEED_ROWS = [
     {
         "company": "The Farmer's Dog",
         "position": "Brand Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Greenhouse",
         "pay_range": "$80K-$90K/yr",
-        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "notes": "Confirmed via Greenhouse's auto-reply. Rejected 2026-10-12 -- generic \"decided to move "
+                 "forward with other candidates\" decline.",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: The Farmer's Dog is a DTC fresh-pet-food subscription company; "
                          "this Brand Designer role creates marketing/digital/print creative across channels "
@@ -3535,8 +3540,9 @@ SEED_ROWS = [
                      "got tighter (unclear if related to the earlier Houston/mother's-surgery trip or a "
                      "separate one; not guessing). New date not yet confirmed; round 2 removed from "
                      "interview_dates until it actually happens. Kate replied the same evening offering Tue "
-                     "10/13 at 3:00pm ET or Wed 10/14 at 1:30pm ET -- Regina hasn't picked one yet. The "
-                     "original Oct 12 calendar invite was canceled.",
+                     "10/13 at 3:00pm ET or Wed 10/14 at 1:30pm ET. The original Oct 12 calendar invite was "
+                     "canceled. 2026-10-12: Regina confirmed Wednesday, Oct 14, 1:30pm ET for the rescheduled "
+                     "round 2 with Joelyn Dalit.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
