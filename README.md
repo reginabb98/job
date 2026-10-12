@@ -978,6 +978,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   named the role directly ("the Senior Graphic Designer position has
   been filled"), confirming the earlier guess. Flipped Applied →
   Rejected and filled in the real title.
+- **2026-10-12 (afternoon rescan)** — 1 new row. Reddit — Senior
+  Creative Strategist, App Dev (KarmaLab, Reddit's in-house creative
+  team for the Global Sales org). No original application-
+  confirmation email was ever found; only a generic Greenhouse
+  rejection surfaced, so logged directly as Rejected with the
+  rejection date as an unconfirmed applied_date placeholder.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

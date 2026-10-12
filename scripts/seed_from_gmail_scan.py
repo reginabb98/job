@@ -987,6 +987,12 @@ Scan history:
     rejection named the role directly ("the Senior Graphic Designer
     position has been filled"), confirming the earlier guess. Flipped
     Applied -> Rejected and filled in the real title.
+  - 2026-10-12 (afternoon rescan): 1 new row. Reddit -- Senior
+    Creative Strategist, App Dev (KarmaLab, Reddit's in-house creative
+    team for the Global Sales org). No original application-
+    confirmation email was ever found; only a generic Greenhouse
+    rejection surfaced, so logged directly as Rejected with the
+    rejection date as an unconfirmed applied_date placeholder.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3909,6 +3915,24 @@ SEED_ROWS = [
                          "image-making, working with an Art Director and editors. A solid match to Regina's "
                          "visual-design and conceptual branding background, though she has no prior book-cover "
                          "or publishing-specific design experience.",
+    },
+    {
+        "company": "Reddit",
+        "position": "Senior Creative Strategist - App Dev",
+        "status": "Rejected",
+        "applied_date": "2026-10-12",
+        "source": "Greenhouse",
+        "notes": "No original application-confirmation email was found -- picked up directly from the "
+                 "rejection, so the true applied_date is unconfirmed (using the rejection date as a "
+                 "placeholder). Generic decline: \"after carefully considering your background and "
+                 "qualifications we have decided not to move forward.\"",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: sits in KarmaLab, Reddit's in-house creative team for the Global "
+                         "Sales org -- building campaign concepts and supporting Sales on pitches/RFPs for app "
+                         "advertisers, 5-7+ yrs creative strategy/advertising experience. Overlaps with Regina's "
+                         "strategy-transition background, but leans more toward ad-sales pitch support for a "
+                         "specific platform vertical (app/mobile advertisers) than her brand/product-design-"
+                         "rooted strategy experience.",
     },
 ]
 
