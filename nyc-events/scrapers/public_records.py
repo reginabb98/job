@@ -4,17 +4,15 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from .base import Event
+from .base import Event, infer_upcoming_year
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
 URL = "https://publicrecords.nyc/"
 
-MONTHS_NUM = {m: m for m in range(1, 13)}
 
-
-def _parse_date_cell(text: str, default_year: int = 2026):
+def _parse_date_cell(text: str):
     # e.g. "Tue 7.14" "Live," "7:00 pm," "Sound Room"
     m = re.search(r"(\d{1,2})\.(\d{1,2})", text)
     time_m = re.search(r"(\d{1,2}:\d{2}\s*[ap]m)", text, re.I)
@@ -22,7 +20,8 @@ def _parse_date_cell(text: str, default_year: int = 2026):
     if not m:
         return None, "", ""
     month, day = int(m.group(1)), int(m.group(2))
-    date = f"{default_year}-{month:02d}-{day:02d}"
+    year = infer_upcoming_year(month, day)
+    date = f"{year}-{month:02d}-{day:02d}"
     time_str = time_m.group(1) if time_m else ""
     room = room_m.group(1).strip() if room_m else ""
     return date, time_str, room

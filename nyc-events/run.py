@@ -1,6 +1,6 @@
 """Run all scrapers, annotate with taste/distance, and write data/events.json."""
 import json
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from scrapers import bowery_presents, elsewhere, public_records, tv_eye, broadway, donyc
@@ -47,6 +47,13 @@ def main():
         d["transit_min"] = venues.transit_minutes(d["venue"])
         taste.annotate(d)
         seen[d["id"]] = d  # de-dupe by content hash
+
+    # Defensive floor against any scraper date-parsing bug (a hardcoded or
+    # misinferred year can stamp a listing into the past) — a couple days
+    # of slack covers today's already-started shows without needing
+    # per-event timezone math.
+    cutoff = (date.today() - timedelta(days=2)).isoformat()
+    seen = {k: d for k, d in seen.items() if d["date"] >= cutoff}
 
     result = sorted(seen.values(), key=lambda d: (d["date"], d["time_minutes"]))
 
