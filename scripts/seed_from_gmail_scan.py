@@ -1005,6 +1005,12 @@ Scan history:
     they're "still interviewing at first round" -- confusing phrasing
     given Regina's second round already happened; not guessing what
     it means. No concrete next step yet.
+  - 2026-10-13 (night rescan): 2 updates, no new rows. Mother -- Jack
+    proposed Thursday, Oct 16, 2:30-3:00pm ET for the Veronica call;
+    not yet confirmed by Regina. Porto Rocha -- flipped Applied ->
+    Interviewing: Regina followed up on the internship conversation,
+    Natalee proposed a call to walk through her SVA projects, and it's
+    now confirmed for Tuesday, Oct 27, 4:00-4:30pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1934,7 +1940,9 @@ SEED_ROWS = [
                      "Regina agreed. 2026-10-12: Regina followed up to confirm, offering to move to the "
                      "following week instead if that was easier. 2026-10-13: Jack replied that Veronica's "
                      "calendar had gotten chaotic again and the call didn't happen a second time; he asked "
-                     "Regina for her availability next week instead. No new date confirmed yet.",
+                     "Regina for her availability next week instead. Regina replied the same day saying she's "
+                     "flexible next week; Jack proposed Thursday, Oct 16, 2:30-3:00pm ET. No confirmation from "
+                     "Regina yet as of this scan.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -3751,7 +3759,7 @@ SEED_ROWS = [
     {
         "company": "Porto Rocha",
         "position": "Brand Strategy (cold outreach -- no open role at time of contact)",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-08-26",
         "source": "Email",
         "notes": "Direct cold-outreach email to Natalee Ranii-Dropcho (Strategy & Copy Director) with resume "
@@ -3759,7 +3767,12 @@ SEED_ROWS = [
                  "then got a real reply 2026-10-05: Natalee asked which portfolio projects were speculative "
                  "vs. real client work, then said there's no Associate Strategist opening but asked if "
                  "Regina would consider a paid strategy internship. Regina said she's open to hearing more "
-                 "though she's looking for full-time strategy work; awaiting Natalee's next message.",
+                 "though she's looking for full-time strategy work; awaiting Natalee's next message. "
+                 "2026-10-13: Regina followed up to confirm she's still interested in the internship; Natalee "
+                 "replied the same day proposing a call Oct 27 or 28 at 4pm to walk through Regina's SVA "
+                 "projects and her approach to strategy. Regina confirmed either day works; calendar invite "
+                 "followed for Tuesday, Oct 27, 4:00-4:30pm ET. Flipped to Interviewing since this is "
+                 "effectively a first conversation for the internship opportunity.",
         "job_fit": "Good",
         "job_fit_notes": "Porto Rocha is a well-regarded NYC branding studio; this was a speculative intro, "
                          "not a response to a specific posting. The paid-strategy-internship path now being "

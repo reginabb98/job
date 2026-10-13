@@ -996,6 +996,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   they're "still interviewing at first round" — confusing phrasing
   given Regina's second round already happened; not guessing what it
   means. No concrete next step yet.
+- **2026-10-13 (night rescan)** — 2 updates, no new rows. Mother —
+  Jack proposed Thursday, Oct 16, 2:30-3:00pm ET for the Veronica
+  call; not yet confirmed by Regina. Porto Rocha — flipped Applied →
+  Interviewing: Regina followed up on the internship conversation,
+  Natalee proposed a call to walk through her SVA projects, and it's
+  now confirmed for Tuesday, Oct 27, 4:00-4:30pm ET.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
