@@ -28,6 +28,7 @@ VENUE_COORDS = {
     "Arlene's Grocery": (40.7217, -73.9873),
     "Heaven Can Wait": (40.7276, -73.9803),
     "Angelika Film Center": (40.7259, -73.9959),
+    "Le Poisson Rouge": (40.7294, -74.0003),
 }
 
 
@@ -68,6 +69,7 @@ TRANSIT_MINUTES = {
     "Arlene's Grocery": 28,
     "Heaven Can Wait": 28,
     "Angelika Film Center": 30,
+    "Le Poisson Rouge": 35,  # Bleecker St / Greenwich Village — same ballpark as IFC Center, Film Forum
 }
 
 

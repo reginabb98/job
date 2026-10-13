@@ -2,6 +2,7 @@
 import hashlib
 import re
 from dataclasses import dataclass, asdict
+from datetime import date, timedelta
 from typing import Optional
 
 
@@ -98,6 +99,24 @@ def extract_trailing_year(name: str, existing_year: str = "") -> tuple:
     return name, existing_year
 
 
+def infer_upcoming_year(month: int, day: int, today: Optional[date] = None) -> int:
+    """Venue listings routinely give a month/day with no year ("Tue 7.14",
+    "Mar 31") since they only ever list upcoming shows. Picking a fixed
+    calendar year to fill that gap in breaks the moment the real date moves
+    past it — a show that's actually next March starts rendering as last
+    March. Instead: assume the listing means the next calendar occurrence
+    of that month/day from today (a few days of slack so a show happening
+    in the last day or two doesn't flip forward a year)."""
+    today = today or date.today()
+    try:
+        candidate = date(today.year, month, day)
+    except ValueError:
+        return today.year + 1  # Feb 29 in a non-leap year -> next leap year is close enough
+    if candidate < today - timedelta(days=3):
+        return today.year + 1
+    return today.year
+
+
 def parse_loose_date(text: str, default_year: Optional[int] = None) -> Optional[str]:
     """Parse strings like 'Mon Jul 13, 2026' or 'Jul 13' into YYYY-MM-DD."""
     text = text.strip()
@@ -108,5 +127,10 @@ def parse_loose_date(text: str, default_year: Optional[int] = None) -> Optional[
     mon_key = mon.lower()[:3]
     if mon_key not in MONTHS:
         return None
-    year = year or str(default_year or 2026)
+    if year:
+        pass
+    elif default_year:
+        year = str(default_year)
+    else:
+        year = str(infer_upcoming_year(int(MONTHS[mon_key]), int(day)))
     return f"{year}-{MONTHS[mon_key]}-{int(day):02d}"

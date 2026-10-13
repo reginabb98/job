@@ -1,6 +1,6 @@
 """Scraper for venues that block direct scraping but are listed on doNYC
 (donyc.com), an events aggregator with clean schema.org-marked HTML —
-covers Baby's All Right, Union Pool, and Arlene's Grocery.
+covers Baby's All Right, Union Pool, Arlene's Grocery, and Le Poisson Rouge.
 """
 import re
 from datetime import datetime
@@ -20,6 +20,7 @@ VENUES = {
     "Baby's All Right": "https://donyc.com/venues/baby-s-all-right",
     "Union Pool": "https://donyc.com/venues/union-pool",
     "Arlene's Grocery": "https://donyc.com/venues/arlene-s-grocery",
+    "Le Poisson Rouge": "https://donyc.com/venues/le-poisson-rouge",
 }
 
 
