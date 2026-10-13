@@ -988,6 +988,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Farmer's Dog — Brand Designer flipped Applied → Rejected (generic
   decline). Bespoke Post — Regina confirmed Wednesday, Oct 14,
   1:30pm ET for the rescheduled round 2 with Joelyn Dalit.
+- **2026-10-13 (afternoon rescan)** — 2 updates, no new rows. Mother
+  — the Veronica Thew call got rescheduled twice (Veronica had
+  conflicts both times) and still hasn't happened; Jack Pompe asked
+  for Regina's availability next week, no new date confirmed yet.
+  Vault 49 — Anna relayed positive feedback from Laura, but said
+  they're "still interviewing at first round" — confusing phrasing
+  given Regina's second round already happened; not guessing what it
+  means. No concrete next step yet.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

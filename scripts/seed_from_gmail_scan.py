@@ -997,6 +997,14 @@ Scan history:
     Dog -- Brand Designer flipped Applied -> Rejected (generic
     decline). Bespoke Post -- Regina confirmed Wednesday, Oct 14,
     1:30pm ET for the rescheduled round 2 with Joelyn Dalit.
+  - 2026-10-13 (afternoon rescan): 2 updates, no new rows. Mother --
+    the Veronica Thew call got rescheduled twice (Veronica had
+    conflicts both times) and still hasn't happened; Jack Pompe asked
+    for Regina's availability next week, no new date confirmed yet.
+    Vault 49 -- Anna relayed positive feedback from Laura, but said
+    they're "still interviewing at first round" -- confusing phrasing
+    given Regina's second round already happened; not guessing what
+    it means. No concrete next step yet.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1921,7 +1929,12 @@ SEED_ROWS = [
                      "few back-and-forth messages, the call is confirmed for Tuesday, Oct 13, 3:00-4:00pm ET "
                      "with Lauren (Veronica cc'd) -- this resolves the previously-logged \"unexplained\" "
                      "calendar invite from 2026-10-06, which was just the downstream scheduling step of this "
-                     "same thread.",
+                     "same thread. 2026-10-09: Jack Pompe (Mother) said Veronica had a scheduling conflict "
+                     "during the Oct 13 3:00-3:30pm slot and asked to move to 4:00-4:30pm ET the same day; "
+                     "Regina agreed. 2026-10-12: Regina followed up to confirm, offering to move to the "
+                     "following week instead if that was easier. 2026-10-13: Jack replied that Veronica's "
+                     "calendar had gotten chaotic again and the call didn't happen a second time; he asked "
+                     "Regina for her availability next week instead. No new date confirmed yet.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -2674,7 +2687,11 @@ SEED_ROWS = [
                      "skewed toward smaller brands and spec work, even though she's interested in big-brand "
                      "work too. She also showed a fairly wide range, so it may not have been clear what she's "
                      "best at (packaging, layouts, lockups, and type specifically). Still interested -- liked "
-                     "that the team seems hands-on. Awaiting word from Anna.",
+                     "that the team seems hands-on. Awaiting word from Anna. 2026-10-13: Anna relayed positive "
+                     "feedback from Laura at Vault 49, but said they're \"still interviewing at first round\" "
+                     "and will follow up with next steps -- phrasing is a little confusing given Regina's "
+                     "second-round call already happened Oct 9; not guessing what it means exactly (possibly "
+                     "Vault 49 still first-round-interviewing other candidates). No concrete next step yet.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
