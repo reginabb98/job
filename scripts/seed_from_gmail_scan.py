@@ -1023,6 +1023,14 @@ Scan history:
     double-submit; flagging rather than guessing), and e.l.f. Beauty
     (Sr. Packaging Designer, requires packaging-specific experience
     Regina doesn't have).
+  - 2026-10-14 (midday rescan): 3 new rows, same overnight sprint,
+    just past midnight ET. Ogilvy (Senior Designer, New Business --
+    distinct from the existing 2026-08-17 Ogilvy Designer row -- good
+    fit on pitch-deck/brand-presentation work), Cyera (Brand Designer,
+    job_fit Unknown -- multiple conflicting postings found, couldn't
+    confirm which one she applied to), Twigeo (Senior Designer, Paid
+    Social - New York, confirmed motion-craft requirement Regina
+    doesn't have).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4042,6 +4050,52 @@ SEED_ROWS = [
                          "Adobe Creative Suite, $80K-$110K, 3 days/week in-office minimum. Regina doesn't have "
                          "packaging-design-specific experience, so this is a stretch outside her core "
                          "digital/brand/strategy background.",
+    },
+    {
+        "company": "Ogilvy",
+        "position": "Senior Designer, New Business",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Email",
+        "notes": "Confirmed via auto-reply from no-reply@ogilvy.com. Distinct role, date, and source from the "
+                 "existing 2026-08-17 Ogilvy Designer application already in this scan history.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: reports to the NY New Business Executive Group Director, "
+                         "supporting the North America business-development/pitch team -- building pitch "
+                         "decks, visual concepts, brand stories, mockups, digital assets, and landing pages "
+                         "for pitches. Emphasizes visual storytelling, typography, branding, layout, "
+                         "illustration, print, and \"basic motion graphics\" as a plus (not a stated hard "
+                         "requirement). One NY listing shows $60K-$140K/yr. Solid match to Regina's visual/"
+                         "brand design and deck-design skillset; years-of-experience requirement couldn't be "
+                         "confirmed anywhere.",
+    },
+    {
+        "company": "Cyera",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Email",
+        "notes": "Confirmed via Spark Hire/Comeet auto-reply from no-reply@careers.cyera.io.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which specific Brand Designer listing/location Regina applied to -- "
+                         "multiple similarly-titled Cyera postings found conflict on location (several are "
+                         "Tel Aviv, on-site) and years-required (2-5 yrs, 5-10 yrs, and a separate Team Lead "
+                         "variant at 5+ yrs all appeared). Not guessing which applies.",
+    },
+    {
+        "company": "Twigeo",
+        "position": "Senior Designer, Paid Social - New York",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Teamtailor",
+        "notes": "Confirmed via Teamtailor auto-reply from Lisa Sandahl.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Found via aggregator listing (unconfirmed on Twigeo's own site): Brooklyn, NY, "
+                         "on-site, $90K-$115K/yr. Description explicitly calls for \"a high level of design "
+                         "and motion craft\" on paid social ad creative for clients like Duolingo and "
+                         "MyFitnessPal -- a confirmed gap, since Regina has no motion-graphics/video-editing "
+                         "experience. Years-of-experience requirement is Unknown (aggregator-only, not "
+                         "corroborated on the company site).",
     },
 ]
 

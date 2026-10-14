@@ -1014,6 +1014,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   double-submit; flagging rather than guessing), and e.l.f. Beauty
   (Sr. Packaging Designer, requires packaging-specific experience
   Regina doesn't have).
+- **2026-10-14 (midday rescan)** — 3 new rows, same overnight sprint,
+  just past midnight ET. Ogilvy (Senior Designer, New Business —
+  distinct from the existing 2026-08-17 Ogilvy Designer row — good fit
+  on pitch-deck/brand-presentation work), Cyera (Brand Designer,
+  job_fit Unknown — multiple conflicting postings found, couldn't
+  confirm which one she applied to), Twigeo (Senior Designer, Paid
+  Social - New York, confirmed motion-craft requirement Regina doesn't
+  have).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
