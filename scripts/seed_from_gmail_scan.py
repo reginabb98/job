@@ -1031,6 +1031,11 @@ Scan history:
     confirm which one she applied to), Twigeo (Senior Designer, Paid
     Social - New York, confirmed motion-craft requirement Regina
     doesn't have).
+  - 2026-10-14 (portal check): 1 update, no new rows. Material/Aruliden
+    (Mid-level Brand Designer) flipped Applied -> Rejected: Regina's
+    own Workday candidate portal now shows the listing under the
+    "Inactive" tab rather than "Active" -- no rejection email arrived
+    to go with it.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2335,13 +2340,16 @@ SEED_ROWS = [
     {
         "company": "Material",
         "position": "Mid-level Brand Designer (Aruliden)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-06",
         "source": "Workday",
         "notes": "Generic Workday auto-reply confirmation didn't name the role; confirmed from the LinkedIn "
                  "listing Regina shared. Aruliden is a Material-owned multi-disciplinary design studio "
                  "(beauty/lifestyle/wellness/tech clients), New York, NY (hybrid) -- not Los Angeles as "
-                 "originally assumed from a generic web search.",
+                 "originally assumed from a generic web search. Flipped Applied -> Rejected 2026-10-14: "
+                 "Regina's own Workday candidate portal now shows this listing under the \"Inactive\" tab "
+                 "(moved out of \"Active\"), no explicit rejection email received -- no reply email to go "
+                 "with it.",
         "pay_range": "$65K-$85K/yr",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: 2-5+ yrs studio/agency design, brand identity systems across "

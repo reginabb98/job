@@ -1022,6 +1022,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   confirm which one she applied to), Twigeo (Senior Designer, Paid
   Social - New York, confirmed motion-craft requirement Regina doesn't
   have).
+- **2026-10-14 (portal check)** — 1 update, no new rows. Material/
+  Aruliden (Mid-level Brand Designer) flipped Applied → Rejected:
+  Regina's own Workday candidate portal now shows the listing under
+  the "Inactive" tab rather than "Active" — no rejection email arrived
+  to go with it.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
