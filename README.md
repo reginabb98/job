@@ -1027,6 +1027,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Regina's own Workday candidate portal now shows the listing under
   the "Inactive" tab rather than "Active" — no rejection email arrived
   to go with it.
+- **2026-10-14 (afternoon rescan)** — 3 new rows, 1 update. Notion
+  (Brand Designer, Creative Studio) flipped Applied → Rejected
+  (generic decline). New: Material (Unspecified role — generic
+  Workday confirmation, distinct from the already-rejected 09-06
+  Aruliden row, job_fit Unknown), Bandit Running (Junior Art Director,
+  likely underleveled for Regina's 6+ yrs), Jacob Bar Inc. (Senior
+  Designer, $140K-$170K, job_fit Unknown — couldn't confirm
+  years-of-experience requirement or the company's actual business).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

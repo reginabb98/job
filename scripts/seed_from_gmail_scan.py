@@ -1036,6 +1036,14 @@ Scan history:
     own Workday candidate portal now shows the listing under the
     "Inactive" tab rather than "Active" -- no rejection email arrived
     to go with it.
+  - 2026-10-14 (afternoon rescan): 3 new rows, 1 update. Notion
+    (Brand Designer, Creative Studio) flipped Applied -> Rejected
+    (generic decline). New: Material (Unspecified role -- generic
+    Workday confirmation, distinct from the already-rejected
+    09-06 Aruliden row, job_fit Unknown), Bandit Running (Junior Art
+    Director, likely underleveled for Regina's 6+ yrs), Jacob Bar Inc.
+    (Senior Designer, $140K-$170K, job_fit Unknown -- couldn't confirm
+    years-of-experience requirement or the company's actual business).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1975,10 +1983,11 @@ SEED_ROWS = [
     {
         "company": "Notion",
         "position": "Brand Designer, Creative Studio",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-05",
         "source": "Greenhouse",
-        "notes": None,
+        "notes": "Flipped Applied -> Rejected 2026-10-14: generic decline, \"we will not be moving forward "
+                 "with your candidacy.\"",
         "job_fit": "Good",
         "job_fit_notes": "5+ yrs agency/in-house design, strong Figma/Adobe CC, brand storytelling across "
                          "launch campaigns -- a solid match for Regina's design background and tools. "
@@ -4104,6 +4113,50 @@ SEED_ROWS = [
                          "MyFitnessPal -- a confirmed gap, since Regina has no motion-graphics/video-editing "
                          "experience. Years-of-experience requirement is Unknown (aggregator-only, not "
                          "corroborated on the company site).",
+    },
+    {
+        "company": "Material",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Workday",
+        "notes": "Generic Workday auto-reply confirmation (\"Thank you for applying!\") didn't name the role, "
+                 "and no LinkedIn listing was shared this time. Distinct from the existing 2026-09-06 Material/"
+                 "Aruliden Mid-level Brand Designer application (already Rejected) -- different date, no reason "
+                 "to assume it's the same posting, but which specific role this is couldn't be confirmed.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Can't assess fit without knowing which role was applied to.",
+    },
+    {
+        "company": "Bandit Running",
+        "position": "Junior Art Director",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Workable",
+        "notes": "Confirmed via Workable's auto-reply with full application data attached.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: Brooklyn, NY, on-site, requires 3+ yrs art direction/graphic "
+                         "design at a fashion/apparel/sport/lifestyle brand or agency, Adobe CS + Figma, helps "
+                         "art-direct (not edit) photo/video shoots. Despite the \"Junior\" title, the actual "
+                         "bar (3+ yrs, reporting to an Art Director) is genuinely junior-level -- Regina's "
+                         "6+ yrs makes her likely overqualified/underleveled for the stated requirement, "
+                         "though the apparel/sport brand subject matter fits her background well.",
+    },
+    {
+        "company": "Jacob Bar Inc.",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-14",
+        "source": "Workable",
+        "notes": "Confirmed via Workable's auto-reply with full application data attached. Role confirmed "
+                 "in-person in New York City (she checked \"Yes\" to acknowledge this).",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Confirmed posting (eatjacob.workable.com): NYC, on-site, $140K-$170K/yr, design "
+                         "lead for the company's media team working directly with the founder/creative "
+                         "director; motion graphics/photo editing listed as nice-to-haves, not required. "
+                         "Couldn't confirm the specific years-of-experience requirement (cut off in the "
+                         "listing) or independently confirm what Jacob Bar Inc. actually is as a company -- "
+                         "not guessing either.",
     },
 ]
 
