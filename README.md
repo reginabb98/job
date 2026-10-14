@@ -1002,6 +1002,18 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Interviewing: Regina followed up on the internship conversation,
   Natalee proposed a call to walk through her SVA projects, and it's
   now confirmed for Tuesday, Oct 27, 4:00-4:30pm ET.
+- **2026-10-14 (morning rescan)** — 4 new rows, surfaced from a
+  late-evening application sprint on 2026-10-13 (~7:22-8:35pm ET).
+  Tubi (Associate Creative Director, likely a seniority stretch),
+  Amazon (Multimedia Designer, ADX, Job ID 10574195, distinct from 3
+  prior Amazon rows, job_fit Unknown — couldn't confirm the specific
+  posting), Freshine Product Inc/Wavytalk (Graphic Designer —
+  Workable's auto-reply said "applied again, overwrote the previous
+  application" with no earlier Freshine row on record, so it's unclear
+  whether a prior scan missed one or this was a same-night
+  double-submit; flagging rather than guessing), and e.l.f. Beauty
+  (Sr. Packaging Designer, requires packaging-specific experience
+  Regina doesn't have).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

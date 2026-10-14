@@ -1011,6 +1011,18 @@ Scan history:
     Interviewing: Regina followed up on the internship conversation,
     Natalee proposed a call to walk through her SVA projects, and it's
     now confirmed for Tuesday, Oct 27, 4:00-4:30pm ET.
+  - 2026-10-14 (morning rescan): 4 new rows, surfaced from a late-
+    evening application sprint on 2026-10-13 (~7:22-8:35pm ET). Tubi
+    (Associate Creative Director, likely a seniority stretch), Amazon
+    (Multimedia Designer, ADX, Job ID 10574195, distinct from 3 prior
+    Amazon rows, job_fit Unknown -- couldn't confirm the specific
+    posting), Freshine Product Inc/Wavytalk (Graphic Designer --
+    Workable's auto-reply said "applied again, overwrote the previous
+    application" with no earlier Freshine row on record, so it's
+    unclear whether a prior scan missed one or this was a same-night
+    double-submit; flagging rather than guessing), and e.l.f. Beauty
+    (Sr. Packaging Designer, requires packaging-specific experience
+    Regina doesn't have).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3969,6 +3981,67 @@ SEED_ROWS = [
                          "strategy-transition background, but leans more toward ad-sales pitch support for a "
                          "specific platform vertical (app/mobile advertisers) than her brand/product-design-"
                          "rooted strategy experience.",
+    },
+    {
+        "company": "Tubi",
+        "position": "Associate Creative Director",
+        "status": "Applied",
+        "applied_date": "2026-10-13",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply, applied during a late-evening application sprint.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Posting is for entertainment/streaming marketing creative, hybrid LA/NYC, "
+                         "$135K-$192.8K. Couldn't confirm the exact years-of-experience requirement on the "
+                         "official posting, but ACD is a senior/leadership title that typically implies "
+                         "10+ yrs and prior people-management experience -- likely a seniority stretch above "
+                         "Regina's current individual-contributor level.",
+    },
+    {
+        "company": "Amazon",
+        "position": "Multimedia Designer, Amazon Delivery Experience (ADX)",
+        "status": "Applied",
+        "applied_date": "2026-10-13",
+        "source": "Amazon Jobs",
+        "notes": "Confirmed via Amazon Jobs auto-reply, Job ID 10574195. Distinct from Regina's 3 other "
+                 "existing Amazon applications (Job IDs 10525009, 10410280, 10523835).",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find this specific Job ID's posting to confirm requirements. General context "
+                         "found: the ADX team supports and advocates for Amazon's global network of delivery "
+                         "partners and Operations professionals -- can't confirm fit without the actual "
+                         "posting.",
+    },
+    {
+        "company": "Freshine Product Inc (Wavytalk)",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-13",
+        "source": "Workable",
+        "notes": "Confirmed via Workable's auto-reply, which read \"You have applied again for this job. This "
+                 "application has overwritten the previous one.\" No earlier Freshine/Wavytalk row exists in "
+                 "this scan history, so it's unclear whether a prior application was missed by earlier scans "
+                 "or this reflects an accidental double-submit tonight -- flagging rather than guessing. "
+                 "Regina's application answers: $90,000 salary expectation, 6 yrs relevant graphic design "
+                 "experience, 0 yrs motion graphics/video editing experience, hybrid Mon-Thu onsite/Fri remote, "
+                 "Flatiron NYC commute confirmed yes.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: hybrid NYC role for the Wavytalk beauty brand, covering social/"
+                         "email/website/Amazon/TikTok Shop creative. Explicitly wants motion graphics/video "
+                         "editing experience, which Regina self-reported as 0 years on her application -- a "
+                         "real gap. Posted salary range is $70K-$75K vs. her stated $90K expectation, a likely "
+                         "mismatch.",
+    },
+    {
+        "company": "e.l.f. Beauty",
+        "position": "Sr. Packaging Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-13",
+        "source": "Lever",
+        "notes": "Confirmed via Lever's auto-reply, applied during a late-evening application sprint.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: requires 5+ yrs beauty-specific packaging design experience and "
+                         "Adobe Creative Suite, $80K-$110K, 3 days/week in-office minimum. Regina doesn't have "
+                         "packaging-design-specific experience, so this is a stretch outside her core "
+                         "digital/brand/strategy background.",
     },
 ]
 
