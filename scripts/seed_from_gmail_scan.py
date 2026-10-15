@@ -1067,6 +1067,14 @@ Scan history:
     actual role is Event & Experiences Designer, not a generic design
     role -- Fair, since it requires physical/spatial fabrication
     production experience Regina doesn't have).
+  - 2026-10-15 (correction from Regina): no new rows, 2 updates.
+    Regina confirmed the 2026-10-14 Material application is a
+    reapplication to the same Mid-level Brand Designer (Aruliden)
+    posting as the existing 2026-09-06 row -- retitled and job_fit
+    set to Good. Jacob Bar Inc. -- confirmed it's a food/beverage-
+    adjacent consumer brand (packaging dieline work for flavor
+    launches mentioned); job_fit set to Fair (7+ yrs required, just
+    above Regina's 6+ yrs).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4146,16 +4154,20 @@ SEED_ROWS = [
     },
     {
         "company": "Material",
-        "position": "Unspecified role (Design)",
+        "position": "Mid-level Brand Designer (Aruliden)",
         "status": "Applied",
         "applied_date": "2026-10-14",
         "source": "Workday",
-        "notes": "Generic Workday auto-reply confirmation (\"Thank you for applying!\") didn't name the role, "
-                 "and no LinkedIn listing was shared this time. Distinct from the existing 2026-09-06 Material/"
-                 "Aruliden Mid-level Brand Designer application (already Rejected) -- different date, no reason "
-                 "to assume it's the same posting, but which specific role this is couldn't be confirmed.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Can't assess fit without knowing which role was applied to.",
+        "notes": "Generic Workday auto-reply confirmation (\"Thank you for applying!\") didn't name the role; "
+                 "Regina confirmed 2026-10-15 this is the same Mid-level Brand Designer (Aruliden) posting as "
+                 "the existing 2026-09-06 application (already flipped to Rejected per the candidate portal) "
+                 "-- a reapplication to the same role.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: 2-5+ yrs studio/agency design, brand identity systems across "
+                         "packaging/digital/physical, Adobe CS + Figma, strong typography, cultural fluency "
+                         "in beauty/fashion/lifestyle, NYC hybrid, $65K-$85K/yr -- a solid match to Regina's "
+                         "Common Matter background. Motion graphics is called out as a required skill, which "
+                         "isn't evidenced on her resume.",
     },
     {
         "company": "Bandit Running",
@@ -4179,14 +4191,19 @@ SEED_ROWS = [
         "applied_date": "2026-10-14",
         "source": "Workable",
         "notes": "Confirmed via Workable's auto-reply with full application data attached. Role confirmed "
-                 "in-person in New York City (she checked \"Yes\" to acknowledge this).",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Confirmed posting (eatjacob.workable.com): NYC, on-site, $140K-$170K/yr, design "
-                         "lead for the company's media team working directly with the founder/creative "
-                         "director; motion graphics/photo editing listed as nice-to-haves, not required. "
-                         "Couldn't confirm the specific years-of-experience requirement (cut off in the "
-                         "listing) or independently confirm what Jacob Bar Inc. actually is as a company -- "
-                         "not guessing either.",
+                 "in-person in New York City (she checked \"Yes\" to acknowledge this). Posting confirmed "
+                 "2026-10-15 via Regina -- Jacob is a food/beverage-adjacent consumer brand (the posting "
+                 "mentions supporting dieline/packaging work for \"flavor launches and product drops\" "
+                 "alongside campaign and digital design), though it explicitly says \"we're not looking for a "
+                 "classic food-and-beverage designer.\"",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting (eatjacob.workable.com): NYC, on-site 5 days/week, $140K-$170K/yr, "
+                         "primary design engine of the brand's media team working directly with the founder/"
+                         "creative director across campaign graphics, social, OOH, retail, and packaging "
+                         "dielines. Requires 7+ yrs design experience at a brand/studio/agency -- just above "
+                         "Regina's 6+ yrs. Animation/motion-graphics and photo-editing skills are listed as "
+                         "pluses, not required, which suits her gap there; the generalist, multi-disciplinary "
+                         "framing fits her Common Matter background well.",
     },
     {
         "company": "Big Spaceship",

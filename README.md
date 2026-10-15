@@ -1058,6 +1058,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   the actual role is Event & Experiences Designer, not a generic
   design role — Fair, since it requires physical/spatial fabrication
   production experience Regina doesn't have).
+- **2026-10-15 (correction from Regina)** — no new rows, 2 updates.
+  Regina confirmed the 2026-10-14 Material application is a
+  reapplication to the same Mid-level Brand Designer (Aruliden)
+  posting as the existing 2026-09-06 row — retitled and job_fit set
+  to Good. Jacob Bar Inc. — confirmed it's a food/beverage-adjacent
+  consumer brand (packaging dieline work for flavor launches
+  mentioned); job_fit set to Fair (7+ yrs required, just above
+  Regina's 6+ yrs).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
