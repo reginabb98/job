@@ -1041,6 +1041,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   12:30pm). She emailed Michael Hale and Jaslin Tonton the same day to
   apologize; rescheduled and now confirmed for Monday, Oct 19,
   12:00-12:30pm ET. Status remains Interviewing.
+- **2026-10-15 (evening rescan)** — 4 new rows, all job_fit Unknown —
+  none of the exact live postings could be confirmed via web search.
+  Big Spaceship (Designer, $105K desired salary, confirmed 3-day/wk
+  hybrid Manhattan), Live Nation Entertainment (Graphic Designer), MSG
+  Entertainment Holdings, LLC (Senior Designer), and Okta (Unspecified
+  role — generic confirmation didn't name it).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

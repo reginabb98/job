@@ -1050,6 +1050,12 @@ Scan history:
     12:30pm). She emailed Michael Hale and Jaslin Tonton the same day
     to apologize; rescheduled and now confirmed for Monday, Oct 19,
     12:00-12:30pm ET. Status remains Interviewing.
+  - 2026-10-15 (evening rescan): 4 new rows, all job_fit Unknown --
+    none of the exact live postings could be confirmed via web search.
+    Big Spaceship (Designer, $105K desired salary, confirmed 3-day/wk
+    hybrid Manhattan), Live Nation Entertainment (Graphic Designer),
+    MSG Entertainment Holdings, LLC (Senior Designer), and Okta
+    (Unspecified role -- generic confirmation didn't name it).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4167,6 +4173,59 @@ SEED_ROWS = [
                          "Couldn't confirm the specific years-of-experience requirement (cut off in the "
                          "listing) or independently confirm what Jacob Bar Inc. actually is as a company -- "
                          "not guessing either.",
+    },
+    {
+        "company": "Big Spaceship",
+        "position": "Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Workable",
+        "notes": "Confirmed via Workable's auto-reply with full application data attached. Regina's answers: "
+                 "$105,000 desired salary; confirmed able to comply with the 3-day/week hybrid Manhattan "
+                 "office policy.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Could only find a related \"Temp to Perm Senior Designer\" listing at Big Spaceship "
+                         "(NYC, hybrid, contract, $100K-$125K, posted 2026-06-10) -- no years-of-experience "
+                         "figure stated there, and couldn't confirm it's the same posting as the plain "
+                         "\"Designer\" role she applied to.",
+    },
+    {
+        "company": "Live Nation Entertainment",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply (\"Application Acknowledgement\").",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No current \"Graphic Designer\" posting could be confirmed. Nearby Live Nation design "
+                         "roles found skew toward video editing or print-production specialties (e.g. a "
+                         "Partnerships role wanting video-editing skills Regina doesn't have, a Vibee seasonal "
+                         "print-production role) -- without the exact posting, can't confirm fit either way.",
+    },
+    {
+        "company": "MSG Entertainment Holdings, LLC",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Email",
+        "notes": "Confirmed via no-reply@msg.com auto-reply.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No current \"Senior Designer\" posting confirmed as live. Related/closed MSG listings "
+                         "found (e.g. a removed \"Senior Designer -- NY Rangers\" wanting 5-10 yrs brand "
+                         "design/Adobe CS, $83K-$120K) roughly match her experience range, but couldn't confirm "
+                         "which posting she actually applied to.",
+    },
+    {
+        "company": "Okta",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Email",
+        "notes": "Generic ATS confirmation from no-reply@okta.com didn't name the role.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which role was applied to. A plausible candidate found is a "
+                         "\"Brand Designer, Social Media\" posting (Okta's first dedicated social-creative "
+                         "hire), but not guessing without confirmation.",
     },
 ]
 
