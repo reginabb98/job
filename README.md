@@ -1073,6 +1073,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   HTML5/motion-graphics emphasis isn't evidenced on her resume).
   Picture Studio and WGACA not yet actioned — missing the Picture
   Studio applied date and the WGACA posting/role details.
+- **2026-10-15 (Gmail search for Picture Studio/WGACA)** — 1 new row.
+  Found Regina's direct email application to PictureStudio (sent
+  2026-10-06, missed by prior ATS-domain scans since it's not an ATS
+  confirmation email) — Senior Designer, job_fit Good. WGACA's
+  2026-10-07 account-creation email was found too but matches the
+  already-logged 2026-10-06 WGACA row exactly — no new role/posting
+  info available for it; still Unspecified role, job_fit Unknown.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

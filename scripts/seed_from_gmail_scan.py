@@ -1083,6 +1083,13 @@ Scan history:
     her resume). Picture Studio and WGACA not yet actioned -- missing
     the Picture Studio applied date and the WGACA posting/role
     details.
+  - 2026-10-15 (Gmail search for Picture Studio/WGACA): 1 new row.
+    Found Regina's direct email application to PictureStudio (sent
+    2026-10-06, missed by prior ATS-domain scans since it's not an
+    ATS confirmation email) -- Senior Designer, job_fit Good. WGACA's
+    2026-10-07 account-creation email was found too but matches the
+    already-logged 2026-10-06 WGACA row exactly -- no new role/posting
+    info available for it; still Unspecified role, job_fit Unknown.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4284,6 +4291,22 @@ SEED_ROWS = [
                          "fabrication) than Regina's digital/brand/print design background, and isn't "
                          "evidenced on her resume -- a real stretch despite her years of experience clearing "
                          "the bar.",
+    },
+    {
+        "company": "PictureStudio",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-06",
+        "source": "Email",
+        "notes": "Direct email application to jobs@picturestudio.ai (no ATS), missed by prior scans since it "
+                 "doesn't match the ATS-domain search list. Regina's email: expected salary $110,000-$130,000, "
+                 "earliest start date November 1st.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: PictureStudio builds image-making/editing apps for Web and macOS. "
+                         "Requires 3+ yrs design work, ideally including web or app development, strong "
+                         "Figma/design-systems skills, salary band $70K-$140K. Regina's 6+ yrs clears the bar "
+                         "comfortably, and her brand + web design background and stated interest in AI design "
+                         "tools (Krea, Midjourney) align well with the role.",
     },
 ]
 
