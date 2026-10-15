@@ -1056,6 +1056,17 @@ Scan history:
     hybrid Manhattan), Live Nation Entertainment (Graphic Designer),
     MSG Entertainment Holdings, LLC (Senior Designer), and Okta
     (Unspecified role -- generic confirmation didn't name it).
+  - 2026-10-15 (posting detail from Regina): no new rows, 5 updates.
+    Regina shared the full LinkedIn postings for 5 already-logged
+    applications, resolving prior job_fit "Unknown"s: Cyera (NY Metro
+    posting confirmed, Good -- 3+ yrs required), Big Spaceship
+    (confirmed posting, Good -- 3+ yrs, $75K-$105K), Live Nation/Roc
+    Nation (confirmed the hiring entity is actually Roc Nation, Good
+    -- 3+ yrs, $70K-$80K), MSG Entertainment Holdings (confirmed
+    posting, Good -- 6+ yrs, $100K-$115K), and Okta (confirmed the
+    actual role is Event & Experiences Designer, not a generic design
+    role -- Fair, since it requires physical/spatial fabrication
+    production experience Regina doesn't have).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4108,12 +4119,15 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-10-14",
         "source": "Email",
-        "notes": "Confirmed via Spark Hire/Comeet auto-reply from no-reply@careers.cyera.io.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which specific Brand Designer listing/location Regina applied to -- "
-                         "multiple similarly-titled Cyera postings found conflict on location (several are "
-                         "Tel Aviv, on-site) and years-required (2-5 yrs, 5-10 yrs, and a separate Team Lead "
-                         "variant at 5+ yrs all appeared). Not guessing which applies.",
+        "notes": "Confirmed via Spark Hire/Comeet auto-reply from no-reply@careers.cyera.io. Posting confirmed "
+                 "2026-10-15 via Comeet (NY Metro, Intermediate level, Product Management dept).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: NY Metro, $130K-$160K/yr, 3+ yrs professional brand design "
+                         "experience, strong typography/composition/visual storytelling, highly proficient in "
+                         "Figma + Adobe Creative Cloud, comfortable using AI tools (Claude, ChatGPT, "
+                         "image-generation) as part of the design process. Motion design/animation listed as a "
+                         "nice-to-have, not required. A solid match to Regina's brand-design background and "
+                         "tools; her 6+ yrs comfortably clears the 3+ yr bar.",
     },
     {
         "company": "Twigeo",
@@ -4183,11 +4197,13 @@ SEED_ROWS = [
         "notes": "Confirmed via Workable's auto-reply with full application data attached. Regina's answers: "
                  "$105,000 desired salary; confirmed able to comply with the 3-day/week hybrid Manhattan "
                  "office policy.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Could only find a related \"Temp to Perm Senior Designer\" listing at Big Spaceship "
-                         "(NYC, hybrid, contract, $100K-$125K, posted 2026-06-10) -- no years-of-experience "
-                         "figure stated there, and couldn't confirm it's the same posting as the plain "
-                         "\"Designer\" role she applied to.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: hybrid NYC, Creative & Design dept, $75K-$105K/yr -- her $105K "
+                         "ask sits at the top of the band. Requires 3+ yrs in a creative agency or similar "
+                         "environment, strong Figma + Adobe tools, typography/color theory/composition. After "
+                         "Effects and digital-agency experience called out as pluses, not requirements. A "
+                         "solid match to Regina's agency background (Common Matter, Superside) and 6+ yrs "
+                         "clears the 3+ yr bar comfortably.",
     },
     {
         "company": "Live Nation Entertainment",
@@ -4195,12 +4211,16 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-10-15",
         "source": "Workday",
-        "notes": "Confirmed via Workday's auto-reply (\"Application Acknowledgement\").",
-        "job_fit": "Unknown",
-        "job_fit_notes": "No current \"Graphic Designer\" posting could be confirmed. Nearby Live Nation design "
-                         "roles found skew toward video editing or print-production specialties (e.g. a "
-                         "Partnerships role wanting video-editing skills Regina doesn't have, a Vibee seasonal "
-                         "print-production role) -- without the exact posting, can't confirm fit either way.",
+        "notes": "Confirmed via Workday's auto-reply (\"Application Acknowledgement\"). Posting confirmed "
+                 "2026-10-15: the actual hiring entity is Roc Nation (a Live Nation-affiliated label/"
+                 "entertainment company, Req JR-93368) -- \"Roc Nation benefits and policies differ from Live "
+                 "Nation\" per the posting.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: NYC, in-office 5 days/week, $70K-$80K/yr, requires minimum 3+ yrs "
+                         "in-house work experience, BA in Graphic Design, Adobe CS, direct portfolio link "
+                         "required. Music/entertainment marketing and campaign design -- overlaps with "
+                         "Regina's Common Matter music/live-events client work and Superside's entertainment "
+                         "campaigns. Her 6+ yrs comfortably clears the 3+ yr bar.",
     },
     {
         "company": "MSG Entertainment Holdings, LLC",
@@ -4208,24 +4228,32 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-10-15",
         "source": "Email",
-        "notes": "Confirmed via no-reply@msg.com auto-reply.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "No current \"Senior Designer\" posting confirmed as live. Related/closed MSG listings "
-                         "found (e.g. a removed \"Senior Designer -- NY Rangers\" wanting 5-10 yrs brand "
-                         "design/Adobe CS, $83K-$120K) roughly match her experience range, but couldn't confirm "
-                         "which posting she actually applied to.",
+        "notes": "Confirmed via no-reply@msg.com auto-reply. Posting confirmed 2026-10-15 (Req ID 27969).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: NYC on-site, $100K-$115K/yr, requires 6+ yrs professional graphic "
+                         "design experience with a focus on brand concept/design/storytelling, print + digital "
+                         "design, deck design and typography; sports/entertainment/media experience preferred. "
+                         "Regina's 6+ yrs matches almost exactly, and her Superside work (OOH incl. a Times "
+                         "Square billboard, event branding, entertainment-adjacent campaigns) overlaps well.",
     },
     {
         "company": "Okta",
-        "position": "Unspecified role (Design)",
+        "position": "Event & Experiences Designer",
         "status": "Applied",
         "applied_date": "2026-10-15",
         "source": "Email",
-        "notes": "Generic ATS confirmation from no-reply@okta.com didn't name the role.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which role was applied to. A plausible candidate found is a "
-                         "\"Brand Designer, Social Media\" posting (Okta's first dedicated social-creative "
-                         "hire), but not guessing without confirmation.",
+        "notes": "Generic ATS confirmation from no-reply@okta.com didn't name the role; role confirmed 2026-10-15 "
+                 "via LinkedIn (\"Application submitted\" status) as Event & Experiences Designer, NY/Remote.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: $84K-$115K/yr, requires 4+ yrs dedicated experience in "
+                         "experiential design, spatial/environmental graphic design, or event production, with "
+                         "hands-on production fluency preparing large-format print/environmental graphics for "
+                         "physical builds (tension fabric, hardwall structures, vinyl wraps, vendor fabrication "
+                         "specs, CMYK/Pantone color management) -- SketchUp/Cinema 4D/Blender a plus. This is "
+                         "a notably different, specialized skillset (physical/spatial production and "
+                         "fabrication) than Regina's digital/brand/print design background, and isn't "
+                         "evidenced on her resume -- a real stretch despite her years of experience clearing "
+                         "the bar.",
     },
 ]
 

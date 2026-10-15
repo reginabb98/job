@@ -1047,6 +1047,17 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   hybrid Manhattan), Live Nation Entertainment (Graphic Designer), MSG
   Entertainment Holdings, LLC (Senior Designer), and Okta (Unspecified
   role — generic confirmation didn't name it).
+- **2026-10-15 (posting detail from Regina)** — no new rows, 5
+  updates. Regina shared the full LinkedIn postings for 5
+  already-logged applications, resolving prior job_fit "Unknown"s:
+  Cyera (NY Metro posting confirmed, Good — 3+ yrs required), Big
+  Spaceship (confirmed posting, Good — 3+ yrs, $75K-$105K), Live
+  Nation/Roc Nation (confirmed the hiring entity is actually Roc
+  Nation, Good — 3+ yrs, $70K-$80K), MSG Entertainment Holdings
+  (confirmed posting, Good — 6+ yrs, $100K-$115K), and Okta (confirmed
+  the actual role is Event & Experiences Designer, not a generic
+  design role — Fair, since it requires physical/spatial fabrication
+  production experience Regina doesn't have).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
