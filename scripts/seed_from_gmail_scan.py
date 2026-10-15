@@ -1090,6 +1090,14 @@ Scan history:
     2026-10-07 account-creation email was found too but matches the
     already-logged 2026-10-06 WGACA row exactly -- no new role/posting
     info available for it; still Unspecified role, job_fit Unknown.
+  - 2026-10-15 (cold outreach): 3 new rows, all cold_outreach=1.
+    Regina sent 3 cold-outreach emails with resume attached (real
+    applications, not LinkedIn cold messages). Studio Freight (Senior
+    Designer, Fair -- depends on which design track, if either, is
+    open), Sylvain (Strategy, Good -- strategy+design consultancy
+    matches her design-to-strategy pivot well; sent to 2 contacts,
+    logged as 1 row), Company Policy (Unspecified role, Unknown --
+    couldn't confirm any open designer role).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4307,6 +4315,57 @@ SEED_ROWS = [
                          "Figma/design-systems skills, salary band $70K-$140K. Regina's 6+ yrs clears the bar "
                          "comfortably, and her brand + web design background and stated interest in AI design "
                          "tools (Krea, Midjourney) align well with the role.",
+    },
+    {
+        "company": "Studio Freight",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Email",
+        "notes": "Cold-outreach email (resume attached) to Matt@studiofreight.com, \"Senior Designer Role @SF\" "
+                 "-- not a response to a specific posted req.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Studio Freight is an independent brand & digital design studio (Columbus, OH / NYC) "
+                         "doing branding, visual identity, web design/development, and art direction for "
+                         "clients like Netflix and Path Robotics; also builds open-source dev tools, signaling "
+                         "a design+engineering hybrid shop. They periodically post a \"Senior Brand Designer\" "
+                         "role (matches Regina's background well) and a \"Senior Digital Designer\" role "
+                         "(leans web/interaction/motion-heavy, which isn't her strength) -- fit depends on "
+                         "which track, if either, is actually open; couldn't confirm current openings.",
+        "cold_outreach": 1,
+    },
+    {
+        "company": "Sylvain",
+        "position": "Strategy (unspecified)",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Email",
+        "notes": "Cold-outreach emails (resume attached) to both ben@sylvain.co and chris@sylvain.co, \"Strategy "
+                 "@Sylvain\" -- same pitch sent to two contacts at the same company, logged as one application, "
+                 "not a response to a specific posted req.",
+        "job_fit": "Good",
+        "job_fit_notes": "Sylvain (formerly Sylvain Labs) is an NYC-based strategy and design consultancy, "
+                         "part of kyu Collective, blending brand strategy/design/innovation consulting for "
+                         "major clients (Google, Amex, Spotify, Nike). The company's core identity (strategy + "
+                         "brand design) directly matches Regina's design-to-strategy pivot and agency "
+                         "pedigree; couldn't confirm a specific open strategy-team req.",
+        "cold_outreach": 1,
+    },
+    {
+        "company": "Company Policy",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-10-15",
+        "source": "Email",
+        "notes": "Cold-outreach email (resume attached) to careers@companypolicy.studio, \"Design Roles at "
+                 "Company Policy\" -- not a response to a specific posted req.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Company Policy is a small, independent brand strategy and visual identity design "
+                         "studio (Brooklyn/NYC), founded 2021 by Adam Katz (ex-Google Creative Lab, "
+                         "MediaMonks) -- the work (brand strategy + visual identity) matches Regina's skills "
+                         "well, but couldn't confirm any open designer role or the studio's team size, so fit "
+                         "beyond thematic alignment can't be verified.",
+        "cold_outreach": 1,
     },
 ]
 

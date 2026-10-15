@@ -1080,6 +1080,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   2026-10-07 account-creation email was found too but matches the
   already-logged 2026-10-06 WGACA row exactly — no new role/posting
   info available for it; still Unspecified role, job_fit Unknown.
+- **2026-10-15 (cold outreach)** — 3 new rows, all cold_outreach=1.
+  Regina sent 3 cold-outreach emails with resume attached (real
+  applications, not LinkedIn cold messages). Studio Freight (Senior
+  Designer, Fair — depends on which design track, if either, is
+  open), Sylvain (Strategy, Good — strategy+design consultancy
+  matches her design-to-strategy pivot well; sent to 2 contacts,
+  logged as 1 row), Company Policy (Unspecified role, Unknown —
+  couldn't confirm any open designer role).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
