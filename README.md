@@ -1035,6 +1035,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   likely underleveled for Regina's 6+ yrs), Jacob Bar Inc. (Senior
   Designer, $140K-$170K, job_fit Unknown — couldn't confirm
   years-of-experience requirement or the company's actual business).
+- **2026-10-15 (afternoon rescan)** — no new rows, 1 update. webAI —
+  Regina missed her second-round call (Hiring Manager chat) due to a
+  calendar mix-up (Google Calendar showed 1:00pm, Ashby had it at
+  12:30pm). She emailed Michael Hale and Jaslin Tonton the same day to
+  apologize; rescheduled and now confirmed for Monday, Oct 19,
+  12:00-12:30pm ET. Status remains Interviewing.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

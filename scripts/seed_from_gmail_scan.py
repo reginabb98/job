@@ -1044,6 +1044,12 @@ Scan history:
     Director, likely underleveled for Regina's 6+ yrs), Jacob Bar Inc.
     (Senior Designer, $140K-$170K, job_fit Unknown -- couldn't confirm
     years-of-experience requirement or the company's actual business).
+  - 2026-10-15 (afternoon rescan): no new rows, 1 update. webAI --
+    Regina missed her second-round call (Hiring Manager chat) due to a
+    calendar mix-up (Google Calendar showed 1:00pm, Ashby had it at
+    12:30pm). She emailed Michael Hale and Jaslin Tonton the same day
+    to apologize; rescheduled and now confirmed for Monday, Oct 19,
+    12:00-12:30pm ET. Status remains Interviewing.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3500,7 +3506,11 @@ SEED_ROWS = [
                      "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
                      "video call). That recruiter screen happened; the same day, Michael emailed that he'd "
                      "shared her info with the Hiring Manager, who wants to chat next. Regina booked that "
-                     "call for Thursday, Oct 15, 1:00-1:30pm ET via Ashby (Google Meet).",
+                     "call for Thursday, Oct 15, 1:00-1:30pm ET via Ashby (Google Meet). 2026-10-15: Regina "
+                     "missed this second-round call due to a calendar mix-up -- her Google Calendar showed "
+                     "1:00pm but Ashby had it listed for 12:30pm. She emailed Michael and Jaslin Tonton the "
+                     "same day to apologize and rescheduled; the call is now confirmed for Monday, Oct 19, "
+                     "12:00-12:30pm ET.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
