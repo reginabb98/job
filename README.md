@@ -1066,6 +1066,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   consumer brand (packaging dieline work for flavor launches
   mentioned); job_fit set to Fair (7+ yrs required, just above
   Regina's 6+ yrs).
+- **2026-10-15 (correction from Regina, part 2)** — no new rows, 1
+  update. Warner Bros. Discovery/CNN Digital Designer — confirmed same
+  req (R000107792, Turner Services Inc) as the existing 2026-09-28
+  row; job_fit set to Fair (5+ yrs required, Regina clears it, but
+  HTML5/motion-graphics emphasis isn't evidenced on her resume).
+  Picture Studio and WGACA not yet actioned — missing the Picture
+  Studio applied date and the WGACA posting/role details.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

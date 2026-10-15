@@ -1075,6 +1075,14 @@ Scan history:
     adjacent consumer brand (packaging dieline work for flavor
     launches mentioned); job_fit set to Fair (7+ yrs required, just
     above Regina's 6+ yrs).
+  - 2026-10-15 (correction from Regina, part 2): no new rows, 1
+    update. Warner Bros. Discovery/CNN Digital Designer -- confirmed
+    same req (R000107792, Turner Services Inc) as the existing
+    2026-09-28 row; job_fit set to Fair (5+ yrs required, Regina
+    clears it, but HTML5/motion-graphics emphasis isn't evidenced on
+    her resume). Picture Studio and WGACA not yet actioned -- missing
+    the Picture Studio applied date and the WGACA posting/role
+    details.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3722,9 +3730,14 @@ SEED_ROWS = [
         "applied_date": "2026-09-28",
         "source": "Workday",
         "notes": "Confirmed via Workday's auto-reply, which named the req (R000107792) but included no further "
-                 "posting details.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't find the specific posting to confirm requirements.",
+                 "posting details. Posting confirmed 2026-10-15 via Regina -- same req ID (R000107792), hiring "
+                 "entity is Turner Services Inc.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Confirmed posting: hybrid (Atlanta/NYC/Burbank), $63,008-$117,016/yr, requires 5+ "
+                         "yrs designing for broadcast, streaming, digital, or social-first campaigns, "
+                         "Photoshop/Illustrator/InDesign/After Effects, HTML5 + motion graphics for digital "
+                         "\"strongly preferred.\" Regina's 6+ yrs clears the bar, but the HTML5 and motion-"
+                         "graphics emphasis aren't evidenced on her resume.",
     },
     {
         "company": "TRM Labs",
