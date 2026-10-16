@@ -1117,6 +1117,20 @@ Scan history:
     (Multimedia Designer, ADX, Job ID 10574195) -- flipped Applied ->
     Rejected: Amazon's status-update email said "this position is no
     longer available" (role closed, not an evaluated decline).
+  - 2026-10-16 (evening rescan, part 2): 5 new rows. Taskrabbit
+    (Unspecified role, distinct from the existing 08-18 application,
+    job_fit Unknown), Vinson & Elkins LLP (Unspecified role, a large
+    law firm -- unusual for Regina's consumer-brand background,
+    job_fit Unknown, flagging as possibly a generic ATS pull),
+    WITHIN (Senior Creative Lead, distinct from the existing 09-08
+    Creative Lead Fellow row, Fair -- performance-marketing skew),
+    Trailborn Hotel Management LLC (Visual Designer, Good -- strong
+    tool/skills match, $70K-$95K), L'Oreal (Manager, Content Designer
+    (Kiehl's), job_fit Unknown -- couldn't confirm the exact posting).
+    Also found a Ralph Lauren "unfinished application" nudge email
+    (Senior Digital Designer, Luxury Brands) -- Regina started but did
+    not complete/submit this application, so it's not logged as
+    Applied; flagging for her to decide whether to finish it.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4397,6 +4411,84 @@ SEED_ROWS = [
                          "well, but couldn't confirm any open designer role or the studio's team size, so fit "
                          "beyond thematic alignment can't be verified.",
         "cold_outreach": 1,
+    },
+    {
+        "company": "Taskrabbit",
+        "position": "Unspecified role (Design)",
+        "status": "Applied",
+        "applied_date": "2026-10-16",
+        "source": "Greenhouse",
+        "notes": "Generic Greenhouse auto-reply confirmation (\"Thanks for applying to Taskrabbit!\") didn't name "
+                 "the role. Distinct from the existing 2026-08-18 Taskrabbit/Sr. Manager, Brand & Content "
+                 "application -- different date.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Two distinct current design roles found at Taskrabbit: \"Lead Visual Designer / "
+                         "Senior Visual Design Specialist\" (hybrid SF/NY, $89K-$115K, 5+ yrs creative "
+                         "marketing/brand design/art direction -- a reasonable match) and a separate \"AI "
+                         "Content Design Lead\" (Charlotte, requires hands-on generative-AI image/video/copy "
+                         "skills Regina doesn't have). Couldn't confirm which one she applied to -- not "
+                         "guessing.",
+    },
+    {
+        "company": "Vinson & Elkins LLP",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-10-16",
+        "source": "Email",
+        "notes": "Generic \"Application Received\" confirmation from BPRecruiting@velaw.com didn't name the "
+                 "role. Vinson & Elkins is a large corporate law firm -- an unusual application for Regina's "
+                 "consumer-brand/agency design background; flagging rather than guessing why she applied here.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No design, creative, or marketing job postings found at the firm at all -- its "
+                         "\"business professionals\" track covers business development/communications but no "
+                         "open creative role was confirmed. In-house legal-marketing teams typically want "
+                         "corporate/legal-services marketing experience, not consumer-brand creative -- "
+                         "possibly a stretch or an unclear/generic ATS pull rather than a genuine design "
+                         "opening.",
+    },
+    {
+        "company": "WITHIN",
+        "position": "Senior Creative Lead",
+        "status": "Applied",
+        "applied_date": "2026-10-16",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply (\"the world's first Performance Branding company\"). "
+                 "Distinct from the existing 2026-09-08 WITHIN/Creative Lead Fellow application -- different "
+                 "role and date.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Multiple current listings found (ranging 5-10 yrs depending on location) focused on "
+                         "social-first, performance/paid-media creative concepting and copy oversight -- not "
+                         "traditional brand design. Regina's 6+ yrs clears the experience bar, but the role's "
+                         "performance-marketing/paid-social skew is a gap versus her brand-strategy/visual-"
+                         "design background. Couldn't confirm a single salary figure.",
+    },
+    {
+        "company": "Trailborn Hotel Management LLC",
+        "position": "Visual Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-16",
+        "source": "ADP",
+        "notes": "Confirmed via ADP-hosted auto-reply.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: NYC, on-site, 3+ yrs experience, $70K-$95K, Adobe Suite + Figma + "
+                         "Canva + Asana, covering organic social, digital ads, email, sales materials, print "
+                         "collateral, partnerships, and merch for a boutique hotel brand. Tool stack and scope "
+                         "line up well with Regina's skills, though the 3+ yr requirement suggests the role "
+                         "may be pitched below her 6+ yrs of seniority.",
+    },
+    {
+        "company": "L'Oreal",
+        "position": "Manager, Content Designer (Kiehl's)",
+        "status": "Applied",
+        "applied_date": "2026-10-16",
+        "source": "Avature",
+        "notes": "Confirmed via L'Oreal's Avature-hosted auto-reply.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find a posting matching this exact title. Closest confirmed Kiehl's "
+                         "postings found were \"Manager, E-commerce Content,\" \"Manager, Visual "
+                         "Merchandising,\" and \"Senior Manager, Global Retail Design\" -- none matched "
+                         "precisely, and none showed salary or years-of-experience in what was found. Not "
+                         "guessing which applies.",
     },
 ]
 

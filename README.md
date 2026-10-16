@@ -1108,6 +1108,20 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Applied → Rejected: Amazon's status-update email said "this
   position is no longer available" (role closed, not an evaluated
   decline).
+- **2026-10-16 (evening rescan, part 2)** — 5 new rows. Taskrabbit
+  (Unspecified role, distinct from the existing 08-18 application,
+  job_fit Unknown), Vinson & Elkins LLP (Unspecified role, a large law
+  firm — unusual for Regina's consumer-brand background, job_fit
+  Unknown, flagging as possibly a generic ATS pull), WITHIN (Senior
+  Creative Lead, distinct from the existing 09-08 Creative Lead Fellow
+  row, Fair — performance-marketing skew), Trailborn Hotel Management
+  LLC (Visual Designer, Good — strong tool/skills match, $70K-$95K),
+  L'Oreal (Manager, Content Designer (Kiehl's), job_fit Unknown —
+  couldn't confirm the exact posting). Also found a Ralph Lauren
+  "unfinished application" nudge email (Senior Digital Designer,
+  Luxury Brands) — Regina started but did not complete/submit this
+  application, so it's not logged as Applied; flagging for her to
+  decide whether to finish it.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
