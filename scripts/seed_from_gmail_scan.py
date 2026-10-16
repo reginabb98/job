@@ -1098,6 +1098,14 @@ Scan history:
     matches her design-to-strategy pivot well; sent to 2 contacts,
     logged as 1 row), Company Policy (Unspecified role, Unknown --
     couldn't confirm any open designer role).
+  - 2026-10-16 (morning rescan): no new rows, 1 update. Bespoke Post --
+    the round 2 call with Joelyn Dalit (ACD) happened Oct 14 and went
+    well; Kate wrote 2026-10-15 that Joelyn "really enjoyed their
+    conversation," and the next step is a video meeting with Bespoke
+    Post's Chief Creative Officer (round 3). Kate also asked when
+    Regina's OPT expires "to understand the timing" -- as of this
+    scan Regina hasn't replied to either the availability request or
+    the OPT question yet.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3643,7 +3651,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "had_interview": 1,
-        "interview_dates": ["2026-10-01"],
+        "interview_dates": ["2026-10-01", "2026-10-14"],
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
@@ -3662,7 +3670,11 @@ SEED_ROWS = [
                      "interview_dates until it actually happens. Kate replied the same evening offering Tue "
                      "10/13 at 3:00pm ET or Wed 10/14 at 1:30pm ET. The original Oct 12 calendar invite was "
                      "canceled. 2026-10-12: Regina confirmed Wednesday, Oct 14, 1:30pm ET for the rescheduled "
-                     "round 2 with Joelyn Dalit.",
+                     "round 2 with Joelyn Dalit. That round 2 call happened and went well -- Kate wrote "
+                     "2026-10-15 that \"Joelyn really enjoyed their conversation,\" and the next step is a "
+                     "video meeting with Bespoke Post's Chief Creative Officer (round 3). Kate asked for "
+                     "Regina's availability next week, and separately asked when Regina's OPT expires \"to "
+                     "understand the timing\" -- as of this scan Regina hasn't replied to either question yet.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

@@ -1088,6 +1088,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   matches her design-to-strategy pivot well; sent to 2 contacts,
   logged as 1 row), Company Policy (Unspecified role, Unknown —
   couldn't confirm any open designer role).
+- **2026-10-16 (morning rescan)** — no new rows, 1 update. Bespoke
+  Post — the round 2 call with Joelyn Dalit (ACD) happened Oct 14 and
+  went well; Kate wrote 2026-10-15 that Joelyn "really enjoyed their
+  conversation," and the next step is a video meeting with Bespoke
+  Post's Chief Creative Officer (round 3). Kate also asked when
+  Regina's OPT expires "to understand the timing" — as of this scan
+  Regina hasn't replied to either the availability request or the OPT
+  question yet.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
