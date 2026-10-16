@@ -1106,6 +1106,13 @@ Scan history:
     Regina's OPT expires "to understand the timing" -- as of this
     scan Regina hasn't replied to either the availability request or
     the OPT question yet.
+  - 2026-10-16 (afternoon rescan): no new rows, 2 updates. Nourish --
+    flipped Applied -> Rejected (generic decline, Senior Creative
+    Strategist). Bespoke Post -- Regina replied with her availability
+    for the week of Oct 19 and confirmed her OPT is valid through
+    September 2027 (TN transition after, support letter only, no
+    formal sponsorship needed); awaiting Kate's reply to confirm the
+    CCO round 3 date/time.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2124,11 +2131,13 @@ SEED_ROWS = [
     {
         "company": "Nourish",
         "position": "Senior Creative Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-03",
         "source": "Greenhouse",
         "notes": "Generic Greenhouse auto-reply confirmation didn't name the role; confirmed from the "
-                 "LinkedIn listing Regina shared (same Greenhouse instance, usenourish).",
+                 "LinkedIn listing Regina shared (same Greenhouse instance, usenourish). Flipped Applied -> "
+                 "Rejected 2026-10-16: generic decline, \"we have made the decision to move forward with "
+                 "other candidates whose experience more closely aligns with our team's needs.\"",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed posting: 5-7 yrs creative strategy/growth marketing owning the creative "
                          "roadmap for paid channels. Regina's creative-strategy and storytelling skills "
@@ -3674,7 +3683,11 @@ SEED_ROWS = [
                      "2026-10-15 that \"Joelyn really enjoyed their conversation,\" and the next step is a "
                      "video meeting with Bespoke Post's Chief Creative Officer (round 3). Kate asked for "
                      "Regina's availability next week, and separately asked when Regina's OPT expires \"to "
-                     "understand the timing\" -- as of this scan Regina hasn't replied to either question yet.",
+                     "understand the timing.\" 2026-10-16: Regina replied with a detailed week-of-Oct-19 "
+                     "availability window and confirmed her OPT is valid through September 2027, after which "
+                     "she'd transition to TN status -- she said she can handle that visa process herself and "
+                     "would just need an employment support letter from the company. Awaiting Kate's reply to "
+                     "confirm the CCO round 3 date/time.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

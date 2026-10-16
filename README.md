@@ -1096,6 +1096,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Regina's OPT expires "to understand the timing" — as of this scan
   Regina hasn't replied to either the availability request or the OPT
   question yet.
+- **2026-10-16 (afternoon rescan)** — no new rows, 2 updates. Nourish
+  — flipped Applied → Rejected (generic decline, Senior Creative
+  Strategist). Bespoke Post — Regina replied with her availability
+  for the week of Oct 19 and confirmed her OPT is valid through
+  September 2027 (TN transition after, support letter only, no formal
+  sponsorship needed); awaiting Kate's reply to confirm the CCO round
+  3 date/time.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
