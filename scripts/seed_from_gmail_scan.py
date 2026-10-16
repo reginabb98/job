@@ -1113,6 +1113,10 @@ Scan history:
     September 2027 (TN transition after, support letter only, no
     formal sponsorship needed); awaiting Kate's reply to confirm the
     CCO round 3 date/time.
+  - 2026-10-16 (evening rescan, part 1): no new rows, 1 update. Amazon
+    (Multimedia Designer, ADX, Job ID 10574195) -- flipped Applied ->
+    Rejected: Amazon's status-update email said "this position is no
+    longer available" (role closed, not an evaluated decline).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4112,11 +4116,13 @@ SEED_ROWS = [
     {
         "company": "Amazon",
         "position": "Multimedia Designer, Amazon Delivery Experience (ADX)",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-13",
         "source": "Amazon Jobs",
         "notes": "Confirmed via Amazon Jobs auto-reply, Job ID 10574195. Distinct from Regina's 3 other "
-                 "existing Amazon applications (Job IDs 10525009, 10410280, 10523835).",
+                 "existing Amazon applications (Job IDs 10525009, 10410280, 10523835). Flipped Applied -> "
+                 "Rejected 2026-10-16: Amazon's status-update email said \"this position is no longer "
+                 "available\" -- role closed, not an evaluated decline, but no longer pursuable.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find this specific Job ID's posting to confirm requirements. General context "
                          "found: the ADX team supports and advocates for Amazon's global network of delivery "

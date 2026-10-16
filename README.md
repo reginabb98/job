@@ -1103,6 +1103,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   September 2027 (TN transition after, support letter only, no formal
   sponsorship needed); awaiting Kate's reply to confirm the CCO round
   3 date/time.
+- **2026-10-16 (evening rescan, part 1)** — no new rows, 1 update.
+  Amazon (Multimedia Designer, ADX, Job ID 10574195) — flipped
+  Applied → Rejected: Amazon's status-update email said "this
+  position is no longer available" (role closed, not an evaluated
+  decline).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
