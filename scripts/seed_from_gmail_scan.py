@@ -1131,6 +1131,11 @@ Scan history:
     (Senior Digital Designer, Luxury Brands) -- Regina started but did
     not complete/submit this application, so it's not logged as
     Applied; flagging for her to decide whether to finish it.
+  - 2026-10-17 (evening rescan): no new rows, 1 update. Porto Rocha --
+    updated calendar invite moved the Oct 27 internship call from
+    4:00-4:30pm ET to 3:30-4:00pm ET (same date). Also saw a generic
+    L'Oreal "Get To Know Us" candidate-engagement email on the
+    existing Kiehl's application -- no status change, no action taken.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3915,7 +3920,8 @@ SEED_ROWS = [
                  "replied the same day proposing a call Oct 27 or 28 at 4pm to walk through Regina's SVA "
                  "projects and her approach to strategy. Regina confirmed either day works; calendar invite "
                  "followed for Tuesday, Oct 27, 4:00-4:30pm ET. Flipped to Interviewing since this is "
-                 "effectively a first conversation for the internship opportunity.",
+                 "effectively a first conversation for the internship opportunity. 2026-10-17: calendar "
+                 "invite updated -- call time moved to 3:30-4:00pm ET (same date, Oct 27).",
         "job_fit": "Good",
         "job_fit_notes": "Porto Rocha is a well-regarded NYC branding studio; this was a speculative intro, "
                          "not a response to a specific posting. The paid-strategy-internship path now being "

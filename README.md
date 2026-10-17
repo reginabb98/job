@@ -1122,6 +1122,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Luxury Brands) — Regina started but did not complete/submit this
   application, so it's not logged as Applied; flagging for her to
   decide whether to finish it.
+- **2026-10-17 (evening rescan)** — no new rows, 1 update. Porto Rocha
+  — updated calendar invite moved the Oct 27 internship call from
+  4:00-4:30pm ET to 3:30-4:00pm ET (same date). Also saw a generic
+  L'Oreal "Get To Know Us" candidate-engagement email on the existing
+  Kiehl's application — no status change, no action taken.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
