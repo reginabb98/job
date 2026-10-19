@@ -1157,6 +1157,17 @@ Scan history:
     moving her forward to a group-interview stage (team conversation
     plus a technical problem-solving walkthrough), awaiting her
     availability submission -- no date confirmed yet.
+  - 2026-10-19 (evening rescan): 1 new row, 3 updates. Savvy Studio
+    (Mid-Level Brand Designer, cold outreach with resume attached,
+    job_fit Good -- well-regarded NY/Mexico City branding practice,
+    strong stylistic match, specific posting not confirmed). Vinson &
+    Elkins LLP -- rejected, and the rejection named the actual role
+    (Creative Specialist), resolving the earlier "Unspecified role"
+    placeholder. webAI -- the group-interview stage from this
+    afternoon is now confirmed: a calendar invite puts the team
+    interview at Tuesday, Oct 20, 9:00-10:00am ET; also logged the Oct
+    19 second-round call (which did happen despite the link mix-up) in
+    interview_dates.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3612,7 +3623,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "had_interview": 1,
-        "interview_dates": ["2026-10-05"],
+        "interview_dates": ["2026-10-05", "2026-10-19"],
         "source": "Ashby",
         "next_step": "Michael Hale (Technical Recruiter) reached out 2026-10-02 to schedule an intro call; "
                      "Regina booked Monday, Oct 5, 11:30am-12pm ET via his Google Calendar link (20-30 min "
@@ -3627,7 +3638,9 @@ SEED_ROWS = [
                      "Ashby sent official next steps: webAI wants to move her forward to a group-interview "
                      "stage (\"meet with members of the team you'd work closely with\" plus a technical "
                      "problem-solving walkthrough) -- asked her to submit availability via an Ashby scheduling "
-                     "link; no date confirmed yet as of this scan.",
+                     "link. 2026-10-19 evening: calendar invite arrived from Marcus Godin (webai.com) for "
+                     "\"Marketing Designer @ webAI - Team Interview,\" confirmed for Tuesday, Oct 20, "
+                     "9:00-10:00am ET (Google Meet).",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
@@ -4467,13 +4480,16 @@ SEED_ROWS = [
     },
     {
         "company": "Vinson & Elkins LLP",
-        "position": "Unspecified role",
-        "status": "Applied",
+        "position": "Creative Specialist",
+        "status": "Rejected",
         "applied_date": "2026-10-16",
         "source": "Email",
         "notes": "Generic \"Application Received\" confirmation from BPRecruiting@velaw.com didn't name the "
                  "role. Vinson & Elkins is a large corporate law firm -- an unusual application for Regina's "
-                 "consumer-brand/agency design background; flagging rather than guessing why she applied here.",
+                 "consumer-brand/agency design background; flagging rather than guessing why she applied here. "
+                 "Rejected 2026-10-19: \"we will not be moving forward with your application at this time\" -- "
+                 "the rejection named the actual title, Creative Specialist (Austin/Dallas/Houston/New "
+                 "York/Washington), resolving the previous \"Unspecified role\" placeholder.",
         "job_fit": "Unknown",
         "job_fit_notes": "No design, creative, or marketing job postings found at the firm at all -- its "
                          "\"business professionals\" track covers business development/communications but no "
@@ -4525,6 +4541,25 @@ SEED_ROWS = [
                          "Merchandising,\" and \"Senior Manager, Global Retail Design\" -- none matched "
                          "precisely, and none showed salary or years-of-experience in what was found. Not "
                          "guessing which applies.",
+    },
+    {
+        "company": "Savvy Studio",
+        "position": "Mid-Level Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-19",
+        "source": "Email",
+        "notes": "Direct cold-outreach email to hola@vvstudio.net about a Mid-Level Brand Designer opening she "
+                 "saw posted -- resume (ReginaBarrera_CV_B.pdf) attached, portfolio linked, no open-role "
+                 "confirmation beyond her own message.",
+        "job_fit": "Good",
+        "job_fit_notes": "Couldn't find the specific Mid-Level Brand Designer posting to confirm its exact "
+                         "requirements, but Savvy Studio is a well-regarded branding/architecture practice with "
+                         "NY and Mexico City offices, known for holistic brand-identity work spanning logos, "
+                         "typefaces, and physical spaces for cafes, fashion labels, bookstores, and galleries -- "
+                         "a strong stylistic match for Regina's brand-identity/typography/layout focus and SVA "
+                         "branding background, though the exact level/seniority bar for this specific opening "
+                         "isn't confirmed.",
+        "cold_outreach": 1,
     },
 ]
 

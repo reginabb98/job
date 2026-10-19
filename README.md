@@ -1147,6 +1147,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   moving her forward to a group-interview stage (team conversation
   plus a technical problem-solving walkthrough), awaiting her
   availability submission — no date confirmed yet.
+- **2026-10-19 (evening rescan)** — 1 new row, 3 updates. Savvy Studio
+  (Mid-Level Brand Designer, cold outreach with resume attached,
+  job_fit Good — well-regarded NY/Mexico City branding practice,
+  strong stylistic match, specific posting not confirmed). Vinson &
+  Elkins LLP — rejected, and the rejection named the actual role
+  (Creative Specialist), resolving the earlier "Unspecified role"
+  placeholder. webAI — the group-interview stage from this afternoon
+  is now confirmed: a calendar invite puts the team interview at
+  Tuesday, Oct 20, 9:00-10:00am ET; also logged the Oct 19 second-round
+  call (which did happen despite the link mix-up) in interview_dates.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
