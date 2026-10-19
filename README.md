@@ -1127,6 +1127,18 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   4:00-4:30pm ET to 3:30-4:00pm ET (same date). Also saw a generic
   L'Oreal "Get To Know Us" candidate-engagement email on the existing
   Kiehl's application — no status change, no action taken.
+- **2026-10-18 (morning/afternoon/evening rescans)** — no new rows, no
+  updates across all three — nothing but promotional/personal mail
+  newer than the prior scan.
+- **2026-10-19 (morning rescan)** — no new rows, 1 update. Mother —
+  corrected a date error from the 2026-10-13 night rescan: the
+  "Thursday, Oct 16" call time it logged was never actually a Thursday
+  (Oct 16, 2026 is a Friday); the Google Calendar invite that actually
+  followed Jack's proposal confirms the Veronica Thew call landed on
+  Thursday, Oct 22, 2:30-3:00pm ET instead, confirmed/accepted by both
+  sides. Also saw an Otter.ai weekly digest confirming the
+  already-logged webAI second-round call today (Oct 19, 12:00-12:30pm
+  ET) — no new information, call hadn't happened yet as of this scan.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

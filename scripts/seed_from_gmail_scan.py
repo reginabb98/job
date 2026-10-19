@@ -1136,6 +1136,19 @@ Scan history:
     4:00-4:30pm ET to 3:30-4:00pm ET (same date). Also saw a generic
     L'Oreal "Get To Know Us" candidate-engagement email on the
     existing Kiehl's application -- no status change, no action taken.
+  - 2026-10-18 (morning/afternoon/evening rescans): no new rows, no
+    updates across all three -- nothing but promotional/personal mail
+    newer than the prior scan.
+  - 2026-10-19 (morning rescan): no new rows, 1 update. Mother --
+    corrected a date error from the 2026-10-13 night rescan: the
+    "Thursday, Oct 16" call time it logged was never actually a
+    Thursday (Oct 16, 2026 is a Friday); the Google Calendar invite
+    that actually followed Jack's proposal confirms the Veronica Thew
+    call landed on Thursday, Oct 22, 2:30-3:00pm ET instead, confirmed/
+    accepted by both sides. Also saw an Otter.ai weekly digest
+    confirming the already-logged webAI second-round call today
+    (Oct 19, 12:00-12:30pm ET) -- no new information, call hadn't
+    happened yet as of this scan.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2066,8 +2079,11 @@ SEED_ROWS = [
                      "following week instead if that was easier. 2026-10-13: Jack replied that Veronica's "
                      "calendar had gotten chaotic again and the call didn't happen a second time; he asked "
                      "Regina for her availability next week instead. Regina replied the same day saying she's "
-                     "flexible next week; Jack proposed Thursday, Oct 16, 2:30-3:00pm ET. No confirmation from "
-                     "Regina yet as of this scan.",
+                     "flexible next week; Jack proposed what he called \"Thursday, 2:30-3pm ET\" (sent Oct 13, "
+                     "actually mislabeled -- the calendar invite that followed confirms it landed on "
+                     "**Thursday, Oct 22, 2:30-3:00pm ET**, not Oct 16 as previously logged here). Regina "
+                     "confirmed 2026-10-15; the Google Calendar invite (organizer Veronica Thew, Zoom link) "
+                     "shows the call as confirmed/accepted by both for Oct 22.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
