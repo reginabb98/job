@@ -1149,6 +1149,14 @@ Scan history:
     confirming the already-logged webAI second-round call today
     (Oct 19, 12:00-12:30pm ET) -- no new information, call hadn't
     happened yet as of this scan.
+  - 2026-10-19 (afternoon rescan): no new rows, 2 updates. Whatnot --
+    flipped Applied -> Rejected: "won't be able to invite you to the
+    next round of our hiring process." webAI -- another meeting-link
+    mix-up delayed today's second-round call by a few minutes but it
+    happened; Ashby then sent official next steps the same afternoon,
+    moving her forward to a group-interview stage (team conversation
+    plus a technical problem-solving walkthrough), awaiting her
+    availability submission -- no date confirmed yet.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3614,7 +3622,12 @@ SEED_ROWS = [
                      "missed this second-round call due to a calendar mix-up -- her Google Calendar showed "
                      "1:00pm but Ashby had it listed for 12:30pm. She emailed Michael and Jaslin Tonton the "
                      "same day to apologize and rescheduled; the call is now confirmed for Monday, Oct 19, "
-                     "12:00-12:30pm ET.",
+                     "12:00-12:30pm ET. 2026-10-19: another mix-up at call time (wrong meeting link posted by "
+                     "Ashby), resolved within a few minutes over email and the call happened. Same afternoon, "
+                     "Ashby sent official next steps: webAI wants to move her forward to a group-interview "
+                     "stage (\"meet with members of the team you'd work closely with\" plus a technical "
+                     "problem-solving walkthrough) -- asked her to submit availability via an Ashby scheduling "
+                     "link; no date confirmed yet as of this scan.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
@@ -3976,10 +3989,11 @@ SEED_ROWS = [
     {
         "company": "Whatnot",
         "position": "Lead Brand Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-06",
         "source": "Ashby",
-        "notes": "Confirmed via Ashby's auto-reply.",
+        "notes": "Confirmed via Ashby's auto-reply. Rejected 2026-10-19: \"after reviewing your application and "
+                 "experience, we won't be able to invite you to the next round of our hiring process.\"",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find a posting with this exact title -- Whatnot's other senior/lead brand "
                          "creative roles found (Lead Illustrator, Lead Motion Designer, Senior Art Director "

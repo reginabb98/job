@@ -1139,6 +1139,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   sides. Also saw an Otter.ai weekly digest confirming the
   already-logged webAI second-round call today (Oct 19, 12:00-12:30pm
   ET) — no new information, call hadn't happened yet as of this scan.
+- **2026-10-19 (afternoon rescan)** — no new rows, 2 updates. Whatnot
+  — flipped Applied → Rejected: "won't be able to invite you to the
+  next round of our hiring process." webAI — another meeting-link
+  mix-up delayed today's second-round call by a few minutes but it
+  happened; Ashby then sent official next steps the same afternoon,
+  moving her forward to a group-interview stage (team conversation
+  plus a technical problem-solving walkthrough), awaiting her
+  availability submission — no date confirmed yet.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
