@@ -1157,6 +1157,21 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   is now confirmed: a calendar invite puts the team interview at
   Tuesday, Oct 20, 9:00-10:00am ET; also logged the Oct 19 second-round
   call (which did happen despite the link mix-up) in interview_dates.
+- **2026-10-20 (morning rescan)** — no new rows, no updates — nothing
+  but promotional/personal mail and a job-opportunity newsletter
+  (Words of Mouth, excluded like LinkedIn job-alert digests) newer
+  than the prior scan.
+- **2026-10-20 (afternoon rescan)** — 1 new row, 3 updates. Kettle
+  (Visual Designer, cold outreach with resume attached, job_fit Good
+  — real NYC creative/digital agency, exact posting/level not
+  confirmed). OLIVER (Digital Content Designer) — a second, named
+  rejection explicitly for this role arrived, flipping it to Rejected
+  and resolving which of the earlier generic 10-06 rejections it
+  belonged to. Bespoke Post — the CCO round 3 call is now locked in
+  for Wednesday, Oct 21, 3:00-3:30pm EDT with Danny Cohn. webAI —
+  noted an ambiguous backup-link message sent right at today's
+  team-interview start time; no confirmation either way that a mix-up
+  actually recurred, not guessing the outcome.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -1168,6 +1168,21 @@ Scan history:
     interview at Tuesday, Oct 20, 9:00-10:00am ET; also logged the Oct
     19 second-round call (which did happen despite the link mix-up) in
     interview_dates.
+  - 2026-10-20 (morning rescan): no new rows, no updates -- nothing
+    but promotional/personal mail and a job-opportunity newsletter
+    (Words of Mouth, excluded like LinkedIn job-alert digests) newer
+    than the prior scan.
+  - 2026-10-20 (afternoon rescan): 1 new row, 3 updates. Kettle
+    (Visual Designer, cold outreach with resume attached, job_fit Good
+    -- real NYC creative/digital agency, exact posting/level not
+    confirmed). OLIVER (Digital Content Designer) -- a second, named
+    rejection explicitly for this role arrived, flipping it to
+    Rejected and resolving which of the earlier generic 10-06
+    rejections it belonged to. Bespoke Post -- the CCO round 3 call is
+    now locked in for Wednesday, Oct 21, 3:00-3:30pm EDT with Danny
+    Cohn. webAI -- noted an ambiguous backup-link message sent right
+    at today's team-interview start time; no confirmation either way
+    that a mix-up actually recurred, not guessing the outcome.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3640,7 +3655,10 @@ SEED_ROWS = [
                      "problem-solving walkthrough) -- asked her to submit availability via an Ashby scheduling "
                      "link. 2026-10-19 evening: calendar invite arrived from Marcus Godin (webai.com) for "
                      "\"Marketing Designer @ webAI - Team Interview,\" confirmed for Tuesday, Oct 20, "
-                     "9:00-10:00am ET (Google Meet).",
+                     "9:00-10:00am ET (Google Meet). 2026-10-20, right at start time: Jaslin preemptively sent "
+                     "a backup Meet link \"in case the same thing is happening again\" -- no follow-up message "
+                     "either way, so whether another mix-up actually occurred or the backup link was just "
+                     "precautionary isn't confirmed; not guessing the outcome.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
@@ -3693,7 +3711,7 @@ SEED_ROWS = [
     {
         "company": "OLIVER",
         "position": "Digital Content Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Greenhouse",
         "notes": "5th, distinct OLIVER application -- a genuinely different title from the other four OLIVER "
@@ -3701,7 +3719,11 @@ SEED_ROWS = [
                  "auto-reply (\"Thank you for interest in the Digital Content Designer posting\"). A generic "
                  "OLIVER rejection email arrived 2026-10-06 with no job title or req ID -- could pertain to "
                  "this application or to any of OLIVER's three other still-open ones (Senior Designer x3); "
-                 "not guessing which, status left unchanged.",
+                 "not guessing which, status left unchanged. 2026-10-20: a second, named rejection arrived "
+                 "(\"Important information about your application to The Inside Ideas Group\"), explicitly "
+                 "for the Digital Content Designer role -- flipped to Rejected. The earlier 10-06 generic "
+                 "rejection most likely belonged to one of the Senior Designer applications instead, since "
+                 "this one got its own dedicated rejection email.",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed general scope: end-to-end design and production of content for a client's "
                          "flagship digital display platform, with motion graphics/video editing/Gen AI tool "
@@ -3752,7 +3774,9 @@ SEED_ROWS = [
                      "availability window and confirmed her OPT is valid through September 2027, after which "
                      "she'd transition to TN status -- she said she can handle that visa process herself and "
                      "would just need an employment support letter from the company. Awaiting Kate's reply to "
-                     "confirm the CCO round 3 date/time.",
+                     "confirm the CCO round 3 date/time. 2026-10-20: Kate proposed Wednesday, Oct 21, 3:00pm "
+                     "ET; Regina confirmed the same day, and a calendar invite followed for Wed, Oct 21, "
+                     "3:00-3:30pm EDT with Danny Cohn (Bespoke Post's CCO) -- round 3 now locked in.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
@@ -4559,6 +4583,23 @@ SEED_ROWS = [
                          "a strong stylistic match for Regina's brand-identity/typography/layout focus and SVA "
                          "branding background, though the exact level/seniority bar for this specific opening "
                          "isn't confirmed.",
+        "cold_outreach": 1,
+    },
+    {
+        "company": "Kettle",
+        "position": "Visual Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Email",
+        "notes": "Direct cold-outreach email to Nicole Locklair (nicole.locklair@wearekettle.com) about a Visual "
+                 "Designer opening Regina saw posted, following an initial LinkedIn message -- resume "
+                 "(ReginaBarrera_CV_B.pdf) attached, portfolio linked.",
+        "job_fit": "Good",
+        "job_fit_notes": "Couldn't find the specific (non-senior) Visual Designer posting, but Kettle is a "
+                         "real NYC-headquartered creative/digital agency; their Senior Visual Designer listings "
+                         "describe concept-to-build website and digital design work for agency clients, which "
+                         "lines up with Regina's agency/digital design background, though the exact level and "
+                         "scope of this specific opening isn't confirmed.",
         "cold_outreach": 1,
     },
 ]
