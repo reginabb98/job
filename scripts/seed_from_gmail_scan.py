@@ -1213,6 +1213,15 @@ Scan history:
     networking call, confirmed Monday, Oct 26, 1:00-2:00pm ET; this is
     the first concrete next step out of the 09-22 warm-intro cold
     outreach.
+  - 2026-10-21 (evening rescan): 1 new row, 3 updates. Substack
+    (Unspecified role, job_fit Unknown). Sylvain -- Ben Cheney replied
+    to the 10-15 cold outreach: not hiring, but open to a networking
+    video chat; Regina sent her availability, no date confirmed yet.
+    Mother -- the Oct 22 Veronica Thew call got rescheduled twice the
+    same evening, landing on Friday, Oct 23, 2:00-2:30pm ET. Bespoke
+    Post -- the CCO round 3 call with Danny Cohn happened (Regina
+    joined a few minutes late but it went well per her own account);
+    awaiting next steps.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2147,7 +2156,11 @@ SEED_ROWS = [
                      "actually mislabeled -- the calendar invite that followed confirms it landed on "
                      "**Thursday, Oct 22, 2:30-3:00pm ET**, not Oct 16 as previously logged here). Regina "
                      "confirmed 2026-10-15; the Google Calendar invite (organizer Veronica Thew, Zoom link) "
-                     "shows the call as confirmed/accepted by both for Oct 22.",
+                     "shows the call as confirmed/accepted by both for Oct 22. 2026-10-21: Veronica sent an "
+                     "updated \"*Rescheduling*\" invite moving the call to Thursday, Oct 22, 2:30-3:00pm ET "
+                     "(same day, same time as before -- just reissued), then a second updated invite the same "
+                     "evening moving it again to **Friday, Oct 23, 2:00-2:30pm ET**. Treating the Oct 23 "
+                     "invite as the current, authoritative time since it was sent later the same day.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -3791,7 +3804,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-27",
         "had_interview": 1,
-        "interview_dates": ["2026-10-01", "2026-10-14"],
+        "interview_dates": ["2026-10-01", "2026-10-14", "2026-10-21"],
         "source": "Lever",
         "next_step": "Kate Mulcahy reached out 2026-09-29 to schedule a phone call; Regina replied 2026-09-30 "
                      "with her availability, and the call is now confirmed for Thursday, Oct 1, 12:15-12:45pm "
@@ -3820,7 +3833,10 @@ SEED_ROWS = [
                      "would just need an employment support letter from the company. Awaiting Kate's reply to "
                      "confirm the CCO round 3 date/time. 2026-10-20: Kate proposed Wednesday, Oct 21, 3:00pm "
                      "ET; Regina confirmed the same day, and a calendar invite followed for Wed, Oct 21, "
-                     "3:00-3:30pm EDT with Danny Cohn (Bespoke Post's CCO) -- round 3 now locked in.",
+                     "3:00-3:30pm EDT with Danny Cohn (Bespoke Post's CCO) -- round 3 now locked in. 2026-10-21: "
+                     "the call happened -- Regina joined about 3 minutes late (Kate checked in mid-call asking "
+                     "if everything was okay since Danny hadn't seen her join yet), but she and Danny connected "
+                     "and Regina described it as \"a really great conversation.\" Awaiting next steps.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
@@ -4507,6 +4523,11 @@ SEED_ROWS = [
         "status": "Applied",
         "applied_date": "2026-10-15",
         "source": "Email",
+        "next_step": "2026-10-21: Ben Cheney (Partner, Strategy & Co-Founder) replied -- Sylvain isn't "
+                     "currently hiring, but he's always open to connecting with interesting people and offered "
+                     "a video chat next week or the week after. Regina replied the same day with her "
+                     "availability (flexible next week except Monday 1-2pm and Tuesday afternoon ET); no "
+                     "specific date/time confirmed yet.",
         "notes": "Cold-outreach emails (resume attached) to both ben@sylvain.co and chris@sylvain.co, \"Strategy "
                  "@Sylvain\" -- same pitch sent to two contacts at the same company, logged as one application, "
                  "not a response to a specific posted req.",
@@ -4744,6 +4765,18 @@ SEED_ROWS = [
                          "covering campaign work, landing pages, brand visuals across digital channels, and "
                          "design systems -- a solid match for Regina's brand/campaign/digital design background, "
                          "though likely pitched a bit below her 6+ yrs of seniority.",
+    },
+    {
+        "company": "Substack",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-10-21",
+        "source": "Ashby",
+        "notes": "Generic Ashby confirmation (\"We're on it!\") didn't name the role.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which role this was for. Substack's only confirmed open design "
+                         "listing found was a Product Designer role (hybrid NY/SF, 3+ yrs, $150K-$215K) -- not "
+                         "guessing whether that's the one applied to.",
     },
 ]
 

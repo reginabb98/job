@@ -1202,6 +1202,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   networking call, confirmed Monday, Oct 26, 1:00-2:00pm ET; this is
   the first concrete next step out of the 09-22 warm-intro cold
   outreach.
+- **2026-10-21 (evening rescan)** — 1 new row, 3 updates. Substack
+  (Unspecified role, job_fit Unknown). Sylvain — Ben Cheney replied to
+  the 10-15 cold outreach: not hiring, but open to a networking video
+  chat; Regina sent her availability, no date confirmed yet. Mother —
+  the Oct 22 Veronica Thew call got rescheduled twice the same
+  evening, landing on Friday, Oct 23, 2:00-2:30pm ET. Bespoke Post —
+  the CCO round 3 call with Danny Cohn happened (Regina joined a few
+  minutes late but it went well per her own account); awaiting next
+  steps.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
