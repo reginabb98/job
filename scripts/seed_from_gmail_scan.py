@@ -1198,6 +1198,15 @@ Scan history:
     auto-apply tool) resubmitted to the same already-logged posting;
     Workable's confirmation says it overwrote the previous submission,
     so left as one row, not counted as new.
+  - 2026-10-21 (update from Regina, offer stage): 1 update. webAI --
+    the Oct 20 team interview happened; Marcus (covering for Michael)
+    called 2026-10-21 and moved Regina to the offer stage -- comp is
+    with finance for approval, expected back today or tomorrow via
+    text + call. Filled in full job context from the 2026-10-05 intro
+    call (~200-person Austin AI startup, junior/mid generalist design
+    role, $80K-$100K band, fully remote) and upgraded job_fit from
+    Unknown to Good. Status left as Interviewing until an actual offer
+    number arrives.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3673,11 +3682,23 @@ SEED_ROWS = [
                      "9:00-10:00am ET (Google Meet). 2026-10-20, right at start time: Jaslin preemptively sent "
                      "a backup Meet link \"in case the same thing is happening again\" -- no follow-up message "
                      "either way, so whether another mix-up actually occurred or the backup link was just "
-                     "precautionary isn't confirmed; not guessing the outcome.",
+                     "precautionary isn't confirmed; not guessing the outcome. The Oct 20 group/team interview "
+                     "did happen. 2026-10-21: Marcus (covering for Michael, who's out of town) texted asking "
+                     "for a quick call; the call happened and webAI is moving Regina to the offer stage -- "
+                     "they're submitting her comp to finance for approval and will follow up today or tomorrow "
+                     "with a number, then a text and a call to discuss. Regina intends to ask for $95K (up from "
+                     "the $90K she originally gave Michael on the 10/5 intro call), within the role's $80K-"
+                     "$100K band.",
         "notes": "Confirmed via Ashby's auto-reply.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't find the specific posting or confirm what the role required -- webAI "
-                         "appears to be an AI-focused company, but no further detail was available.",
+        "pay_range": "$80K-$100K/yr",
+        "job_fit": "Good",
+        "job_fit_notes": "Per the 2026-10-05 intro call with Michael Hale: webAI is a ~200-person Austin AI "
+                         "startup (decentralized/on-device AI solutions), design team of 5-6. This is an open "
+                         "junior/mid-level generalist design role spanning marketing/sales collateral, digital, "
+                         "and possibly web -- a solid match for Regina's generalist brand/marketing design "
+                         "background, though likely a step below her actual 6+ yrs of seniority. Fully remote "
+                         "(this team doesn't require Austin relocation). Michael confirmed OPT/TN timeline "
+                         "isn't a concern on their end.",
     },
     {
         "company": "The Farmer's Dog",

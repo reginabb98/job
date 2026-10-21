@@ -1187,6 +1187,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   to the same already-logged posting; Workable's confirmation says it
   overwrote the previous submission, so left as one row, not counted
   as new.
+- **2026-10-21 (update from Regina, offer stage)** — 1 update. webAI —
+  the Oct 20 team interview happened; Marcus (covering for Michael)
+  called 2026-10-21 and moved Regina to the offer stage — comp is with
+  finance for approval, expected back today or tomorrow via text +
+  call. Filled in full job context from the 2026-10-05 intro call
+  (~200-person Austin AI startup, junior/mid generalist design role,
+  $80K-$100K band, fully remote) and upgraded job_fit from Unknown to
+  Good. Status left as Interviewing until an actual offer number
+  arrives.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
