@@ -1172,6 +1172,21 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   noted an ambiguous backup-link message sent right at today's
   team-interview start time; no confirmation either way that a mix-up
   actually recurred, not guessing the outcome.
+- **2026-10-20 (evening rescan)** — no new rows, no updates — nothing
+  but promotional/personal mail newer than the prior scan.
+- **2026-10-21 (update requested by Regina)** — 7 new rows, 1 update,
+  surfaced from a late-evening application sprint on 2026-10-20
+  (~7:56-8:22pm ET). Titan (Unspecified role, job_fit Unknown), Raisin
+  (Unspecified role, job_fit Unknown — a Brand & Marketing Designer NY
+  opening exists but isn't confirmed as the one applied to), Rillet
+  (Brand Designer, Good), Barry's (Graphic Designer, Unknown — likely
+  Barry's Bootcamp but unconfirmed), iHeartMedia (Graphic Designer,
+  Req39497, Fair), Elmwood Brand Consultancy (Senior Designer, Good —
+  strong typography/brand-identity match), Peloton (Senior Designer,
+  Good). Jacob Bar Inc. — Regina (or an auto-apply tool) resubmitted
+  to the same already-logged posting; Workable's confirmation says it
+  overwrote the previous submission, so left as one row, not counted
+  as new.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -1183,6 +1183,21 @@ Scan history:
     Cohn. webAI -- noted an ambiguous backup-link message sent right
     at today's team-interview start time; no confirmation either way
     that a mix-up actually recurred, not guessing the outcome.
+  - 2026-10-20 (evening rescan): no new rows, no updates -- nothing
+    but promotional/personal mail newer than the prior scan.
+  - 2026-10-21 (update requested by Regina): 7 new rows, 1 update,
+    surfaced from a late-evening application sprint on 2026-10-20
+    (~7:56-8:22pm ET). Titan (Unspecified role, job_fit Unknown),
+    Raisin (Unspecified role, job_fit Unknown -- a Brand & Marketing
+    Designer NY opening exists but isn't confirmed as the one applied
+    to), Rillet (Brand Designer, Good), Barry's (Graphic Designer,
+    Unknown -- likely Barry's Bootcamp but unconfirmed), iHeartMedia
+    (Graphic Designer, Req39497, Fair), Elmwood Brand Consultancy
+    (Senior Designer, Good -- strong typography/brand-identity match),
+    Peloton (Senior Designer, Good). Jacob Bar Inc. -- Regina (or an
+    auto-apply tool) resubmitted to the same already-logged posting;
+    Workable's confirmation says it overwrote the previous submission,
+    so left as one row, not counted as new.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4349,7 +4364,10 @@ SEED_ROWS = [
                          "dielines. Requires 7+ yrs design experience at a brand/studio/agency -- just above "
                          "Regina's 6+ yrs. Animation/motion-graphics and photo-editing skills are listed as "
                          "pluses, not required, which suits her gap there; the generalist, multi-disciplinary "
-                         "framing fits her Common Matter background well.",
+                         "framing fits her Common Matter background well. 2026-10-20 night: Regina (or an "
+                         "auto-apply tool acting on her behalf) resubmitted to this same Workable posting; "
+                         "Workable's own confirmation says the new submission \"overwrote the previous one\" -- "
+                         "same req, not a separate application, status/date left unchanged.",
     },
     {
         "company": "Big Spaceship",
@@ -4601,6 +4619,100 @@ SEED_ROWS = [
                          "lines up with Regina's agency/digital design background, though the exact level and "
                          "scope of this specific opening isn't confirmed.",
         "cold_outreach": 1,
+    },
+    # -- 2026-10-20 night: late-evening application sprint (~7:56-8:22pm ET), 7 new rows --
+    {
+        "company": "Titan",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Ashby",
+        "notes": "Generic Ashby confirmation (\"Thanks for your interest in Titan!\") didn't name the role.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which Titan this is or the specific posting. Most plausible match "
+                         "found was Titan, the investing/wealth-management app (Senior Product Designer roles, "
+                         "NYC) -- a16z/General Catalyst-backed -- but not guessing which Titan or which role.",
+    },
+    {
+        "company": "Raisin",
+        "position": "Unspecified role",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Email",
+        "notes": "Generic confirmation from careers@raisin.com (\"Thanks for applying to Raisin\") didn't name "
+                 "the role.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Raisin is a Berlin-based fintech savings/investment marketplace with a US direct-to-"
+                         "consumer platform; a Brand & Marketing Designer (New York) role was found open around "
+                         "this time, but the confirmation doesn't confirm this is the posting applied to -- not "
+                         "guessing.",
+    },
+    {
+        "company": "Rillet",
+        "position": "Brand Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Ashby",
+        "notes": "Confirmed via Ashby's auto-reply (\"Thank you for applying for the Brand Designer role at "
+                 "Rillet!\").",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting context: Rillet is a well-funded startup ($100M+ raised); the Brand "
+                         "Designer sits on the marketing team defining how the company shows up visually -- a "
+                         "brand-identity-focused role that lines up with Regina's background, though the exact "
+                         "requirements/seniority bar weren't independently confirmed.",
+    },
+    {
+        "company": "Barry's",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Rippling",
+        "notes": "Confirmed via Rippling's auto-reply, which named the role (Graphic Designer) but not which "
+                 "Barry's -- most likely Barry's Bootcamp (fitness brand) given the context, but not confirmed.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't find or confirm the specific posting behind this application.",
+    },
+    {
+        "company": "iHeartMedia",
+        "position": "Graphic Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Workday",
+        "notes": "Confirmed via Workday's auto-reply, which named the req (Req39497 - Graphic Designer) but the "
+                 "exact req's requirements couldn't be matched to a specific public posting.",
+        "job_fit": "Fair",
+        "job_fit_notes": "Other iHeartMedia Graphic Designer postings found (not confirmed to be this exact "
+                         "req) describe a mid-level, lower-paying NYC role ($52K-65K) focused on presentations, "
+                         "infographics, and brand consistency -- core design/presentation skills overlap with "
+                         "Regina's background, but the pay band suggests a less senior role than her 6+ yrs.",
+    },
+    {
+        "company": "Elmwood Brand Consultancy",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Workable",
+        "notes": "Confirmed via Workable's auto-reply with full application data attached (resume: Regina "
+                 "Barrera_Designer_Elmwood.pdf).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting: NYC, hybrid, $100K-115K, owning projects from concept to execution "
+                         "with client-relationship and junior-mentoring responsibilities, requiring mastery of "
+                         "design systems, typography, and art direction -- a strong match for Regina's "
+                         "brand-identity/typography background and 6+ yrs of experience.",
+    },
+    {
+        "company": "Peloton",
+        "position": "Senior Designer",
+        "status": "Applied",
+        "applied_date": "2026-10-20",
+        "source": "Greenhouse",
+        "notes": "Confirmed via Greenhouse's auto-reply, with a matching copy-of-application notice also sent "
+                 "via Adzuna (\"We have sent your Senior Designer application to Peloton\").",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed posting (via aggregator): bachelor's degree + 3 yrs experience, hybrid NYC, "
+                         "covering campaign work, landing pages, brand visuals across digital channels, and "
+                         "design systems -- a solid match for Regina's brand/campaign/digital design background, "
+                         "though likely pitched a bit below her 6+ yrs of seniority.",
     },
 ]
 
