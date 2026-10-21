@@ -1196,6 +1196,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   $80K-$100K band, fully remote) and upgraded job_fit from Unknown to
   Good. Status left as Interviewing until an actual offer number
   arrives.
+- **2026-10-21 (afternoon rescan)** — no new rows, 2 updates. Mammoth
+  Brands (Junior Creative Strategist) — rejected, generic decline.
+  Mischief — Robyn Makinson sent a calendar invite for a follow-up
+  networking call, confirmed Monday, Oct 26, 1:00-2:00pm ET; this is
+  the first concrete next step out of the 09-22 warm-intro cold
+  outreach.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

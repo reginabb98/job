@@ -1207,6 +1207,12 @@ Scan history:
     role, $80K-$100K band, fully remote) and upgraded job_fit from
     Unknown to Good. Status left as Interviewing until an actual offer
     number arrives.
+  - 2026-10-21 (afternoon rescan): no new rows, 2 updates. Mammoth
+    Brands (Junior Creative Strategist) -- rejected, generic decline.
+    Mischief -- Robyn Makinson sent a calendar invite for a follow-up
+    networking call, confirmed Monday, Oct 26, 1:00-2:00pm ET; this is
+    the first concrete next step out of the 09-22 warm-intro cold
+    outreach.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3378,7 +3384,9 @@ SEED_ROWS = [
         "source": "Cold email",
         "notes": "Warm-intro cold email to robyn@mischiefusa.com, referred by Sadia -- Mischief isn't "
                  "actively hiring, but Sadia flagged they might need extra design support as things get "
-                 "busy. Portfolio linked, no resume attached, no specific role applied to.",
+                 "busy. Portfolio linked, no resume attached, no specific role applied to. 2026-10-21: Robyn "
+                 "Makinson sent a calendar invite for \"Connect w/Regina,\" confirmed for Monday, Oct 26, "
+                 "1:00-2:00pm ET (Zoom) -- this follow-up networking call grew out of the cold outreach.",
     },
     {
         "company": "LOS YORK",
@@ -4047,11 +4055,13 @@ SEED_ROWS = [
     {
         "company": "Mammoth Brands",
         "position": "Junior Creative Strategist",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-06",
         "source": "Greenhouse",
         "notes": "2nd, distinct Mammoth Brands application -- separate from the earlier Creative Strategist "
-                 "application (applied 07-22, already Rejected). Confirmed via Greenhouse's auto-reply.",
+                 "application (applied 07-22, already Rejected). Confirmed via Greenhouse's auto-reply. "
+                 "Rejected 2026-10-21: \"decided to move forward with other candidates whose experience more "
+                 "closely aligns with what we're looking for.\"",
         "job_fit": "Good",
         "job_fit_notes": "A Junior Creative Strategist posting at Lume Deodorant (a Mammoth Brands company), "
                          "$90,800-$113,500, described as early-career with room to learn from senior creative "
