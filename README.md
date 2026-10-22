@@ -1225,6 +1225,19 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   pending; no written offer signed yet. Sylvain — Ben Cheney's
   networking call is now locked in for Wednesday, Oct 28, 1:00-1:30pm
   ET.
+- **2026-10-22 (evening rescan)** — 1 new row, 4 updates. Gretel
+  (Strategy Intern, via Notion form, job_fit Unknown — couldn't
+  confirm which company or posting). EliseAI — rejected. webAI — the
+  formal written offer email arrived: $95,000 salary, 2,800 options
+  with confirmed 4-year vesting/1-year cliff, start date Nov 2, and a
+  hard deadline (offer valid 5 business days from 10/22, roughly
+  through 10/29); Regina negotiated benefits clarifications (updated
+  list after some perks turned out outdated) and asked about a
+  coworking stipend, awaiting a reply; no DocuSign signed yet. Vault
+  49 and Bespoke Post — with the real webAI offer in hand, Regina
+  emailed both Anna and Kate to flag the competing offer/number and
+  ask for a status update given her decision timeline; no replies yet
+  from either as of this scan.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

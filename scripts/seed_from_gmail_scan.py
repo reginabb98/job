@@ -1236,6 +1236,19 @@ Scan history:
     pending; no written offer signed yet. Sylvain -- Ben Cheney's
     networking call is now locked in for Wednesday, Oct 28, 1:00-
     1:30pm ET.
+  - 2026-10-22 (evening rescan): 1 new row, 4 updates. Gretel
+    (Strategy Intern, via Notion form, job_fit Unknown -- couldn't
+    confirm which company or posting). EliseAI -- rejected. webAI --
+    the formal written offer email arrived: $95,000 salary, 2,800
+    options with confirmed 4-year vesting/1-year cliff, start date
+    Nov 2, and a hard deadline (offer valid 5 business days from
+    10/22, roughly through 10/29); Regina negotiated benefits
+    clarifications (updated list after some perks turned out outdated)
+    and asked about a coworking stipend, awaiting a reply; no DocuSign
+    signed yet. Vault 49 and Bespoke Post -- with the real webAI offer
+    in hand, Regina emailed both Anna and Kate to flag the competing
+    offer/number and ask for a status update given her decision
+    timeline; no replies yet from either as of this scan.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2937,7 +2950,11 @@ SEED_ROWS = [
                      "feedback from Laura at Vault 49, but said they're \"still interviewing at first round\" "
                      "and will follow up with next steps -- phrasing is a little confusing given Regina's "
                      "second-round call already happened Oct 9; not guessing what it means exactly (possibly "
-                     "Vault 49 still first-round-interviewing other candidates). No concrete next step yet.",
+                     "Vault 49 still first-round-interviewing other candidates). No concrete next step yet. "
+                     "2026-10-22: with a real competing offer in hand (webAI, $95K), Regina emailed Anna to "
+                     "check in given the long silence since 10-13 -- mentioned the team's energy resonated with "
+                     "her, that Vault 49 is genuinely her top choice, and that she now has a decision to make "
+                     "soon. No reply from Anna yet as of this scan.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3736,7 +3753,20 @@ SEED_ROWS = [
                      "genuine excitement about webAI. HR is sending a soft-offer email plus a DocuSign and an "
                      "updated benefits guide; Regina has not yet signed as of this call. No written offer "
                      "confirmed yet -- treating this as Offer status based on the verbal terms given, to be "
-                     "finalized once the DocuSign/written offer arrives.",
+                     "finalized once the DocuSign/written offer arrives. 2026-10-22 evening: formal written "
+                     "offer email arrived from Marcus Godin -- $95,000 salary, 2,800 options with a confirmed "
+                     "4-year vesting schedule and 1-year cliff, target start date Nov 2. **Offer valid for 5 "
+                     "business days from 10/22** (i.e. roughly through Thu 10/29) -- a real decision deadline. "
+                     "Regina asked follow-up questions: several perks from the original job posting (a $200/mo "
+                     "health & wellness stipend, Function Health subscription) weren't in the attached benefits "
+                     "guide -- Marcus said the guide was outdated (benefits were re-elected for next year) and "
+                     "sent an updated list (HSA/FSA-based health plan, 401k match, flexible PTO, parental "
+                     "leave, continuing education support (case-by-case, not a fixed stipend), life/disability "
+                     "insurance, free in-office parking). Performance reviews are bi-annual (every 6 months) "
+                     "with potential base/equity increases. No coworking stipend or WFH equipment budget as a "
+                     "standard benefit -- Marcus is checking whether any flexibility exists after Regina asked "
+                     "about partial reimbursement, given she'd be fully remote from NYC; awaiting his reply. "
+                     "No DocuSign sent/signed yet as of this scan.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "pay_range": "$95K base + 2,800 stock options",
         "job_fit": "Good",
@@ -3863,7 +3893,10 @@ SEED_ROWS = [
                      "3:00-3:30pm EDT with Danny Cohn (Bespoke Post's CCO) -- round 3 now locked in. 2026-10-21: "
                      "the call happened -- Regina joined about 3 minutes late (Kate checked in mid-call asking "
                      "if everything was okay since Danny hadn't seen her join yet), but she and Danny connected "
-                     "and Regina described it as \"a really great conversation.\" Awaiting next steps.",
+                     "and Regina described it as \"a really great conversation.\" Awaiting next steps. "
+                     "2026-10-22: with a real competing offer in hand (webAI, $95K), Regina emailed Kate -- "
+                     "said she enjoyed the Danny call, flagged the offer/number, and asked where things stand "
+                     "given she has a decision to make soon. No reply from Kate yet as of this scan.",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",
@@ -4169,10 +4202,11 @@ SEED_ROWS = [
     {
         "company": "EliseAI",
         "position": "Graphic Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-06",
         "source": "Ashby",
-        "notes": "Confirmed via Ashby's auto-reply.",
+        "notes": "Confirmed via Ashby's auto-reply. Rejected 2026-10-22: \"the application process is highly "
+                 "competitive... we are not in the position to move forward with your application.\"",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: $125K-$160K, NYC on-site, 2-5 years as a Brand/Graphic/Marketing "
                          "Designer, driving visual identity and brand expression, building design-system "
@@ -4807,6 +4841,18 @@ SEED_ROWS = [
         "job_fit_notes": "Couldn't confirm which role this was for. Substack's only confirmed open design "
                          "listing found was a Product Designer role (hybrid NY/SF, 3+ yrs, $150K-$215K) -- not "
                          "guessing whether that's the one applied to.",
+    },
+    {
+        "company": "Gretel",
+        "position": "Strategy Intern",
+        "status": "Applied",
+        "applied_date": "2026-10-22",
+        "source": "Notion form",
+        "notes": "Confirmed via a Notion-hosted application form confirmation (\"Thank you for filling out "
+                 "'Gretel Strategy Intern'\").",
+        "job_fit": "Unknown",
+        "job_fit_notes": "Couldn't confirm which company this is (common name) or find the specific posting to "
+                         "assess requirements.",
     },
 ]
 
