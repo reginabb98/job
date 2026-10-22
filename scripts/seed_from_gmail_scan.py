@@ -1228,6 +1228,14 @@ Scan history:
     Excluded a mass recruiting-agency solicitation (TasteMakers/Taste
     AI, freelance Figma project work) -- unsolicited outreach, not a
     response to an application.
+  - 2026-10-22 (afternoon rescan, update from Regina): 2 updates.
+    webAI -- flipped to Offer: formal offer call confirmed base salary
+    at Regina's ask ($95,000), plus 2,800 stock options (speculative/
+    illiquid value, not guaranteed), standard 4-year vesting, proposed
+    start date Nov 2. Soft-offer email, DocuSign, and benefits guide
+    pending; no written offer signed yet. Sylvain -- Ben Cheney's
+    networking call is now locked in for Wednesday, Oct 28, 1:00-
+    1:30pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3686,7 +3694,7 @@ SEED_ROWS = [
     {
         "company": "webAI",
         "position": "Marketing Designer",
-        "status": "Interviewing",
+        "status": "Offer",
         "applied_date": "2026-09-27",
         "had_interview": 1,
         "interview_dates": ["2026-10-05", "2026-10-19"],
@@ -3715,9 +3723,22 @@ SEED_ROWS = [
                      "they're submitting her comp to finance for approval and will follow up today or tomorrow "
                      "with a number, then a text and a call to discuss. Regina intends to ask for $95K (up from "
                      "the $90K she originally gave Michael on the 10/5 intro call), within the role's $80K-"
-                     "$100K band.",
+                     "$100K band. 2026-10-22: formal offer call (HR, covering for Michael) -- base salary "
+                     "confirmed at Regina's ask, $95,000. Equity: 2,800 options, strike price ~$5.50, with a "
+                     "hypothetical/estimated future sale price of ~$32.50 used to project a rough total equity "
+                     "value of ~$70-75K over a vesting period (~$18-19K/year) -- framed by HR as bringing total "
+                     "comp to a \"$113-114K\" quote-unquote figure, though this equity value is a speculative, "
+                     "illiquid projection tied to an unreleased internal valuation, not guaranteed money. "
+                     "Standard 4-year vesting mentioned; exact cliff/post-termination exercise window not yet "
+                     "confirmed in writing. Proposed start date Nov 2, 2026 (backup option Nov 16); Regina "
+                     "confirmed Nov 2 works. HR asked whether Regina had other processes in play -- she said "
+                     "she has other conversations in progress but none at offer stage yet, and expressed "
+                     "genuine excitement about webAI. HR is sending a soft-offer email plus a DocuSign and an "
+                     "updated benefits guide; Regina has not yet signed as of this call. No written offer "
+                     "confirmed yet -- treating this as Offer status based on the verbal terms given, to be "
+                     "finalized once the DocuSign/written offer arrives.",
         "notes": "Confirmed via Ashby's auto-reply.",
-        "pay_range": "$80K-$100K/yr",
+        "pay_range": "$95K base + 2,800 stock options",
         "job_fit": "Good",
         "job_fit_notes": "Per the 2026-10-05 intro call with Michael Hale: webAI is a ~200-person Austin AI "
                          "startup (decentralized/on-device AI solutions), design team of 5-6. This is an open "
@@ -4533,7 +4554,9 @@ SEED_ROWS = [
                      "currently hiring, but he's always open to connecting with interesting people and offered "
                      "a video chat next week or the week after. Regina replied the same day with her "
                      "availability (flexible next week except Monday 1-2pm and Tuesday afternoon ET); no "
-                     "specific date/time confirmed yet.",
+                     "specific date/time confirmed yet. 2026-10-22: Ben proposed Wednesday at 1pm; Regina "
+                     "confirmed, and a calendar invite followed for Wednesday, Oct 28, 1:00-1:30pm ET (Google "
+                     "Meet) -- networking call now locked in.",
         "notes": "Cold-outreach emails (resume attached) to both ben@sylvain.co and chris@sylvain.co, \"Strategy "
                  "@Sylvain\" -- same pitch sent to two contacts at the same company, logged as one application, "
                  "not a response to a specific posted req.",

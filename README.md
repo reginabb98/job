@@ -1217,6 +1217,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Excluded a mass recruiting-agency solicitation (TasteMakers/Taste
   AI, freelance Figma project work) — unsolicited outreach, not a
   response to an application.
+- **2026-10-22 (afternoon rescan, update from Regina)** — 2 updates.
+  webAI — flipped to Offer: formal offer call confirmed base salary at
+  Regina's ask ($95,000), plus 2,800 stock options (speculative/
+  illiquid value, not guaranteed), standard 4-year vesting, proposed
+  start date Nov 2. Soft-offer email, DocuSign, and benefits guide
+  pending; no written offer signed yet. Sylvain — Ben Cheney's
+  networking call is now locked in for Wednesday, Oct 28, 1:00-1:30pm
+  ET.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
