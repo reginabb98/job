@@ -1222,6 +1222,12 @@ Scan history:
     Post -- the CCO round 3 call with Danny Cohn happened (Regina
     joined a few minutes late but it went well per her own account);
     awaiting next steps.
+  - 2026-10-22 (morning rescan): no new rows, 1 update. Raisin --
+    rejected, and the rejection named the actual role (Digital
+    Designer), resolving the earlier "Unspecified role" placeholder.
+    Excluded a mass recruiting-agency solicitation (TasteMakers/Taste
+    AI, freelance Figma project work) -- unsolicited outreach, not a
+    response to an application.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4687,17 +4693,18 @@ SEED_ROWS = [
     },
     {
         "company": "Raisin",
-        "position": "Unspecified role",
-        "status": "Applied",
+        "position": "Digital Designer",
+        "status": "Rejected",
         "applied_date": "2026-10-20",
         "source": "Email",
         "notes": "Generic confirmation from careers@raisin.com (\"Thanks for applying to Raisin\") didn't name "
-                 "the role.",
+                 "the role. Rejected 2026-10-22: \"decided not to move forward with your candidacy at this "
+                 "time\" -- this rejection named the actual title, Digital Designer, resolving the earlier "
+                 "\"Unspecified role\" placeholder.",
         "job_fit": "Unknown",
         "job_fit_notes": "Raisin is a Berlin-based fintech savings/investment marketplace with a US direct-to-"
-                         "consumer platform; a Brand & Marketing Designer (New York) role was found open around "
-                         "this time, but the confirmation doesn't confirm this is the posting applied to -- not "
-                         "guessing.",
+                         "consumer platform. Couldn't find the specific Digital Designer posting to confirm its "
+                         "requirements.",
     },
     {
         "company": "Rillet",

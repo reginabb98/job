@@ -1211,6 +1211,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   the CCO round 3 call with Danny Cohn happened (Regina joined a few
   minutes late but it went well per her own account); awaiting next
   steps.
+- **2026-10-22 (morning rescan)** — no new rows, 1 update. Raisin —
+  rejected, and the rejection named the actual role (Digital
+  Designer), resolving the earlier "Unspecified role" placeholder.
+  Excluded a mass recruiting-agency solicitation (TasteMakers/Taste
+  AI, freelance Figma project work) — unsolicited outreach, not a
+  response to an application.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
