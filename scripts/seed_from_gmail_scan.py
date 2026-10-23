@@ -1249,6 +1249,16 @@ Scan history:
     in hand, Regina emailed both Anna and Kate to flag the competing
     offer/number and ask for a status update given her decision
     timeline; no replies yet from either as of this scan.
+  - 2026-10-23 (afternoon rescan): 2 updates, no new rows. Vault 49 --
+    the leverage email worked: Anna confirmed the role is still open
+    (team still assessing candidates), then locked in a final-round
+    in-person studio visit for Tuesday, Oct 27, 1:00pm ET at Vault
+    49's studio (180 Varick Street, Suite 1018), with Sam Wilkes (CD),
+    Jennifer Yelk (ACD), and a new contact, Graham Erwin (DD). Regina
+    disclosed her Thursday webAI deadline to Anna, who's passed it
+    along so the team moves quickly. Bespoke Post -- no reply yet
+    from Kate as of this scan. Mother -- the Veronica Thew call was
+    rescheduled again, same day, now Friday Oct 23, 3:00-3:30pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2186,8 +2196,9 @@ SEED_ROWS = [
                      "shows the call as confirmed/accepted by both for Oct 22. 2026-10-21: Veronica sent an "
                      "updated \"*Rescheduling*\" invite moving the call to Thursday, Oct 22, 2:30-3:00pm ET "
                      "(same day, same time as before -- just reissued), then a second updated invite the same "
-                     "evening moving it again to **Friday, Oct 23, 2:00-2:30pm ET**. Treating the Oct 23 "
-                     "invite as the current, authoritative time since it was sent later the same day.",
+                     "evening moving it again to **Friday, Oct 23, 2:00-2:30pm ET**. 2026-10-23: a further "
+                     "updated invite (same Zoom link, host jack.pompe@mothernewyork.com) moved the call again, "
+                     "same day, to **3:00-3:30pm ET** -- treating this as the current, authoritative time.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -2926,7 +2937,7 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-09-14",
         "had_interview": 1,
-        "interview_dates": ["2026-09-30", "2026-10-09"],
+        "interview_dates": ["2026-09-30", "2026-10-09", "2026-10-27"],
         "source": "Craft (recruitment agency ATS)",
         "next_step": "Interview happened Wednesday, Sept 30 at 1:00pm ET with Laura (Operations), Nick Corey "
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
@@ -2954,7 +2965,18 @@ SEED_ROWS = [
                      "2026-10-22: with a real competing offer in hand (webAI, $95K), Regina emailed Anna to "
                      "check in given the long silence since 10-13 -- mentioned the team's energy resonated with "
                      "her, that Vault 49 is genuinely her top choice, and that she now has a decision to make "
-                     "soon. No reply from Anna yet as of this scan.",
+                     "soon. 2026-10-23: the leverage email worked -- Anna replied (12:52pm) that the role is "
+                     "still open but they're still assessing candidates, and she'd check back in with Laura. "
+                     "Regina told Anna (3:34pm) she'd received the formal offer and has until Thursday to "
+                     "respond, could potentially request a short extension, and asked if Vault 49 could decide "
+                     "shortly after a visit. Anna came back (4:17pm) asking if Regina could come into the "
+                     "studio 1-2:30pm Tuesday; confirmed (4:39pm) at exactly 1:00pm Tuesday, Oct 27, at Vault "
+                     "49's studio -- 180 Varick Street, Suite 1018 (Laura's cell for day-of issues: "
+                     "609-903-7314). Regina is asked to prepare to present some work and have a conversation "
+                     "with Sam Wilkes (CD), Jennifer Yelk (ACD), and Graham Erwin (one of their DDs -- new "
+                     "contact, not previously on the req). Anna has let the team know about the Thursday "
+                     "deadline so they move quickly if they're keen. This is now a confirmed final-round "
+                     "in-person visit directly resulting from disclosing the competing offer.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "

@@ -1238,6 +1238,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   emailed both Anna and Kate to flag the competing offer/number and
   ask for a status update given her decision timeline; no replies yet
   from either as of this scan.
+- **2026-10-23 (afternoon rescan)** — 2 updates, no new rows. Vault 49
+  — the leverage email worked: Anna confirmed the role is still open
+  (team still assessing candidates), then locked in a final-round
+  in-person studio visit for Tuesday, Oct 27, 1:00pm ET at Vault 49's
+  studio (180 Varick Street, Suite 1018), with Sam Wilkes (CD),
+  Jennifer Yelk (ACD), and a new contact, Graham Erwin (DD). Regina
+  disclosed her Thursday webAI deadline to Anna, who's passed it along
+  so the team moves quickly. Bespoke Post — no reply yet from Kate as
+  of this scan. Mother — the Veronica Thew call was rescheduled again,
+  same day, now Friday Oct 23, 3:00-3:30pm ET.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
