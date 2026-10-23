@@ -1248,6 +1248,10 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   so the team moves quickly. Bespoke Post — no reply yet from Kate as
   of this scan. Mother — the Veronica Thew call was rescheduled again,
   same day, now Friday Oct 23, 3:00-3:30pm ET.
+- **2026-10-23 (evening rescan)** — 1 update, no new rows. webAI —
+  Marcus confirmed there's no coworking-space program, but finance
+  bumped the base salary to $98,000 (from $95,000) to help cover a
+  coworking membership; equity terms unchanged, no DocuSign yet.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

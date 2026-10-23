@@ -1259,6 +1259,10 @@ Scan history:
     along so the team moves quickly. Bespoke Post -- no reply yet
     from Kate as of this scan. Mother -- the Veronica Thew call was
     rescheduled again, same day, now Friday Oct 23, 3:00-3:30pm ET.
+  - 2026-10-23 (evening rescan): 1 update, no new rows. webAI --
+    Marcus confirmed there's no coworking-space program, but finance
+    bumped the base salary to $98,000 (from $95,000) to help cover a
+    coworking membership; equity terms unchanged, no DocuSign yet.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3788,9 +3792,12 @@ SEED_ROWS = [
                      "with potential base/equity increases. No coworking stipend or WFH equipment budget as a "
                      "standard benefit -- Marcus is checking whether any flexibility exists after Regina asked "
                      "about partial reimbursement, given she'd be fully remote from NYC; awaiting his reply. "
-                     "No DocuSign sent/signed yet as of this scan.",
+                     "No DocuSign sent/signed yet as of this scan. 2026-10-23: Marcus confirmed there's still "
+                     "no coworking-space program or reimbursement, but finance bumped the base salary to "
+                     "**$98,000** (up from $95,000) to help cover a coworking membership instead. Equity/"
+                     "options terms unchanged. Still no DocuSign sent/signed as of this scan.",
         "notes": "Confirmed via Ashby's auto-reply.",
-        "pay_range": "$95K base + 2,800 stock options",
+        "pay_range": "$98K base + 2,800 stock options",
         "job_fit": "Good",
         "job_fit_notes": "Per the 2026-10-05 intro call with Michael Hale: webAI is a ~200-person Austin AI "
                          "startup (decentralized/on-device AI solutions), design team of 5-6. This is an open "
