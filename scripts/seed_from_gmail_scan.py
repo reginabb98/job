@@ -1263,6 +1263,15 @@ Scan history:
     Marcus confirmed there's no coworking-space program, but finance
     bumped the base salary to $98,000 (from $95,000) to help cover a
     coworking membership; equity terms unchanged, no DocuSign yet.
+  - 2026-10-24 (morning rescan): 1 update, no new rows. Craft (Taste
+    freelance platform) -- the GoldenStone freelance project is active
+    and billing (Oct 1-15 hours reported); Taste Labs is moving her
+    from the wrapping-up Brand Designer role into Presentation Design
+    on the same project (assessment waived), and a new PandaDoc SOW
+    for the Presentation Designer role arrived 10/24, not yet signed.
+    Excluded an unrelated generic "open design projects" solicitation
+    from Taste's broader recruiting list (unsolicited, not tied to
+    this project).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3430,7 +3439,19 @@ SEED_ROWS = [
                      "participants -- fully signed. Remaining steps: set up a tastemaker.pro email, get added "
                      "to the project Slack, attend the kickoff call (was scheduled for Thu Oct 1, so should "
                      "have happened by now). 2026-10-06: Checkr confirmed the background check is complete and "
-                     "the report was sent to Taste AI, who will notify Regina of next steps.",
+                     "the report was sent to Taste AI, who will notify Regina of next steps. 2026-10-16: "
+                     "active and billing -- reminder to report hours for the Oct 1-15 payment cycle via the "
+                     "Payment Center, confirming the Brand Designer work is underway. 2026-10-21: Taste Labs "
+                     "said Brand is almost wrapped and asked if she wants to keep going, offering to move her "
+                     "from Brand into Presentation Design on the same GoldenStone project (separately, an "
+                     "unrelated generic \"open design projects\" solicitation arrived the same day from Taste's "
+                     "broader recruiting list -- excluded as unsolicited, not tied to this project). 2026-10-23: "
+                     "approved for Presentation Design on GoldenStone with the assessment waived. 2026-10-24: "
+                     "TasteMakers' own system separately flagged her as \"selected\" for a Brand Designer/Art "
+                     "Director assessment (Pitch, Brand Kit, Presentation) -- likely just the same Presentation "
+                     "Design move working through two different internal systems, not a distinct role; not "
+                     "guessing further. Same day, a new PandaDoc SOW arrived from David Barner for \"GoldenStone "
+                     "Slides & Docs Project - Presentation Designer\" -- not yet signed as of this scan.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "

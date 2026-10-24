@@ -1252,6 +1252,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Marcus confirmed there's no coworking-space program, but finance
   bumped the base salary to $98,000 (from $95,000) to help cover a
   coworking membership; equity terms unchanged, no DocuSign yet.
+- **2026-10-24 (morning rescan)** — 1 update, no new rows. Craft
+  (Taste freelance platform) — the GoldenStone freelance project is
+  active and billing (Oct 1-15 hours reported); Taste Labs is moving
+  her from the wrapping-up Brand Designer role into Presentation
+  Design on the same project (assessment waived), and a new PandaDoc
+  SOW for the Presentation Designer role arrived 10/24, not yet
+  signed. Excluded an unrelated generic "open design projects"
+  solicitation from Taste's broader recruiting list (unsolicited, not
+  tied to this project).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
