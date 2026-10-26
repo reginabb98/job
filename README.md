@@ -1266,6 +1266,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   fully signed by all participants. Mother — the Veronica Thew call
   happened Friday as scheduled; Regina followed up same day with a
   thank-you note and her strategy portfolio.
+- **2026-10-26 (evening rescan)** — 1 update, no new rows. Instrument
+  — flipped Applied → Interviewing: recruiter Kearney Fagan reached
+  out out of the blue, nearly 3 months after the original Lever
+  application, inviting Regina to a phone screen; booked for
+  Wednesday, Oct 28, 2:00-2:30pm ET. Excluded another generic "open
+  Figma design projects" solicitation from Taste's broader recruiting
+  list (unsolicited, not tied to the active GoldenStone project).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

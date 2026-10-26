@@ -1277,6 +1277,14 @@ Scan history:
     fully signed by all participants. Mother -- the Veronica Thew call
     happened Friday as scheduled; Regina followed up same day with a
     thank-you note and her strategy portfolio.
+  - 2026-10-26 (evening rescan): 1 update, no new rows. Instrument --
+    flipped Applied -> Interviewing: recruiter Kearney Fagan reached
+    out out of the blue, nearly 3 months after the original Lever
+    application, inviting Regina to a phone screen; booked for
+    Wednesday, Oct 28, 2:00-2:30pm ET. Excluded another generic "open
+    Figma design projects" solicitation from Taste's broader
+    recruiting list (unsolicited, not tied to the active GoldenStone
+    project).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1447,9 +1455,16 @@ SEED_ROWS = [
     {
         "company": "Instrument",
         "position": "Unspecified role",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-07-27",
+        "had_interview": 0,
+        "interview_dates": ["2026-10-28"],
         "source": "Lever",
+        "next_step": "2026-10-26: out of the blue (nearly 3 months after applying), recruiter Kearney Fagan "
+                     "reached out inviting Regina to a phone screen, impressed by her skills/background. Regina "
+                     "booked via Kearney's scheduling link; confirmed for Wednesday, Oct 28, 2:00-2:30pm ET "
+                     "(Kearney mentioned using an AI note-taking assistant on the call unless Regina objects). "
+                     "Still no confirmation of which specific role this is for.",
         "notes": None,
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role applied to, and no listing could be matched -- there's nothing concrete to assess fit against.",
