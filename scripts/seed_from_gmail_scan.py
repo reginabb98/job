@@ -1272,6 +1272,11 @@ Scan history:
     Excluded an unrelated generic "open design projects" solicitation
     from Taste's broader recruiting list (unsolicited, not tied to
     this project).
+  - 2026-10-26 (afternoon rescan): 2 updates, no new rows. Craft
+    (Taste freelance platform) -- the Presentation Designer SOW is now
+    fully signed by all participants. Mother -- the Veronica Thew call
+    happened Friday as scheduled; Regina followed up same day with a
+    thank-you note and her strategy portfolio.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -2211,7 +2216,10 @@ SEED_ROWS = [
                      "(same day, same time as before -- just reissued), then a second updated invite the same "
                      "evening moving it again to **Friday, Oct 23, 2:00-2:30pm ET**. 2026-10-23: a further "
                      "updated invite (same Zoom link, host jack.pompe@mothernewyork.com) moved the call again, "
-                     "same day, to **3:00-3:30pm ET** -- treating this as the current, authoritative time.",
+                     "same day, to **3:00-3:30pm ET** -- treating this as the current, authoritative time. "
+                     "2026-10-26: the call with Veronica happened as scheduled Friday -- Regina followed up "
+                     "same day with a thank-you note and her strategy portfolio, saying it was lovely meeting "
+                     "her and getting a glimpse of what things are like on the inside. Awaiting any reply.",
         "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
     },
@@ -3451,7 +3459,9 @@ SEED_ROWS = [
                      "Director assessment (Pitch, Brand Kit, Presentation) -- likely just the same Presentation "
                      "Design move working through two different internal systems, not a distinct role; not "
                      "guessing further. Same day, a new PandaDoc SOW arrived from David Barner for \"GoldenStone "
-                     "Slides & Docs Project - Presentation Designer\" -- not yet signed as of this scan.",
+                     "Slides & Docs Project - Presentation Designer\" -- not yet signed as of this scan. "
+                     "2026-10-26: that SOW is now fully signed/completed by all participants -- the "
+                     "Presentation Designer role on GoldenStone is confirmed and underway.",
         "source": "Referral",
         "notes": "Freelance project application via Craft's Taste platform (Fionn Andrews onboarded her "
                  "earlier the same day) -- submitted brand guideline samples as the design assessment. Same "

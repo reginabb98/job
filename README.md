@@ -1261,6 +1261,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   signed. Excluded an unrelated generic "open design projects"
   solicitation from Taste's broader recruiting list (unsolicited, not
   tied to this project).
+- **2026-10-26 (afternoon rescan)** — 2 updates, no new rows. Craft
+  (Taste freelance platform) — the Presentation Designer SOW is now
+  fully signed by all participants. Mother — the Veronica Thew call
+  happened Friday as scheduled; Regina followed up same day with a
+  thank-you note and her strategy portfolio.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
