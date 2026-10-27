@@ -1288,6 +1288,15 @@ Scan history:
   - 2026-10-27 (afternoon rescan): 1 update, no new rows. VaynerMedia
     -- Designer application flipped Applied -> Rejected (generic
     decline).
+  - 2026-10-27 (evening rescan): 4 updates, no new rows. Instrument --
+    the Kearney Fagan phone screen was rescheduled from Wed Oct 28,
+    2:00-2:30pm ET to Thu Oct 29, 1:00-1:30pm ET. Vault 49 -- the
+    in-person studio visit happened; Regina emailed Anna right after
+    saying it went well and she's hoping to hear back given her
+    Thursday deadline. Thyme Care -- Visual Designer, Marketing
+    flipped Applied -> Rejected (role filled). Bespoke Post (2nd
+    application, Graphic Designer) -- flipped Interviewing -> Rejected
+    after the round-3 CCO call; "wasn't quite the right fit."
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1461,13 +1470,15 @@ SEED_ROWS = [
         "status": "Interviewing",
         "applied_date": "2026-07-27",
         "had_interview": 0,
-        "interview_dates": ["2026-10-28"],
+        "interview_dates": ["2026-10-29"],
         "source": "Lever",
         "next_step": "2026-10-26: out of the blue (nearly 3 months after applying), recruiter Kearney Fagan "
                      "reached out inviting Regina to a phone screen, impressed by her skills/background. Regina "
                      "booked via Kearney's scheduling link; confirmed for Wednesday, Oct 28, 2:00-2:30pm ET "
                      "(Kearney mentioned using an AI note-taking assistant on the call unless Regina objects). "
-                     "Still no confirmation of which specific role this is for.",
+                     "Still no confirmation of which specific role this is for. 2026-10-27: the booking was "
+                     "rescheduled to Thursday, Oct 29, 1:00-1:30pm ET (same Kearney Fagan phone screen, new "
+                     "time/date -- no reason given in the calendar update).",
         "notes": None,
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role applied to, and no listing could be matched -- there's nothing concrete to assess fit against.",
@@ -3015,7 +3026,14 @@ SEED_ROWS = [
                      "with Sam Wilkes (CD), Jennifer Yelk (ACD), and Graham Erwin (one of their DDs -- new "
                      "contact, not previously on the req). Anna has let the team know about the Thursday "
                      "deadline so they move quickly if they're keen. This is now a confirmed final-round "
-                     "in-person visit directly resulting from disclosing the competing offer.",
+                     "in-person visit directly resulting from disclosing the competing offer. 2026-10-27: the "
+                     "visit happened as planned -- Regina emailed Anna right after (\"just got back from "
+                     "Vault... it went really well... I really do think the way they work is aligned with what "
+                     "I'm looking for\"), and is hoping to hear back soon given her Thursday deadline. (A same-"
+                     "day calendar-update email for this slot showed a virtual/Roam link with an odd default "
+                     "location, but Regina's own account confirms the visit was in person at the studio as "
+                     "planned -- the calendar email appears to be a scheduling-tool artifact, not a real "
+                     "change.)",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -3710,11 +3728,12 @@ SEED_ROWS = [
     {
         "company": "Thyme Care",
         "position": "Visual Designer, Marketing",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Ashby",
         "pay_range": "$115K-$135K/yr",
-        "notes": "Confirmed via Ashby's auto-reply.",
+        "notes": "Confirmed via Ashby's auto-reply. Rejected 2026-10-27: \"the position has recently been "
+                 "filled, so we won't be moving forward with your application at this time.\"",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: Thyme Care is a value-based oncology care company; this Visual "
                          "Designer role on the Marketing team owns design/production of campaigns, digital "
@@ -3936,7 +3955,7 @@ SEED_ROWS = [
     {
         "company": "Bespoke Post",
         "position": "Graphic Designer",
-        "status": "Interviewing",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "had_interview": 1,
         "interview_dates": ["2026-10-01", "2026-10-14", "2026-10-21"],
@@ -3974,7 +3993,9 @@ SEED_ROWS = [
                      "and Regina described it as \"a really great conversation.\" Awaiting next steps. "
                      "2026-10-22: with a real competing offer in hand (webAI, $95K), Regina emailed Kate -- "
                      "said she enjoyed the Danny call, flagged the offer/number, and asked where things stand "
-                     "given she has a decision to make soon. No reply from Kate yet as of this scan.",
+                     "given she has a decision to make soon. 2026-10-27: Kate replied with a rejection -- "
+                     "\"everyone really enjoyed getting to know you, but after a lot of consideration, we "
+                     "ultimately decided it wasn't quite the right fit for the Graphic Designer role.\"",
         "notes": "2nd, distinct Bespoke Post application -- separate from the earlier Strategist, Growth "
                  "Marketing application (applied 08-17, Weak fit). Confirmed via Lever's auto-reply.",
         "job_fit": "Unknown",

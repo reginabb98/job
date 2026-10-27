@@ -1276,6 +1276,15 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
 - **2026-10-27 (afternoon rescan)** — 1 update, no new rows.
   VaynerMedia — Designer application flipped Applied → Rejected
   (generic decline).
+- **2026-10-27 (evening rescan)** — 4 updates, no new rows. Instrument
+  — the Kearney Fagan phone screen was rescheduled from Wed Oct 28,
+  2:00-2:30pm ET to Thu Oct 29, 1:00-1:30pm ET. Vault 49 — the
+  in-person studio visit happened; Regina emailed Anna right after
+  saying it went well and she's hoping to hear back given her
+  Thursday deadline. Thyme Care — Visual Designer, Marketing flipped
+  Applied → Rejected (role filled). Bespoke Post (2nd application,
+  Graphic Designer) — flipped Interviewing → Rejected after the
+  round-3 CCO call; "wasn't quite the right fit."
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
