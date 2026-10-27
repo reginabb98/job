@@ -1285,6 +1285,9 @@ Scan history:
     Figma design projects" solicitation from Taste's broader
     recruiting list (unsolicited, not tied to the active GoldenStone
     project).
+  - 2026-10-27 (afternoon rescan): 1 update, no new rows. VaynerMedia
+    -- Designer application flipped Applied -> Rejected (generic
+    decline).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4024,10 +4027,11 @@ SEED_ROWS = [
     {
         "company": "VaynerMedia",
         "position": "Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-27",
         "source": "Greenhouse",
-        "notes": "Confirmed via Greenhouse's auto-reply.",
+        "notes": "Confirmed via Greenhouse's auto-reply. Rejected 2026-10-27: generic decline (\"decided not "
+                 "to proceed with your candidacy... moved ahead with another candidate\").",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: 2+ yrs experience, skills in motion graphics, color grading, and "
                          "Photoshop, agency environment -- a solid general match to Regina's agency background, "

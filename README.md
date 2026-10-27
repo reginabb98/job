@@ -1273,6 +1273,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Wednesday, Oct 28, 2:00-2:30pm ET. Excluded another generic "open
   Figma design projects" solicitation from Taste's broader recruiting
   list (unsolicited, not tied to the active GoldenStone project).
+- **2026-10-27 (afternoon rescan)** — 1 update, no new rows.
+  VaynerMedia — Designer application flipped Applied → Rejected
+  (generic decline).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
