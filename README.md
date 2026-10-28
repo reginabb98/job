@@ -1302,6 +1302,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Anna-Rae Morris (JKR) had just the one call, on 09-22 (the second
   call being arranged for the week of 09-28 never happened), and Angel
   Bellon's 09-08 call happened as scheduled.
+- **2026-10-28 (afternoon rescan)** — 1 new row. Mouthwash — cold-
+  outreach application to careers@mouthwash.co, resume attached, no
+  specific role named. Eve Bates (an existing recruiter connection)
+  emailed pitching 2 live roles at HallPass (Junior Designer and a 3D
+  Senior Designer); not logged as a row yet since there's no
+  response/scheduled call, per the standing rule — flagged to Regina
+  instead.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

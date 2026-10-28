@@ -1314,6 +1314,13 @@ Scan history:
     Anna-Rae Morris (JKR) had just the one call, on 09-22 (the second
     call being arranged for the week of 09-28 never happened), and
     Angel Bellon's 09-08 call happened as scheduled.
+  - 2026-10-28 (afternoon rescan): 1 new row. Mouthwash -- cold-
+    outreach application to careers@mouthwash.co, resume attached, no
+    specific role named. Eve Bates (a recruiter Regina has an existing
+    connection with) emailed pitching 2 live roles at HallPass (Junior
+    Designer and a 3D Senior Designer); not yet logged as a row since
+    there's no response/scheduled call yet, per the standing rule for
+    inbound recruiter outreach -- flagged to Regina instead.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -5002,6 +5009,20 @@ SEED_ROWS = [
         "job_fit": "Unknown",
         "job_fit_notes": "Couldn't confirm which company this is (common name) or find the specific posting to "
                          "assess requirements.",
+    },
+    {
+        "company": "Mouthwash",
+        "position": "Unspecified design role (cold outreach)",
+        "status": "Applied",
+        "applied_date": "2026-10-28",
+        "source": "Email",
+        "cold_outreach": 1,
+        "notes": "Direct cold-outreach email to careers@mouthwash.co, prompted by a post from someone named "
+                 "Alex saying the studio is growing again. Resume attached, portfolio linked "
+                 "(reginabbsv.cargo.site). No specific role/req named in Regina's email, so no listing to "
+                 "confirm against.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No specific posting named -- couldn't confirm requirements.",
     },
 ]
 
