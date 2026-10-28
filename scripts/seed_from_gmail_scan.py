@@ -2218,7 +2218,7 @@ SEED_ROWS = [
         "status": "Networking",
         "applied_date": "2026-09-10",
         "had_interview": 1,
-        "interview_dates": ["2026-09-10", "2026-10-26"],
+        "interview_dates": ["2026-09-10", "2026-10-23"],
         "source": "Referral",
         "next_step": "Regina sent a check-in email on 2026-09-25 to a contact at Mother named Rachel "
                      "(rachel@motherusa.com), asking about strategy-side openings -- note: this name doesn't "
@@ -2253,8 +2253,9 @@ SEED_ROWS = [
                      "her and getting a glimpse of what things are like on the inside. Awaiting any reply.",
         "notes": "Follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
                  "2026-07-30 Mother Intro Call. Per Regina, this call happened as scheduled on 2026-09-10. "
-                 "Round 2 (interview_dates) is the later Veronica Thew call on 2026-10-26, logged on this same "
-                 "row since it's the same Mother thread.",
+                 "Round 2 (interview_dates) is the later Veronica Thew call, which happened Friday, "
+                 "2026-10-23 (the 2026-10-26 date in next_step is when the update was logged, not the call "
+                 "date -- Oct 26 is a Monday).",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {
