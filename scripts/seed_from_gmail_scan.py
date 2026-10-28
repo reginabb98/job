@@ -1304,9 +1304,16 @@ Scan history:
     (informational, intro call 07-30), Maggie Murphy (networking call
     09-10), and a new row for Veronica Thew (networking call, happened
     Fri 10-23, not Mon 10-26 as previously logged -- that was the log
-    date, not the call date). Also added 1 new row: Instrument --
-    Andie Wexler, a networking call on 09-16 that had no row at all
-    (distinct from Kearney Fagan's unrelated recruiting outreach).
+    date, not the call date). Also confirmed the existing Andie Wexler
+    row's company (Instrument, via a follow-up email) and marked it as
+    a completed call -- it already had a row from 2026-09-18, which an
+    earlier pass in this same cycle missed and nearly re-added as a
+    duplicate under "Instrument" before catching it.
+  - 2026-10-28 (later, per Regina): marked 2 more networking calls as
+    completed, both previously logged only as scheduled/in-progress --
+    Anna-Rae Morris (JKR) had just the one call, on 09-22 (the second
+    call being arranged for the week of 09-28 never happened), and
+    Angel Bellon's 09-08 call happened as scheduled.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1492,22 +1499,6 @@ SEED_ROWS = [
         "notes": None,
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role applied to, and no listing could be matched -- there's nothing concrete to assess fit against.",
-    },
-    {
-        "company": "Instrument",
-        "position": "Networking call -- Andie Wexler",
-        "status": "Networking",
-        "applied_date": "2026-09-16",
-        "had_interview": 1,
-        "interview_dates": ["2026-09-16"],
-        "source": "Email",
-        "notes": "A 30-minute call with Andie Wexler (andie.wexler@instrument.com), confirmed via Calendly for "
-                 "Wed, Sept 16, 2026, 11:00am ET. How this contact originated isn't in Gmail (no outreach "
-                 "email found, just the Calendly confirmation) -- possibly arranged via LinkedIn or referral. "
-                 "Regina followed up 2026-09-25 thanking her for the chat and sending her strategy portfolio "
-                 "(reginabbs.cargo.site) for feedback. Separate from Kearney Fagan's unrelated 2026-10-26 "
-                 "recruiting outreach for an Instrument phone screen (its own row) -- different contact, no "
-                 "confirmed connection between the two threads.",
     },
     {
         "company": "Something Special Studios",
@@ -2225,24 +2216,29 @@ SEED_ROWS = [
     },
     {
         "company": "Anna-Rae Morris",
-        "position": "Networking call",
+        "position": "Networking call -- JKR",
         "status": "Networking",
         "applied_date": "2026-08-31",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-22"],
         "source": "LinkedIn",
-        "next_step": "Follow-up call being scheduled for next week (2026-09-25) after a reschedule -- exact "
-                     "time not yet confirmed.",
-        "notes": "Networking call with Anna-Rae Morris via LinkedIn outreach -- she's at JKR Global "
-                 "(annarae.morris@jkrglobal.com). A follow-up call was rescheduled, and Regina is now finding "
-                 "a new time with her for the week of 2026-09-28.",
+        "next_step": "2026-09-25: Regina asked to find a time for a second call the following week, after "
+                     "thanking Anna-Rae for being flexible about rescheduling the first one. Per Regina, that "
+                     "second call never happened -- just the one on 2026-09-22.",
+        "notes": "Networking call with Anna-Rae Morris via LinkedIn outreach -- she's at JKR "
+                 "(annarae.morris@jkrglobal.com). An invite was accepted 2026-08-28 and rescheduled; per "
+                 "Regina, the one call that actually happened was around 2026-09-22.",
     },
     {
         "company": "Angel Bellon",
         "position": "Networking call (Cultural Intelligence + Foresight consultant, Parsons faculty)",
         "status": "Networking",
         "applied_date": "2026-09-08",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-08"],
         "source": "LinkedIn",
-        "notes": "Scheduled networking call with Angel Bellon -- independent cultural-intelligence/foresight "
-                 "consultant and Parsons faculty. Not yet happened as of 2026-09-05.",
+        "notes": "Networking call with Angel Bellon -- independent cultural-intelligence/foresight consultant "
+                 "and Parsons faculty. Per Regina, this call happened as scheduled on 2026-09-08.",
     },
     {
         "company": "Mother",
@@ -3260,13 +3256,20 @@ SEED_ROWS = [
     # -- 2026-09-18: networking call reported directly by Regina --
     {
         "company": "Andie Wexler",
-        "position": "Networking call",
+        "position": "Networking call -- Instrument",
         "status": "Networking",
         "applied_date": "2026-09-16",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-16"],
         "source": "Calendly",
-        "notes": "30-minute Google Meet call booked via Calendly, Sept 16, 2026, 11:00-11:30am ET. Only a "
-                 "Calendly confirmation email was found in Gmail -- no other correspondence surfaced, so the "
-                 "company/context behind this contact is unconfirmed.",
+        "next_step": "2026-09-25: Regina followed up thanking her for the chat and sending her strategy "
+                     "portfolio (reginabbs.cargo.site) for feedback. No reply found yet.",
+        "notes": "30-minute Google Meet call booked via Calendly, Sept 16, 2026, 11:00-11:30am ET. Company "
+                 "now confirmed via the 2026-09-25 follow-up: Andie Wexler is at Instrument "
+                 "(andie.wexler@instrument.com). How the contact originated isn't in Gmail -- no outreach "
+                 "email found, just the Calendly confirmation; possibly LinkedIn or a referral. Separate from "
+                 "Kearney Fagan's unrelated 2026-10-26 recruiting outreach for an Instrument phone screen (its "
+                 "own row) -- different contact, no confirmed connection between the two threads.",
     },
     # -- 2026-09-18 (later): incremental rescan, 2 new rows, 2 flips --
     {

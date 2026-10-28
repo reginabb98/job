@@ -1292,9 +1292,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (informational, intro call 07-30), Maggie Murphy (networking call
   09-10), and a new row for Veronica Thew (networking call, happened
   Fri 10-23, not Mon 10-26 as previously logged — that was the log
-  date, not the call date). Also added 1 new row: Instrument — Andie
-  Wexler, a networking call on 09-16 that had no row at all (distinct
-  from Kearney Fagan's unrelated recruiting outreach).
+  date, not the call date). Also confirmed the existing Andie Wexler
+  row's company (Instrument, via a follow-up email) and marked it as
+  a completed call — it already had a row from 2026-09-18, which an
+  earlier pass in this same cycle missed and nearly re-added as a
+  duplicate under "Instrument" before catching it.
+- **2026-10-28 (later, per Regina)** — marked 2 more networking calls
+  as completed, both previously logged only as scheduled/in-progress —
+  Anna-Rae Morris (JKR) had just the one call, on 09-22 (the second
+  call being arranged for the week of 09-28 never happened), and Angel
+  Bellon's 09-08 call happened as scheduled.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
