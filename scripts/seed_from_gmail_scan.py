@@ -2217,6 +2217,8 @@ SEED_ROWS = [
         "position": "Networking call -- Maggie Murphy, Strategy Director",
         "status": "Networking",
         "applied_date": "2026-09-10",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-10", "2026-10-26"],
         "source": "Referral",
         "next_step": "Regina sent a check-in email on 2026-09-25 to a contact at Mother named Rachel "
                      "(rachel@motherusa.com), asking about strategy-side openings -- note: this name doesn't "
@@ -2249,8 +2251,10 @@ SEED_ROWS = [
                      "2026-10-26: the call with Veronica happened as scheduled Friday -- Regina followed up "
                      "same day with a thank-you note and her strategy portfolio, saying it was lovely meeting "
                      "her and getting a glimpse of what things are like on the inside. Awaiting any reply.",
-        "notes": "Scheduled follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
-                 "2026-07-30 Mother Intro Call. Not yet happened as of 2026-09-05.",
+        "notes": "Follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
+                 "2026-07-30 Mother Intro Call. Per Regina, this call happened as scheduled on 2026-09-10. "
+                 "Round 2 (interview_dates) is the later Veronica Thew call on 2026-10-26, logged on this same "
+                 "row since it's the same Mother thread.",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {
@@ -4195,6 +4199,8 @@ SEED_ROWS = [
         "position": "Brand Strategy (cold outreach -- no open role at time of contact)",
         "status": "Interviewing",
         "applied_date": "2026-08-26",
+        "had_interview": 1,
+        "interview_dates": ["2026-10-27"],
         "source": "Email",
         "notes": "Direct cold-outreach email to Natalee Ranii-Dropcho (Strategy & Copy Director) with resume "
                  "attached; no open strategy role existed at the time. Went unanswered for over a month, "
@@ -4207,7 +4213,8 @@ SEED_ROWS = [
                  "projects and her approach to strategy. Regina confirmed either day works; calendar invite "
                  "followed for Tuesday, Oct 27, 4:00-4:30pm ET. Flipped to Interviewing since this is "
                  "effectively a first conversation for the internship opportunity. 2026-10-17: calendar "
-                 "invite updated -- call time moved to 3:30-4:00pm ET (same date, Oct 27).",
+                 "invite updated -- call time moved to 3:30-4:00pm ET (same date, Oct 27). Per Regina, the "
+                 "call happened Oct 27 as scheduled.",
         "job_fit": "Good",
         "job_fit_notes": "Porto Rocha is a well-regarded NYC branding studio; this was a speculative intro, "
                          "not a response to a specific posting. The paid-strategy-internship path now being "
