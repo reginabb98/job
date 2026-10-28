@@ -1285,6 +1285,16 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Applied → Rejected (role filled). Bespoke Post (2nd application,
   Graphic Designer) — flipped Interviewing → Rejected after the
   round-3 CCO call; "wasn't quite the right fit."
+- **2026-10-28 (per Regina, reported directly rather than found by
+  scan)** — split the single merged "Mother" networking row (which had
+  wrongly combined two different people's calls as "round 1"/"round 2"
+  of one process) into three separate rows — Rachel Boyle
+  (informational, intro call 07-30), Maggie Murphy (networking call
+  09-10), and a new row for Veronica Thew (networking call, happened
+  Fri 10-23, not Mon 10-26 as previously logged — that was the log
+  date, not the call date). Also added 1 new row: Instrument — Andie
+  Wexler, a networking call on 09-16 that had no row at all (distinct
+  from Kearney Fagan's unrelated recruiting outreach).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

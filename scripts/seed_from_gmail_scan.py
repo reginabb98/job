@@ -1297,6 +1297,16 @@ Scan history:
     flipped Applied -> Rejected (role filled). Bespoke Post (2nd
     application, Graphic Designer) -- flipped Interviewing -> Rejected
     after the round-3 CCO call; "wasn't quite the right fit."
+  - 2026-10-28 (per Regina, reported directly rather than found by
+    scan): split the single merged "Mother" networking row (which had
+    wrongly combined two different people's calls as "round 1"/"round
+    2" of one process) into three separate rows -- Rachel Boyle
+    (informational, intro call 07-30), Maggie Murphy (networking call
+    09-10), and a new row for Veronica Thew (networking call, happened
+    Fri 10-23, not Mon 10-26 as previously logged -- that was the log
+    date, not the call date). Also added 1 new row: Instrument --
+    Andie Wexler, a networking call on 09-16 that had no row at all
+    (distinct from Kearney Fagan's unrelated recruiting outreach).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1482,6 +1492,22 @@ SEED_ROWS = [
         "notes": None,
         "job_fit": "Unknown",
         "job_fit_notes": "The confirmation email never named the specific role applied to, and no listing could be matched -- there's nothing concrete to assess fit against.",
+    },
+    {
+        "company": "Instrument",
+        "position": "Networking call -- Andie Wexler",
+        "status": "Networking",
+        "applied_date": "2026-09-16",
+        "had_interview": 1,
+        "interview_dates": ["2026-09-16"],
+        "source": "Email",
+        "notes": "A 30-minute call with Andie Wexler (andie.wexler@instrument.com), confirmed via Calendly for "
+                 "Wed, Sept 16, 2026, 11:00am ET. How this contact originated isn't in Gmail (no outreach "
+                 "email found, just the Calendly confirmation) -- possibly arranged via LinkedIn or referral. "
+                 "Regina followed up 2026-09-25 thanking her for the chat and sending her strategy portfolio "
+                 "(reginabbs.cargo.site) for feedback. Separate from Kearney Fagan's unrelated 2026-10-26 "
+                 "recruiting outreach for an Instrument phone screen (its own row) -- different contact, no "
+                 "confirmed connection between the two threads.",
     },
     {
         "company": "Something Special Studios",
@@ -1807,15 +1833,21 @@ SEED_ROWS = [
     # -- 2026-08-18: reported directly by Regina, not from any inbox scan --
     {
         "company": "Mother",
-        "position": "Networking call -- no open role (Strategy)",
+        "position": "Informational call -- Rachel Boyle, Recruiter",
         "status": "Networking",
         "applied_date": "2026-07-30",
+        "had_interview": 1,
+        "interview_dates": ["2026-07-30"],
         "source": "Referral",
-        "notes": "Mother Intro Call, confirmed via calendar (12:30pm, 2026-07-30) -- corrects the earlier "
-                 "approximate date. Recruiter called to get to know Regina, not about a specific opening -- "
-                 "she said she doesn't currently have any open roles. Regina expressed interest in Strategy. "
-                 "Led to a follow-up call scheduled with Maggie Murphy, Strategy Director at Mother, on "
-                 "2026-09-10 (see separate row).",
+        "next_step": "2026-08-13: Regina checked in by email asking if anything had opened up on the "
+                     "strategist side; no reply found. 2026-09-25: Regina checked in again; Rachel replied "
+                     "2026-09-29 that it's still quiet on the strategy side and she'll flag if anything opens "
+                     "up. Informational only -- no role has moved for Regina through this specific contact.",
+        "notes": "Mother Intro Call with Rachel Boyle (rachel@motherusa.com), a recruiter at Mother -- "
+                 "confirmed via calendar (12:30pm, 2026-07-30). A get-to-know-you call, not about a specific "
+                 "opening -- Rachel said there wasn't one open at the time. Regina expressed interest in "
+                 "Strategy. Led to a separate follow-up call being scheduled with Maggie Murphy, Strategy "
+                 "Director at Mother, on 2026-09-10 (its own row, not a later round of this same call).",
     },
     {
         "company": "PepsiCo",
@@ -2218,44 +2250,50 @@ SEED_ROWS = [
         "status": "Networking",
         "applied_date": "2026-09-10",
         "had_interview": 1,
-        "interview_dates": ["2026-09-10", "2026-10-23"],
+        "interview_dates": ["2026-09-10"],
         "source": "Referral",
-        "next_step": "Regina sent a check-in email on 2026-09-25 to a contact at Mother named Rachel "
-                     "(rachel@motherusa.com), asking about strategy-side openings -- note: this name doesn't "
-                     "match Maggie Murphy from the original follow-up call, so it's unclear if this is the "
-                     "same contact under a different name or a separate person at Mother; not guessing which. "
-                     "Rachel replied 2026-09-29: still quiet on the strategy side, will flag if anything opens "
-                     "up. Separately, Regina directly cold-emailed a third Mother contact, Veronica Thew "
-                     "(veronica@mothernewyork.com), on 2026-09-25, introducing herself and noting she'd "
-                     "already spoken with Rachel and Maggie -- portfolio linked, no resume attached. Veronica "
-                     "replied warmly on 2026-10-04 and looped in Lauren Martinovic to schedule a call; after a "
-                     "few back-and-forth messages, the call is confirmed for Tuesday, Oct 13, 3:00-4:00pm ET "
-                     "with Lauren (Veronica cc'd) -- this resolves the previously-logged \"unexplained\" "
-                     "calendar invite from 2026-10-06, which was just the downstream scheduling step of this "
-                     "same thread. 2026-10-09: Jack Pompe (Mother) said Veronica had a scheduling conflict "
-                     "during the Oct 13 3:00-3:30pm slot and asked to move to 4:00-4:30pm ET the same day; "
-                     "Regina agreed. 2026-10-12: Regina followed up to confirm, offering to move to the "
-                     "following week instead if that was easier. 2026-10-13: Jack replied that Veronica's "
-                     "calendar had gotten chaotic again and the call didn't happen a second time; he asked "
-                     "Regina for her availability next week instead. Regina replied the same day saying she's "
-                     "flexible next week; Jack proposed what he called \"Thursday, 2:30-3pm ET\" (sent Oct 13, "
-                     "actually mislabeled -- the calendar invite that followed confirms it landed on "
-                     "**Thursday, Oct 22, 2:30-3:00pm ET**, not Oct 16 as previously logged here). Regina "
-                     "confirmed 2026-10-15; the Google Calendar invite (organizer Veronica Thew, Zoom link) "
-                     "shows the call as confirmed/accepted by both for Oct 22. 2026-10-21: Veronica sent an "
-                     "updated \"*Rescheduling*\" invite moving the call to Thursday, Oct 22, 2:30-3:00pm ET "
-                     "(same day, same time as before -- just reissued), then a second updated invite the same "
-                     "evening moving it again to **Friday, Oct 23, 2:00-2:30pm ET**. 2026-10-23: a further "
-                     "updated invite (same Zoom link, host jack.pompe@mothernewyork.com) moved the call again, "
-                     "same day, to **3:00-3:30pm ET** -- treating this as the current, authoritative time. "
-                     "2026-10-26: the call with Veronica happened as scheduled Friday -- Regina followed up "
-                     "same day with a thank-you note and her strategy portfolio, saying it was lovely meeting "
-                     "her and getting a glimpse of what things are like on the inside. Awaiting any reply.",
-        "notes": "Follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of the "
-                 "2026-07-30 Mother Intro Call. Per Regina, this call happened as scheduled on 2026-09-10. "
-                 "Round 2 (interview_dates) is the later Veronica Thew call, which happened Friday, "
-                 "2026-10-23 (the 2026-10-26 date in next_step is when the update was logged, not the call "
-                 "date -- Oct 26 is a Monday).",
+        "notes": "Follow-up call with Maggie Murphy, Strategy Director at Mother -- grew out of Rachel "
+                 "Boyle's 2026-07-30 intro call (its own row). Per Regina, this call happened as scheduled on "
+                 "2026-09-10. A separate, later Mother contact (Veronica Thew) has her own row -- not a "
+                 "further round of this same conversation.",
+    },
+    {
+        "company": "Mother",
+        "position": "Networking call -- Veronica Thew",
+        "status": "Networking",
+        "applied_date": "2026-09-25",
+        "had_interview": 1,
+        "interview_dates": ["2026-10-23"],
+        "source": "Cold email",
+        "cold_outreach": 1,
+        "next_step": "2026-09-25: Regina directly cold-emailed Veronica Thew (veronica@mothernewyork.com), "
+                     "introducing herself and noting she'd already spoken with Rachel and Maggie -- portfolio "
+                     "linked, no resume attached. Veronica replied warmly on 2026-10-04 and looped in Lauren "
+                     "Martinovic to schedule a call; after a few back-and-forth messages, the call is "
+                     "confirmed for Tuesday, Oct 13, 3:00-4:00pm ET with Lauren (Veronica cc'd) -- this "
+                     "resolves the previously-logged \"unexplained\" calendar invite from 2026-10-06, which was "
+                     "just the downstream scheduling step of this same thread. 2026-10-09: Jack Pompe (Mother) "
+                     "said Veronica had a scheduling conflict during the Oct 13 3:00-3:30pm slot and asked to "
+                     "move to 4:00-4:30pm ET the same day; Regina agreed. 2026-10-12: Regina followed up to "
+                     "confirm, offering to move to the following week instead if that was easier. 2026-10-13: "
+                     "Jack replied that Veronica's calendar had gotten chaotic again and the call didn't "
+                     "happen a second time; he asked Regina for her availability next week instead. Regina "
+                     "replied the same day saying she's flexible next week; Jack proposed what he called "
+                     "\"Thursday, 2:30-3pm ET\" (sent Oct 13, actually mislabeled -- the calendar invite that "
+                     "followed confirms it landed on **Thursday, Oct 22, 2:30-3:00pm ET**, not Oct 16 as "
+                     "previously logged here). Regina confirmed 2026-10-15; the Google Calendar invite "
+                     "(organizer Veronica Thew, Zoom link) shows the call as confirmed/accepted by both for "
+                     "Oct 22. 2026-10-21: Veronica sent an updated \"*Rescheduling*\" invite moving the call to "
+                     "Thursday, Oct 22, 2:30-3:00pm ET (same day, same time as before -- just reissued), then "
+                     "a second updated invite the same evening moving it again to **Friday, Oct 23, "
+                     "2:00-2:30pm ET**. 2026-10-23: a further updated invite (same Zoom link, host "
+                     "jack.pompe@mothernewyork.com) moved the call again, same day, to **3:00-3:30pm ET** -- "
+                     "treating this as the current, authoritative time, and per Regina this is when the call "
+                     "actually happened. Regina followed up the same day with a thank-you note and her "
+                     "strategy portfolio, saying it was lovely meeting her and getting a glimpse of what "
+                     "things are like on the inside. Awaiting any reply.",
+        "notes": "A third, distinct Mother contact -- separate from Rachel Boyle (intro call/recruiter) and "
+                 "Maggie Murphy (Strategy Director networking call). Not a later round of either.",
     },
     # -- 2026-09-05: incremental rescan, 3 new rows --
     {
