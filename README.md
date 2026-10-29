@@ -1316,6 +1316,19 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   quick call for today, moved same-morning from 10:00-10:15am ET to
   11:00-11:15am ET — likely carrying Vault 49's decision, same day as
   Regina's webAI deadline.
+- **2026-10-29 (afternoon rescan)** — 2 updates, no new rows. Vault 49
+  — flipped Interviewing → Offer: $90,000 base plus full benefits
+  (healthcare, 20 PTO days, 401k match, hybrid Tue-Thu in-studio,
+  volunteer program, etc). Regina verbally accepted, proposed Nov 9 as
+  her start date, and gave her full legal name for the contract. Note:
+  $90K is below both the $98K webAI competing offer and the "up to
+  $100K" figure originally quoted for this role — she accepted anyway,
+  on fit/team over base pay. No confirmation yet that she's formally
+  declined webAI. Taskrabbit (10-16 application) — flipped Applied →
+  Interviewing and confirmed the specific role (Senior Visual Design
+  Specialist, resolving earlier uncertainty between Taskrabbit's two
+  open design reqs): recruiter Michael LaPlaca sent a Calendly link to
+  book a screening call, not yet booked as of this scan.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

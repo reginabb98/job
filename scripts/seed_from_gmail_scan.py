@@ -1328,6 +1328,20 @@ Scan history:
     a quick call for today, moved same-morning from 10:00-10:15am ET
     to 11:00-11:15am ET -- likely carrying Vault 49's decision, same
     day as Regina's webAI deadline.
+  - 2026-10-29 (afternoon rescan): 2 updates, no new rows. Vault 49 --
+    flipped Interviewing -> Offer: $90,000 base plus full benefits
+    (healthcare, 20 PTO days, 401k match, hybrid Tue-Thu in-studio,
+    volunteer program, etc). Regina verbally accepted, proposed Nov 9
+    as her start date, and gave her full legal name for the contract.
+    Note: $90K is below both the $98K webAI competing offer and the
+    "up to $100K" figure originally quoted for this role -- she
+    accepted anyway, on fit/team over base pay. No confirmation yet
+    that she's formally declined webAI. Taskrabbit (10-16 application)
+    -- flipped Applied -> Interviewing and confirmed the specific role
+    (Senior Visual Design Specialist, resolving earlier uncertainty
+    between Taskrabbit's two open design reqs): recruiter Michael
+    LaPlaca sent a Calendly link to book a screening call, not yet
+    booked as of this scan.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3036,12 +3050,13 @@ SEED_ROWS = [
     },
     {
         "company": "Vault 49",
-        "position": "Brand Designer",
-        "status": "Interviewing",
+        "position": "Designer",
+        "status": "Offer",
         "applied_date": "2026-09-14",
         "had_interview": 1,
         "interview_dates": ["2026-09-30", "2026-10-09", "2026-10-27"],
         "source": "Craft (recruitment agency ATS)",
+        "pay_range": "$90,000/yr base",
         "next_step": "Interview happened Wednesday, Sept 30 at 1:00pm ET with Laura (Operations), Nick Corey "
                      "(ADD), and Steve Baust (ADD) -- Vault 49's own team, not just Craft. Format: a 45-minute "
                      "get-to-know-you call where Regina presented a couple of projects, walking through her "
@@ -3094,7 +3109,21 @@ SEED_ROWS = [
                      "work out, hoping there's room to make it happen. 2026-10-29: Anna sent a calendar invite "
                      "for a quick call, originally 10:00-10:15am ET, then updated the same morning to "
                      "11:00-11:15am ET -- no reason given, but likely the call carrying Vault 49's decision, "
-                     "landing the same day as Regina's webAI response deadline.",
+                     "landing the same day as Regina's webAI response deadline. 2026-10-29 (the call, then "
+                     "email): Anna emailed at 11:29am with great news -- Vault 49 offered Regina the Designer "
+                     "role at $90,000 base, plus: fully covered individual healthcare (Aetna -- medical/"
+                     "dental/vision), 20 vacation days (25 after 10 years, sick time separate from vacation), "
+                     "closed between Christmas Eve and New Year's, 401k match up to 4% after 6 months, FSA, "
+                     "Summer Fridays (close at 3pm June-August), 10 public holidays, hybrid schedule (remote "
+                     "Mon/Fri, in-studio Tue-Thu), a volunteer program (5 extra days off + $1,000 travel "
+                     "stipend every 2 years, after 2 years of service), and quarterly wellness/social/cultural "
+                     "events. Note: $90K is below the $98K webAI competing offer and below the \"up to $100K\" "
+                     "figure Anna originally quoted for the role -- Regina accepted anyway. Regina replied "
+                     "(12:31pm) verbally accepting, excited to move forward, proposing Nov 9 as her start date "
+                     "and providing her full legal name (Regina Barrera Babb) for the formal contract. Anna "
+                     "confirmed (1:04pm) she'll get things moving with the team and asked for Regina's address "
+                     "and cell number next. This resolves the webAI/Vault 49 decision -- Vault 49 won out on "
+                     "fit/team over base salary. No confirmation yet that Regina has formally declined webAI.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -4791,20 +4820,25 @@ SEED_ROWS = [
     },
     {
         "company": "Taskrabbit",
-        "position": "Unspecified role (Design)",
-        "status": "Applied",
+        "position": "Senior Visual Design Specialist",
+        "status": "Interviewing",
         "applied_date": "2026-10-16",
         "source": "Greenhouse",
-        "notes": "Generic Greenhouse auto-reply confirmation (\"Thanks for applying to Taskrabbit!\") didn't name "
-                 "the role. Distinct from the existing 2026-08-18 Taskrabbit/Sr. Manager, Brand & Content "
-                 "application -- different date.",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Two distinct current design roles found at Taskrabbit: \"Lead Visual Designer / "
-                         "Senior Visual Design Specialist\" (hybrid SF/NY, $89K-$115K, 5+ yrs creative "
-                         "marketing/brand design/art direction -- a reasonable match) and a separate \"AI "
-                         "Content Design Lead\" (Charlotte, requires hands-on generative-AI image/video/copy "
-                         "skills Regina doesn't have). Couldn't confirm which one she applied to -- not "
-                         "guessing.",
+        "pay_range": "$89K-$115K/yr",
+        "next_step": "2026-10-29: Michael LaPlaca (Sr. Corporate & Technical Recruiter) emailed inviting "
+                     "Regina to interview, confirming this is for the Senior Visual Design Specialist role -- "
+                     "resolves the earlier uncertainty about which of Taskrabbit's two open design roles this "
+                     "application was for. Asked her to pick a time via his Calendly link; not yet booked as "
+                     "of this scan.",
+        "notes": "Generic Greenhouse auto-reply confirmation (\"Thanks for applying to Taskrabbit!\") didn't "
+                 "name the role at the time. Distinct from the existing 2026-08-18 Taskrabbit/Sr. Manager, "
+                 "Brand & Content application -- different date.",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed via Michael LaPlaca's 2026-10-29 outreach: this is the \"Lead Visual "
+                         "Designer / Senior Visual Design Specialist\" role (hybrid SF/NY, $89K-$115K, 5+ yrs "
+                         "creative marketing/brand design/art direction) -- a reasonable match to Regina's "
+                         "background, not the separate \"AI Content Design Lead\" role (Charlotte, generative-"
+                         "AI skills she doesn't have).",
     },
     {
         "company": "Vinson & Elkins LLP",
