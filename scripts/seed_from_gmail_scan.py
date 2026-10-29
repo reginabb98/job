@@ -1342,6 +1342,14 @@ Scan history:
     between Taskrabbit's two open design reqs): recruiter Michael
     LaPlaca sent a Calendly link to book a screening call, not yet
     booked as of this scan.
+  - 2026-10-29 (evening rescan): 2 updates, no new rows. Vault 49 --
+    Laura Negin (People Ops) sent the formal written offer/contract
+    directly; Regina replied excited to join, confirming she'll
+    return the signed copy by EOD Oct 30 (not yet confirmed
+    signed/returned as of this scan). Titan -- flipped Applied ->
+    Interviewing: recruiter Alex Mastando confirmed the company
+    (titanvest.com) and invited Regina to a first-round video call via
+    an Ashby scheduling link; specific role still not named.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3123,7 +3131,12 @@ SEED_ROWS = [
                      "and providing her full legal name (Regina Barrera Babb) for the formal contract. Anna "
                      "confirmed (1:04pm) she'll get things moving with the team and asked for Regina's address "
                      "and cell number next. This resolves the webAI/Vault 49 decision -- Vault 49 won out on "
-                     "fit/team over base salary. No confirmation yet that Regina has formally declined webAI.",
+                     "fit/team over base salary. No confirmation yet that Regina has formally declined webAI. "
+                     "2026-10-29 (evening): Laura Negin (People Operations Manager) emailed directly with the "
+                     "formal written offer -- contract attached, same benefits as Anna relayed, asked for a "
+                     "signed copy back by EOD Oct 30. Regina replied same evening, excited to join, confirming "
+                     "she'll return the signed contract the next day. Not yet confirmed signed/returned as of "
+                     "this scan.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
@@ -4944,14 +4957,20 @@ SEED_ROWS = [
     {
         "company": "Titan",
         "position": "Unspecified role",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-10-20",
         "source": "Ashby",
-        "notes": "Generic Ashby confirmation (\"Thanks for your interest in Titan!\") didn't name the role.",
+        "next_step": "2026-10-29: Alex Mastando emailed (alex.mastando@titanvest.com) confirming this is "
+                     "Titan, the investing/wealth-management app, and inviting Regina to a first-round video "
+                     "call -- an Ashby scheduling link was provided (not yet booked as of this scan), plus an "
+                     "attached interview-prep PDF. Role itself still not named.",
+        "notes": "Generic Ashby confirmation (\"Thanks for your interest in Titan!\") didn't name the role at "
+                 "the time.",
         "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which Titan this is or the specific posting. Most plausible match "
-                         "found was Titan, the investing/wealth-management app (Senior Product Designer roles, "
-                         "NYC) -- a16z/General Catalyst-backed -- but not guessing which Titan or which role.",
+        "job_fit_notes": "Company now confirmed (titanvest.com) as Titan, the investing/wealth-management app "
+                         "-- a16z/General Catalyst-backed. Most plausible open role is a Senior Product "
+                         "Designer posting (NYC), but the recruiter's email didn't name the specific role -- "
+                         "not guessing which.",
     },
     {
         "company": "Raisin",

@@ -1329,6 +1329,14 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Specialist, resolving earlier uncertainty between Taskrabbit's two
   open design reqs): recruiter Michael LaPlaca sent a Calendly link to
   book a screening call, not yet booked as of this scan.
+- **2026-10-29 (evening rescan)** — 2 updates, no new rows. Vault 49 —
+  Laura Negin (People Ops) sent the formal written offer/contract
+  directly; Regina replied excited to join, confirming she'll return
+  the signed copy by EOD Oct 30 (not yet confirmed signed/returned as
+  of this scan). Titan — flipped Applied → Interviewing: recruiter
+  Alex Mastando confirmed the company (titanvest.com) and invited
+  Regina to a first-round video call via an Ashby scheduling link;
+  specific role still not named.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
