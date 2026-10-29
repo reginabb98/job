@@ -1309,6 +1309,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Senior Designer); not logged as a row yet since there's no
   response/scheduled call, per the standing rule — flagged to Regina
   instead.
+- **2026-10-29 (morning rescan)** — 1 update, no new rows. Vault 49 —
+  Anna relayed that Laura wants a definitive answer ASAP and asked for
+  the competing offer's details to make Vault 49's response
+  competitive; Regina shared the $98K base figure. Anna then booked a
+  quick call for today, moved same-morning from 10:00-10:15am ET to
+  11:00-11:15am ET — likely carrying Vault 49's decision, same day as
+  Regina's webAI deadline.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

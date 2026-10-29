@@ -1321,6 +1321,13 @@ Scan history:
     Designer and a 3D Senior Designer); not yet logged as a row since
     there's no response/scheduled call yet, per the standing rule for
     inbound recruiter outreach -- flagged to Regina instead.
+  - 2026-10-29 (morning rescan): 1 update, no new rows. Vault 49 --
+    Anna relayed that Laura wants a definitive answer ASAP and asked
+    for the competing offer's details to make Vault 49's response
+    competitive; Regina shared the $98K base figure. Anna then booked
+    a quick call for today, moved same-morning from 10:00-10:15am ET
+    to 11:00-11:15am ET -- likely carrying Vault 49's decision, same
+    day as Regina's webAI deadline.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3079,7 +3086,15 @@ SEED_ROWS = [
                      "day calendar-update email for this slot showed a virtual/Roam link with an odd default "
                      "location, but Regina's own account confirms the visit was in person at the studio as "
                      "planned -- the calendar email appears to be a scheduling-tool artifact, not a real "
-                     "change.)",
+                     "change.) 2026-10-28: Anna messaged (10:16am) that she's checking in with the team that "
+                     "day and will follow up as soon as she hears back. Later (10:41am) Anna said Laura wants "
+                     "a definitive answer ASAP -- the team enjoyed the meeting -- and asked Regina to share "
+                     "the competing offer's details so Anna can make sure Vault 49's response is competitive. "
+                     "Regina replied (11:13am) sharing the $98K base figure and saying she'd love for this to "
+                     "work out, hoping there's room to make it happen. 2026-10-29: Anna sent a calendar invite "
+                     "for a quick call, originally 10:00-10:15am ET, then updated the same morning to "
+                     "11:00-11:15am ET -- no reason given, but likely the call carrying Vault 49's decision, "
+                     "landing the same day as Regina's webAI response deadline.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
