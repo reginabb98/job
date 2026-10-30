@@ -1350,6 +1350,12 @@ Scan history:
     Interviewing: recruiter Alex Mastando confirmed the company
     (titanvest.com) and invited Regina to a first-round video call via
     an Ashby scheduling link; specific role still not named.
+  - 2026-10-30 (midday rescan): 1 update, no new rows. Vault 49 --
+    start date moved to Tue, Nov 10 (not Nov 9) for onboarding; Regina
+    asked about a PD budget and WFH stipend (Laura: no fixed budget,
+    case-by-case; no formal stipend but open to specifics). Regina
+    sent back the signed contract at 1:32pm ET -- the offer is now
+    fully accepted and signed.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3135,8 +3141,16 @@ SEED_ROWS = [
                      "2026-10-29 (evening): Laura Negin (People Operations Manager) emailed directly with the "
                      "formal written offer -- contract attached, same benefits as Anna relayed, asked for a "
                      "signed copy back by EOD Oct 30. Regina replied same evening, excited to join, confirming "
-                     "she'll return the signed contract the next day. Not yet confirmed signed/returned as of "
-                     "this scan.",
+                     "she'll return the signed contract the next day. 2026-10-29 (later): Laura confirmed the "
+                     "start date moved to Tuesday, Nov 10 (not Nov 9 as Regina first proposed) since the team "
+                     "is in-office Tuesdays, better for onboarding; Regina agreed, and separately asked Anna "
+                     "whether Vault 49 offers a professional-development/education budget or a WFH stipend. "
+                     "2026-10-30 (morning): Anna relayed Laura's answers -- no fixed per-person PD budget, "
+                     "built from zero and approved case-by-case (recent examples: typography courses, "
+                     "conferences); no formal WFH stipend, but open to a conversation if Regina needs anything "
+                     "specific for her home setup. 2026-10-30 (1:32pm ET): Regina sent back the signed "
+                     "contract -- \"Really looking forward to joining the team!!\" Vault 49 offer is now fully "
+                     "accepted and signed.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "

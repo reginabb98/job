@@ -1337,6 +1337,12 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   Alex Mastando confirmed the company (titanvest.com) and invited
   Regina to a first-round video call via an Ashby scheduling link;
   specific role still not named.
+- **2026-10-30 (midday rescan)** — 1 update, no new rows. Vault 49 —
+  start date moved to Tue, Nov 10 (not Nov 9) for onboarding; Regina
+  asked about a PD budget and WFH stipend (Laura: no fixed budget,
+  case-by-case; no formal stipend but open to specifics). Regina sent
+  back the signed contract at 1:32pm ET — the offer is now fully
+  accepted and signed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
