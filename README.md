@@ -1343,6 +1343,13 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   case-by-case; no formal stipend but open to specifics). Regina sent
   back the signed contract at 1:32pm ET — the offer is now fully
   accepted and signed.
+- **2026-10-30 (evening rescan)** — 2 updates, no new rows. webAI —
+  flipped Offer → Withdrawn: Regina emailed Marcus declining, having
+  accepted Vault 49 instead ("a better fit... especially because it's
+  hybrid") — resolves the webAI/Vault 49 decision in writing. Gretel
+  (Strategy Intern) — flipped Applied → Interviewing: Izzy Antonelli
+  invited Regina to a 30-min Zoom interview with the strategy team on
+  Fri, Nov 6; slot not yet confirmed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

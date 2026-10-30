@@ -1356,6 +1356,14 @@ Scan history:
     case-by-case; no formal stipend but open to specifics). Regina
     sent back the signed contract at 1:32pm ET -- the offer is now
     fully accepted and signed.
+  - 2026-10-30 (evening rescan): 2 updates, no new rows. webAI --
+    flipped Offer -> Withdrawn: Regina emailed Marcus declining,
+    having accepted Vault 49 instead ("a better fit... especially
+    because it's hybrid") -- resolves the webAI/Vault 49 decision in
+    writing. Gretel (Strategy Intern) -- flipped Applied ->
+    Interviewing: Izzy Antonelli invited Regina to a 30-min Zoom
+    interview with the strategy team on Fri, Nov 6; slot not yet
+    confirmed.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3929,7 +3937,7 @@ SEED_ROWS = [
     {
         "company": "webAI",
         "position": "Marketing Designer",
-        "status": "Offer",
+        "status": "Withdrawn",
         "applied_date": "2026-09-27",
         "had_interview": 1,
         "interview_dates": ["2026-10-05", "2026-10-19"],
@@ -3987,7 +3995,10 @@ SEED_ROWS = [
                      "No DocuSign sent/signed yet as of this scan. 2026-10-23: Marcus confirmed there's still "
                      "no coworking-space program or reimbursement, but finance bumped the base salary to "
                      "**$98,000** (up from $95,000) to help cover a coworking membership instead. Equity/"
-                     "options terms unchanged. Still no DocuSign sent/signed as of this scan.",
+                     "options terms unchanged. Still no DocuSign sent/signed as of this scan. 2026-10-30: "
+                     "Regina emailed Marcus declining the offer -- she accepted Vault 49 instead, calling it "
+                     "\"a better fit for me right now, especially because it's hybrid.\" Thanked him for his "
+                     "help throughout the process. This resolves the webAI/Vault 49 decision in writing.",
         "notes": "Confirmed via Ashby's auto-reply.",
         "pay_range": "$98K base + 2,800 stock options",
         "job_fit": "Good",
@@ -5083,14 +5094,20 @@ SEED_ROWS = [
     {
         "company": "Gretel",
         "position": "Strategy Intern",
-        "status": "Applied",
+        "status": "Interviewing",
         "applied_date": "2026-10-22",
         "source": "Notion form",
+        "next_step": "2026-10-30: Izzy Antonelli (People & Culture Manager) emailed inviting Regina to a "
+                     "30-min interview with Noah Goldberg and Georgia Watt from the strategy team, via Zoom "
+                     "on Friday, Nov 6 -- offered 5 time slots between 10am and 1:45pm; not yet confirmed "
+                     "which slot as of this scan.",
         "notes": "Confirmed via a Notion-hosted application form confirmation (\"Thank you for filling out "
-                 "'Gretel Strategy Intern'\").",
-        "job_fit": "Unknown",
-        "job_fit_notes": "Couldn't confirm which company this is (common name) or find the specific posting to "
-                         "assess requirements.",
+                 "'Gretel Strategy Intern'\"). Company confirmed via Izzy's 2026-10-30 email: Gretel is a "
+                 "Brooklyn-based agency (gretelny.com).",
+        "job_fit": "Good",
+        "job_fit_notes": "Confirmed via the 2026-10-30 interview invite (strategy team, Noah Goldberg and "
+                         "Georgia Watt): a strategy-focused internship, a good match for Regina's "
+                         "design-to-strategy transition and SVA Branding Master's background.",
     },
     {
         "company": "Mouthwash",
