@@ -1350,6 +1350,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   (Strategy Intern) — flipped Applied → Interviewing: Izzy Antonelli
   invited Regina to a 30-min Zoom interview with the strategy team on
   Fri, Nov 6; slot not yet confirmed.
+- **2026-10-31 (evening rescan)** — 1 update, no new rows. Gretel —
+  flipped Interviewing → Withdrawn: Regina declined the interview
+  invite, having accepted a full-time role (Vault 49); asked to stay
+  in touch for future full-time openings and offered an informal chat
+  instead.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

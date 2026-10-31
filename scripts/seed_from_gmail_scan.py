@@ -1364,6 +1364,11 @@ Scan history:
     Interviewing: Izzy Antonelli invited Regina to a 30-min Zoom
     interview with the strategy team on Fri, Nov 6; slot not yet
     confirmed.
+  - 2026-10-31 (evening rescan): 1 update, no new rows. Gretel --
+    flipped Interviewing -> Withdrawn: Regina declined the interview
+    invite, having accepted a full-time role (Vault 49); asked to
+    stay in touch for future full-time openings and offered an
+    informal chat instead.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -5094,13 +5099,15 @@ SEED_ROWS = [
     {
         "company": "Gretel",
         "position": "Strategy Intern",
-        "status": "Interviewing",
+        "status": "Withdrawn",
         "applied_date": "2026-10-22",
         "source": "Notion form",
         "next_step": "2026-10-30: Izzy Antonelli (People & Culture Manager) emailed inviting Regina to a "
                      "30-min interview with Noah Goldberg and Georgia Watt from the strategy team, via Zoom "
-                     "on Friday, Nov 6 -- offered 5 time slots between 10am and 1:45pm; not yet confirmed "
-                     "which slot as of this scan.",
+                     "on Friday, Nov 6 -- offered 5 time slots between 10am and 1:45pm. 2026-10-31: Regina "
+                     "replied declining -- she's accepted a full-time role (Vault 49) and won't be pursuing "
+                     "the internship, but asked to stay in touch for future full-time roles and offered an "
+                     "informal chat with Noah/Georgia if they're open to it.",
         "notes": "Confirmed via a Notion-hosted application form confirmation (\"Thank you for filling out "
                  "'Gretel Strategy Intern'\"). Company confirmed via Izzy's 2026-10-30 email: Gretel is a "
                  "Brooklyn-based agency (gretelny.com).",
