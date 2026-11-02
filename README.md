@@ -1355,6 +1355,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   invite, having accepted a full-time role (Vault 49); asked to stay
   in touch for future full-time openings and offered an informal chat
   instead.
+- **2026-11-02 (afternoon rescan)** — 1 update, no new rows. Gretel —
+  Izzy followed up taking Regina up on the informal-chat offer,
+  congratulating her on the full-time role and proposing Fri, Nov 13
+  between 1:15-5pm for an intro chat with Noah/Georgia; not yet
+  confirmed.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

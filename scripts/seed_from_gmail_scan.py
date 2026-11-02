@@ -1369,6 +1369,11 @@ Scan history:
     invite, having accepted a full-time role (Vault 49); asked to
     stay in touch for future full-time openings and offered an
     informal chat instead.
+  - 2026-11-02 (afternoon rescan): 1 update, no new rows. Gretel --
+    Izzy followed up taking Regina up on the informal-chat offer,
+    congratulating her on the full-time role and proposing Fri, Nov 13
+    between 1:15-5pm for an intro chat with Noah/Georgia; not yet
+    confirmed.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -5107,7 +5112,10 @@ SEED_ROWS = [
                      "on Friday, Nov 6 -- offered 5 time slots between 10am and 1:45pm. 2026-10-31: Regina "
                      "replied declining -- she's accepted a full-time role (Vault 49) and won't be pursuing "
                      "the internship, but asked to stay in touch for future full-time roles and offered an "
-                     "informal chat with Noah/Georgia if they're open to it.",
+                     "informal chat with Noah/Georgia if they're open to it. 2026-11-02: Izzy followed up "
+                     "taking her up on it -- congratulated Regina on the full-time role and offered to set up "
+                     "an informal intro chat with Noah/Georgia, proposing Fri, Nov 13 between 1:15-5pm; not "
+                     "yet confirmed as of this scan.",
         "notes": "Confirmed via a Notion-hosted application form confirmation (\"Thank you for filling out "
                  "'Gretel Strategy Intern'\"). Company confirmed via Izzy's 2026-10-30 email: Gretel is a "
                  "Brooklyn-based agency (gretelny.com).",
