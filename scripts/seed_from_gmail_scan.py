@@ -1374,6 +1374,11 @@ Scan history:
     congratulating her on the full-time role and proposing Fri, Nov 13
     between 1:15-5pm for an intro chat with Noah/Georgia; not yet
     confirmed.
+  - 2026-11-03 (afternoon rescan): 2 updates, no new rows. Twigeo --
+    flipped Applied -> Rejected (generic decline, role filled).
+    Taskrabbit -- the recruiter screen is now booked, Wed Nov 4,
+    11:00-11:30am ET; unclear whether Regina still intends to take it
+    given she's already accepted Vault 49.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4657,10 +4662,11 @@ SEED_ROWS = [
     {
         "company": "Twigeo",
         "position": "Senior Designer, Paid Social - New York",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-14",
         "source": "Teamtailor",
-        "notes": "Confirmed via Teamtailor auto-reply from Lisa Sandahl.",
+        "notes": "Confirmed via Teamtailor auto-reply from Lisa Sandahl. Rejected 2026-11-03: generic "
+                 "decline (\"the position has now been filled\").",
         "job_fit": "Fair",
         "job_fit_notes": "Found via aggregator listing (unconfirmed on Twigeo's own site): Brooklyn, NY, "
                          "on-site, $90K-$115K/yr. Description explicitly calls for \"a high level of design "
@@ -4876,8 +4882,10 @@ SEED_ROWS = [
         "next_step": "2026-10-29: Michael LaPlaca (Sr. Corporate & Technical Recruiter) emailed inviting "
                      "Regina to interview, confirming this is for the Senior Visual Design Specialist role -- "
                      "resolves the earlier uncertainty about which of Taskrabbit's two open design roles this "
-                     "application was for. Asked her to pick a time via his Calendly link; not yet booked as "
-                     "of this scan.",
+                     "application was for. Asked her to pick a time via his Calendly link. 2026-11-03: "
+                     "booked via Calendly -- 30-min recruiter screen confirmed for Wed, Nov 4, 11:00-11:30am "
+                     "ET (phone call). Given Regina has already accepted Vault 49 (starting Nov 10), unclear "
+                     "whether she still intends to take this call.",
         "notes": "Generic Greenhouse auto-reply confirmation (\"Thanks for applying to Taskrabbit!\") didn't "
                  "name the role at the time. Distinct from the existing 2026-08-18 Taskrabbit/Sr. Manager, "
                  "Brand & Content application -- different date.",

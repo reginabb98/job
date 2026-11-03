@@ -1360,6 +1360,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   congratulating her on the full-time role and proposing Fri, Nov 13
   between 1:15-5pm for an intro chat with Noah/Georgia; not yet
   confirmed.
+- **2026-11-03 (afternoon rescan)** — 2 updates, no new rows. Twigeo —
+  flipped Applied → Rejected (generic decline, role filled).
+  Taskrabbit — the recruiter screen is now booked, Wed Nov 4,
+  11:00-11:30am ET; unclear whether Regina still intends to take it
+  given she's already accepted Vault 49.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
