@@ -1370,6 +1370,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   rescheduled to Fri, Nov 13, 11:30am-12pm ET. Gretel — the informal
   intro chat with Noah/Georgia is confirmed for Fri, Nov 13, 12:30pm
   ET.
+- **2026-11-04 (evening rescan)** — 1 update, no new rows. Vault 49 —
+  Laura sent onboarding info ("Welcome to Vault49: Part I"): Justworks
+  payroll/HR setup, benefits enrollment, commuter benefits, the
+  employee handbook to sign, and I-9 verification. Cc'd Regina's new
+  Vault49 email for the first time.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

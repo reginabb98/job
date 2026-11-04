@@ -1383,6 +1383,11 @@ Scan history:
     -- Regina canceled the recruiter screen last-minute, rescheduled
     to Fri, Nov 13, 11:30am-12pm ET. Gretel -- the informal intro
     chat with Noah/Georgia is confirmed for Fri, Nov 13, 12:30pm ET.
+  - 2026-11-04 (evening rescan): 1 update, no new rows. Vault 49 --
+    Laura sent onboarding info ("Welcome to Vault49: Part I"):
+    Justworks payroll/HR setup, benefits enrollment, commuter
+    benefits, the employee handbook to sign, and I-9 verification.
+    Cc'd Regina's new Vault49 email for the first time.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3177,7 +3182,10 @@ SEED_ROWS = [
                      "conferences); no formal WFH stipend, but open to a conversation if Regina needs anything "
                      "specific for her home setup. 2026-10-30 (1:32pm ET): Regina sent back the signed "
                      "contract -- \"Really looking forward to joining the team!!\" Vault 49 offer is now fully "
-                     "accepted and signed.",
+                     "accepted and signed. 2026-11-04: Laura sent onboarding info (\"Welcome to Vault49: Part "
+                     "I\") -- Justworks payroll/HR setup, benefits enrollment details, commuter benefits, the "
+                     "employee handbook to sign and return, and I-9 verification. Cc'd Regina's new Vault49 "
+                     "email (regina.barrera@vault49.com) and Beth Galbraith for the first time.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
