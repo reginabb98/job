@@ -1379,6 +1379,10 @@ Scan history:
     Taskrabbit -- the recruiter screen is now booked, Wed Nov 4,
     11:00-11:30am ET; unclear whether Regina still intends to take it
     given she's already accepted Vault 49.
+  - 2026-11-04 (afternoon rescan): 2 updates, no new rows. Taskrabbit
+    -- Regina canceled the recruiter screen last-minute, rescheduled
+    to Fri, Nov 13, 11:30am-12pm ET. Gretel -- the informal intro
+    chat with Noah/Georgia is confirmed for Fri, Nov 13, 12:30pm ET.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4884,8 +4888,12 @@ SEED_ROWS = [
                      "resolves the earlier uncertainty about which of Taskrabbit's two open design roles this "
                      "application was for. Asked her to pick a time via his Calendly link. 2026-11-03: "
                      "booked via Calendly -- 30-min recruiter screen confirmed for Wed, Nov 4, 11:00-11:30am "
-                     "ET (phone call). Given Regina has already accepted Vault 49 (starting Nov 10), unclear "
-                     "whether she still intends to take this call.",
+                     "ET (phone call). 2026-11-04: Regina canceled last-minute (\"a personal issue came up\"); "
+                     "Michael tried calling (voicemail) and followed up with his Calendly link. Regina "
+                     "rescheduled to the following week (new invite confirms Fri, Nov 13, 11:30am-12pm ET), "
+                     "noting she'd try to move it up sooner if things cleared up. Still unclear whether she "
+                     "intends to actually take this call given she's already accepted Vault 49 (starting Nov "
+                     "10).",
         "notes": "Generic Greenhouse auto-reply confirmation (\"Thanks for applying to Taskrabbit!\") didn't "
                  "name the role at the time. Distinct from the existing 2026-08-18 Taskrabbit/Sr. Manager, "
                  "Brand & Content application -- different date.",
@@ -5122,8 +5130,11 @@ SEED_ROWS = [
                      "the internship, but asked to stay in touch for future full-time roles and offered an "
                      "informal chat with Noah/Georgia if they're open to it. 2026-11-02: Izzy followed up "
                      "taking her up on it -- congratulated Regina on the full-time role and offered to set up "
-                     "an informal intro chat with Noah/Georgia, proposing Fri, Nov 13 between 1:15-5pm; not "
-                     "yet confirmed as of this scan.",
+                     "an informal intro chat with Noah/Georgia, proposing Fri, Nov 13 between 1:15-5pm. "
+                     "2026-11-04: Regina confirmed she's happy with whatever time works for them; Izzy locked "
+                     "in 12:30pm ET on Fri, Nov 13 -- calendar invite (\"Regina Barrera x Gretel | Connect\") "
+                     "explicitly notes this is an informal intro call, not a continuation of the internship "
+                     "process, since she's already accepted a full-time role elsewhere.",
         "notes": "Confirmed via a Notion-hosted application form confirmation (\"Thank you for filling out "
                  "'Gretel Strategy Intern'\"). Company confirmed via Izzy's 2026-10-30 email: Gretel is a "
                  "Brooklyn-based agency (gretelny.com).",
