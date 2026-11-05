@@ -1375,6 +1375,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   payroll/HR setup, benefits enrollment, commuter benefits, the
   employee handbook to sign, and I-9 verification. Cc'd Regina's new
   Vault49 email for the first time.
+- **2026-11-05 (evening rescan)** — 1 update, no new rows. Vault 49 —
+  Regina confirmed Justworks setup and sent the signed handbook,
+  flagging a PTO discrepancy (17 vs. 20 days) and asking to WFH
+  Dec 22-23 for already-booked holiday travel; Laura confirmed 20 days
+  is correct and approved the WFH request.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

@@ -1388,6 +1388,11 @@ Scan history:
     Justworks payroll/HR setup, benefits enrollment, commuter
     benefits, the employee handbook to sign, and I-9 verification.
     Cc'd Regina's new Vault49 email for the first time.
+  - 2026-11-05 (evening rescan): 1 update, no new rows. Vault 49 --
+    Regina confirmed Justworks setup and sent the signed handbook,
+    flagging a PTO discrepancy (17 vs. 20 days) and asking to WFH
+    Dec 22-23 for already-booked holiday travel; Laura confirmed 20
+    days is correct and approved the WFH request.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3185,7 +3190,12 @@ SEED_ROWS = [
                      "accepted and signed. 2026-11-04: Laura sent onboarding info (\"Welcome to Vault49: Part "
                      "I\") -- Justworks payroll/HR setup, benefits enrollment details, commuter benefits, the "
                      "employee handbook to sign and return, and I-9 verification. Cc'd Regina's new Vault49 "
-                     "email (regina.barrera@vault49.com) and Beth Galbraith for the first time.",
+                     "email (regina.barrera@vault49.com) and Beth Galbraith for the first time. 2026-11-05: "
+                     "Regina replied confirming Justworks set up and the signed handbook attached, and asked "
+                     "two questions -- the handbook lists 17 PTO days vs. 20 in the offer, and whether she "
+                     "could work remotely Dec 22-23 (flights already booked before the offer). Laura confirmed "
+                     "same day: 20 days is correct (handbook not yet updated for 2026), and approved the "
+                     "Dec 22-23 WFH request (NYC hours, 9-5:30pm EST).",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "
