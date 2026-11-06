@@ -1393,6 +1393,11 @@ Scan history:
     flagging a PTO discrepancy (17 vs. 20 days) and asking to WFH
     Dec 22-23 for already-booked holiday travel; Laura confirmed 20
     days is correct and approved the WFH request.
+  - 2026-11-06 (evening rescan): 1 update, no new rows. Vault 49 --
+    Laura sent "Welcome to Vault: Part II" with first-day/first-week
+    logistics (9am start, studio tour, hybrid schedule, Slack
+    channels, onboarding folder, Tech Form). Anna Callagher (Craft)
+    is out of office until Nov 10; Regina thanked her for her help.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3195,7 +3200,13 @@ SEED_ROWS = [
                      "two questions -- the handbook lists 17 PTO days vs. 20 in the offer, and whether she "
                      "could work remotely Dec 22-23 (flights already booked before the offer). Laura confirmed "
                      "same day: 20 days is correct (handbook not yet updated for 2026), and approved the "
-                     "Dec 22-23 WFH request (NYC hours, 9-5:30pm EST).",
+                     "Dec 22-23 WFH request (NYC hours, 9-5:30pm EST). 2026-11-06: Laura sent \"Welcome to "
+                     "Vault: Part II\" with first-day/first-week details -- 9:00am start, studio tour, laptop "
+                     "setup, hybrid schedule confirmed (in-studio Tue-Thu, WFH Mon/Fri), Slack channel rundown, "
+                     "an onboarding folder (orientation deck, PTO/room-booking policies, studio guide, ways-of-"
+                     "working guide, brand assets) and a linked Tech Form with account/login details. Also: "
+                     "Anna Callagher (Craft) is out of office until Tue Nov 10 (contact tommy@itscraft.com for "
+                     "urgent matters); Regina thanked her for her help throughout the process before she left.",
         "notes": "Applied through Craft, a UK/NY creative & design recruitment consultancy (itscraft.com), not "
                  "the hiring company itself -- one of three distinct applications Regina submitted through "
                  "their ATS within minutes of each other on 2026-09-14. Anna Callagher, Lead Recruiter @ "

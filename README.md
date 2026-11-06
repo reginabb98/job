@@ -1380,6 +1380,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   flagging a PTO discrepancy (17 vs. 20 days) and asking to WFH
   Dec 22-23 for already-booked holiday travel; Laura confirmed 20 days
   is correct and approved the WFH request.
+- **2026-11-06 (evening rescan)** — 1 update, no new rows. Vault 49 —
+  Laura sent "Welcome to Vault: Part II" with first-day/first-week
+  logistics (9am start, studio tour, hybrid schedule, Slack channels,
+  onboarding folder, Tech Form). Anna Callagher (Craft) is out of
+  office until Nov 10; Regina thanked her for her help.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
