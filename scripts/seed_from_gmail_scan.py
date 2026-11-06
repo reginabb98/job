@@ -1398,6 +1398,8 @@ Scan history:
     logistics (9am start, studio tour, hybrid schedule, Slack
     channels, onboarding folder, Tech Form). Anna Callagher (Craft)
     is out of office until Nov 10; Regina thanked her for her help.
+  - 2026-11-06 (night rescan): 1 update, no new rows. Monster Energy
+    -- flipped Applied -> Rejected (generic decline, role filled).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -3597,10 +3599,10 @@ SEED_ROWS = [
     {
         "company": "Monster Energy",
         "position": "Senior Graphic Designer, Americas",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-09-22",
         "source": "Email",
-        "notes": None,
+        "notes": "Rejected 2026-11-06: generic decline, \"the position has been filled.\"",
         "pay_range": "$108,750-$145,000/yr",
         "job_fit": "Fair",
         "job_fit_notes": "Confirmed general posting: 5+ yrs print graphic design for large consumer brands, "

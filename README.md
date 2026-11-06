@@ -1385,6 +1385,8 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   logistics (9am start, studio tour, hybrid schedule, Slack channels,
   onboarding folder, Tech Form). Anna Callagher (Craft) is out of
   office until Nov 10; Regina thanked her for her help.
+- **2026-11-06 (night rescan)** — 1 update, no new rows. Monster
+  Energy — flipped Applied → Rejected (generic decline, role filled).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
