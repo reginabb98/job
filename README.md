@@ -1387,6 +1387,11 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   office until Nov 10; Regina thanked her for her help.
 - **2026-11-06 (night rescan)** — 1 update, no new rows. Monster
   Energy — flipped Applied → Rejected (generic decline, role filled).
+- **2026-11-10 (evening rescan)** — 1 new row. Highbeam — Brand
+  Designer, status Interviewing. No application-confirmation email
+  was ever found for this one; Rohail Khan emailed directly asking to
+  schedule an intro call via an Ashby link. applied_date is the date
+  of this email, not a confirmed submission date.
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.

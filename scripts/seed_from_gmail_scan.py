@@ -1400,6 +1400,11 @@ Scan history:
     is out of office until Nov 10; Regina thanked her for her help.
   - 2026-11-06 (night rescan): 1 update, no new rows. Monster Energy
     -- flipped Applied -> Rejected (generic decline, role filled).
+  - 2026-11-10 (evening rescan): 1 new row. Highbeam -- Brand
+    Designer, status Interviewing. No application-confirmation email
+    was ever found for this one; Rohail Khan emailed directly asking
+    to schedule an intro call via an Ashby link. applied_date is the
+    date of this email, not a confirmed submission date.
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -1412,6 +1417,25 @@ from datetime import datetime
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tracker.db")
 
 SEED_ROWS = [
+    {
+        "company": "Highbeam",
+        "position": "Brand Designer",
+        "status": "Interviewing",
+        "applied_date": "2026-11-10",
+        "had_interview": 0,
+        "source": "Ashby",
+        "next_step": "2026-11-10: Rohail Khan (Highbeam) emailed that they'd reviewed her application and want "
+                     "to move to an intro call, asking her to share 4-5 available time slots via an Ashby "
+                     "scheduling link within the next two weeks; not yet booked.",
+        "notes": "No application-confirmation email for this one was ever found in the inbox -- the "
+                 "applied_date above is the date this interview-request email arrived, not a confirmed "
+                 "submission date; she may have applied earlier via a job board/Easy Apply that didn't send "
+                 "a receipt.",
+        "job_fit": "Unknown",
+        "job_fit_notes": "No job posting text available to assess against; Highbeam is a business-banking/"
+                         "fintech startup for other startups.",
+        "cold_outreach": 0,
+    },
     {
         "company": "Accenture (Droga5)",
         "position": "Senior Strategist (R00338279)",
