@@ -54,7 +54,8 @@ Then open http://127.0.0.1:8124.
 ## How it fits together
 
 - `scrapers/` — one module per venue (Mercury Lounge & Bowery Ballroom,
-  Elsewhere, Public Records, TV Eye, The Broadway, DoNYC, Metrograph, Film
+  Elsewhere, Public Records, The Broadway, DoNYC (Baby's All Right, Union Pool,
+  Arlene's Grocery, Le Poisson Rouge, TV Eye), Metrograph, Film
   Forum, IFC Center, Nitehawk), each returning a list of `scrapers.base.Event`.
 - `run.py` — runs every scraper, de-dupes, annotates each event via `taste.py`
   and `movie_taste.py`, ranks by distance/transit via `venues.py`, writes

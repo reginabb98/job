@@ -3,7 +3,7 @@ import json
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from scrapers import bowery_presents, elsewhere, public_records, tv_eye, broadway, donyc
+from scrapers import bowery_presents, elsewhere, public_records, broadway, donyc
 from scrapers import metrograph, film_forum, ifc_center, nitehawk
 from scrapers.base import time_sort_key, extract_trailing_year, format_time_display
 import taste
@@ -15,7 +15,6 @@ SCRAPERS = [
     bowery_presents,
     elsewhere,
     public_records,
-    tv_eye,
     broadway,
     donyc,
     metrograph,
