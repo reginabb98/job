@@ -29,6 +29,13 @@ VENUE_COORDS = {
     "Heaven Can Wait": (40.7276, -73.9803),
     "Angelika Film Center": (40.7259, -73.9959),
     "Le Poisson Rouge": (40.7294, -74.0003),
+    "National Sawdust": (40.7193, -73.9612),
+    "Pioneer Works": (40.6787, -74.0125),
+    "Union Hall": (40.6773, -73.9800),
+    "The Bell House": (40.6738, -73.9918),
+    "Brooklyn Steel": (40.7192, -73.9388),
+    "Bowery Electric": (40.7253, -73.9917),
+    "Webster Hall": (40.7318, -73.9892),
 }
 
 
@@ -70,6 +77,13 @@ TRANSIT_MINUTES = {
     "Heaven Can Wait": 28,
     "Angelika Film Center": 30,
     "Le Poisson Rouge": 35,  # Bleecker St / Greenwich Village — same ballpark as IFC Center, Film Forum
+    "National Sawdust": 20,   # N 6th St, Williamsburg — L to Bedford
+    "Pioneer Works": 60,      # Red Hook — no subway nearby, L + G + bus/walk
+    "Union Hall": 45,         # Park Slope — L/G transfer
+    "The Bell House": 50,     # Gowanus — L/G to F/G at 4th Ave–9th St, then walk
+    "Brooklyn Steel": 14,     # Frost St, East Williamsburg — walk or one L stop
+    "Bowery Electric": 30,    # L to 1st Ave, walk to Bowery
+    "Webster Hall": 25,       # L to 3rd Ave, short walk
 }
 
 

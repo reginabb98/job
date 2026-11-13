@@ -28,6 +28,15 @@ VENUES = {
     "Le Poisson Rouge": "le-poisson-rouge",
     # TV Eye's own site now returns 403 to scrapers; doNYC lists it fine.
     "TV Eye": "tv-eye",
+    "National Sawdust": "national-sawdust",
+    "Pioneer Works": "pioneer-works",
+    "Union Hall": "union-hall",
+    "The Bell House": "the-bell-house",
+    "Brooklyn Steel": "brooklyn-steel",
+    "Music Hall of Williamsburg": "music-hall-of-williamsburg",
+    # doNYC now lists this room as "Bowery Palace"; same address (327 Bowery).
+    "Bowery Electric": "bowery-electric",
+    "Webster Hall": "webster-hall",
 }
 
 MAX_PAGES = 15  # 150 events per venue is far more than any of them list
