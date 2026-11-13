@@ -1405,6 +1405,9 @@ Scan history:
     was ever found for this one; Rohail Khan emailed directly asking
     to schedule an intro call via an Ashby link. applied_date is the
     date of this email, not a confirmed submission date.
+  - 2026-11-13 (afternoon rescan): 1 update, no new rows. Big
+    Spaceship -- flipped Applied -> Rejected (generic decline, will
+    keep her info on file).
 
 Run `python scripts/seed_from_gmail_scan.py` once against an empty
 applications table; it will not create duplicates on repeat runs.
@@ -4793,12 +4796,13 @@ SEED_ROWS = [
     {
         "company": "Big Spaceship",
         "position": "Designer",
-        "status": "Applied",
+        "status": "Rejected",
         "applied_date": "2026-10-15",
         "source": "Workable",
         "notes": "Confirmed via Workable's auto-reply with full application data attached. Regina's answers: "
                  "$105,000 desired salary; confirmed able to comply with the 3-day/week hybrid Manhattan "
-                 "office policy.",
+                 "office policy. Rejected 2026-11-13: generic decline, \"won't be moving it forward at this "
+                 "time,\" will keep her info on file.",
         "job_fit": "Good",
         "job_fit_notes": "Confirmed posting: hybrid NYC, Creative & Design dept, $75K-$105K/yr -- her $105K "
                          "ask sits at the top of the band. Requires 3+ yrs in a creative agency or similar "

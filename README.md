@@ -1392,6 +1392,9 @@ The rows in `scripts/seed_from_gmail_scan.py` came from exactly that:
   was ever found for this one; Rohail Khan emailed directly asking to
   schedule an intro call via an Ashby link. applied_date is the date
   of this email, not a confirmed submission date.
+- **2026-11-13 (afternoon rescan)** — 1 update, no new rows. Big
+  Spaceship — flipped Applied → Rejected (generic decline, will keep
+  her info on file).
 
 LinkedIn's own "job alert" and "jobs similar to" emails were excluded from
 every scan since those are recommendations, not applications you submitted.
