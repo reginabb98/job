@@ -1,4 +1,5 @@
 """Scraper for Nitehawk Cinema (nitehawkcinema.com) — Filmbot-powered, one page per day."""
+import re
 import time
 from datetime import date, timedelta
 
@@ -34,15 +35,26 @@ def _scrape_day(location_slug: str, venue_name: str, day: date) -> list[Event]:
         detail_url = show.select_one("a.overlay-link")
         detail_href = detail_url.get("href", url) if detail_url else url
 
-        for span in show.select("ul.showtime-button-row span.showtime"):
-            time_text = next(iter(span.stripped_strings), "")
+        image = ""
+        thumb = show.select_one("div.show-thumbnail")
+        if thumb:
+            m = re.search(r"url\(([^)]+)\)", thumb.get("style", ""))
+            image = m.group(1).strip("'\"") if m else ""
+
+        # Showtime buttons are <a class="showtime"> (they used to be <span>);
+        # match either so a future swap back doesn't silently empty the feed.
+        for btn in show.select("ul.showtime-button-row .showtime"):
+            time_text = next(iter(btn.stripped_strings), "")
+            if not time_text:
+                continue
             events.append(Event(
                 type="movie",
                 name=title,
                 venue=venue_name,
                 date=day.isoformat(),
                 time=time_text,
-                url=span.get("href", detail_href),
+                url=btn.get("href", detail_href),
+                image=image,
             ))
     return events
 
