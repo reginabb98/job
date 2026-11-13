@@ -37,6 +37,11 @@ VENUES = {
     # doNYC now lists this room as "Bowery Palace"; same address (327 Bowery).
     "Bowery Electric": "bowery-electric",
     "Webster Hall": "webster-hall",
+    "Brooklyn Paramount": "brooklyn-paramount",
+    "Irving Plaza": "irving-plaza",
+    "The Gramercy Theatre": "gramercy-theatre",
+    # Formerly Avant Gardner / The Brooklyn Mirage complex on Stewart Ave.
+    "Pacha NYC": "avant-gardner",
 }
 
 MAX_PAGES = 15  # 150 events per venue is far more than any of them list

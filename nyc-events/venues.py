@@ -36,6 +36,10 @@ VENUE_COORDS = {
     "Brooklyn Steel": (40.7192, -73.9388),
     "Bowery Electric": (40.7253, -73.9917),
     "Webster Hall": (40.7318, -73.9892),
+    "Brooklyn Paramount": (40.6905, -73.9837),
+    "Irving Plaza": (40.7349, -73.9883),
+    "The Gramercy Theatre": (40.7398, -73.9843),
+    "Pacha NYC": (40.7112, -73.9233),
 }
 
 
@@ -84,6 +88,10 @@ TRANSIT_MINUTES = {
     "Brooklyn Steel": 14,     # Frost St, East Williamsburg — walk or one L stop
     "Bowery Electric": 30,    # L to 1st Ave, walk to Bowery
     "Webster Hall": 25,       # L to 3rd Ave, short walk
+    "Brooklyn Paramount": 35, # Flatbush Ave Ext, Downtown Brooklyn — L/G transfer
+    "Irving Plaza": 25,       # L to 3rd Ave or Union Sq
+    "The Gramercy Theatre": 30,  # L to Union Sq, then walk up to 23rd
+    "Pacha NYC": 10,          # Stewart Ave — walk from Morgan Ave L
 }
 
 
